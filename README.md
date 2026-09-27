@@ -2,6 +2,8 @@
 
 2026-09-27 기준, 세 가지 AirComp 언러닝 방법의 수학적 조건, Original/V1 비교, 실패 기록과 비용 산정을 모은 연구 저장소다. 최신 판단은 아래 방법론과 총비용 보고서를 기준으로 읽는다. 이전 날짜 문서는 당시의 탐색 결과이며, 이후 수정 사항을 덮어쓰지 않았다.
 
+**추가 GPU 검증: 공중 잡음 활용** — [NM-Air / JS-Air 결과](research_20260927_channel_noise/README_KO.md) · [알고리즘과 수식](research_20260927_channel_noise/METHOD_KO.md). NM-Air는 같은 출력분포 비교군 대비 총 삭제비를3.19% 줄였지만, noisy Hessian 조건의 분포 언러닝 검증은 통과하지 못했다. JS-Air는20dB에서 같은 비용의 point MSE를1.8–12.0% 줄였다. 잡음만으로 삭제가 완성된다는 결론은 아니다. 새 데이터 seed3개, Gaussian/point 비교2106행과 별도 분포 구분·잡음 추정비용 진단을 공개했다.
+
 - [①②③ 최신 방법론](research_20260927_methodology/METHODS_KO.md)
 - [통신·계산·저장·초기 준비 총비용](research_20260927_costs/COST_REPORT_KO.md)
 - [비용 가정과 미측정 항목](research_20260927_costs/ASSUMPTIONS_KO.md)
@@ -47,6 +49,7 @@
 **저장소 구성과 실행**
 
 - `research_20260927_methodology/`: 최신 수식, 송수신 절차, 정보 공개 조건, 780개 평가 행 감사와 GPU 검증 기록.
+- `research_20260927_channel_noise/`: 후속 NM-Air/JS-Air 수식, 새 GPU 실험, 잡음 보정 비용과 실패 원인.
 - `research_20260927_costs/`: 추가 비용 계산 코드, 가정, JSON 원장과 보고서.
 - `research_20260927_orthogonality/`: 완전/부분 투영 비교, 마지막 1회 및 반복 실패 기록.
 - `research_20260926_versioned/`: DS/OG/RTD Original·V1 실험 및 RTD 수치 정밀도 보정.
@@ -58,6 +61,7 @@ Python 표준 라이브러리만으로 비용표와 배포 파일을 검증할 �
 ```bash
 python research_20260927_costs/calculate_costs.py
 python verify_bundle.py
+python research_20260927_channel_noise/summarize.py
 ```
 
-GPU 학습 코드는 당시 파일을 보존했다. 데이터셋, checkpoint, Python/CUDA 환경과 전체 vendor 소스는 포함하지 않았다. 전체 GPU 재실행에는 [재현 안내](REPRODUCIBILITY_KO.md)의 외부 의존성과 경로 설정이 필요하다. SFL 후속 연구와 retain recovery를 이 실험 묶음의 성과에 합치지 않았다.
+이전 GPU 학습 코드는 당시 파일을 보존했다. 데이터셋, checkpoint, Python/CUDA 환경과 전체 vendor 소스는 포함하지 않았다. 이전 GPU 실험 재실행에는 [재현 안내](REPRODUCIBILITY_KO.md)의 외부 의존성과 경로 설정이 필요하다. 새로운 `research_20260927_channel_noise`는 vendor 없이 PyTorch·NumPy와 `--data` 경로로 실행할 수 있다. SFL 후속 연구와 retain recovery를 이 실험 묶음의 성과에 합치지 않았다.

@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-27",
+  "scope": "New channel-noise experiments; initial archived experiments unchanged",
+  "files": [
+    {
+      "path": "comparison.pdf",
+      "sha256": "d707aa0527adfcc2bbf84970b7b31241e82f074153aeb39aadc5b27280f5a2eb",
+      "bytes": 23197
+    },
+    {
+      "path": "comparison.png",
+      "sha256": "f2dc79a812a3952087c2524b8b7eb673073d728068481df4a5b21d68fe9c9a97",
+      "bytes": 141406
+    },
+    {
+      "path": "diagnose.py",
+      "sha256": "2ff48b411bd1f5306a52bfcd5c6d9073c1e5d2190462cd53b1e50bf8c01018eb",
+      "bytes": 4512
+    },
+    {
+      "path": "METHOD_KO.md",
+      "sha256": "91a7f6a1a8c90792a2e31a7ab3a573227899c58d583601509fb45cde5b6bcfd5",
+      "bytes": 13539
+    },
+    {
+      "path": "PROTOCOL_KO.md",
+      "sha256": "fc95d8691c85eff619ccaaa5ee3da95fe8aa945960dea78f2ec33e68ec292c51",
+      "bytes": 6255
+    },
+    {
+      "path": "README_KO.md",
+      "sha256": "3cd2757bf7e740f42aad7010833900102ca73e4fbcb77cf066a70f1a4af44db5",
+      "bytes": 8870
+    },
+    {
+      "path": "RESULT_TABLES_KO.md",
+      "sha256": "81395eaa0a9ee387397e3f74114bb4cca2edef23e83fa39c9106afbe38226782",
+      "bytes": 3669
+    },
+    {
+      "path": "results/completion.json",
+      "sha256": "64c78b8d3a99075e47e2256e57fdecfd1b50dbb57a3101ff12ace7a07b56f878",
+      "bytes": 243
+    },
+    {
+      "path": "results/diagnosis.json",
+      "sha256": "9bd7f06c6431d5405907dace4b65e7e6a070b2c1f984c57903c8d1350fde5011",
+      "bytes": 6723
+    },
+    {
+      "path": "results/environment.json",
+      "sha256": "7cc6e84a10e6f87390d2aeeddb2207bcac0991305f94956117032d727f55c3a6",
+      "bytes": 964
+    },
+    {
+      "path": "results/math_checks.json",
+      "sha256": "d71385d2fe044e812156b0104f39702f720c332ece128e056b17e4ecf95b96b4",
+      "bytes": 834
+    },
+    {
+      "path": "results/seed202609271.json",
+      "sha256": "a9ae968f8bf752667a585a3eb6681d3a74627f43097eaada0089bdd11b3a31a6",
+      "bytes": 1111184
+    },
+    {
+      "path": "results/seed202609272.json",
+      "sha256": "40080cb46e70dc652f3c65ff8ff05d65be2269b18414f1b22e6bd58ed29c4d2f",
+      "bytes": 1110680
+    },
+    {
+      "path": "results/seed202609273.json",
+      "sha256": "d1b0684408d103639c464c81d2edd4e2f3a465bd853099612d4bc59e15125643",
+      "bytes": 1109811
+    },
+    {
+      "path": "results/summary.json",
+      "sha256": "3edbd8fdcb237dc8cddad9e8924f376c6ea2cc8bc3cbe7e4fdb664cc4c269925",
+      "bytes": 581690
+    },
+    {
+      "path": "results/verification.json",
+      "sha256": "d03926f350f79858ac6df66da9c8376816d0438e8d02651f2e7af69e35e50a99",
+      "bytes": 360
+    },
+    {
+      "path": "run_experiment.py",
+      "sha256": "9eb07693dd4bb4bd78761a3ab860c225c5f73ff68c9e7455c7ae09288df53ead",
+      "bytes": 18637
+    },
+    {
+      "path": "summarize.py",
+      "sha256": "bf5508b53d264a96ead7413fdaf6a750bed7c30ffcc8ee7899ed9942221de495",
+      "bytes": 12810
+    }
+  ]
+}

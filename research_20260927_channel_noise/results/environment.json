@@ -1,0 +1,33 @@
+{
+  "torch": "2.11.0+cu128",
+  "numpy": "2.5.3",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "cuda": "12.8",
+  "one_worker": true,
+  "seeds": [
+    202609271,
+    202609272,
+    202609273
+  ],
+  "snr_db": [
+    10,
+    20,
+    30
+  ],
+  "taus": [
+    0.001,
+    0.003,
+    0.01
+  ],
+  "H_draws": 8,
+  "payload_draws": 128,
+  "utility_draws": 4,
+  "code_sha256": "9eb07693dd4bb4bd78761a3ab860c225c5f73ff68c9e7455c7ae09288df53ead",
+  "protocol_sha256": "fc95d8691c85eff619ccaaa5ee3da95fe8aa945960dea78f2ec33e68ec292c51",
+  "data_sha256": {
+    "t10k-images-idx3-ubyte": "5b4141f0afbad91edebe8549f8fcffe087ea10ca49f1dbef5c9a5cd8815ce37b",
+    "t10k-labels-idx1-ubyte": "0402a96d92fd2663957122ceb108a494c5af83dab82d92729df917d7dec38c34",
+    "train-images-idx3-ubyte": "c59f468a2f672dc815687fe0f83887768d799fd8a3f3276145d20f83aa44d888",
+    "train-labels-idx1-ubyte": "bad3541b69d912435c50bb6ba87bec294ff4f6a2e1246121d8633921760443d9"
+  }
+}

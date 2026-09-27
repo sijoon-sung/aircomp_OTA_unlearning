@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "quadratic_identity_max_error": 1.1587952819525071e-15,
+  "MAC_max_error": 2.220446049250313e-16,
+  "covariance_relative_max_error": 0.01653238897228082,
+  "integer_repetitions_minimal": true,
+  "power": {
+    "max_mean_power": 0.3809106340298671,
+    "max_peak_power": 3.455356517559387,
+    "tx_symbol_energy_normalized": 3628.874970644924
+  },
+  "noise_only_MSE": 0.4162578297988602,
+  "noise_only_theory": 0.4159745168108666,
+  "JS_unbiased_Gaussian_raw_MSE": 0.11699371222502084,
+  "JS_unbiased_Gaussian_shrunk_MSE": 0.0385325497687134,
+  "empirical_KL": 0.5537396446630617,
+  "analytic_KL": 0.5572299502423756,
+  "code_sha256": "9eb07693dd4bb4bd78761a3ab860c225c5f73ff68c9e7455c7ae09288df53ead",
+  "protocol_sha256": "fc95d8691c85eff619ccaaa5ee3da95fe8aa945960dea78f2ec33e68ec292c51"
+}

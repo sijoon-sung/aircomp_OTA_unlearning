@@ -1,0 +1,176 @@
+{
+  "posthoc_diagnostic": true,
+  "main_hyperparameters_unchanged": true,
+  "source_code_sha256": "9eb07693dd4bb4bd78761a3ab860c225c5f73ff68c9e7455c7ae09288df53ead",
+  "diagnostic_code_sha256": "2ff48b411bd1f5306a52bfcd5c6d9073c1e5d2190462cd53b1e50bf8c01018eb",
+  "rows": [
+    {
+      "seed": 202609271,
+      "sampler": "OTA32",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": 128,
+      "radius_discriminator_AUC": 1.0,
+      "radius_squared_mean": 0.029607115468967306,
+      "reference_radius_squared_mean": 0.0058509925048002565,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609271,
+      "sampler": "oracle",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": null,
+      "radius_discriminator_AUC": 0.4912528991699219,
+      "radius_squared_mean": 0.005844847920246172,
+      "reference_radius_squared_mean": 0.0058509925048002565,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609271,
+      "sampler": "noise_only",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": null,
+      "radius_discriminator_AUC": 1.0,
+      "radius_squared_mean": 0.12355330114124552,
+      "reference_radius_squared_mean": 0.0058509925048002565,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609272,
+      "sampler": "OTA32",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": 128,
+      "radius_discriminator_AUC": 1.0,
+      "radius_squared_mean": 0.02873456846573126,
+      "reference_radius_squared_mean": 0.005853517018540319,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609272,
+      "sampler": "oracle",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": null,
+      "radius_discriminator_AUC": 0.48427581787109375,
+      "radius_squared_mean": 0.005834930170647566,
+      "reference_radius_squared_mean": 0.005853517018540319,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609272,
+      "sampler": "noise_only",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": null,
+      "radius_discriminator_AUC": 1.0,
+      "radius_squared_mean": 0.11553933225552712,
+      "reference_radius_squared_mean": 0.005853517018540319,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609273,
+      "sampler": "OTA32",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": 128,
+      "radius_discriminator_AUC": 1.0,
+      "radius_squared_mean": 0.02714738539005645,
+      "reference_radius_squared_mean": 0.005858931036137671,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609273,
+      "sampler": "oracle",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": null,
+      "radius_discriminator_AUC": 0.4988136291503906,
+      "radius_squared_mean": 0.00585796652091144,
+      "reference_radius_squared_mean": 0.005858931036137671,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    },
+    {
+      "seed": 202609273,
+      "sampler": "noise_only",
+      "sampler_draws": 2048,
+      "reference_draws": 2048,
+      "independent_H_draws": null,
+      "radius_discriminator_AUC": 1.0,
+      "radius_squared_mean": 0.1119485503801837,
+      "reference_radius_squared_mean": 0.005858931036137671,
+      "interpretation": "sampler-vs-randomized-retrain discrimination, NOT membership inference"
+    }
+  ],
+  "variance_miscalibration": [
+    {
+      "actual_over_nominal_noise_variance": 0.8,
+      "empirical_output_variance_ratio": 0.8007435073999759,
+      "covariance_only_KL": 7.52165417711817,
+      "Pinsker_TV_upper": 1.0
+    },
+    {
+      "actual_over_nominal_noise_variance": 1.0,
+      "empirical_output_variance_ratio": 0.9999307011670466,
+      "covariance_only_KL": 0.0,
+      "Pinsker_TV_upper": 0.0
+    },
+    {
+      "actual_over_nominal_noise_variance": 1.2,
+      "empirical_output_variance_ratio": 1.2002998413220474,
+      "covariance_only_KL": 5.745494041964743,
+      "Pinsker_TV_upper": 1.0
+    }
+  ],
+  "silent_calibration_cost": [
+    {
+      "silent_real_samples": 64,
+      "added_real_uses": 72.0,
+      "variance_estimator_relative_std": 0.1767766952966369,
+      "covariance_KL_mean": 5.621241094749316,
+      "covariance_KL_p95": 23.203281784596523,
+      "TV_Pinsker_bound_mean": 0.7474773632631627,
+      "overhead_per_deletion_if_shared_over_100": 0.72
+    },
+    {
+      "silent_real_samples": 256,
+      "added_real_uses": 288.0,
+      "variance_estimator_relative_std": 0.08838834764831845,
+      "covariance_KL_mean": 1.2343260242325234,
+      "covariance_KL_p95": 4.886028524324997,
+      "TV_Pinsker_bound_mean": 0.541938084564328,
+      "overhead_per_deletion_if_shared_over_100": 2.88
+    },
+    {
+      "silent_real_samples": 1024,
+      "added_real_uses": 1152.0,
+      "variance_estimator_relative_std": 0.04419417382415922,
+      "covariance_KL_mean": 0.3330140451585143,
+      "covariance_KL_p95": 1.2029518861583701,
+      "TV_Pinsker_bound_mean": 0.3236706447580908,
+      "overhead_per_deletion_if_shared_over_100": 11.52
+    },
+    {
+      "silent_real_samples": 4096,
+      "added_real_uses": 4608.0,
+      "variance_estimator_relative_std": 0.02209708691207961,
+      "covariance_KL_mean": 0.07823865658546734,
+      "covariance_KL_p95": 0.30263843846356425,
+      "TV_Pinsker_bound_mean": 0.15849202500398785,
+      "overhead_per_deletion_if_shared_over_100": 46.08
+    },
+    {
+      "silent_real_samples": 16384,
+      "added_real_uses": 18432.0,
+      "variance_estimator_relative_std": 0.011048543456039806,
+      "covariance_KL_mean": 0.01842248038356003,
+      "covariance_KL_p95": 0.07269500388985338,
+      "TV_Pinsker_bound_mean": 0.07555178963918707,
+      "overhead_per_deletion_if_shared_over_100": 184.32
+    }
+  ],
+  "seconds": 4.704179299995303,
+  "caveat": "AUC is a finite-sample diagnostic, not a worst-case unlearning or privacy certificate. Shared Hessian draws form clusters."
+}

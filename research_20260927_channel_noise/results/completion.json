@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "wall_seconds": 5.883633300021756,
+  "max_cuda_allocated_bytes": 458523136,
+  "new_model_data_seeds": [
+    202609271,
+    202609272,
+    202609273
+  ],
+  "real_RF_measurement": false,
+  "worker_count": 1
+}

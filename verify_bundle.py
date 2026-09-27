@@ -89,10 +89,11 @@ def verify():
             checked += 1
     result = dict(passed=True, archived_files=manifest['archived_file_count'],
                   archived_bytes=manifest['archived_bytes'], raw_rows=counts,
+                  scope='Initial archive integrity and current Markdown links; new GPU experiment has its own results/verification.json',
                   cost_variants=13, markdown_local_links_checked=checked,
                   archived_code_and_frozen_protocol_hashes_preserved=True,
                   generated_outputs_with_only_platform_newline_changes=newline_only,
-                  gpu_training_rerun=False)
+                  gpu_training_rerun_by_this_verifier=False)
     (ROOT / 'BUNDLE_VERIFICATION.json').write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')
     print(json.dumps(result, indent=2))
 

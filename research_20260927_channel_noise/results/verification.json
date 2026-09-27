@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "gaussian_rows": 1458,
+  "point_rows": 648,
+  "complete_seed_count": 3,
+  "code_and_protocol_hashes_match": true,
+  "ledger_max_error": 0.0,
+  "power_constraints_pass": true,
+  "same_law_comparators_checked": 243,
+  "NM_covariance_and_integer_costs_checked": true,
+  "gaussian_KL_recomputed": true,
+  "main_success": false
+}
