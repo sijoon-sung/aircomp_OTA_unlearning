@@ -1,0 +1,77 @@
+[
+  {
+    "seed": 271,
+    "parameters": 63562,
+    "plain_source_preparation_real_uses": 113857009.01455995,
+    "orthogonal_source_preparation_real_uses": 227714018.0291199,
+    "independent_teacher_preparation_corrected": {
+      "ul_payload_real": 20000.0,
+      "dl_bits": 2098016.0,
+      "metadata_bits": 640.0,
+      "pilot_real": 80.0,
+      "client_gradient_samples": 0.0,
+      "client_hvp_samples": 0.0,
+      "teacher_forward_samples": 20000,
+      "student_train_samples": 38400,
+      "messages": 1,
+      "total_real_uses": 731785.8572106572,
+      "snr_db": 20,
+      "cp_factor": 1.125,
+      "scope": "equalized real MAC; modeled communication, measured simulator time separately",
+      "local_teacher_gradient_samples": 320000
+    },
+    "public_image_provisioning_bits_if_not_cached": 12544000,
+    "public_image_provisioning_extra_real_uses_if_not_cached": 4238976.198505369,
+    "privacy_transcript_note": "Original and target-free aggregates on the same public queries can reveal the removed teacher predictions by differencing. They are partial output information, not full gradient updates; no DP claim."
+  },
+  {
+    "seed": 272,
+    "parameters": 63562,
+    "plain_source_preparation_real_uses": 113857009.01455995,
+    "orthogonal_source_preparation_real_uses": 227714018.0291199,
+    "independent_teacher_preparation_corrected": {
+      "ul_payload_real": 20000.0,
+      "dl_bits": 2098016.0,
+      "metadata_bits": 640.0,
+      "pilot_real": 80.0,
+      "client_gradient_samples": 0.0,
+      "client_hvp_samples": 0.0,
+      "teacher_forward_samples": 20000,
+      "student_train_samples": 38400,
+      "messages": 1,
+      "total_real_uses": 731785.8572106572,
+      "snr_db": 20,
+      "cp_factor": 1.125,
+      "scope": "equalized real MAC; modeled communication, measured simulator time separately",
+      "local_teacher_gradient_samples": 320000
+    },
+    "public_image_provisioning_bits_if_not_cached": 12544000,
+    "public_image_provisioning_extra_real_uses_if_not_cached": 4238976.198505369,
+    "privacy_transcript_note": "Original and target-free aggregates on the same public queries can reveal the removed teacher predictions by differencing. They are partial output information, not full gradient updates; no DP claim."
+  },
+  {
+    "seed": 273,
+    "parameters": 63562,
+    "plain_source_preparation_real_uses": 113857009.01455995,
+    "orthogonal_source_preparation_real_uses": 227714018.0291199,
+    "independent_teacher_preparation_corrected": {
+      "ul_payload_real": 20000.0,
+      "dl_bits": 2098016.0,
+      "metadata_bits": 640.0,
+      "pilot_real": 80.0,
+      "client_gradient_samples": 0.0,
+      "client_hvp_samples": 0.0,
+      "teacher_forward_samples": 20000,
+      "student_train_samples": 38400,
+      "messages": 1,
+      "total_real_uses": 731785.8572106572,
+      "snr_db": 20,
+      "cp_factor": 1.125,
+      "scope": "equalized real MAC; modeled communication, measured simulator time separately",
+      "local_teacher_gradient_samples": 320000
+    },
+    "public_image_provisioning_bits_if_not_cached": 12544000,
+    "public_image_provisioning_extra_real_uses_if_not_cached": 4238976.198505369,
+    "privacy_transcript_note": "Original and target-free aggregates on the same public queries can reveal the removed teacher predictions by differencing. They are partial output information, not full gradient updates; no DP claim."
+  }
+]

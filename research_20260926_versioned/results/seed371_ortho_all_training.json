@@ -1,0 +1,21 @@
+{
+  "cost": {
+    "ul_payload_real": 19068600.0,
+    "dl_bits": 610195200.0,
+    "metadata_bits": 96000.0,
+    "pilot_real": 24000.0,
+    "client_gradient_samples": 384000.0,
+    "client_hvp_samples": 0.0,
+    "teacher_forward_samples": 0.0,
+    "student_train_samples": 0.0,
+    "messages": 300,
+    "total_real_uses": 227714018.0291199,
+    "snr_db": 20,
+    "cp_factor": 1.125,
+    "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+  },
+  "seconds": 30.005103799980134,
+  "validation_accuracy": 0.7450000643730164,
+  "parameter_sha256": "a6ec08bb297612263169d1abcb50ed004f66522b07d0e938cd71a01634591e0b",
+  "source_training": "150 rounds; original frozen settings"
+}

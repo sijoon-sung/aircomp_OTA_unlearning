@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "probability_reconstruction_max_error": 1.1102230246251565e-16,
+  "gate_forward_max_error": 0.0,
+  "gate_application_max_error": 7.450580596923828e-08,
+  "gate_gradient_contrast_max_error": 7.450580596923828e-09,
+  "mac_max_error": 2.220446049250313e-16,
+  "partial_operator_rank": 2,
+  "partial_operator_dimension": 3,
+  "full_operator_stationarity_disclosure": "not resolved by preconditioning"
+}

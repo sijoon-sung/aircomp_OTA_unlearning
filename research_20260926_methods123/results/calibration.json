@@ -1,0 +1,38 @@
+{
+  "seed": 270,
+  "chosen_rounds": 150,
+  "validation_accuracy": 0.7585000395774841,
+  "quality_gate_passed": true,
+  "wall_seconds": 12.696518399985507,
+  "cost_first100": {
+    "ul_payload_real": 6356200.0,
+    "dl_bits": 203398400.0,
+    "metadata_bits": 32000.0,
+    "pilot_real": 8000.0,
+    "client_gradient_samples": 256000.0,
+    "client_hvp_samples": 0.0,
+    "teacher_forward_samples": 0.0,
+    "student_train_samples": 0.0,
+    "messages": 100,
+    "total_real_uses": 75904672.6763733,
+    "snr_db": 20,
+    "cp_factor": 1.125,
+    "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+  },
+  "cost_extension": {
+    "ul_payload_real": 3178100.0,
+    "dl_bits": 101699200.0,
+    "metadata_bits": 16000.0,
+    "pilot_real": 4000.0,
+    "client_gradient_samples": 128000.0,
+    "client_hvp_samples": 0.0,
+    "teacher_forward_samples": 0.0,
+    "student_train_samples": 0.0,
+    "messages": 50,
+    "total_real_uses": 37952336.33818665,
+    "snr_db": 20,
+    "cp_factor": 1.125,
+    "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+  },
+  "test_used": false
+}

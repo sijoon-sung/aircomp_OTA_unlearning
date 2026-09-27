@@ -1,0 +1,28 @@
+{
+  "device": "NVIDIA GeForce RTX 3080",
+  "precision": "float64",
+  "training_started": false,
+  "hvp": {
+    "gradient_aggregation_max_error": 4.163336342344337e-17,
+    "hvp_dense_max_error": 1.1102230246251565e-16,
+    "hvp_fd_max_error": 1.8157489400927318e-10
+  },
+  "quadratic_exact_error": 2.886579864025407e-15,
+  "cubic_coefficient_error": 8.881784197001252e-16,
+  "paper_code_note": "M||delta||^3/6 differentiates to (M/2)||delta||delta; official helper uses M/2. Pseudocode line uses L, so code convention retained.",
+  "official_cubic_step_model_decrease": -0.0025086337587650214,
+  "orthogonal_regularizer_difference": 0.0,
+  "orthogonal_feature_counterexample": {
+    "kernel_inner_product": 0.0,
+    "feature_covariance": 0.8
+  },
+  "unequal_count_statistic_error": 0.0,
+  "unweighted_local_means_bias": 1.2388390622765426,
+  "fedquit_numpy_port_error": 1.6653345369377348e-16,
+  "kl_gradient_error": 9.324138683375338e-18,
+  "original_teacher_retain_kd_grad_norm": 2.5374136656818217e-17,
+  "privacy_counterexample": "At student=old teacher all retained KD gradients are zero; the mixed aggregate is only the target gradient times its known coefficient.",
+  "mac_noiseless_max_error": 4.440892098500626e-16,
+  "independent_teacher_condition": "With target-independent initialization, per-client random streams and no teacher feedback, excluding teacher A leaves exactly the target-free KD objective. Student optimization must restart independently of A.",
+  "passed": true
+}

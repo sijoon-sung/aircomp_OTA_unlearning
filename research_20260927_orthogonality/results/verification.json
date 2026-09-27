@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "rows": 198,
+  "groups": 30,
+  "models": 99,
+  "max_peak_power": 4.000000953674316,
+  "max_average_power": 0.0042666601948440075,
+  "max_exact_retained_cosine": 1.4901161193847656e-07,
+  "max_mac_error": 4.842877388000488e-08,
+  "beta0_float32_normalization_differences": [
+    {
+      "seed": 381,
+      "step": 1,
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    {
+      "seed": 381,
+      "step": 10,
+      "absolute": 2.1794080169001973e-05,
+      "relative": 1.2384400140712976e-07
+    },
+    {
+      "seed": 382,
+      "step": 1,
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    {
+      "seed": 382,
+      "step": 10,
+      "absolute": 1.4517738861741236e-05,
+      "relative": 1.4729132721715623e-07
+    },
+    {
+      "seed": 383,
+      "step": 1,
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    {
+      "seed": 383,
+      "step": 10,
+      "absolute": 5.032582826913767e-06,
+      "relative": 8.517994943162431e-08
+    }
+  ]
+}

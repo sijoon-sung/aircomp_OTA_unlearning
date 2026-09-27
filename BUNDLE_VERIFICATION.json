@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "archived_files": 312,
+  "archived_bytes": 5238636,
+  "raw_rows": {
+    "DS": 441,
+    "OG": 54,
+    "RTDfp64": 87,
+    "partial": 198
+  },
+  "cost_variants": 13,
+  "markdown_local_links_checked": 76,
+  "archived_code_and_frozen_protocol_hashes_preserved": true,
+  "gpu_training_rerun": false
+}

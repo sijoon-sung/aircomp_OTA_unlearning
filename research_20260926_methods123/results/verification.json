@@ -1,0 +1,42 @@
+{
+  "completed_method_seed_files": [
+    "method1_seed271.json",
+    "method1_seed272.json",
+    "method1_seed273.json",
+    "method2_seed271.json",
+    "method2_seed272.json",
+    "method2_seed273.json",
+    "method3_seed271.json",
+    "method3_seed272.json",
+    "method3_seed273.json"
+  ],
+  "reference_audits": 6,
+  "sequential_stages_verified": true,
+  "mathematical_checks_passed": true,
+  "source_integration_checks_passed": true,
+  "local_links_missing": [],
+  "independent_teacher_full_replay_seed": 271,
+  "teacher_hash_equality_count": 9,
+  "student_parameter_replay_error": 0.0,
+  "two_reference_ratios": {
+    "curenus_exact": [
+      3.946186551239288,
+      9.35511133469013,
+      1.843109525130852
+    ],
+    "noiseless_prune": [
+      3.7638138438229056,
+      25.37627823223178,
+      18.38397379933764
+    ]
+  },
+  "dataset_sha256": {
+    "t10k-images-idx3-ubyte": "5b4141f0afbad91edebe8549f8fcffe087ea10ca49f1dbef5c9a5cd8815ce37b",
+    "t10k-labels-idx1-ubyte": "0402a96d92fd2663957122ceb108a494c5af83dab82d92729df917d7dec38c34",
+    "train-images-idx3-ubyte": "c59f468a2f672dc815687fe0f83887768d799fd8a3f3276145d20f83aa44d888",
+    "train-labels-idx1-ubyte": "bad3541b69d912435c50bb6ba87bec294ff4f6a2e1246121d8633921760443d9"
+  },
+  "scientific_figure_visually_reviewed": true,
+  "no_privacy_certificate_claimed": true,
+  "full_upstream_benchmark_reproduction_claimed": false
+}

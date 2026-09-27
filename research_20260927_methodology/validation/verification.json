@@ -1,0 +1,483 @@
+{
+  "record_audit": {
+    "passed": true,
+    "raw_rows": {
+      "DS": 441,
+      "OG": 54,
+      "RTDfp64": 87,
+      "partial": 198
+    },
+    "code_manifest": {
+      "C:\\Users\\DISLAB\\Desktop\\성시준_논문\\논문\\research_20260926_versioned\\benchmark.py": "3e27fdad5c61ee3095402a977962704fd62b7d6e548defc30e823daca62b6c0b",
+      "C:\\Users\\DISLAB\\Desktop\\성시준_논문\\논문\\research_20260927_orthogonality\\run_experiment.py": "2bc23840d273afaa74753432e98636d984048811a67fc7c4c30c67245e32eec6"
+    },
+    "existing_noiseless_KD_equalities": [
+      [
+        371,
+        "Original"
+      ],
+      [
+        371,
+        "V1"
+      ],
+      [
+        372,
+        "Original"
+      ],
+      [
+        372,
+        "V1"
+      ],
+      [
+        373,
+        "Original"
+      ],
+      [
+        373,
+        "V1"
+      ]
+    ],
+    "statistics": {
+      "DS_Original": {
+        "mean": 0.369046720734278,
+        "sd": 0.007061308946522428,
+        "seed_values": [
+          0.3609585367603776,
+          0.3721974796134277,
+          0.37398414582902884
+        ],
+        "samples_per_seed": [
+          16,
+          16,
+          16
+        ],
+        "cost": 143939.7833991173
+      },
+      "DS_V1": {
+        "mean": 0.21044353100910604,
+        "sd": 0.003549043877287659,
+        "seed_values": [
+          0.20639687088327416,
+          0.21302732410596334,
+          0.21190639803808062
+        ],
+        "samples_per_seed": [
+          16,
+          16,
+          16
+        ],
+        "cost": 144642.67486060417
+      },
+      "DS_Original-cost-matched": {
+        "mean": 0.3534349090122234,
+        "sd": 0.0067661606433350825,
+        "seed_values": [
+          0.34566467412822544,
+          0.35661396892325015,
+          0.3580260839851946
+        ],
+        "samples_per_seed": [
+          16,
+          16,
+          16
+        ],
+        "cost": 144524.7833991173
+      },
+      "DS_DS-Air-subspace48": {
+        "mean": 0.36761148057457715,
+        "sd": 0.006037321068474127,
+        "seed_values": [
+          0.3726012188013208,
+          0.3609004366539575,
+          0.36933278626845323
+        ],
+        "samples_per_seed": [
+          16,
+          16,
+          16
+        ],
+        "cost": 88173.3721603747
+      },
+      "partial_sketch_1_0.5": {
+        "mean": 0.7052873353700395,
+        "sd": 0.17916883597251657,
+        "seed_values": [
+          0.7861321373377799,
+          0.49994204246438617,
+          0.8297878263079526
+        ],
+        "samples_per_seed": [
+          1,
+          1,
+          1
+        ],
+        "cost": 1557477.358438845
+      },
+      "partial_sketch_1_1.0": {
+        "mean": 0.883532588767846,
+        "sd": 0.029213345002967583,
+        "seed_values": [
+          0.8955963954294068,
+          0.8502194106705381,
+          0.9047819602035931
+        ],
+        "samples_per_seed": [
+          1,
+          1,
+          1
+        ],
+        "cost": 1557477.358438845
+      },
+      "partial_ota20_1_0.5": {
+        "mean": 0.8670134993582834,
+        "sd": 0.023205349413147815,
+        "seed_values": [
+          0.8403017918224354,
+          0.8822001321341076,
+          0.8785385741183073
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 1557477.358438845
+      },
+      "partial_ota20_1_1.0": {
+        "mean": 0.9811561808862929,
+        "sd": 0.0009525959765161117,
+        "seed_values": [
+          0.9804842312593683,
+          0.9807379661555213,
+          0.982246345243989
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 1557477.358438845
+      },
+      "partial_ota40_1_0.5": {
+        "mean": 0.6783665979105112,
+        "sd": 0.1357667468277731,
+        "seed_values": [
+          0.7017931441272318,
+          0.5324109796071137,
+          0.8008956699971881
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 816134.4817494875
+      },
+      "partial_ota40_1_1.0": {
+        "mean": 0.8946613120809948,
+        "sd": 0.01722032642505161,
+        "seed_values": [
+          0.8930636636580904,
+          0.878295484189275,
+          0.9126247883956189
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 816134.4817494875
+      },
+      "partial_sketch_10_0.5": {
+        "mean": 105.79143614522687,
+        "sd": 59.302556496863154,
+        "seed_values": [
+          171.94441726332929,
+          88.032599582615,
+          57.3972915897363
+        ],
+        "samples_per_seed": [
+          1,
+          1,
+          1
+        ],
+        "cost": 9388604.204413014
+      },
+      "partial_sketch_10_1.0": {
+        "mean": 7.050226662163842,
+        "sd": 4.195129757346025,
+        "seed_values": [
+          11.496772305240736,
+          6.491371926322476,
+          3.162535754928314
+        ],
+        "samples_per_seed": [
+          1,
+          1,
+          1
+        ],
+        "cost": 9388604.204413014
+      },
+      "partial_ota20_10_0.5": {
+        "mean": 1.2773132337291135,
+        "sd": 0.6071128756597904,
+        "seed_values": [
+          1.6301514799244596,
+          0.5762848057118228,
+          1.6255034155510584
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 9388604.204413014
+      },
+      "partial_ota20_10_1.0": {
+        "mean": 0.8672181654281785,
+        "sd": 0.02022073805681223,
+        "seed_values": [
+          0.8902231117877114,
+          0.8591736656156429,
+          0.8522577188811814
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 9388604.204413014
+      },
+      "partial_ota40_10_0.5": {
+        "mean": 75.2542701657375,
+        "sd": 45.34451963643184,
+        "seed_values": [
+          127.48963440345389,
+          52.25516196352418,
+          46.018014130234434
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 5061610.593217842
+      },
+      "partial_ota40_10_1.0": {
+        "mean": 3.7254756202622694,
+        "sd": 2.0322592712069882,
+        "seed_values": [
+          5.902720250250526,
+          3.3949971645041286,
+          1.8787094460321545
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 5061610.593217842
+      },
+      "RTD_Original_1": {
+        "mean": 0.6683297610333527,
+        "sd": 0.3154286857805974,
+        "seed_values": [
+          0.7653477820276243,
+          0.9238534519271053,
+          0.31578804914532843
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 731755.229781073
+      },
+      "RTD_Original_4": {
+        "mean": 0.5957565340271289,
+        "sd": 0.3433641211864005,
+        "seed_values": [
+          0.6009049462210361,
+          0.9365174996021441,
+          0.2498471562582064
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 799255.229781073
+      },
+      "RTD_V1_1": {
+        "mean": 0.7554251613524814,
+        "sd": 0.4106693160621197,
+        "seed_values": [
+          0.4513229322641023,
+          1.222580485409236,
+          0.592372066384106
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 729505.229781073
+      },
+      "RTD_V1_4": {
+        "mean": 0.8773979308166,
+        "sd": 0.20777531969230942,
+        "seed_values": [
+          0.8327078311901459,
+          1.1038818542423132,
+          0.695604107017341
+        ],
+        "samples_per_seed": [
+          4,
+          4,
+          4
+        ],
+        "cost": 790255.229781073
+      }
+    }
+  },
+  "DS_math": {
+    "exact_delete_error": 2.42861286636753e-17,
+    "common_inverse_sum_error": 1.474514954580286e-17,
+    "target_gradient_reconstruction_error": 2.3592239273284576e-15,
+    "local_inverse_averaging_difference": 0.6672783141594454,
+    "subspace_same_source_error": 1.3877787807814457e-17,
+    "subspace_same_projected_payload_error": 6.661338147750939e-16,
+    "subspace_same_correction_error": 1.3010426069826053e-17,
+    "subspace_changed_target_gradient_norm": 1.7320508075688776,
+    "full_dimension": 12,
+    "subspace_dimension": 7
+  },
+  "projection_math": {
+    "partial_operator_rank": 17,
+    "full_projection_rank": 13,
+    "known_span_partial_inverse_error": 2.220446049250313e-16,
+    "dimension": 17,
+    "retained_span_dimension": 4
+  },
+  "projection_checkpoint_replay": [
+    {
+      "seed": 381,
+      "replayed_js_ratio": 0.7861321568489075,
+      "recorded_js_ratio": 0.7861321373377799,
+      "js_difference": 1.9511127602456213e-08,
+      "residual_norm_difference": 0.0,
+      "power": {
+        "scale": 0.1441986858844757,
+        "max_average_power": 0.0015441295690834522,
+        "max_peak_power": 4.0,
+        "variance": 0.0
+      }
+    },
+    {
+      "seed": 382,
+      "replayed_js_ratio": 0.49994203448295593,
+      "recorded_js_ratio": 0.49994204246438617,
+      "js_difference": 7.981430238945819e-09,
+      "residual_norm_difference": 0.0,
+      "power": {
+        "scale": 0.1616462916135788,
+        "max_average_power": 0.0012287821155041456,
+        "max_peak_power": 4.0,
+        "variance": 0.0
+      }
+    },
+    {
+      "seed": 383,
+      "replayed_js_ratio": 0.8297878503799438,
+      "recorded_js_ratio": 0.8297878263079526,
+      "js_difference": 2.4071991289176253e-08,
+      "residual_norm_difference": 0.0,
+      "power": {
+        "scale": 0.10813353210687637,
+        "max_average_power": 0.0027459056582301855,
+        "max_peak_power": 4.0,
+        "variance": 0.0
+      }
+    }
+  ],
+  "KD_teacher_checkpoint_replay": [
+    {
+      "seed": 371,
+      "version": "Original",
+      "noiseless_target_max_error": 0.0,
+      "teacher_prediction_reconstruction_max_error": 3.1086244689504383e-15,
+      "power": {
+        "scale": 0.07178071778630517,
+        "max_average_power": 0.1782986427576689,
+        "max_peak_power": 4.000000000000002,
+        "variance": 0.0
+      }
+    },
+    {
+      "seed": 371,
+      "version": "V1",
+      "noiseless_target_max_error": 0.0,
+      "teacher_prediction_reconstruction_max_error": 3.1086244689504383e-15,
+      "power": {
+        "scale": 0.06780143044619379,
+        "max_average_power": 0.16899783936451712,
+        "max_peak_power": 4.0,
+        "variance": 0.0
+      }
+    },
+    {
+      "seed": 372,
+      "version": "Original",
+      "noiseless_target_max_error": 0.0,
+      "teacher_prediction_reconstruction_max_error": 3.3306690738754696e-15,
+      "power": {
+        "scale": 0.06915055758229273,
+        "max_average_power": 0.20529070228755072,
+        "max_peak_power": 3.999999999999999,
+        "variance": 0.0
+      }
+    },
+    {
+      "seed": 372,
+      "version": "V1",
+      "noiseless_target_max_error": 0.0,
+      "teacher_prediction_reconstruction_max_error": 3.3306690738754696e-15,
+      "power": {
+        "scale": 0.06493777801349712,
+        "max_average_power": 0.20082618600403346,
+        "max_peak_power": 4.0,
+        "variance": 0.0
+      }
+    },
+    {
+      "seed": 373,
+      "version": "Original",
+      "noiseless_target_max_error": 0.0,
+      "teacher_prediction_reconstruction_max_error": 2.9976021664879227e-15,
+      "power": {
+        "scale": 0.07046268214845933,
+        "max_average_power": 0.16898741776438939,
+        "max_peak_power": 4.0,
+        "variance": 0.0
+      }
+    },
+    {
+      "seed": 373,
+      "version": "V1",
+      "noiseless_target_max_error": 0.0,
+      "teacher_prediction_reconstruction_max_error": 2.9976021664879227e-15,
+      "power": {
+        "scale": 0.06550013305954572,
+        "max_average_power": 0.16074809489057465,
+        "max_peak_power": 4.0,
+        "variance": 0.0
+      }
+    }
+  ],
+  "passed": true,
+  "device": "NVIDIA GeForce RTX 3080",
+  "new_training_runs": 0,
+  "seconds": 2.03135510001448,
+  "code_sha256": "db48c6460e18c9e502397fc33a683eb91b5486dfaa71a6dd1c5d7f029ddf2db0",
+  "plan_sha256": "1c6b99aded15fc346934cc392b9a259b1ef971c4d98076d9153f2df8d1e6acb8"
+}

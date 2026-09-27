@@ -1,0 +1,12 @@
+{
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "one_worker": true,
+  "seeds": [
+    381,
+    382,
+    383
+  ],
+  "protocol_sha256": "fefb7011d31bd1df6b2ec1e27630c55a94f474c9caa9c414435241ac07ff4e8e",
+  "code_sha256": "2bc23840d273afaa74753432e98636d984048811a67fc7c4c30c67245e32eec6"
+}

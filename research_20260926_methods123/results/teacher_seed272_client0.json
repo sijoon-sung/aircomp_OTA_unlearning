@@ -1,0 +1,8 @@
+{
+  "client": 0,
+  "seed": 272,
+  "steps": 500,
+  "gradient_samples": 32000,
+  "wall_seconds": 0.9780483999929857,
+  "parameter_sha256": "45b9e63c0fa1bc7930f0b2aa2eb55254d151c1bef6fec408d2a0a4ba663c38b7"
+}

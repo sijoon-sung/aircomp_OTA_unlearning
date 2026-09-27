@@ -1,0 +1,171 @@
+[
+  {
+    "stage": 1,
+    "seed": 271,
+    "source_val": 0.7815000414848328,
+    "source_test": 0.7565999627113342,
+    "noop_forget_js": 0.0013116541085764766,
+    "retrain_test": 0.7551999688148499
+  },
+  {
+    "stage": 1,
+    "seed": 272,
+    "source_val": 0.7625000476837158,
+    "source_test": 0.7576999664306641,
+    "noop_forget_js": 0.0009590155095793307,
+    "retrain_test": 0.7536999583244324
+  },
+  {
+    "stage": 1,
+    "seed": 273,
+    "source_val": 0.7675000429153442,
+    "source_test": 0.7516999840736389,
+    "noop_forget_js": 0.0014919048408046365,
+    "retrain_test": 0.7529999613761902
+  },
+  {
+    "stage": 2,
+    "seed": 271,
+    "ortho": {
+      "feature_abs_correlation": 0.3979838788509369,
+      "kernel_gram_error": 10.845012664794922
+    },
+    "plain": {
+      "feature_abs_correlation": 0.39073696732521057,
+      "kernel_gram_error": 11.696800231933594
+    }
+  },
+  {
+    "stage": 2,
+    "seed": 272,
+    "ortho": {
+      "feature_abs_correlation": 0.3489983081817627,
+      "kernel_gram_error": 10.243002891540527
+    },
+    "plain": {
+      "feature_abs_correlation": 0.3401545286178589,
+      "kernel_gram_error": 11.142009735107422
+    }
+  },
+  {
+    "stage": 2,
+    "seed": 273,
+    "ortho": {
+      "feature_abs_correlation": 0.45244497060775757,
+      "kernel_gram_error": 10.27547836303711
+    },
+    "plain": {
+      "feature_abs_correlation": 0.44677039980888367,
+      "kernel_gram_error": 10.922943115234375
+    }
+  },
+  {
+    "stage": 3,
+    "seed": 271,
+    "replay": {
+      "teachers": [
+        {
+          "client": 1,
+          "equal_sha256": true,
+          "wall_seconds": 0.9829183000256307
+        },
+        {
+          "client": 2,
+          "equal_sha256": true,
+          "wall_seconds": 0.9815336000174284
+        },
+        {
+          "client": 3,
+          "equal_sha256": true,
+          "wall_seconds": 1.0374114999722224
+        },
+        {
+          "client": 4,
+          "equal_sha256": true,
+          "wall_seconds": 1.1604681000171695
+        },
+        {
+          "client": 5,
+          "equal_sha256": true,
+          "wall_seconds": 1.0494271999923512
+        },
+        {
+          "client": 6,
+          "equal_sha256": true,
+          "wall_seconds": 1.074827300006291
+        },
+        {
+          "client": 7,
+          "equal_sha256": true,
+          "wall_seconds": 0.9966303999826778
+        },
+        {
+          "client": 8,
+          "equal_sha256": true,
+          "wall_seconds": 0.9851311999955215
+        },
+        {
+          "client": 9,
+          "equal_sha256": true,
+          "wall_seconds": 0.9798400999861769
+        }
+      ],
+      "all_teacher_hashes_equal": true,
+      "student_parameter_max_error": 0.0,
+      "student_replay_seconds": 1.3252256999840029,
+      "public_target_max_error": 0.0
+    },
+    "teacher_gradient_samples": 320000,
+    "teacher_wall_seconds": 6.837412100023357,
+    "structural_vs_fedavg": {
+      "forget_accuracy": 0.7875000238418579,
+      "forget_reference_accuracy": 0.8116666674613953,
+      "forget_js": 0.008714226074516773,
+      "retain_accuracy": 0.729629635810852,
+      "retain_reference_accuracy": 0.7607407569885254,
+      "retain_js": 0.012018175795674324,
+      "test_accuracy": 0.7249000072479248,
+      "test_reference_accuracy": 0.7551999688148499,
+      "test_js": 0.011382462456822395,
+      "loss_mia_auc": 0.5113312602043152
+    }
+  },
+  {
+    "stage": 3,
+    "seed": 272,
+    "replay": null,
+    "teacher_gradient_samples": 320000,
+    "teacher_wall_seconds": 9.973521199979587,
+    "structural_vs_fedavg": {
+      "forget_accuracy": 0.7825000286102295,
+      "forget_reference_accuracy": 0.7941666841506958,
+      "forget_js": 0.007551233749836683,
+      "retain_accuracy": 0.7333333492279053,
+      "retain_reference_accuracy": 0.7692592740058899,
+      "retain_js": 0.010382987558841705,
+      "test_accuracy": 0.7317999601364136,
+      "test_reference_accuracy": 0.7536999583244324,
+      "test_js": 0.01035700086504221,
+      "loss_mia_auc": 0.5194909572601318
+    }
+  },
+  {
+    "stage": 3,
+    "seed": 273,
+    "replay": null,
+    "teacher_gradient_samples": 320000,
+    "teacher_wall_seconds": 10.068046000029426,
+    "structural_vs_fedavg": {
+      "forget_accuracy": 0.7591666579246521,
+      "forget_reference_accuracy": 0.7866666913032532,
+      "forget_js": 0.006469608284533024,
+      "retain_accuracy": 0.7162963151931763,
+      "retain_reference_accuracy": 0.757777750492096,
+      "retain_js": 0.007629648316651583,
+      "test_accuracy": 0.7181000113487244,
+      "test_reference_accuracy": 0.7529999613761902,
+      "test_js": 0.007067338563501835,
+      "loss_mia_auc": 0.5156242847442627
+    }
+  }
+]

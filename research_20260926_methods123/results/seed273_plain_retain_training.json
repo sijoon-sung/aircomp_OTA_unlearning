@@ -1,0 +1,26 @@
+{
+  "tag": "seed273_plain_retain",
+  "seed": 273,
+  "rounds": 150,
+  "ortho": false,
+  "exclude_client0": true,
+  "cost": {
+    "ul_payload_real": 9534300.0,
+    "dl_bits": 305097600.0,
+    "metadata_bits": 43200.0,
+    "pilot_real": 10800.0,
+    "client_gradient_samples": 345600.0,
+    "client_hvp_samples": 0.0,
+    "teacher_forward_samples": 0.0,
+    "student_train_samples": 0.0,
+    "messages": 150,
+    "total_real_uses": 113854036.95734113,
+    "snr_db": 20,
+    "cp_factor": 1.125,
+    "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+  },
+  "wall_seconds": 6.273970900016138,
+  "validation_accuracy": 0.7620000243186951,
+  "parameter_sha256": "1e006df180d5fb853a257030a5eaf93065bb22363b2ce1ffa442e15503e0f670",
+  "parameters": 63562
+}

@@ -1,0 +1,583 @@
+{
+  "seed": 273,
+  "training": {
+    "tag": "seed273_plain_all",
+    "seed": 273,
+    "rounds": 150,
+    "ortho": false,
+    "exclude_client0": false,
+    "cost": {
+      "ul_payload_real": 9534300.0,
+      "dl_bits": 305097600.0,
+      "metadata_bits": 48000.0,
+      "pilot_real": 12000.0,
+      "client_gradient_samples": 384000.0,
+      "client_hvp_samples": 0.0,
+      "teacher_forward_samples": 0.0,
+      "student_train_samples": 0.0,
+      "messages": 150,
+      "total_real_uses": 113857009.01455995,
+      "snr_db": 20,
+      "cp_factor": 1.125,
+      "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+    },
+    "wall_seconds": 7.477658899995731,
+    "validation_accuracy": 0.7675000429153442,
+    "parameter_sha256": "9a080e4bacbeaa1623e7a59c5536747fe66a985bc7afaa9a609680b0373e30c6",
+    "parameters": 63562
+  },
+  "reference_training": {
+    "tag": "seed273_plain_retain",
+    "seed": 273,
+    "rounds": 150,
+    "ortho": false,
+    "exclude_client0": true,
+    "cost": {
+      "ul_payload_real": 9534300.0,
+      "dl_bits": 305097600.0,
+      "metadata_bits": 43200.0,
+      "pilot_real": 10800.0,
+      "client_gradient_samples": 345600.0,
+      "client_hvp_samples": 0.0,
+      "teacher_forward_samples": 0.0,
+      "student_train_samples": 0.0,
+      "messages": 150,
+      "total_real_uses": 113854036.95734113,
+      "snr_db": 20,
+      "cp_factor": 1.125,
+      "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+    },
+    "wall_seconds": 6.273970900016138,
+    "validation_accuracy": 0.7620000243186951,
+    "parameter_sha256": "1e006df180d5fb853a257030a5eaf93065bb22363b2ce1ffa442e15503e0f670",
+    "parameters": 63562
+  },
+  "rows": [
+    {
+      "method": "no_op",
+      "metrics": {
+        "forget_accuracy": 0.7950000166893005,
+        "forget_reference_accuracy": 0.7866666913032532,
+        "forget_js": 0.0014919048408046365,
+        "retain_accuracy": 0.754444420337677,
+        "retain_reference_accuracy": 0.757777750492096,
+        "retain_js": 0.0009717883076518774,
+        "test_accuracy": 0.7516999840736389,
+        "test_reference_accuracy": 0.7529999613761902,
+        "test_js": 0.0010342019377276301,
+        "loss_mia_auc": 0.5160819292068481
+      }
+    },
+    {
+      "method": "target_free_retrain",
+      "metrics": {
+        "forget_accuracy": 0.7866666913032532,
+        "forget_reference_accuracy": 0.7866666913032532,
+        "forget_js": 0.0,
+        "forget_noop_js": 0.0014919048408046365,
+        "forget_normalized_js": 0.0,
+        "retain_accuracy": 0.757777750492096,
+        "retain_reference_accuracy": 0.757777750492096,
+        "retain_js": 0.0,
+        "retain_noop_js": 0.0009717883076518774,
+        "retain_normalized_js": 0.0,
+        "test_accuracy": 0.7529999613761902,
+        "test_reference_accuracy": 0.7529999613761902,
+        "test_js": 0.0,
+        "test_noop_js": 0.0010342019377276301,
+        "test_normalized_js": 0.0,
+        "loss_mia_auc": 0.5146993398666382
+      },
+      "cost": {
+        "ul_payload_real": 9534300.0,
+        "dl_bits": 305097600.0,
+        "metadata_bits": 43200.0,
+        "pilot_real": 10800.0,
+        "client_gradient_samples": 345600.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 0.0,
+        "student_train_samples": 0.0,
+        "messages": 150,
+        "total_real_uses": 113854036.95734113,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 6.273970900016138
+    },
+    {
+      "method": "curenus_exact",
+      "metrics": {
+        "forget_accuracy": 0.7925000190734863,
+        "forget_reference_accuracy": 0.7866666913032532,
+        "forget_js": 0.004809238947927952,
+        "forget_noop_js": 0.0014919048408046365,
+        "forget_normalized_js": 3.223556098480223,
+        "retain_accuracy": 0.7522222399711609,
+        "retain_reference_accuracy": 0.757777750492096,
+        "retain_js": 0.006300030276179314,
+        "retain_noop_js": 0.0009717883076518774,
+        "retain_normalized_js": 6.482924549073878,
+        "test_accuracy": 0.7447999715805054,
+        "test_reference_accuracy": 0.7529999613761902,
+        "test_js": 0.00626617344096303,
+        "test_noop_js": 0.0010342019377276301,
+        "test_normalized_js": 6.058945755537063,
+        "loss_mia_auc": 0.5135437846183777
+      },
+      "cost": {
+        "ul_payload_real": 4449340.0,
+        "dl_bits": 144412864.0,
+        "metadata_bits": 20160.0,
+        "pilot_real": 5040.0,
+        "client_gradient_samples": 1440.0,
+        "client_hvp_samples": 4320.0,
+        "teacher_forward_samples": 0.0,
+        "student_train_samples": 0.0,
+        "messages": 70,
+        "total_real_uses": 53819225.25304167,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.9044691000017338,
+      "trace": [
+        {
+          "outer": 0,
+          "gradient_norm": 1.4828969240188599,
+          "step_norm": 0.23324590921401978,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.4828966\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.024547669947893\ngrad_norm after scaled: 0.20024547669947895\nGD step 2, LR = 0.001\ngrad_norm: 19.909930425620797\ngrad_norm after scaled: 0.019909930425620795\nGD step 3, LR = 0.0001\ngrad_norm: 19.888575430467938\ngrad_norm after scaled: 0.0019888575430467943\nGD step 4, LR = 1e-05\ngrad_norm: 19.886335540200033\ngrad_norm after scaled: 0.00019886335540200036\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886110508123984\ngrad_norm after scaled: 1.988611050812399e-05\n"
+        },
+        {
+          "outer": 1,
+          "gradient_norm": 3.112680435180664,
+          "step_norm": 0.2380496859550476,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 3.11268\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.03968148978893\ngrad_norm after scaled: 0.2003968148978893\nGD step 2, LR = 0.001\ngrad_norm: 19.912525741660797\ngrad_norm after scaled: 0.019912525741660796\nGD step 3, LR = 0.0001\ngrad_norm: 19.890786822046078\ngrad_norm after scaled: 0.0019890786822046075\nGD step 4, LR = 1e-05\ngrad_norm: 19.888510969004347\ngrad_norm after scaled: 0.0001988851096900435\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88828236490044\ngrad_norm after scaled: 1.9888282364900443e-05\n"
+        },
+        {
+          "outer": 2,
+          "gradient_norm": 1.9705976247787476,
+          "step_norm": 0.23063647747039795,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.9705973\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.023325883478137\ngrad_norm after scaled: 0.20023325883478138\nGD step 2, LR = 0.001\ngrad_norm: 19.910842213345177\ngrad_norm after scaled: 0.01991084221334518\nGD step 3, LR = 0.0001\ngrad_norm: 19.889486678057004\ngrad_norm after scaled: 0.001988948667805701\nGD step 4, LR = 1e-05\ngrad_norm: 19.887246303455687\ngrad_norm after scaled: 0.00019887246303455688\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.887021218615324\ngrad_norm after scaled: 1.9887021218615326e-05\n"
+        },
+        {
+          "outer": 3,
+          "gradient_norm": 2.0840654373168945,
+          "step_norm": 0.2337953895330429,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.084065\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.021613469858686\ngrad_norm after scaled: 0.20021613469858685\nGD step 2, LR = 0.001\ngrad_norm: 19.90634415036155\ngrad_norm after scaled: 0.019906344150361552\nGD step 3, LR = 0.0001\ngrad_norm: 19.8849575701423\ngrad_norm after scaled: 0.0019884957570142302\nGD step 4, LR = 1e-05\ngrad_norm: 19.882714808570448\ngrad_norm after scaled: 0.00019882714808570448\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88248949492221\ngrad_norm after scaled: 1.9882489494922216e-05\n"
+        },
+        {
+          "outer": 4,
+          "gradient_norm": 1.9619355201721191,
+          "step_norm": 0.23346354067325592,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.9619353\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.029290678691066\ngrad_norm after scaled: 0.20029290678691064\nGD step 2, LR = 0.001\ngrad_norm: 19.913968211091046\ngrad_norm after scaled: 0.019913968211091048\nGD step 3, LR = 0.0001\ngrad_norm: 19.89251849273431\ngrad_norm after scaled: 0.001989251849273431\nGD step 4, LR = 1e-05\ngrad_norm: 19.890269305993264\ngrad_norm after scaled: 0.00019890269305993267\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.890043348184037\ngrad_norm after scaled: 1.989004334818404e-05\n"
+        },
+        {
+          "outer": 5,
+          "gradient_norm": 2.43497633934021,
+          "step_norm": 0.23316873610019684,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.434976\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.04845807488238\ngrad_norm after scaled: 0.2004845807488238\nGD step 2, LR = 0.001\ngrad_norm: 19.91151834113525\ngrad_norm after scaled: 0.019911518341135248\nGD step 3, LR = 0.0001\ngrad_norm: 19.890002601111654\ngrad_norm after scaled: 0.001989000260111165\nGD step 4, LR = 1e-05\ngrad_norm: 19.88774790944098\ngrad_norm after scaled: 0.0001988774790944098\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88752140970267\ngrad_norm after scaled: 1.9887521409702674e-05\n"
+        },
+        {
+          "outer": 6,
+          "gradient_norm": 2.2593774795532227,
+          "step_norm": 0.2338683307170868,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.2593772\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.02138941713876\ngrad_norm after scaled: 0.2002138941713876\nGD step 2, LR = 0.001\ngrad_norm: 19.908219501017868\ngrad_norm after scaled: 0.01990821950101787\nGD step 3, LR = 0.0001\ngrad_norm: 19.88688731852349\ngrad_norm after scaled: 0.001988688731852349\nGD step 4, LR = 1e-05\ngrad_norm: 19.884649214238152\ngrad_norm after scaled: 0.0001988464921423815\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.884424358992018\ngrad_norm after scaled: 1.9884424358992022e-05\n"
+        },
+        {
+          "outer": 7,
+          "gradient_norm": 1.564079761505127,
+          "step_norm": 0.2310585081577301,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.5640796\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.025571377977304\ngrad_norm after scaled: 0.20025571377977305\nGD step 2, LR = 0.001\ngrad_norm: 19.909755728693046\ngrad_norm after scaled: 0.019909755728693045\nGD step 3, LR = 0.0001\ngrad_norm: 19.88850342115545\ngrad_norm after scaled: 0.001988850342115545\nGD step 4, LR = 1e-05\ngrad_norm: 19.88627397028348\ngrad_norm after scaled: 0.00019886273970283483\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886049980951043\ngrad_norm after scaled: 1.9886049980951048e-05\n"
+        },
+        {
+          "outer": 8,
+          "gradient_norm": 2.988661289215088,
+          "step_norm": 0.23033024370670319,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.9886606\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.02595494468515\ngrad_norm after scaled: 0.20025954944685148\nGD step 2, LR = 0.001\ngrad_norm: 19.910569989664317\ngrad_norm after scaled: 0.019910569989664315\nGD step 3, LR = 0.0001\ngrad_norm: 19.889156632504548\ngrad_norm after scaled: 0.001988915663250455\nGD step 4, LR = 1e-05\ngrad_norm: 19.88691125907048\ngrad_norm after scaled: 0.0001988691125907048\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886685687255696\ngrad_norm after scaled: 1.98866856872557e-05\n"
+        },
+        {
+          "outer": 9,
+          "gradient_norm": 2.4163730144500732,
+          "step_norm": 0.22826425731182098,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.4163725\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.015550921080123\ngrad_norm after scaled: 0.20015550921080122\nGD step 2, LR = 0.001\ngrad_norm: 19.907195257621186\ngrad_norm after scaled: 0.019907195257621184\nGD step 3, LR = 0.0001\ngrad_norm: 19.886039006581978\ngrad_norm after scaled: 0.001988603900658198\nGD step 4, LR = 1e-05\ngrad_norm: 19.883817787362517\ngrad_norm after scaled: 0.0001988381778736252\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.883594611152123\ngrad_norm after scaled: 1.9883594611152124e-05\n"
+        }
+      ]
+    },
+    {
+      "method": "curenus_ota20_r1",
+      "metrics": {
+        "forget_accuracy": 0.7908333539962769,
+        "forget_reference_accuracy": 0.7866666913032532,
+        "forget_js": 0.004835463594645262,
+        "forget_noop_js": 0.0014919048408046365,
+        "forget_normalized_js": 3.2411340605593364,
+        "retain_accuracy": 0.7514814734458923,
+        "retain_reference_accuracy": 0.757777750492096,
+        "retain_js": 0.006313053425401449,
+        "retain_noop_js": 0.0009717883076518774,
+        "retain_normalized_js": 6.49632576940097,
+        "test_accuracy": 0.7443999648094177,
+        "test_reference_accuracy": 0.7529999613761902,
+        "test_js": 0.006280854810029268,
+        "test_noop_js": 0.0010342019377276301,
+        "test_normalized_js": 6.073141599240949,
+        "loss_mia_auc": 0.5135611295700073
+      },
+      "cost": {
+        "ul_payload_real": 4449340.0,
+        "dl_bits": 144412864.0,
+        "metadata_bits": 20160.0,
+        "pilot_real": 5040.0,
+        "client_gradient_samples": 1440.0,
+        "client_hvp_samples": 4320.0,
+        "teacher_forward_samples": 0.0,
+        "student_train_samples": 0.0,
+        "messages": 70,
+        "total_real_uses": 53819225.25304167,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.829101300012553,
+      "trace": [
+        {
+          "outer": 0,
+          "gradient_norm": 1.4862009286880493,
+          "step_norm": 0.23340004682540894,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.4862008\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.0251618499027\ngrad_norm after scaled: 0.20025161849902706\nGD step 2, LR = 0.001\ngrad_norm: 19.91051400044633\ngrad_norm after scaled: 0.019910514000446328\nGD step 3, LR = 0.0001\ngrad_norm: 19.889184227306608\ngrad_norm after scaled: 0.001988918422730661\nGD step 4, LR = 1e-05\ngrad_norm: 19.886885577899843\ngrad_norm after scaled: 0.00019886885577899844\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886460300015887\ngrad_norm after scaled: 1.9886460300015886e-05\n"
+        },
+        {
+          "outer": 1,
+          "gradient_norm": 3.1227381229400635,
+          "step_norm": 0.23814918100833893,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 3.1227376\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.040124303264122\ngrad_norm after scaled: 0.2004012430326412\nGD step 2, LR = 0.001\ngrad_norm: 19.91302603323026\ngrad_norm after scaled: 0.01991302603323026\nGD step 3, LR = 0.0001\ngrad_norm: 19.89105884446021\ngrad_norm after scaled: 0.0019891058844460213\nGD step 4, LR = 1e-05\ngrad_norm: 19.889042520174243\ngrad_norm after scaled: 0.00019889042520174246\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88865645855324\ngrad_norm after scaled: 1.9888656458553244e-05\n"
+        },
+        {
+          "outer": 2,
+          "gradient_norm": 1.9763305187225342,
+          "step_norm": 0.23071785271167755,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.9763303\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.02306772042621\ngrad_norm after scaled: 0.20023067720426208\nGD step 2, LR = 0.001\ngrad_norm: 19.910366668564617\ngrad_norm after scaled: 0.019910366668564616\nGD step 3, LR = 0.0001\ngrad_norm: 19.88907025294908\ngrad_norm after scaled: 0.001988907025294908\nGD step 4, LR = 1e-05\ngrad_norm: 19.886873987898145\ngrad_norm after scaled: 0.00019886873987898148\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886589707343333\ngrad_norm after scaled: 1.9886589707343337e-05\n"
+        },
+        {
+          "outer": 3,
+          "gradient_norm": 2.084453582763672,
+          "step_norm": 0.2338518649339676,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.0844533\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.021299200784057\ngrad_norm after scaled: 0.2002129920078406\nGD step 2, LR = 0.001\ngrad_norm: 19.90576585953652\ngrad_norm after scaled: 0.01990576585953652\nGD step 3, LR = 0.0001\ngrad_norm: 19.884571696225443\ngrad_norm after scaled: 0.001988457169622544\nGD step 4, LR = 1e-05\ngrad_norm: 19.88235781813101\ngrad_norm after scaled: 0.0001988235781813101\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88225317577784\ngrad_norm after scaled: 1.988225317577785e-05\n"
+        },
+        {
+          "outer": 4,
+          "gradient_norm": 1.9694852828979492,
+          "step_norm": 0.23357440531253815,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.969485\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.029607995102346\ngrad_norm after scaled: 0.20029607995102347\nGD step 2, LR = 0.001\ngrad_norm: 19.913581747588765\ngrad_norm after scaled: 0.019913581747588758\nGD step 3, LR = 0.0001\ngrad_norm: 19.89244480204779\ngrad_norm after scaled: 0.0019892444802047794\nGD step 4, LR = 1e-05\ngrad_norm: 19.89035085559187\ngrad_norm after scaled: 0.00019890350855591873\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88975991484842\ngrad_norm after scaled: 1.9889759914848423e-05\n"
+        },
+        {
+          "outer": 5,
+          "gradient_norm": 2.4372305870056152,
+          "step_norm": 0.23322747647762299,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.43723\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.051124687737527\ngrad_norm after scaled: 0.2005112468773753\nGD step 2, LR = 0.001\ngrad_norm: 19.913548095857962\ngrad_norm after scaled: 0.019913548095857964\nGD step 3, LR = 0.0001\ngrad_norm: 19.89190237727184\ngrad_norm after scaled: 0.0019891902377271843\nGD step 4, LR = 1e-05\ngrad_norm: 19.88914952291847\ngrad_norm after scaled: 0.00019889149522918468\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.889333289317563\ngrad_norm after scaled: 1.9889333289317564e-05\n"
+        },
+        {
+          "outer": 6,
+          "gradient_norm": 2.2634823322296143,
+          "step_norm": 0.23394463956356049,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.2634819\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.022375929629646\ngrad_norm after scaled: 0.20022375929629643\nGD step 2, LR = 0.001\ngrad_norm: 19.908431456439256\ngrad_norm after scaled: 0.019908431456439255\nGD step 3, LR = 0.0001\ngrad_norm: 19.887413826606423\ngrad_norm after scaled: 0.0019887413826606424\nGD step 4, LR = 1e-05\ngrad_norm: 19.88585949808554\ngrad_norm after scaled: 0.0001988585949808554\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.884297215636508\ngrad_norm after scaled: 1.9884297215636513e-05\n"
+        },
+        {
+          "outer": 7,
+          "gradient_norm": 1.5669053792953491,
+          "step_norm": 0.23117122054100037,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.5669054\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.026164920909352\ngrad_norm after scaled: 0.20026164920909348\nGD step 2, LR = 0.001\ngrad_norm: 19.910244613781774\ngrad_norm after scaled: 0.019910244613781772\nGD step 3, LR = 0.0001\ngrad_norm: 19.88891006039248\ngrad_norm after scaled: 0.001988891006039248\nGD step 4, LR = 1e-05\ngrad_norm: 19.88677853789719\ngrad_norm after scaled: 0.00019886778537897196\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886348627925575\ngrad_norm after scaled: 1.988634862792558e-05\n"
+        },
+        {
+          "outer": 8,
+          "gradient_norm": 2.9920313358306885,
+          "step_norm": 0.23037615418434143,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.9920306\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.02637974725214\ngrad_norm after scaled: 0.2002637974725214\nGD step 2, LR = 0.001\ngrad_norm: 19.911347218497408\ngrad_norm after scaled: 0.01991134721849741\nGD step 3, LR = 0.0001\ngrad_norm: 19.889822494405657\ngrad_norm after scaled: 0.0019889822494405657\nGD step 4, LR = 1e-05\ngrad_norm: 19.88831454522907\ngrad_norm after scaled: 0.00019888314545229074\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.887410929993287\ngrad_norm after scaled: 1.988741092999329e-05\n"
+        },
+        {
+          "outer": 9,
+          "gradient_norm": 2.4154200553894043,
+          "step_norm": 0.2283187061548233,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.4154198\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.016757078092365\ngrad_norm after scaled: 0.20016757078092365\nGD step 2, LR = 0.001\ngrad_norm: 19.908566467869804\ngrad_norm after scaled: 0.019908566467869808\nGD step 3, LR = 0.0001\ngrad_norm: 19.88715875106026\ngrad_norm after scaled: 0.0019887158751060257\nGD step 4, LR = 1e-05\ngrad_norm: 19.88509613479755\ngrad_norm after scaled: 0.00019885096134797555\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.884894864267284\ngrad_norm after scaled: 1.9884894864267286e-05\n"
+        }
+      ]
+    },
+    {
+      "method": "curenus_ota20_r4",
+      "metrics": {
+        "forget_accuracy": 0.7925000190734863,
+        "forget_reference_accuracy": 0.7866666913032532,
+        "forget_js": 0.004807688295841217,
+        "forget_noop_js": 0.0014919048408046365,
+        "forget_normalized_js": 3.222516721139039,
+        "retain_accuracy": 0.7522222399711609,
+        "retain_reference_accuracy": 0.757777750492096,
+        "retain_js": 0.0062947943806648254,
+        "retain_noop_js": 0.0009717883076518774,
+        "retain_normalized_js": 6.47753665186081,
+        "test_accuracy": 0.7447999715805054,
+        "test_reference_accuracy": 0.7529999613761902,
+        "test_js": 0.006261784117668867,
+        "test_noop_js": 0.0010342019377276301,
+        "test_normalized_js": 6.054701590897604,
+        "loss_mia_auc": 0.5135319232940674
+      },
+      "cost": {
+        "ul_payload_real": 17797360.0,
+        "dl_bits": 144412864.0,
+        "metadata_bits": 20160.0,
+        "pilot_real": 5040.0,
+        "client_gradient_samples": 1440.0,
+        "client_hvp_samples": 4320.0,
+        "teacher_forward_samples": 0.0,
+        "student_train_samples": 0.0,
+        "messages": 70,
+        "total_real_uses": 68835747.75304167,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.7668292000016663,
+      "trace": [
+        {
+          "outer": 0,
+          "gradient_norm": 1.4837054014205933,
+          "step_norm": 0.23328529298305511,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.483705\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.024728669471926\ngrad_norm after scaled: 0.20024728669471925\nGD step 2, LR = 0.001\ngrad_norm: 19.910154079877376\ngrad_norm after scaled: 0.019910154079877375\nGD step 3, LR = 0.0001\ngrad_norm: 19.888813556182853\ngrad_norm after scaled: 0.0019888813556182858\nGD step 4, LR = 1e-05\ngrad_norm: 19.886544735510267\ngrad_norm after scaled: 0.00019886544735510264\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886219777834594\ngrad_norm after scaled: 1.98862197778346e-05\n"
+        },
+        {
+          "outer": 1,
+          "gradient_norm": 3.1151463985443115,
+          "step_norm": 0.2380705624818802,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 3.1151457\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.039646601052418\ngrad_norm after scaled: 0.20039646601052422\nGD step 2, LR = 0.001\ngrad_norm: 19.912613206014093\ngrad_norm after scaled: 0.019912613206014094\nGD step 3, LR = 0.0001\ngrad_norm: 19.890762556073586\ngrad_norm after scaled: 0.001989076255607359\nGD step 4, LR = 1e-05\ngrad_norm: 19.888617368793945\ngrad_norm after scaled: 0.00019888617368793942\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.888309965872388\ngrad_norm after scaled: 1.9888309965872393e-05\n"
+        },
+        {
+          "outer": 2,
+          "gradient_norm": 1.972069501876831,
+          "step_norm": 0.23064899444580078,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.9720693\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.0230121651755\ngrad_norm after scaled: 0.20023012165175505\nGD step 2, LR = 0.001\ngrad_norm: 19.910484427183775\ngrad_norm after scaled: 0.019910484427183774\nGD step 3, LR = 0.0001\ngrad_norm: 19.889160102326677\ngrad_norm after scaled: 0.001988916010232668\nGD step 4, LR = 1e-05\ngrad_norm: 19.886941694220486\ngrad_norm after scaled: 0.00019886941694220487\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886687273415216\ngrad_norm after scaled: 1.9886687273415217e-05\n"
+        },
+        {
+          "outer": 3,
+          "gradient_norm": 2.084026336669922,
+          "step_norm": 0.2337983399629593,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.084026\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.02132270009508\ngrad_norm after scaled: 0.2002132270009508\nGD step 2, LR = 0.001\ngrad_norm: 19.90596643521173\ngrad_norm after scaled: 0.019905966435211735\nGD step 3, LR = 0.0001\ngrad_norm: 19.88467777612936\ngrad_norm after scaled: 0.0019884677776129366\nGD step 4, LR = 1e-05\ngrad_norm: 19.88244989043178\ngrad_norm after scaled: 0.00019882449890431782\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.882284569745295\ngrad_norm after scaled: 1.9882284569745298e-05\n"
+        },
+        {
+          "outer": 4,
+          "gradient_norm": 1.963639736175537,
+          "step_norm": 0.23348690569400787,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.9636395\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.029311927239824\ngrad_norm after scaled: 0.20029311927239826\nGD step 2, LR = 0.001\ngrad_norm: 19.913682430472296\ngrad_norm after scaled: 0.019913682430472295\nGD step 3, LR = 0.0001\ngrad_norm: 19.892389967848224\ngrad_norm after scaled: 0.0019892389967848226\nGD step 4, LR = 1e-05\ngrad_norm: 19.89021886443195\ngrad_norm after scaled: 0.00019890218864431955\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88981062829744\ngrad_norm after scaled: 1.9889810628297444e-05\n"
+        },
+        {
+          "outer": 5,
+          "gradient_norm": 2.4359304904937744,
+          "step_norm": 0.23317469656467438,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.43593\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.048590228018682\ngrad_norm after scaled: 0.20048590228018684\nGD step 2, LR = 0.001\ngrad_norm: 19.911658368190515\ngrad_norm after scaled: 0.019911658368190515\nGD step 3, LR = 0.0001\ngrad_norm: 19.89007943567597\ngrad_norm after scaled: 0.001989007943567597\nGD step 4, LR = 1e-05\ngrad_norm: 19.887575593962083\ngrad_norm after scaled: 0.00019887575593962087\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88755424947983\ngrad_norm after scaled: 1.9887554249479833e-05\n"
+        },
+        {
+          "outer": 6,
+          "gradient_norm": 2.259854793548584,
+          "step_norm": 0.23388688266277313,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.2598543\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.021741504318317\ngrad_norm after scaled: 0.2002174150431832\nGD step 2, LR = 0.001\ngrad_norm: 19.908229412925333\ngrad_norm after scaled: 0.019908229412925332\nGD step 3, LR = 0.0001\ngrad_norm: 19.88705578403643\ngrad_norm after scaled: 0.0019887055784036426\nGD step 4, LR = 1e-05\ngrad_norm: 19.885158343715716\ngrad_norm after scaled: 0.00019885158343715717\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88426658524603\ngrad_norm after scaled: 1.988426658524604e-05\n"
+        },
+        {
+          "outer": 7,
+          "gradient_norm": 1.5648096799850464,
+          "step_norm": 0.23108166456222534,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.5648094\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.025765906259213\ngrad_norm after scaled: 0.20025765906259216\nGD step 2, LR = 0.001\ngrad_norm: 19.90997570951433\ngrad_norm after scaled: 0.019909975709514336\nGD step 3, LR = 0.0001\ngrad_norm: 19.88868451817602\ngrad_norm after scaled: 0.001988868451817602\nGD step 4, LR = 1e-05\ngrad_norm: 19.88650384479234\ngrad_norm after scaled: 0.00019886503844792342\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88617749483728\ngrad_norm after scaled: 1.9886177494837288e-05\n"
+        },
+        {
+          "outer": 8,
+          "gradient_norm": 2.9885237216949463,
+          "step_norm": 0.230337992310524,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.9885228\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.026028123026183\ngrad_norm after scaled: 0.20026028123026185\nGD step 2, LR = 0.001\ngrad_norm: 19.910867998738507\ngrad_norm after scaled: 0.019910867998738507\nGD step 3, LR = 0.0001\ngrad_norm: 19.889399995946036\ngrad_norm after scaled: 0.0019889399995946036\nGD step 4, LR = 1e-05\ngrad_norm: 19.887522871754204\ngrad_norm after scaled: 0.00019887522871754208\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886959209825786\ngrad_norm after scaled: 1.988695920982579e-05\n"
+        },
+        {
+          "outer": 9,
+          "gradient_norm": 2.4166171550750732,
+          "step_norm": 0.22827588021755219,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.4166164\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.01582831854225\ngrad_norm after scaled: 0.20015828318542253\nGD step 2, LR = 0.001\ngrad_norm: 19.90760245207866\ngrad_norm after scaled: 0.019907602452078663\nGD step 3, LR = 0.0001\ngrad_norm: 19.886323523643977\ngrad_norm after scaled: 0.001988632352364398\nGD step 4, LR = 1e-05\ngrad_norm: 19.88418169107262\ngrad_norm after scaled: 0.00019884181691072621\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.883969236584324\ngrad_norm after scaled: 1.988396923658433e-05\n"
+        }
+      ]
+    },
+    {
+      "method": "curenus_ota30_r1",
+      "metrics": {
+        "forget_accuracy": 0.7925000190734863,
+        "forget_reference_accuracy": 0.7866666913032532,
+        "forget_js": 0.004805423319339752,
+        "forget_noop_js": 0.0014919048408046365,
+        "forget_normalized_js": 3.2209985435451896,
+        "retain_accuracy": 0.7522222399711609,
+        "retain_reference_accuracy": 0.757777750492096,
+        "retain_js": 0.006292954087257385,
+        "retain_noop_js": 0.0009717883076518774,
+        "retain_normalized_js": 6.475642933452233,
+        "test_accuracy": 0.7447999715805054,
+        "test_reference_accuracy": 0.7529999613761902,
+        "test_js": 0.006259821821004152,
+        "test_noop_js": 0.0010342019377276301,
+        "test_normalized_js": 6.052804189052635,
+        "loss_mia_auc": 0.5135316252708435
+      },
+      "cost": {
+        "ul_payload_real": 4449340.0,
+        "dl_bits": 144412864.0,
+        "metadata_bits": 20160.0,
+        "pilot_real": 5040.0,
+        "client_gradient_samples": 1440.0,
+        "client_hvp_samples": 4320.0,
+        "teacher_forward_samples": 0.0,
+        "student_train_samples": 0.0,
+        "messages": 70,
+        "total_real_uses": 37615464.34579211,
+        "snr_db": 30,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.8826540000154637,
+      "trace": [
+        {
+          "outer": 0,
+          "gradient_norm": 1.483211874961853,
+          "step_norm": 0.23326216638088226,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.4832115\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.02463313382761\ngrad_norm after scaled: 0.20024633133827613\nGD step 2, LR = 0.001\ngrad_norm: 19.91005613358602\ngrad_norm after scaled: 0.019910056133586023\nGD step 3, LR = 0.0001\ngrad_norm: 19.888710723514016\ngrad_norm after scaled: 0.001988871072351402\nGD step 4, LR = 1e-05\ngrad_norm: 19.88645262870398\ngrad_norm after scaled: 0.00019886452628703987\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88616441697573\ngrad_norm after scaled: 1.9886164416975734e-05\n"
+        },
+        {
+          "outer": 1,
+          "gradient_norm": 3.1136298179626465,
+          "step_norm": 0.2380562126636505,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 3.1136289\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.0396014084455\ngrad_norm after scaled: 0.200396014084455\nGD step 2, LR = 0.001\ngrad_norm: 19.912543718494636\ngrad_norm after scaled: 0.019912543718494637\nGD step 3, LR = 0.0001\ngrad_norm: 19.890734583309847\ngrad_norm after scaled: 0.0019890734583309843\nGD step 4, LR = 1e-05\ngrad_norm: 19.88854162227745\ngrad_norm after scaled: 0.00019888541622277453\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.888263146784283\ngrad_norm after scaled: 1.9888263146784287e-05\n"
+        },
+        {
+          "outer": 2,
+          "gradient_norm": 1.9711849689483643,
+          "step_norm": 0.23063763976097107,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.9711845\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.023083217999034\ngrad_norm after scaled: 0.20023083217999033\nGD step 2, LR = 0.001\ngrad_norm: 19.910586960968743\ngrad_norm after scaled: 0.019910586960968747\nGD step 3, LR = 0.0001\ngrad_norm: 19.88925157690737\ngrad_norm after scaled: 0.001988925157690737\nGD step 4, LR = 1e-05\ngrad_norm: 19.887025086362847\ngrad_norm after scaled: 0.00019887025086362848\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886781506504068\ngrad_norm after scaled: 1.9886781506504068e-05\n"
+        },
+        {
+          "outer": 3,
+          "gradient_norm": 2.083989143371582,
+          "step_norm": 0.2337915003299713,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.0839884\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.021402219344424\ngrad_norm after scaled: 0.20021402219344422\nGD step 2, LR = 0.001\ngrad_norm: 19.90608751219557\ngrad_norm after scaled: 0.01990608751219557\nGD step 3, LR = 0.0001\ngrad_norm: 19.884763261194518\ngrad_norm after scaled: 0.001988476326119452\nGD step 4, LR = 1e-05\ngrad_norm: 19.8825300107778\ngrad_norm after scaled: 0.000198825300107778\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.882342568303063\ngrad_norm after scaled: 1.9882342568303067e-05\n"
+        },
+        {
+          "outer": 4,
+          "gradient_norm": 1.9627031087875366,
+          "step_norm": 0.23346973955631256,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.9627026\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.029269909330612\ngrad_norm after scaled: 0.2002926990933061\nGD step 2, LR = 0.001\ngrad_norm: 19.913766846364975\ngrad_norm after scaled: 0.01991376684636497\nGD step 3, LR = 0.0001\ngrad_norm: 19.892417060757026\ngrad_norm after scaled: 0.001989241706075703\nGD step 4, LR = 1e-05\ngrad_norm: 19.890217420075274\ngrad_norm after scaled: 0.00019890217420075274\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.889876159256282\ngrad_norm after scaled: 1.9889876159256287e-05\n"
+        },
+        {
+          "outer": 5,
+          "gradient_norm": 2.435148000717163,
+          "step_norm": 0.23316825926303864,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.4351473\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.048477765455825\ngrad_norm after scaled: 0.20048477765455822\nGD step 2, LR = 0.001\ngrad_norm: 19.911583208392376\ngrad_norm after scaled: 0.01991158320839238\nGD step 3, LR = 0.0001\ngrad_norm: 19.890027892540317\ngrad_norm after scaled: 0.0019890027892540316\nGD step 4, LR = 1e-05\ngrad_norm: 19.88761564948148\ngrad_norm after scaled: 0.00019887615649481479\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.887518662802556\ngrad_norm after scaled: 1.988751866280256e-05\n"
+        },
+        {
+          "outer": 6,
+          "gradient_norm": 2.259498357772827,
+          "step_norm": 0.23387572169303894,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.2594976\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.021581371435808\ngrad_norm after scaled: 0.20021581371435807\nGD step 2, LR = 0.001\ngrad_norm: 19.908204694807136\ngrad_norm after scaled: 0.019908204694807134\nGD step 3, LR = 0.0001\ngrad_norm: 19.886973165611067\ngrad_norm after scaled: 0.001988697316561107\nGD step 4, LR = 1e-05\ngrad_norm: 19.88495036765082\ngrad_norm after scaled: 0.0001988495036765082\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.884303885993944\ngrad_norm after scaled: 1.9884303885993946e-05\n"
+        },
+        {
+          "outer": 7,
+          "gradient_norm": 1.5644524097442627,
+          "step_norm": 0.231065571308136,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 1.5644519\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.025677333390227\ngrad_norm after scaled: 0.20025677333390224\nGD step 2, LR = 0.001\ngrad_norm: 19.909898238815043\ngrad_norm after scaled: 0.019909898238815043\nGD step 3, LR = 0.0001\ngrad_norm: 19.88862193173104\ngrad_norm after scaled: 0.001988862193173104\nGD step 4, LR = 1e-05\ngrad_norm: 19.88642330882591\ngrad_norm after scaled: 0.00019886423308825916\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.886134678921167\ngrad_norm after scaled: 1.988613467892117e-05\n"
+        },
+        {
+          "outer": 8,
+          "gradient_norm": 2.988093852996826,
+          "step_norm": 0.23033131659030914,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.9880924\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.025954977061826\ngrad_norm after scaled: 0.20025954977061827\nGD step 2, LR = 0.001\ngrad_norm: 19.910724014032386\ngrad_norm after scaled: 0.019910724014032388\nGD step 3, LR = 0.0001\ngrad_norm: 19.889276416605867\ngrad_norm after scaled: 0.0019889276416605864\nGD step 4, LR = 1e-05\ngrad_norm: 19.88726391400336\ngrad_norm after scaled: 0.00019887263914003365\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88682468203519\ngrad_norm after scaled: 1.9886824682035195e-05\n"
+        },
+        {
+          "outer": 9,
+          "gradient_norm": 2.416325092315674,
+          "step_norm": 0.22826823592185974,
+          "hvp_calls": 6,
+          "official_solver_log": "grad_norm: 2.416324\nSetting x0 = cauchy point\nDoing gradient descent...\nSigma: 20.0\nGD step 1, LR = 0.01\ngrad_norm: 20.015703084624754\ngrad_norm after scaled: 0.20015703084624756\nGD step 2, LR = 0.001\ngrad_norm: 19.907436299809703\ngrad_norm after scaled: 0.019907436299809702\nGD step 3, LR = 0.0001\ngrad_norm: 19.886202699440947\ngrad_norm after scaled: 0.001988620269944095\nGD step 4, LR = 1e-05\ngrad_norm: 19.884031699009125\ngrad_norm after scaled: 0.0001988403169900913\nGD step 5, LR = 1.0000000000000002e-06\ngrad_norm: 19.88381525421273\ngrad_norm after scaled: 1.9883815254212736e-05\n"
+        }
+      ]
+    },
+    {
+      "method": "retained_sgd70",
+      "metrics": {
+        "forget_accuracy": 0.7875000238418579,
+        "forget_reference_accuracy": 0.7866666913032532,
+        "forget_js": 0.0027287155389785767,
+        "forget_noop_js": 0.0014919048408046365,
+        "forget_normalized_js": 1.829014468179408,
+        "retain_accuracy": 0.7648147940635681,
+        "retain_reference_accuracy": 0.757777750492096,
+        "retain_js": 0.0033389567397534847,
+        "retain_noop_js": 0.0009717883076518774,
+        "retain_normalized_js": 3.4358889826750163,
+        "test_accuracy": 0.7562999725341797,
+        "test_reference_accuracy": 0.7529999613761902,
+        "test_js": 0.003260127268731594,
+        "test_noop_js": 0.0010342019377276301,
+        "test_normalized_js": 3.152312087032841,
+        "loss_mia_auc": 0.514773964881897
+      },
+      "cost": {
+        "ul_payload_real": 4449340.0,
+        "dl_bits": 144412864.0,
+        "metadata_bits": 20160.0,
+        "pilot_real": 5040.0,
+        "client_gradient_samples": 10080.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 0.0,
+        "student_train_samples": 0.0,
+        "messages": 70,
+        "total_real_uses": 53819225.25304167,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 0.7273692000017036
+    }
+  ],
+  "complete": true
+}

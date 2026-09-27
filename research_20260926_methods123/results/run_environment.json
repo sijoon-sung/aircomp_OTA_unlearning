@@ -1,0 +1,14 @@
+{
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "pid": 40392,
+  "one_worker": true,
+  "rounds": 150,
+  "seeds": [
+    271,
+    272,
+    273
+  ],
+  "protocol_sha256": "151fda02dc2e7e5787a5e88b94757a4c68e75fc1fdd63f1da29777e376bd4295"
+}

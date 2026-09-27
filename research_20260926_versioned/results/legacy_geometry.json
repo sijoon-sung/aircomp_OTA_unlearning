@@ -1,0 +1,50 @@
+[
+  {
+    "seed": 371,
+    "sketch_ideal_cosine": 0.9971176385879517,
+    "sketch_noisy_cosine": 0.0961645245552063,
+    "exact_residual_norm": 0.43665581941604614,
+    "sketch_residual_norm": 0.437918096780777,
+    "noise_rms_norm": 4.276507566303565,
+    "ideal_relative_direction_error": 0.07592644542455673,
+    "noisy_relative_direction_error": 1.344496488571167,
+    "power": {
+      "scale": 0.16962523758411407,
+      "max_average_power": 0.001115900231525302,
+      "max_peak_power": 4.0,
+      "variance": 0.0002877272106707096
+    }
+  },
+  {
+    "seed": 372,
+    "sketch_ideal_cosine": 0.9977417588233948,
+    "sketch_noisy_cosine": 0.16559873521327972,
+    "exact_residual_norm": 0.5639349222183228,
+    "sketch_residual_norm": 0.565211296081543,
+    "noise_rms_norm": 3.2132282747694094,
+    "ideal_relative_direction_error": 0.06720387190580368,
+    "noisy_relative_direction_error": 1.2918213605880737,
+    "power": {
+      "scale": 0.1274508684873581,
+      "max_average_power": 0.001976609230041504,
+      "max_peak_power": 4.0,
+      "variance": 0.00016243724152445793
+    }
+  },
+  {
+    "seed": 373,
+    "sketch_ideal_cosine": 0.9973927140235901,
+    "sketch_noisy_cosine": 0.1332693248987198,
+    "exact_residual_norm": 0.3663252294063568,
+    "sketch_residual_norm": 0.3672828674316406,
+    "noise_rms_norm": 2.775666759050567,
+    "ideal_relative_direction_error": 0.07221213728189468,
+    "noisy_relative_direction_error": 1.3166097402572632,
+    "power": {
+      "scale": 0.11009524017572403,
+      "max_average_power": 0.00264892284758389,
+      "max_peak_power": 4.0,
+      "variance": 0.00012120962142944336
+    }
+  }
+]

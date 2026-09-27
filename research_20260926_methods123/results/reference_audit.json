@@ -1,0 +1,200 @@
+[
+  {
+    "seed": 271,
+    "ortho": false,
+    "reference_pairwise_js": 0.0017982034478336573,
+    "noop_mean_js_to_references": 0.0016697702812962234,
+    "rows": [
+      {
+        "method": "no_op",
+        "js_to_reference1": 0.0013116541085764766,
+        "js_to_reference2": 0.0020278864540159702,
+        "mean_js_ratio_to_noop": 1.0,
+        "retained_ce": 0.6171557633247641,
+        "retained_gradient_norm": 0.47642335295677185
+      },
+      {
+        "method": "curenus_exact",
+        "js_to_reference1": 0.004982218146324158,
+        "js_to_reference2": 0.008196231909096241,
+        "mean_js_ratio_to_noop": 3.946186551239288,
+        "retained_ce": 0.6188114744590388,
+        "retained_gradient_norm": 1.0025819540023804
+      },
+      {
+        "method": "curenus_ota20_r1",
+        "js_to_reference1": 0.00485526118427515,
+        "js_to_reference2": 0.008105956017971039,
+        "mean_js_ratio_to_noop": 3.881137826990353,
+        "retained_ce": 0.6183058789758771,
+        "retained_gradient_norm": 0.9913060665130615
+      },
+      {
+        "method": "curenus_ota20_r4",
+        "js_to_reference1": 0.0049843620508909225,
+        "js_to_reference2": 0.008197908289730549,
+        "mean_js_ratio_to_noop": 3.947330506561725,
+        "retained_ce": 0.6188300441978154,
+        "retained_gradient_norm": 1.0032097101211548
+      }
+    ],
+    "alternate_training_seconds": 6.8033831999928225
+  },
+  {
+    "seed": 271,
+    "ortho": true,
+    "reference_pairwise_js": 0.003281135344877839,
+    "noop_mean_js_to_references": 0.0021921737934462726,
+    "rows": [
+      {
+        "method": "no_op",
+        "js_to_reference1": 0.001579601434059441,
+        "js_to_reference2": 0.002804746152833104,
+        "mean_js_ratio_to_noop": 1.0,
+        "retained_ce": 0.6107519845222985,
+        "retained_gradient_norm": 1.066236138343811
+      },
+      {
+        "method": "noiseless_prune",
+        "js_to_reference1": 0.007676704786717892,
+        "js_to_reference2": 0.00882516335695982,
+        "mean_js_ratio_to_noop": 3.7638138438229056,
+        "retained_ce": 0.6808808637162049,
+        "retained_gradient_norm": 1.6800589561462402
+      }
+    ],
+    "alternate_training_seconds": 25.32348649998312
+  },
+  {
+    "seed": 272,
+    "ortho": false,
+    "reference_pairwise_js": 0.0016963501693680882,
+    "noop_mean_js_to_references": 0.0014473441697191447,
+    "rows": [
+      {
+        "method": "no_op",
+        "js_to_reference1": 0.0009590155095793307,
+        "js_to_reference2": 0.0019356728298589587,
+        "mean_js_ratio_to_noop": 1.0,
+        "retained_ce": 0.5955261476834615,
+        "retained_gradient_norm": 0.6222355961799622
+      },
+      {
+        "method": "curenus_exact",
+        "js_to_reference1": 0.015287727117538452,
+        "js_to_reference2": 0.01179240457713604,
+        "mean_js_ratio_to_noop": 9.35511133469013,
+        "retained_ce": 0.6081826314881996,
+        "retained_gradient_norm": 1.3564774990081787
+      },
+      {
+        "method": "curenus_ota20_r1",
+        "js_to_reference1": 0.01538571435958147,
+        "js_to_reference2": 0.01196218654513359,
+        "mean_js_ratio_to_noop": 9.447614975373096,
+        "retained_ce": 0.6086231134555958,
+        "retained_gradient_norm": 1.3717321157455444
+      },
+      {
+        "method": "curenus_ota20_r4",
+        "js_to_reference1": 0.015306346118450165,
+        "js_to_reference2": 0.01181116420775652,
+        "mean_js_ratio_to_noop": 9.368024169216365,
+        "retained_ce": 0.6082447347155324,
+        "retained_gradient_norm": 1.3581687211990356
+      }
+    ],
+    "alternate_training_seconds": 12.02082160001737
+  },
+  {
+    "seed": 272,
+    "ortho": true,
+    "reference_pairwise_js": 0.002232580678537488,
+    "noop_mean_js_to_references": 0.0015960624732542783,
+    "rows": [
+      {
+        "method": "no_op",
+        "js_to_reference1": 0.000854897138196975,
+        "js_to_reference2": 0.0023372278083115816,
+        "mean_js_ratio_to_noop": 1.0,
+        "retained_ce": 0.5907483773761325,
+        "retained_gradient_norm": 0.6097757816314697
+      },
+      {
+        "method": "noiseless_prune",
+        "js_to_reference1": 0.03832428902387619,
+        "js_to_reference2": 0.042679961770772934,
+        "mean_js_ratio_to_noop": 25.37627823223178,
+        "retained_ce": 0.7730678073565165,
+        "retained_gradient_norm": 1.7815693616867065
+      }
+    ],
+    "alternate_training_seconds": 26.908559800009243
+  },
+  {
+    "seed": 273,
+    "ortho": false,
+    "reference_pairwise_js": 0.0034763552248477936,
+    "noop_mean_js_to_references": 0.0023240780574269593,
+    "rows": [
+      {
+        "method": "no_op",
+        "js_to_reference1": 0.0014919048408046365,
+        "js_to_reference2": 0.003156251274049282,
+        "mean_js_ratio_to_noop": 1.0,
+        "retained_ce": 0.640972390682609,
+        "retained_gradient_norm": 0.6631882190704346
+      },
+      {
+        "method": "curenus_exact",
+        "js_to_reference1": 0.004809238947927952,
+        "js_to_reference2": 0.00375782186165452,
+        "mean_js_ratio_to_noop": 1.843109525130852,
+        "retained_ce": 0.6421687125718152,
+        "retained_gradient_norm": 0.8800858855247498
+      },
+      {
+        "method": "curenus_ota20_r1",
+        "js_to_reference1": 0.004835463594645262,
+        "js_to_reference2": 0.0038069782312959433,
+        "mean_js_ratio_to_noop": 1.8593269271492225,
+        "retained_ce": 0.6420693175770619,
+        "retained_gradient_norm": 0.8783059120178223
+      },
+      {
+        "method": "curenus_ota20_r4",
+        "js_to_reference1": 0.004807688295841217,
+        "js_to_reference2": 0.003762021893635392,
+        "mean_js_ratio_to_noop": 1.8436795102666075,
+        "retained_ce": 0.6421575869454278,
+        "retained_gradient_norm": 0.8792732954025269
+      }
+    ],
+    "alternate_training_seconds": 11.911229799996363
+  },
+  {
+    "seed": 273,
+    "ortho": true,
+    "reference_pairwise_js": 0.003207186236977577,
+    "noop_mean_js_to_references": 0.001963583577889949,
+    "rows": [
+      {
+        "method": "no_op",
+        "js_to_reference1": 0.0016306046163663268,
+        "js_to_reference2": 0.0022965625394135714,
+        "mean_js_ratio_to_noop": 1.0,
+        "retained_ce": 0.6349858430359099,
+        "retained_gradient_norm": 0.733615517616272
+      },
+      {
+        "method": "noiseless_prune",
+        "js_to_reference1": 0.03943725675344467,
+        "js_to_reference2": 0.03275968134403229,
+        "mean_js_ratio_to_noop": 18.38397379933764,
+        "retained_ce": 0.7791288238543052,
+        "retained_gradient_norm": 1.6981288194656372
+      }
+    ],
+    "alternate_training_seconds": 26.644943899998907
+  }
+]

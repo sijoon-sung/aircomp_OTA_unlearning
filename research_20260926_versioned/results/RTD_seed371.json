@@ -1,0 +1,1567 @@
+{
+  "seed": 371,
+  "rows": [
+    {
+      "method": "No-op",
+      "version": "baseline",
+      "noise": null,
+      "metrics": {
+        "forget_accuracy": 0.7900000214576721,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.002698262222111225,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.0,
+        "retain_accuracy": 0.70333331823349,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0030606044456362724,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.0,
+        "test_accuracy": 0.7017999887466431,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0029701669700443745,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.0,
+        "loss_mia_auc": 0.522593080997467
+      },
+      "cost": {
+        "ul_real": 0.0,
+        "dl_bits": 0.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 0.0,
+        "pilot_real": 0.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 0.0,
+        "student_samples": 0.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 0.0,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": null
+    },
+    {
+      "method": "Target-free KD",
+      "version": "reference",
+      "noise": null,
+      "metrics": {
+        "forget_accuracy": 0.7816666960716248,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.0,
+        "retain_accuracy": 0.7022222280502319,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.0,
+        "test_accuracy": 0.708299994468689,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.0,
+        "loss_mia_auc": 0.519679844379425
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 288.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 0.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731657.906347944,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "student_seconds": 1.3379731999884825
+      }
+    },
+    {
+      "method": "RTD-Air-noiseless",
+      "version": "V1",
+      "noise": -1,
+      "metrics": {
+        "forget_accuracy": 0.7758333683013916,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0004026856040582061,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.14923886965408767,
+        "retain_accuracy": 0.7081481218338013,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.00047840012121014297,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.15630903297295834,
+        "test_accuracy": 0.7125999927520752,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0004775131237693131,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.16076979125593704,
+        "loss_mia_auc": 0.5196388959884644
+      },
+      "cost": {
+        "ul_real": 18000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 729505.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "target_max_error": 1.7881393432617188e-07,
+        "student_seconds": 1.2845631999953184
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 0,
+      "metrics": {
+        "forget_accuracy": 0.7741667032241821,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.006125049665570259,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 2.2699979325129425,
+        "retain_accuracy": 0.6762962937355042,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.008121954277157784,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 2.6537092333959875,
+        "test_accuracy": 0.6811000108718872,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.007819644175469875,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 2.6327288177179646,
+        "loss_mia_auc": 0.5222680568695068
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3247872999927495,
+        "target_mse": 3.87774889532011e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 5.152471829205752e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 0,
+      "metrics": {
+        "forget_accuracy": 0.7750000357627869,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0012234114110469818,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.45340715999416,
+        "retain_accuracy": 0.7022222280502319,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.001578931463882327,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.5158887703157868,
+        "test_accuracy": 0.7027999758720398,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0015359899261966348,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.5171392523342507,
+        "loss_mia_auc": 0.5200514197349548
+      },
+      "cost": {
+        "ul_real": 80000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 799255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.3312472999969032,
+        "target_mse": 1.0299559107807e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 1.288117957301438e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 0,
+      "metrics": {
+        "forget_accuracy": 0.7733333706855774,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.006506261415779591,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 2.4112784007659713,
+        "retain_accuracy": 0.6707407236099243,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.008868572302162647,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 2.8976538653360513,
+        "test_accuracy": 0.6757999658584595,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.008483564481139183,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 2.8562584415961094,
+        "loss_mia_auc": 0.5222851037979126
+      },
+      "cost": {
+        "ul_real": 18000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 729505.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3336621999915224,
+        "target_mse": 3.4792301448760554e-05,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 4.597033839672804e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 0,
+      "metrics": {
+        "forget_accuracy": 0.7733333706855774,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.007688348647207022,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 2.8493704519167746,
+        "retain_accuracy": 0.6666666865348816,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.011013328097760677,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 3.5984160297039316,
+        "test_accuracy": 0.6757999658584595,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.010431050322949886,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 3.5119407185361187,
+        "loss_mia_auc": 0.5223687291145325
+      },
+      "cost": {
+        "ul_real": 72000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 790255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.324282299989136,
+        "target_mse": 9.229757779394276e-06,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 1.149258459918201e-05
+        }
+      }
+    },
+    {
+      "method": "Centered-full10",
+      "version": "baseline",
+      "noise": 0,
+      "metrics": {
+        "forget_accuracy": 0.7750000357627869,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.00617612199857831,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 2.288925793782145,
+        "retain_accuracy": 0.6725925803184509,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.008341161534190178,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 2.725331444278199,
+        "test_accuracy": 0.6797999739646912,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.00801135879009962,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 2.697275564269012,
+        "loss_mia_auc": 0.5222159624099731
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3154695000266656,
+        "target_mse": 3.152093995595351e-05,
+        "power": {
+          "scale": 0.06437331438064575,
+          "max_average_power": 0.16872894763946533,
+          "max_peak_power": 4.0,
+          "variance": 4.14392352104187e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air-query1000",
+      "version": "V1",
+      "noise": 0,
+      "metrics": {
+        "forget_accuracy": 0.7783333659172058,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0015884673921391368,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.5887001563903816,
+        "retain_accuracy": 0.7144444584846497,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0017266100039705634,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.5641401999635456,
+        "test_accuracy": 0.708899974822998,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0016736085526645184,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.5634728853777249,
+        "loss_mia_auc": 0.5213375091552734
+      },
+      "cost": {
+        "ul_real": 9000.0,
+        "dl_bits": 2066016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 9000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 708566.5149889675,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.344659700000193,
+        "target_mse": 3.392983853700571e-05,
+        "power": {
+          "scale": 0.06780143827199936,
+          "max_average_power": 0.16657473146915436,
+          "max_peak_power": 4.0,
+          "variance": 4.597035236656666e-05
+        }
+      }
+    },
+    {
+      "method": "Digital8",
+      "version": "baseline",
+      "noise": 0,
+      "metrics": {
+        "forget_accuracy": 0.784166693687439,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0021602667402476072,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.8006140850748489,
+        "retain_accuracy": 0.7025926113128662,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0030387190636247396,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.9928493268567468,
+        "test_accuracy": 0.6995999813079834,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0028846855275332928,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.971219987504674,
+        "loss_mia_auc": 0.521344780921936
+      },
+      "cost": {
+        "ul_real": 0.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 1440000.0,
+        "metadata_bits": 288.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 1195775.071992693,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3232524000050034,
+        "target_mse": 2.1786007664559293e-07,
+        "power": {}
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 1,
+      "metrics": {
+        "forget_accuracy": 0.7691667079925537,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0009811368072405457,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.3636180350451137,
+        "retain_accuracy": 0.6992592811584473,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.001173527562059462,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.3834299998265526,
+        "test_accuracy": 0.6994999647140503,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0011435984633862972,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.3850283418137977,
+        "loss_mia_auc": 0.5194690823554993
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.323663499992108,
+        "target_mse": 3.875905167660676e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 5.152471829205752e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 1,
+      "metrics": {
+        "forget_accuracy": 0.7825000286102295,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0019694941584020853,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.7299120679461155,
+        "retain_accuracy": 0.7051851749420166,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0025889219250530005,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.8458858277959492,
+        "test_accuracy": 0.7021999955177307,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0024913575034588575,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.8387937542183483,
+        "loss_mia_auc": 0.5209652781486511
+      },
+      "cost": {
+        "ul_real": 80000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 799255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.3162353000079747,
+        "target_mse": 1.0332320016459562e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 1.288117957301438e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 1,
+      "metrics": {
+        "forget_accuracy": 0.7833333611488342,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.002925183391198516,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.0840990053626955,
+        "retain_accuracy": 0.6970370411872864,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.004241439513862133,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.3858176021110677,
+        "test_accuracy": 0.698199987411499,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.004009181167930365,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.3498167639614103,
+        "loss_mia_auc": 0.5209131836891174
+      },
+      "cost": {
+        "ul_real": 18000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 729505.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3234731999982614,
+        "target_mse": 3.478307189652696e-05,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 4.597033839672804e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 1,
+      "metrics": {
+        "forget_accuracy": 0.78083336353302,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0012993458658456802,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.48154914492670087,
+        "retain_accuracy": 0.7062962651252747,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0017560881096869707,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.5737716653292959,
+        "test_accuracy": 0.7069999575614929,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0017129533225670457,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.5767195379394627,
+        "loss_mia_auc": 0.5188701152801514
+      },
+      "cost": {
+        "ul_real": 72000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 790255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.3434828000026755,
+        "target_mse": 9.260896149498876e-06,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 1.149258459918201e-05
+        }
+      }
+    },
+    {
+      "method": "Centered-full10",
+      "version": "baseline",
+      "noise": 1,
+      "metrics": {
+        "forget_accuracy": 0.7891666889190674,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0027296910993754864,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.0116478217004685,
+        "retain_accuracy": 0.7025926113128662,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0038168709725141525,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.247097114413509,
+        "test_accuracy": 0.7026999592781067,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.003628490259870887,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.2216452126988258,
+        "loss_mia_auc": 0.521224319934845
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3162202000094112,
+        "target_mse": 3.151528653688729e-05,
+        "power": {
+          "scale": 0.06437331438064575,
+          "max_average_power": 0.16872894763946533,
+          "max_peak_power": 4.0,
+          "variance": 4.14392352104187e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air-query1000",
+      "version": "V1",
+      "noise": 1,
+      "metrics": {
+        "forget_accuracy": 0.7825000286102295,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.003246038919314742,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.2030109204045096,
+        "retain_accuracy": 0.699999988079071,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.00382052268832922,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.2482902499133524,
+        "test_accuracy": 0.6988999843597412,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0036731979344040155,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.236697455547133,
+        "loss_mia_auc": 0.5218590497970581
+      },
+      "cost": {
+        "ul_real": 9000.0,
+        "dl_bits": 2066016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 9000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 708566.5149889675,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3354374000045937,
+        "target_mse": 3.508531881379895e-05,
+        "power": {
+          "scale": 0.06780143827199936,
+          "max_average_power": 0.16657473146915436,
+          "max_peak_power": 4.0,
+          "variance": 4.597035236656666e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 2,
+      "metrics": {
+        "forget_accuracy": 0.7825000286102295,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0030917932745069265,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.1458461113122607,
+        "retain_accuracy": 0.7040740847587585,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.004170395899564028,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.3626053198446033,
+        "test_accuracy": 0.7002999782562256,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.003982344642281532,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.3407814046972706,
+        "loss_mia_auc": 0.5220979452133179
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3472238999966066,
+        "target_mse": 3.8587219023611397e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 5.152471829205752e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 2,
+      "metrics": {
+        "forget_accuracy": 0.7800000309944153,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0027117442805320024,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.0049965708707986,
+        "retain_accuracy": 0.6966666579246521,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0036586394999176264,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.195397695097129,
+        "test_accuracy": 0.6961999535560608,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0035102481488138437,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.1818352921625146,
+        "loss_mia_auc": 0.5214993357658386
+      },
+      "cost": {
+        "ul_real": 80000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 799255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.318298500002129,
+        "target_mse": 1.0260529052175116e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 1.288117957301438e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 2,
+      "metrics": {
+        "forget_accuracy": 0.7800000309944153,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.002592493314296007,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.9608011011870965,
+        "retain_accuracy": 0.7029629349708557,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0034025912173092365,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.111738311090987,
+        "test_accuracy": 0.6997999548912048,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.003231355221942067,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.0879372286244873,
+        "loss_mia_auc": 0.5214312672615051
+      },
+      "cost": {
+        "ul_real": 18000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 729505.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.31472140000551,
+        "target_mse": 3.462314634816721e-05,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 4.597033839672804e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 2,
+      "metrics": {
+        "forget_accuracy": 0.784166693687439,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.002852440346032381,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.057139785250568,
+        "retain_accuracy": 0.6966666579246521,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.003934724722057581,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.2856038053749825,
+        "test_accuracy": 0.6969000101089478,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.003757038852199912,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.264925133870094,
+        "loss_mia_auc": 0.521459698677063
+      },
+      "cost": {
+        "ul_real": 72000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 790255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.3474900999863166,
+        "target_mse": 9.196119208354503e-06,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 1.149258459918201e-05
+        }
+      }
+    },
+    {
+      "method": "Centered-full10",
+      "version": "baseline",
+      "noise": 2,
+      "metrics": {
+        "forget_accuracy": 0.7816666960716248,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0034250817261636257,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.2693657784986179,
+        "retain_accuracy": 0.6966666579246521,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.00466262036934495,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.5234312215656578,
+        "test_accuracy": 0.6984999775886536,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.004439257550984621,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.4946154865220584,
+        "loss_mia_auc": 0.5220305323600769
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3299933999951463,
+        "target_mse": 3.13680648105219e-05,
+        "power": {
+          "scale": 0.06437331438064575,
+          "max_average_power": 0.16872894763946533,
+          "max_peak_power": 4.0,
+          "variance": 4.14392352104187e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air-query1000",
+      "version": "V1",
+      "noise": 2,
+      "metrics": {
+        "forget_accuracy": 0.7741667032241821,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.004717398900538683,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.748310027795448,
+        "retain_accuracy": 0.7133333086967468,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0041475784964859486,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.355150124806051,
+        "test_accuracy": 0.7080999612808228,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.004148627165704966,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.3967656389509258,
+        "loss_mia_auc": 0.521293044090271
+      },
+      "cost": {
+        "ul_real": 9000.0,
+        "dl_bits": 2066016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 9000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 708566.5149889675,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3550957000115886,
+        "target_mse": 3.538203236530535e-05,
+        "power": {
+          "scale": 0.06780143827199936,
+          "max_average_power": 0.16657473146915436,
+          "max_peak_power": 4.0,
+          "variance": 4.597035236656666e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 3,
+      "metrics": {
+        "forget_accuracy": 0.7783333659172058,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0047653899528086185,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.7660959389929094,
+        "retain_accuracy": 0.6792592406272888,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.007009816821664572,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 2.2903373977839507,
+        "test_accuracy": 0.6887999773025513,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.006624323781579733,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 2.2302866634735907,
+        "loss_mia_auc": 0.5219736099243164
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3720895000151359,
+        "target_mse": 3.8623646105406806e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 5.152471829205752e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "Original",
+      "noise": 3,
+      "metrics": {
+        "forget_accuracy": 0.7783333659172058,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0027954939287155867,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.036034936044238,
+        "retain_accuracy": 0.7048147916793823,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.0038663912564516068,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.2632770177028931,
+        "test_accuracy": 0.7042999863624573,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0037019560113549232,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.2463797654108368,
+        "loss_mia_auc": 0.5213986039161682
+      },
+      "cost": {
+        "ul_real": 80000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 799255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.339176299981773,
+        "target_mse": 1.0290011232427787e-05,
+        "power": {
+          "scale": 0.0717807188630104,
+          "max_average_power": 0.17829862236976624,
+          "max_peak_power": 4.0,
+          "variance": 1.288117957301438e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 3,
+      "metrics": {
+        "forget_accuracy": 0.7750000357627869,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0008346035028807819,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 0.3093114879797545,
+        "retain_accuracy": 0.7114814519882202,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.000858582672663033,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 0.2805271598841128,
+        "test_accuracy": 0.7063999772071838,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.0008521407726220787,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 0.28689995586657124,
+        "loss_mia_auc": 0.519614577293396
+      },
+      "cost": {
+        "ul_real": 18000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 729505.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.3360673999995925,
+        "target_mse": 3.465396730462089e-05,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 4.597033839672804e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air",
+      "version": "V1",
+      "noise": 3,
+      "metrics": {
+        "forget_accuracy": 0.7783333659172058,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.0028271107003092766,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.0477523930558668,
+        "retain_accuracy": 0.7014814615249634,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.003966344054788351,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.2959348799363661,
+        "test_accuracy": 0.6996999979019165,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.003795891534537077,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.2780061096970472,
+        "loss_mia_auc": 0.521793782711029
+      },
+      "cost": {
+        "ul_real": 72000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 790255.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 4,
+        "student_seconds": 1.3392469999962486,
+        "target_mse": 9.223113920597825e-06,
+        "power": {
+          "scale": 0.06780143082141876,
+          "max_average_power": 0.1689978390932083,
+          "max_peak_power": 4.0,
+          "variance": 1.149258459918201e-05
+        }
+      }
+    },
+    {
+      "method": "Centered-full10",
+      "version": "baseline",
+      "noise": 3,
+      "metrics": {
+        "forget_accuracy": 0.78083336353302,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.003261870238929987,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.2088781483875843,
+        "retain_accuracy": 0.6981481313705444,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.004638346377760172,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.5155001112193383,
+        "test_accuracy": 0.6994999647140503,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.004397057928144932,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.4804076580513719,
+        "loss_mia_auc": 0.5218396186828613
+      },
+      "cost": {
+        "ul_real": 20000.0,
+        "dl_bits": 2098016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 18000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 731755.229781073,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.346994799998356,
+        "target_mse": 3.13957134494558e-05,
+        "power": {
+          "scale": 0.06437331438064575,
+          "max_average_power": 0.16872894763946533,
+          "max_peak_power": 4.0,
+          "variance": 4.14392352104187e-05
+        }
+      }
+    },
+    {
+      "method": "RTD-Air-query1000",
+      "version": "V1",
+      "noise": 3,
+      "metrics": {
+        "forget_accuracy": 0.7791666984558105,
+        "forget_reference_accuracy": 0.7816666960716248,
+        "forget_js": 0.00358086870983243,
+        "forget_noop_js": 0.002698262222111225,
+        "forget_normalized_js": 1.3271018214940649,
+        "retain_accuracy": 0.7059259414672852,
+        "retain_reference_accuracy": 0.7022222280502319,
+        "retain_js": 0.004320058505982161,
+        "retain_noop_js": 0.0030606044456362724,
+        "retain_normalized_js": 1.4115050091303316,
+        "test_accuracy": 0.702299952507019,
+        "test_reference_accuracy": 0.708299994468689,
+        "test_js": 0.00424770824611187,
+        "test_noop_js": 0.0029701669700443745,
+        "test_normalized_js": 1.4301243966928934,
+        "loss_mia_auc": 0.5230437517166138
+      },
+      "cost": {
+        "ul_real": 9000.0,
+        "dl_bits": 2066016.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 9000.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 708566.5149889675,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "extra": {
+        "repeats": 1,
+        "student_seconds": 1.333136300003389,
+        "target_mse": 3.458912397036329e-05,
+        "power": {
+          "scale": 0.06780143827199936,
+          "max_average_power": 0.16657473146915436,
+          "max_peak_power": 4.0,
+          "variance": 4.597035236656666e-05
+        }
+      }
+    }
+  ],
+  "complete": true,
+  "external_fedavg": [
+    {
+      "method": "No-op",
+      "metrics": {
+        "forget_accuracy": 0.8100000023841858,
+        "forget_reference_accuracy": 0.7950000166893005,
+        "forget_js": 0.0009450312936678529,
+        "forget_noop_js": 0.0009450312936678529,
+        "forget_normalized_js": 1.0,
+        "retain_accuracy": 0.7411110997200012,
+        "retain_reference_accuracy": 0.734074056148529,
+        "retain_js": 0.0006259101210162044,
+        "retain_noop_js": 0.0006259101210162044,
+        "retain_normalized_js": 1.0,
+        "test_accuracy": 0.7340999841690063,
+        "test_reference_accuracy": 0.7307999730110168,
+        "test_js": 0.000656681542750448,
+        "test_noop_js": 0.000656681542750448,
+        "test_normalized_js": 1.0,
+        "loss_mia_auc": 0.5237528085708618
+      },
+      "cost": {
+        "ul_real": 0.0,
+        "dl_bits": 0.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 0.0,
+        "pilot_real": 0.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 0.0,
+        "student_samples": 0.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 0.0,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      }
+    },
+    {
+      "method": "Target-free FedAvg",
+      "metrics": {
+        "forget_accuracy": 0.7950000166893005,
+        "forget_reference_accuracy": 0.7950000166893005,
+        "forget_js": 0.0,
+        "forget_noop_js": 0.0009450312936678529,
+        "forget_normalized_js": 0.0,
+        "retain_accuracy": 0.734074056148529,
+        "retain_reference_accuracy": 0.734074056148529,
+        "retain_js": 0.0,
+        "retain_noop_js": 0.0006259101210162044,
+        "retain_normalized_js": 0.0,
+        "test_accuracy": 0.7307999730110168,
+        "test_reference_accuracy": 0.7307999730110168,
+        "test_js": 0.0,
+        "test_noop_js": 0.000656681542750448,
+        "test_normalized_js": 0.0,
+        "loss_mia_auc": 0.5231847167015076
+      },
+      "cost": {
+        "ul_payload_real": 9534300.0,
+        "dl_bits": 305097600.0,
+        "metadata_bits": 43200.0,
+        "pilot_real": 10800.0,
+        "client_gradient_samples": 345600.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 0.0,
+        "student_train_samples": 0.0,
+        "messages": 150,
+        "total_real_uses": 113854036.95734113,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      }
+    },
+    {
+      "method": "FedQUIT-logit-min + CE adaptation",
+      "metrics": {
+        "forget_accuracy": 0.32500001788139343,
+        "forget_reference_accuracy": 0.7950000166893005,
+        "forget_js": 0.14543767273426056,
+        "forget_noop_js": 0.0009450312936678529,
+        "forget_normalized_js": 153.89720288498413,
+        "retain_accuracy": 0.6529629826545715,
+        "retain_reference_accuracy": 0.734074056148529,
+        "retain_js": 0.06251808255910873,
+        "retain_noop_js": 0.0006259101210162044,
+        "retain_normalized_js": 99.88348240416164,
+        "test_accuracy": 0.6024999618530273,
+        "test_reference_accuracy": 0.7307999730110168,
+        "test_js": 0.07173848897218704,
+        "test_noop_js": 0.000656681542750448,
+        "test_normalized_js": 109.24395510145942,
+        "loss_mia_auc": 0.518061101436615
+      },
+      "cost": {
+        "ul_real": 6356200.0,
+        "dl_bits": 205432384.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 32000.0,
+        "pilot_real": 8000.0,
+        "gradient_samples": 32000.0,
+        "forward_samples": 0.0,
+        "student_samples": 0.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 76592014.0159891,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      }
+    },
+    {
+      "method": "Old-global-teacher KD",
+      "metrics": {
+        "forget_accuracy": 0.7875000238418579,
+        "forget_reference_accuracy": 0.7950000166893005,
+        "forget_js": 0.002594954567030072,
+        "forget_noop_js": 0.0009450312936678529,
+        "forget_normalized_js": 2.74589273859762,
+        "retain_accuracy": 0.7129629850387573,
+        "retain_reference_accuracy": 0.734074056148529,
+        "retain_js": 0.0028139539062976837,
+        "retain_noop_js": 0.0006259101210162044,
+        "retain_normalized_js": 4.495779524589015,
+        "test_accuracy": 0.7152999639511108,
+        "test_reference_accuracy": 0.7307999730110168,
+        "test_js": 0.002829386154189706,
+        "test_noop_js": 0.000656681542750448,
+        "test_normalized_js": 4.308612272455674,
+        "loss_mia_auc": 0.5221801996231079
+      },
+      "cost": {
+        "ul_real": 0.0,
+        "dl_bits": 2033984.0,
+        "digital_ul_bits": 0.0,
+        "metadata_bits": 0.0,
+        "pilot_real": 0.0,
+        "gradient_samples": 0.0,
+        "forward_samples": 0.0,
+        "student_samples": 38400.0,
+        "local_matrix_elements": 0.0,
+        "total_real_uses": 687341.3396158118,
+        "rate_bits_per_real_use": 3.3291057413758973,
+        "cp_factor": 1.125
+      },
+      "student_seconds": 1.3568983000004664
+    }
+  ],
+  "plain_preparation": {
+    "cost": {
+      "ul_payload_real": 9534300.0,
+      "dl_bits": 305097600.0,
+      "metadata_bits": 48000.0,
+      "pilot_real": 12000.0,
+      "client_gradient_samples": 384000.0,
+      "client_hvp_samples": 0.0,
+      "teacher_forward_samples": 0.0,
+      "student_train_samples": 0.0,
+      "messages": 150,
+      "total_real_uses": 113857009.01455995,
+      "snr_db": 20,
+      "cp_factor": 1.125,
+      "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+    },
+    "seconds": 13.076096800010419,
+    "validation_accuracy": 0.7450000643730164,
+    "parameter_sha256": "0e60e944077f9922883520fb5e1103683cc0aff8d16796b79c2f020a349c1503",
+    "source_training": "150 rounds; original frozen settings"
+  },
+  "teachers": [
+    {
+      "samples": 32000,
+      "seconds": 1.1685581000056118,
+      "sha256": "c71e9dbfc20b36fbf761df3d0e45f048f64acf4b4029431ca3eb55e627487405"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.185620599979302,
+      "sha256": "92a00577245c86e38b17e6fd191b346851f957951c3767d105582b85fc784823"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.1789155000005849,
+      "sha256": "8eec125d53b37926e8b708fe0ab6d117c3e6268b857726df3a7b77e6bd1b114e"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.1276777999883052,
+      "sha256": "8f9072b84e4927326d3fe1b2b03403a1da7c10f4d54afa11dd5ffbb79c3fd416"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.170059800002491,
+      "sha256": "cd96883b0ef6c5da5aa25b7f52081832855d7d92859859a0f99bc20ce11a7364"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.1752022999862675,
+      "sha256": "57b0333f7f61e16a5e82e9e777b7a53b5a126812b865ba91c839bd6e10c596f8"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.2685491000011098,
+      "sha256": "68805ae1bfd597cd429bc05a824f46b56a992fe41eaf634b314e118738875bd9"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.1830205000005662,
+      "sha256": "bab4daaeb8c75910737a71cad88eed5b1f495a01860148b2c3d66107848f9303"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.1774711000034586,
+      "sha256": "2878b026afa6ceced3ee7e895037947c95d025d736e4545f8450ef8b0ada547f"
+    },
+    {
+      "samples": 32000,
+      "seconds": 1.229164699994726,
+      "sha256": "4876bf8dcc3ac35b39a4d1bf6dce0772cd0cd5ea0aa72985dd49a2d84b439fd7"
+    }
+  ],
+  "preparation": {
+    "ul_real": 20000.0,
+    "dl_bits": 2098016.0,
+    "digital_ul_bits": 0.0,
+    "metadata_bits": 320.0,
+    "pilot_real": 80.0,
+    "gradient_samples": 0.0,
+    "forward_samples": 0.0,
+    "student_samples": 38400.0,
+    "local_matrix_elements": 0.0,
+    "total_real_uses": 731677.7200627362,
+    "rate_bits_per_real_use": 3.3291057413758973,
+    "cp_factor": 1.125
+  },
+  "public_data_bytes_uncached": 1568000,
+  "source_student_seconds": 1.3923987000016496,
+  "reference": "target-free independent-teacher KD at 2000 queries",
+  "cross_reference_metrics": {
+    "forget_accuracy": 0.7816666960716248,
+    "forget_reference_accuracy": 0.7950000166893005,
+    "forget_js": 0.009995752014219761,
+    "retain_accuracy": 0.7022222280502319,
+    "retain_reference_accuracy": 0.734074056148529,
+    "retain_js": 0.011263852939009666,
+    "test_accuracy": 0.708299994468689,
+    "test_reference_accuracy": 0.7307999730110168,
+    "test_js": 0.01081235520541668,
+    "loss_mia_auc": 0.519679844379425
+  },
+  "seconds": 80.59128230001079
+}

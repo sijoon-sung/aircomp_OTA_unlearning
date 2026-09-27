@@ -1,0 +1,39 @@
+{
+  "protocol_and_main_code_hashes_match": true,
+  "rows": {
+    "DS": 441,
+    "OG": 54,
+    "RTD": 84,
+    "RTDfp64": 87
+  },
+  "six_noiseless_rtd_equalities": [
+    [
+      371,
+      "Original"
+    ],
+    [
+      371,
+      "V1"
+    ],
+    [
+      372,
+      "Original"
+    ],
+    [
+      372,
+      "V1"
+    ],
+    [
+      373,
+      "Original"
+    ],
+    [
+      373,
+      "V1"
+    ]
+  ],
+  "max_peak_power": 4.000000000000002,
+  "summary_groups": 39,
+  "local_document_links_valid": true,
+  "passed": true
+}

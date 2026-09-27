@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "official_vs_local_dnn_hvp_relative_error": 2.445252391680697e-07,
+  "boundary_total_real_uses": 805.5694477509971,
+  "uniform_matched_total_real_uses": 786.2944422123428,
+  "pruned_channels": [
+    2,
+    4,
+    22,
+    10,
+    16,
+    23
+  ],
+  "simplex_max_row_sum_error": 2.384185791015625e-07
+}

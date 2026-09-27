@@ -1,0 +1,425 @@
+{
+  "seed": 272,
+  "training": {
+    "tag": "seed272_plain_all",
+    "seed": 272,
+    "rounds": 150,
+    "ortho": false,
+    "exclude_client0": false,
+    "cost": {
+      "ul_payload_real": 9534300.0,
+      "dl_bits": 305097600.0,
+      "metadata_bits": 48000.0,
+      "pilot_real": 12000.0,
+      "client_gradient_samples": 384000.0,
+      "client_hvp_samples": 0.0,
+      "teacher_forward_samples": 0.0,
+      "student_train_samples": 0.0,
+      "messages": 150,
+      "total_real_uses": 113857009.01455995,
+      "snr_db": 20,
+      "cp_factor": 1.125,
+      "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+    },
+    "wall_seconds": 7.7406322000024375,
+    "validation_accuracy": 0.7625000476837158,
+    "parameter_sha256": "8eb1e90277b70c35826efd571caa263f37cb845f868c2a411b23144aa1a6871d",
+    "parameters": 63562
+  },
+  "rows": [
+    {
+      "family": "fedavg",
+      "method": "no_op",
+      "metrics": {
+        "forget_accuracy": 0.8083333373069763,
+        "forget_reference_accuracy": 0.7941666841506958,
+        "forget_js": 0.0009590155095793307,
+        "retain_accuracy": 0.7725926041603088,
+        "retain_reference_accuracy": 0.7692592740058899,
+        "retain_js": 0.0005425926065072417,
+        "test_accuracy": 0.7576999664306641,
+        "test_reference_accuracy": 0.7536999583244324,
+        "test_js": 0.0005769295385107398,
+        "loss_mia_auc": 0.5198173522949219
+      }
+    },
+    {
+      "family": "fedavg",
+      "method": "fedquit_ce_exact",
+      "metrics": {
+        "forget_accuracy": 0.3583333492279053,
+        "forget_reference_accuracy": 0.7941666841506958,
+        "forget_js": 0.1247810646891594,
+        "forget_noop_js": 0.0009590155095793307,
+        "forget_normalized_js": 130.11370873855236,
+        "retain_accuracy": 0.6766666769981384,
+        "retain_reference_accuracy": 0.7692592740058899,
+        "retain_js": 0.060900963842868805,
+        "retain_noop_js": 0.0005425926065072417,
+        "retain_normalized_js": 112.24068133714238,
+        "test_accuracy": 0.6268999576568604,
+        "test_reference_accuracy": 0.7536999583244324,
+        "test_js": 0.06566397100687027,
+        "test_noop_js": 0.0005769295385107398,
+        "test_normalized_js": 113.81627499325536,
+        "loss_mia_auc": 0.5182756781578064
+      },
+      "cost": {
+        "ul_payload_real": 6356200.0,
+        "dl_bits": 205432384.0,
+        "metadata_bits": 32000.0,
+        "pilot_real": 8000.0,
+        "client_gradient_samples": 32000.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 3200.0,
+        "student_train_samples": 0.0,
+        "messages": 100,
+        "total_real_uses": 76592014.0159891,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 2.2409916000033263,
+      "initial_gradients": {
+        "target_gradient_norm": 11.674227714538574,
+        "retained_aggregate_norm": 1.033496379852295
+      }
+    },
+    {
+      "family": "fedavg",
+      "method": "fedquit_ce_ota20_r4",
+      "metrics": {
+        "forget_accuracy": 0.3583333492279053,
+        "forget_reference_accuracy": 0.7941666841506958,
+        "forget_js": 0.12482900172472,
+        "forget_noop_js": 0.0009590155095793307,
+        "forget_normalized_js": 130.1636944114448,
+        "retain_accuracy": 0.6770370602607727,
+        "retain_reference_accuracy": 0.7692592740058899,
+        "retain_js": 0.06092482805252075,
+        "retain_noop_js": 0.0005425926065072417,
+        "retain_normalized_js": 112.28466315585084,
+        "test_accuracy": 0.626800000667572,
+        "test_reference_accuracy": 0.7536999583244324,
+        "test_js": 0.06569034606218338,
+        "test_noop_js": 0.0005769295385107398,
+        "test_normalized_js": 113.86199124377218,
+        "loss_mia_auc": 0.5182486176490784
+      },
+      "cost": {
+        "ul_payload_real": 25424800.0,
+        "dl_bits": 205432384.0,
+        "metadata_bits": 32000.0,
+        "pilot_real": 8000.0,
+        "client_gradient_samples": 32000.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 3200.0,
+        "student_train_samples": 0.0,
+        "messages": 100,
+        "total_real_uses": 98044189.0159891,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 2.268961100024171,
+      "initial_gradients": {
+        "target_gradient_norm": 11.674227714538574,
+        "retained_aggregate_norm": 1.033496379852295
+      }
+    },
+    {
+      "family": "fedavg",
+      "method": "fresh_student_old_global_teacher",
+      "metrics": {
+        "forget_accuracy": 0.7991666793823242,
+        "forget_reference_accuracy": 0.7941666841506958,
+        "forget_js": 0.001888100989162922,
+        "forget_noop_js": 0.0009590155095793307,
+        "forget_normalized_js": 1.9687908801299072,
+        "retain_accuracy": 0.75,
+        "retain_reference_accuracy": 0.7692592740058899,
+        "retain_js": 0.0025045545771718025,
+        "retain_noop_js": 0.0005425926065072417,
+        "retain_normalized_js": 4.615902515321825,
+        "test_accuracy": 0.7392999529838562,
+        "test_reference_accuracy": 0.7536999583244324,
+        "test_js": 0.002374086296185851,
+        "test_noop_js": 0.0005769295385107398,
+        "test_normalized_js": 4.115036824625433,
+        "loss_mia_auc": 0.5194638967514038
+      },
+      "wall_seconds": 1.2760600999754388,
+      "student_train_samples": 38400,
+      "scope": "contaminated-teacher diagnostic, public queries"
+    },
+    {
+      "family": "independent_teachers",
+      "method": "no_op_ensemble_student",
+      "metrics": {
+        "forget_accuracy": 0.7925000190734863,
+        "forget_reference_accuracy": 0.7825000286102295,
+        "forget_js": 0.0008181824232451618,
+        "retain_accuracy": 0.7277777791023254,
+        "retain_reference_accuracy": 0.7333333492279053,
+        "retain_js": 0.0005429142620414495,
+        "test_accuracy": 0.7310999631881714,
+        "test_reference_accuracy": 0.7317999601364136,
+        "test_js": 0.0005953373038209975,
+        "loss_mia_auc": 0.5204840302467346
+      },
+      "cost": {
+        "ul_payload_real": 20000.0,
+        "dl_bits": 64000.0,
+        "metadata_bits": 640.0,
+        "pilot_real": 80.0,
+        "client_gradient_samples": 0.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 20000,
+        "student_train_samples": 0.0,
+        "messages": 1,
+        "total_real_uses": 44433.70388005318,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.3692864000040572
+    },
+    {
+      "family": "independent_teachers",
+      "method": "exclude_fresh_noiseless",
+      "metrics": {
+        "forget_accuracy": 0.7825000286102295,
+        "forget_reference_accuracy": 0.7825000286102295,
+        "forget_js": 0.0,
+        "forget_noop_js": 0.0008181824232451618,
+        "forget_normalized_js": 0.0,
+        "retain_accuracy": 0.7333333492279053,
+        "retain_reference_accuracy": 0.7333333492279053,
+        "retain_js": 0.0,
+        "retain_noop_js": 0.0005429142620414495,
+        "retain_normalized_js": 0.0,
+        "test_accuracy": 0.7317999601364136,
+        "test_reference_accuracy": 0.7317999601364136,
+        "test_js": 0.0,
+        "test_noop_js": 0.0005953373038209975,
+        "test_normalized_js": 0.0,
+        "loss_mia_auc": 0.5194909572601318
+      },
+      "cost": {
+        "ul_payload_real": 20000.0,
+        "dl_bits": 2097984.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "client_gradient_samples": 0.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 18000,
+        "student_train_samples": 38400.0,
+        "messages": 1,
+        "total_real_uses": 731744.4160662809,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.2740397999878041,
+      "reference_kind": "target-free independent-teacher KD algorithm"
+    },
+    {
+      "family": "independent_teachers",
+      "method": "exclude_fresh_ota20_r1",
+      "metrics": {
+        "forget_accuracy": 0.7833333611488342,
+        "forget_reference_accuracy": 0.7825000286102295,
+        "forget_js": 4.356494537205435e-05,
+        "forget_noop_js": 0.0008181824232451618,
+        "forget_normalized_js": 0.053246004967037124,
+        "retain_accuracy": 0.7322221994400024,
+        "retain_reference_accuracy": 0.7333333492279053,
+        "retain_js": 6.36885451967828e-05,
+        "retain_noop_js": 0.0005429142620414495,
+        "retain_normalized_js": 0.11730866114532171,
+        "test_accuracy": 0.733299970626831,
+        "test_reference_accuracy": 0.7317999601364136,
+        "test_js": 6.309319724095985e-05,
+        "test_noop_js": 0.0005953373038209975,
+        "test_normalized_js": 0.1059789078158125,
+        "loss_mia_auc": 0.5195229053497314
+      },
+      "fedavg_reference_comparison": {
+        "forget_accuracy": 0.7833333611488342,
+        "forget_reference_accuracy": 0.7941666841506958,
+        "forget_js": 0.007679732982069254,
+        "retain_accuracy": 0.7322221994400024,
+        "retain_reference_accuracy": 0.7692592740058899,
+        "retain_js": 0.010572642087936401,
+        "test_accuracy": 0.733299970626831,
+        "test_reference_accuracy": 0.7536999583244324,
+        "test_js": 0.010497849434614182,
+        "loss_mia_auc": 0.5195229053497314
+      },
+      "cost": {
+        "ul_payload_real": 20000.0,
+        "dl_bits": 2097984.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "client_gradient_samples": 0.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 18000,
+        "student_train_samples": 38400.0,
+        "messages": 1,
+        "total_real_uses": 731744.4160662809,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.3959213999914937,
+      "query_target_mse": 6.884749836899573e-06
+    },
+    {
+      "family": "independent_teachers",
+      "method": "exclude_fresh_ota20_r4",
+      "metrics": {
+        "forget_accuracy": 0.7816666960716248,
+        "forget_reference_accuracy": 0.7825000286102295,
+        "forget_js": 1.0516393558646087e-05,
+        "forget_noop_js": 0.0008181824232451618,
+        "forget_normalized_js": 0.012853360399670838,
+        "retain_accuracy": 0.734074056148529,
+        "retain_reference_accuracy": 0.7333333492279053,
+        "retain_js": 1.4160704267851543e-05,
+        "retain_noop_js": 0.0005429142620414495,
+        "retain_normalized_js": 0.02608276344519832,
+        "test_accuracy": 0.7321999669075012,
+        "test_reference_accuracy": 0.7317999601364136,
+        "test_js": 1.4269106941355858e-05,
+        "test_noop_js": 0.0005953373038209975,
+        "test_normalized_js": 0.023968104887387015,
+        "loss_mia_auc": 0.5194597244262695
+      },
+      "fedavg_reference_comparison": {
+        "forget_accuracy": 0.7816666960716248,
+        "forget_reference_accuracy": 0.7941666841506958,
+        "forget_js": 0.007570017594844103,
+        "retain_accuracy": 0.734074056148529,
+        "retain_reference_accuracy": 0.7692592740058899,
+        "retain_js": 0.010386602021753788,
+        "test_accuracy": 0.7321999669075012,
+        "test_reference_accuracy": 0.7536999583244324,
+        "test_js": 0.010340733453631401,
+        "loss_mia_auc": 0.5194597244262695
+      },
+      "cost": {
+        "ul_payload_real": 80000.0,
+        "dl_bits": 2097984.0,
+        "metadata_bits": 576.0,
+        "pilot_real": 72.0,
+        "client_gradient_samples": 0.0,
+        "client_hvp_samples": 0.0,
+        "teacher_forward_samples": 18000,
+        "student_train_samples": 38400.0,
+        "messages": 1,
+        "total_real_uses": 799244.4160662809,
+        "snr_db": 20,
+        "cp_factor": 1.125,
+        "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+      },
+      "wall_seconds": 1.3497921000234783,
+      "query_target_mse": 1.790711621652008e-06
+    }
+  ],
+  "teacher_preparation": [
+    {
+      "client": 0,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.9780483999929857,
+      "parameter_sha256": "45b9e63c0fa1bc7930f0b2aa2eb55254d151c1bef6fec408d2a0a4ba663c38b7"
+    },
+    {
+      "client": 1,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.9964504000090528,
+      "parameter_sha256": "0aaf8053818a5e68161e9ecae17c9450cd3d418c0f6ca51a618f140e37bd478f"
+    },
+    {
+      "client": 2,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.992140099988319,
+      "parameter_sha256": "8b507bf13530ad0097fca2e532e0d95536c4e74af8962061f6d107eff878c4fb"
+    },
+    {
+      "client": 3,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 1.0387364000198431,
+      "parameter_sha256": "bce0974b722299310a33ceed807f8b6884d0199c069b60756ae7b6853e432054"
+    },
+    {
+      "client": 4,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.9778668000071775,
+      "parameter_sha256": "24e129c8a1d5f4049fd7b8a02adb467b77628426ff80b899e5426d7aa22ec9c0"
+    },
+    {
+      "client": 5,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.9978414999786764,
+      "parameter_sha256": "14c1aec643ef947723a74d6213982aad4c361947ab33aebbb03a8bfde2c318a9"
+    },
+    {
+      "client": 6,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.9887775999959558,
+      "parameter_sha256": "a712808679852c0864c3048c70f70768f50931c6d1745ec4a44bd9557b9bb729"
+    },
+    {
+      "client": 7,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.993031299993163,
+      "parameter_sha256": "c20a3d826e451ba8394339a5ec7b69bb31c62a3402a679676f9d27202fc00181"
+    },
+    {
+      "client": 8,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 1.0132267999870237,
+      "parameter_sha256": "56f37e54475ae5505aad3b9746ba7875d1a0003cffe90ab3a88427274ecdc89a"
+    },
+    {
+      "client": 9,
+      "seed": 272,
+      "steps": 500,
+      "gradient_samples": 32000,
+      "wall_seconds": 0.9974019000073895,
+      "parameter_sha256": "ea948dbb93f4613d6bf77d9ba816fabe9d51cc99a10bc143705a7576a053b0c3"
+    }
+  ],
+  "fresh_replay": null,
+  "structural_reference_vs_fedavg_retrain": {
+    "forget_accuracy": 0.7825000286102295,
+    "forget_reference_accuracy": 0.7941666841506958,
+    "forget_js": 0.007551233749836683,
+    "retain_accuracy": 0.7333333492279053,
+    "retain_reference_accuracy": 0.7692592740058899,
+    "retain_js": 0.010382987558841705,
+    "test_accuracy": 0.7317999601364136,
+    "test_reference_accuracy": 0.7536999583244324,
+    "test_js": 0.01035700086504221,
+    "loss_mia_auc": 0.5194909572601318
+  },
+  "complete": true
+}

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "projection_identity_max_errors": [
+    0.0,
+    1.1102230246251565e-16,
+    2.6370505216848293e-16
+  ],
+  "mac_max_error": 5.551115123125783e-17,
+  "toy_quadratic": [
+    {
+      "beta": 0.0,
+      "direction": [
+        -9.0,
+        0.0
+      ],
+      "new_model": [
+        0.0,
+        0.0
+      ],
+      "squared_deletion_error_ratio": 0.0
+    },
+    {
+      "beta": 0.5,
+      "direction": [
+        -4.5,
+        0.0
+      ],
+      "new_model": [
+        0.5,
+        0.0
+      ],
+      "squared_deletion_error_ratio": 0.25
+    },
+    {
+      "beta": 1.0,
+      "direction": [
+        0.0,
+        0.0
+      ],
+      "new_model": [
+        1.0,
+        0.0
+      ],
+      "squared_deletion_error_ratio": 1.0
+    }
+  ],
+  "power": {
+    "scale": 0.25159461657086374,
+    "max_average_power": 0.629144781913536,
+    "max_peak_power": 4.0,
+    "variance": 0.0
+  },
+  "interpretation": "CE stationary counterexample, not a theorem for UCE"
+}

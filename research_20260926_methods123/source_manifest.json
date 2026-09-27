@@ -1,0 +1,41 @@
+[
+  {
+    "search": "FedOrtho",
+    "total_count": 0,
+    "repositories": []
+  },
+  {
+    "search": "CuReNU",
+    "total_count": 0,
+    "repositories": []
+  },
+  {
+    "search": "CureNewton",
+    "total_count": 0,
+    "repositories": []
+  },
+  {
+    "repo": "alessiomora/FedQUIT",
+    "commit": "e447fa0c75c6a44b1325be5fd561da98c91f4cc2",
+    "url": "https://codeload.github.com/alessiomora/FedQUIT/zip/e447fa0c75c6a44b1325be5fd561da98c91f4cc2",
+    "sha256": "29f49c567ea1a5d4d40b5255b4a26133e3ac1e1520d137a1671e3b66b9ad011b",
+    "license": null,
+    "status": "downloaded"
+  },
+  {
+    "repo": "samaonline/Orthogonal-Convolutional-Neural-Networks",
+    "commit": "aa7f56901c661a124e0cfe72eb2c9dc98045ce94",
+    "url": "https://codeload.github.com/samaonline/Orthogonal-Convolutional-Neural-Networks/zip/aa7f56901c661a124e0cfe72eb2c9dc98045ce94",
+    "sha256": "79fdea5dd9deaa2acbbde3258ed8aafea450660cb232fb9d83f64dd714f718a9",
+    "license": "MIT",
+    "status": "downloaded"
+  },
+  {
+    "repo": "Liuhong99/Sophia",
+    "commit": "a7e157229b71d58cf995d32854f1be15c265b350",
+    "url": "https://codeload.github.com/Liuhong99/Sophia/zip/a7e157229b71d58cf995d32854f1be15c265b350",
+    "sha256": "64c378990ea638d8ba1b13f29a89cb9df58c71e27a3cb52360683ad5118ba5ae",
+    "license": "MIT",
+    "status": "downloaded"
+  }
+]

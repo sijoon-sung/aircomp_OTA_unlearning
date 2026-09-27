@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "local_links_checked": 18,
+  "document_hashes": {
+    "METHODS_KO.md": "71c97b7b5c5116b063ba9c2bfd6f1a232eafa9530ed4be7d9a6192d658c8a125",
+    "METHOD_1_DS_AIR_KO.md": "4ca0880bfd98a2ede95035ad7127f4ed42d835ab0d4eb0de868e1017937c370e",
+    "METHOD_2_SKETCH_AIR_KO.md": "3c15575bc5dff9a2c6de57adbb6fc5fbf18f07f0b7fe6c39dd5b143876c3c622",
+    "METHOD_3_RTD_AIR_KO.md": "602ba24c881ea39fafde23ec488d796389230064fa2d3e9c21ccbe50038d2530",
+    "VALIDATION_KO.md": "a568b7bc845fecb2383cde1c2d2219f03db66217ccffac0a14dae37ad3e199b0",
+    "VALIDATION_PLAN_KO.md": "1c6b99aded15fc346934cc392b9a259b1ef971c4d98076d9153f2df8d1e6acb8"
+  },
+  "headline_values_match_raw_aggregation": true,
+  "verification_code_and_plan_unchanged": true
+}

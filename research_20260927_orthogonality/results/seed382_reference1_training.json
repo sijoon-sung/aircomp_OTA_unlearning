@@ -1,0 +1,21 @@
+{
+  "cost": {
+    "ul_payload_real": 9534300.0,
+    "dl_bits": 305097600.0,
+    "metadata_bits": 43200.0,
+    "pilot_real": 10800.0,
+    "client_gradient_samples": 345600.0,
+    "client_hvp_samples": 0.0,
+    "teacher_forward_samples": 0.0,
+    "student_train_samples": 0.0,
+    "messages": 150,
+    "total_real_uses": 113854036.95734113,
+    "snr_db": 20,
+    "cp_factor": 1.125,
+    "scope": "equalized real MAC; modeled communication, measured simulator time separately"
+  },
+  "seconds": 11.700827599997865,
+  "parameter_sha256": "5fdb530b60ae37c122ad30e6d165122a60ec9de960f2f7c87e7a02a76220dd6b",
+  "sampling_offset": 900000,
+  "exclude": true
+}
