@@ -30,9 +30,21 @@ def finite(obj):
 
 def verify():
     manifest = load('EXPORT_MANIFEST.json')
+    generated = {'research_20260927_costs/results/costs.json',
+                 'research_20260927_costs/COST_REPORT_KO.md'}
+    newline_only = []
     for item in manifest['files']:
-        assert sha(item['path']) == item['packaged_sha256'], item['path']
-        assert (ROOT / item['path']).stat().st_size == item['bytes'], item['path']
+        payload = (ROOT / item['path']).read_bytes()
+        if sha(item['path']) != item['packaged_sha256']:
+            # Python write_text uses platform line endings. A rerun may produce
+            # LF instead of the archived Windows CRLF, with identical contents.
+            assert item['path'] in generated, item['path']
+            windows = payload.replace(b'\r\n', b'\n').replace(b'\n', b'\r\n')
+            assert hashlib.sha256(windows).hexdigest() == item['packaged_sha256'], item['path']
+            assert len(windows) == item['bytes'], item['path']
+            newline_only.append(item['path'])
+        else:
+            assert len(payload) == item['bytes'], item['path']
         if item['path'].endswith('.py'):
             assert item['source_sha256'] == item['packaged_sha256'], item['path']
     old = 'research_20260926_versioned'
@@ -79,6 +91,7 @@ def verify():
                   archived_bytes=manifest['archived_bytes'], raw_rows=counts,
                   cost_variants=13, markdown_local_links_checked=checked,
                   archived_code_and_frozen_protocol_hashes_preserved=True,
+                  generated_outputs_with_only_platform_newline_changes=newline_only,
                   gpu_training_rerun=False)
     (ROOT / 'BUNDLE_VERIFICATION.json').write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')
     print(json.dumps(result, indent=2))

@@ -13,6 +13,8 @@ python verify_bundle.py
 
 첫 명령은 기존 JSON 원장을 읽어 `results/costs.json`과 `COST_REPORT_KO.md`를 다시 만든다. 둘째 명령은 원본/배포 파일 해시, 주요 실험 코드·프로토콜 해시, 780개 평가 행, 비용 계산의 기록된 코드 해시와 문서 링크를 확인한다. 이미 저장된 GPU 결과를 검사하는 작업이며 GPU 실험 재현 자체를 대신하지 않는다.
 
+비용 계산으로 생성하는 두 출력 파일에 한해서 운영체제의 LF/CRLF 줄바꿈 차이를 허용한다. 수치나 문장이 달라지는 경우는 허용하지 않으며, 보관된 실험 코드와 프로토콜은 바이트 단위 해시를 그대로 검사한다.
+
 **원자료와 배포본의 차이**
 
 `EXPORT_MANIFEST.json`에는 보관 파일별 원본 SHA-256, 배포 SHA-256, 파일 크기가 있다. Markdown의 로컬 절대 경로 링크만 GitHub 상대 경로로 바꿨다. 실험 Python, 결과 JSON/CSV와 동결된 주요 프로토콜은 원본 바이트를 유지한다. 기존 `validation/document_audit.json`은 원본 문서의 검증 기록이므로 링크가 바뀐 배포 Markdown의 해시와 다를 수 있다. 배포본 검증은 `EXPORT_MANIFEST.json`과 `BUNDLE_VERIFICATION.json`을 사용한다.
