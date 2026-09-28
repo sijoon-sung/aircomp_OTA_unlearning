@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "quadratic_identity_error": 2.0816681711721685e-17,
+  "full_gradient_reconstruction_error": 3.1086244689504383e-15,
+  "subspace_example": {
+    "source_change": 2.7755575615628914e-17,
+    "projected_payload_change": 8.881784197001252e-16,
+    "metadata_identical": true,
+    "target_full_gradient_change": 2.320605948502616,
+    "guarantee": "nonidentifiability example only; not DP"
+  },
+  "physical_MAC_error": 1.1102230246251565e-16,
+  "repetition_variance_relative_error": 0.01233471526825447,
+  "power": {
+    "mean": 0.9723204423744579,
+    "peak": 3.999999829249685
+  },
+  "greedy_optimal": true,
+  "scalar_cancellation_error": 9.095468600506251e-09,
+  "pre_better_risks": [
+    50.5,
+    1.0
+  ],
+  "pre_worse_risks": [
+    50.5,
+    100.0
+  ],
+  "code_sha256": "aae15d2d281a20f6e02bf4d2c18b194874727c610808404630bbf1520c3528d6",
+  "protocol_sha256": "038827f160f86bcbb79e01ab4ba20d2035fff5278ddd1a5856cac1bf31a39052"
+}

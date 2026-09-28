@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "rows": 5568,
+  "groups": 464,
+  "raw_files": 18,
+  "ledger_max_error": 0.0,
+  "equal_mean_bias_max_error": 2.842170943040401e-14,
+  "maximum_MC_standard_error_multiple": 5.072380039536134,
+  "all_power_and_budget_checks": true,
+  "source_and_protocol_hashes_match": true,
+  "interpretation": "implementation audit, not successful unlearning certificate"
+}
