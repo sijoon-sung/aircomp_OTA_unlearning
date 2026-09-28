@@ -1,0 +1,294 @@
+{
+  "scope": "THEORY_AND_SYNTHETIC_PHY_ONLY; no real-data accuracy measurement",
+  "seed": 202609289,
+  "device": "NVIDIA GeForce RTX 3080",
+  "torch_version": "2.11.0+cu128",
+  "elapsed_seconds": 0.43888510001124814,
+  "peak_cuda_bytes": 597550592,
+  "rho0": 0.25,
+  "joint_rho_cap": 0.5,
+  "delta": 1e-05,
+  "epsilon_cap": 5.298525912188081,
+  "beta_interval": [
+    0.0,
+    0.7071067811865476
+  ],
+  "beta_half_rho": 0.3333333333333333,
+  "beta_half_epsilon": 4.251313334128,
+  "checks": [
+    {
+      "beta": 0.0,
+      "statistic_error": 0.0,
+      "decoder_error": 0.0,
+      "counterfactual_A_error": 0.0,
+      "rho_A": 0.25,
+      "rho_R": 0.5
+    },
+    {
+      "beta": 0.25,
+      "statistic_error": 1.7763568394002505e-15,
+      "decoder_error": 6.217248937900877e-15,
+      "counterfactual_A_error": 1.7763568394002505e-15,
+      "rho_A": 0.26666666666666666,
+      "rho_R": 0.4
+    },
+    {
+      "beta": 0.5,
+      "statistic_error": 1.7763568394002505e-15,
+      "decoder_error": 4.440892098500626e-15,
+      "counterfactual_A_error": 1.7763568394002505e-15,
+      "rho_A": 0.3333333333333333,
+      "rho_R": 0.3333333333333333
+    },
+    {
+      "beta": 0.7071067811865476,
+      "statistic_error": 3.552713678800501e-15,
+      "decoder_error": 5.551115123125783e-15,
+      "counterfactual_A_error": 3.552713678800501e-15,
+      "rho_A": 0.5,
+      "rho_R": 0.2928932188134524
+    },
+    {
+      "beta": 0.9,
+      "statistic_error": 3.552713678800501e-15,
+      "decoder_error": 7.993605777301127e-15,
+      "counterfactual_A_error": 3.552713678800501e-15,
+      "rho_A": 1.3157894736842108,
+      "rho_R": 0.26315789473684204
+    },
+    {
+      "beta": 0.99,
+      "statistic_error": 3.552713678800501e-15,
+      "decoder_error": 6.217248937900877e-15,
+      "counterfactual_A_error": 3.552713678800501e-15,
+      "rho_A": 12.56281407035174,
+      "rho_R": 0.25125628140703427
+    }
+  ],
+  "mc_covariance_abs_error": 0.00922171826859941,
+  "mc_mean_abs_error": 0.00699296656392603,
+  "source_counterfactual_A_model_mse": 0.03608180223091585,
+  "beta_one_exact_difference_leak_error": 1.8596235662471372e-15,
+  "minmax_beta_grid": 0.5,
+  "optimizer_max_energy_excess": 0.0,
+  "optimizer_max_repeat_excess": 0,
+  "phy": {
+    "mean_error": 4.440892098500626e-16,
+    "empirical_update_variance": 6.000486354272813,
+    "expected_update_variance": 6.0,
+    "max_tx_block_energy": 0.0011574074074074076,
+    "actual_energy": 0.005116977663646739,
+    "formula_energy": 0.005116977663646738
+  },
+  "costs": {
+    "unit": [
+      {
+        "beta": 0.0,
+        "repeats": 1,
+        "payload_real_uses": 296,
+        "pilot_real_uses": 72,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2273.958944242152,
+        "source_preparation_real_uses": 2282.958944242152,
+        "lifecycle_real_uses": 4556.917888484304,
+        "payload_tx_energy_upper_bound": 0.01125,
+        "rho_A": 0.25,
+        "rho_R": 0.5
+      },
+      {
+        "beta": 0.5,
+        "repeats": 1,
+        "payload_real_uses": 296,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2282.958944242152,
+        "source_preparation_real_uses": 2282.958944242152,
+        "lifecycle_real_uses": 4565.917888484304,
+        "payload_tx_energy_upper_bound": 0.004166666666666667,
+        "rho_A": 0.3333333333333333,
+        "rho_R": 0.3333333333333333
+      },
+      {
+        "beta": 0.7071067811865476,
+        "repeats": 1,
+        "payload_real_uses": 296,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2282.958944242152,
+        "source_preparation_real_uses": 2282.958944242152,
+        "lifecycle_real_uses": 4565.917888484304,
+        "payload_tx_energy_upper_bound": 0.0031801948466053617,
+        "rho_A": 0.5000000000000001,
+        "rho_R": 0.2928932188134525
+      },
+      {
+        "beta": 0.5,
+        "repeats": 1,
+        "payload_real_uses": 296,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2282.958944242152,
+        "source_preparation_real_uses": 2282.958944242152,
+        "lifecycle_real_uses": 4565.917888484304,
+        "payload_tx_energy_upper_bound": 0.004166666666666667,
+        "rho_A": 0.3333333333333333,
+        "rho_R": 0.3333333333333333
+      }
+    ],
+    "weak_deleted": [
+      {
+        "beta": 0.0,
+        "repeats": 1,
+        "payload_real_uses": 296,
+        "pilot_real_uses": 72,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2273.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 8552.917888484304,
+        "payload_tx_energy_upper_bound": 0.01125,
+        "rho_A": 0.25,
+        "rho_R": 0.5
+      },
+      {
+        "beta": 0.5,
+        "repeats": 5,
+        "payload_real_uses": 1480,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 3614.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 9893.917888484304,
+        "payload_tx_energy_upper_bound": 4.170416666666667,
+        "rho_A": 0.3333333333333333,
+        "rho_R": 0.3333333333333333
+      },
+      {
+        "beta": 0.0008983836358393306,
+        "repeats": 1,
+        "payload_real_uses": 296,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2282.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 8561.917888484304,
+        "payload_tx_energy_upper_bound": 0.011239893184096808,
+        "rho_A": 0.25000020177345217,
+        "rho_R": 0.49955121136644465
+      },
+      {
+        "beta": 0.009900990099009901,
+        "repeats": 1,
+        "payload_real_uses": 296,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2282.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 8561.917888484304,
+        "payload_tx_energy_upper_bound": 0.012254901960784312,
+        "rho_A": 0.25002450980392155,
+        "rho_R": 0.4950980392156863
+      }
+    ],
+    "weak_retained": [
+      {
+        "beta": 0.0,
+        "repeats": 13,
+        "payload_real_uses": 3848,
+        "pilot_real_uses": 72,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 6269.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 12548.917888484304,
+        "payload_tx_energy_upper_bound": 12.51,
+        "rho_A": 0.25,
+        "rho_R": 0.5
+      },
+      {
+        "beta": 0.5,
+        "repeats": 5,
+        "payload_real_uses": 1480,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 3614.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 9893.917888484304,
+        "payload_tx_energy_upper_bound": 4.170416666666667,
+        "rho_A": 0.3333333333333333,
+        "rho_R": 0.3333333333333333
+      },
+      {
+        "beta": 0.7071067811865476,
+        "repeats": 3,
+        "payload_real_uses": 888,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2948.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 9227.917888484304,
+        "payload_tx_energy_upper_bound": 2.147626669425162,
+        "rho_A": 0.5000000000000001,
+        "rho_R": 0.2928932188134525
+      },
+      {
+        "beta": 0.7071067811865476,
+        "repeats": 3,
+        "payload_real_uses": 888,
+        "pilot_real_uses": 80,
+        "control_bits": 384,
+        "model_broadcast_bits": 5120,
+        "total_deletion_real_uses": 2948.958944242152,
+        "source_preparation_real_uses": 6278.958944242152,
+        "lifecycle_real_uses": 9227.917888484304,
+        "payload_tx_energy_upper_bound": 2.147626669425162,
+        "rho_A": 0.5000000000000001,
+        "rho_R": 0.2928932188134525
+      }
+    ]
+  },
+  "utility_risk": [
+    {
+      "K": 10,
+      "q": 296,
+      "expected_noise_norm_squared_over_B_squared": 23.68
+    },
+    {
+      "K": 10,
+      "q": 2720,
+      "expected_noise_norm_squared_over_B_squared": 217.6
+    },
+    {
+      "K": 100,
+      "q": 296,
+      "expected_noise_norm_squared_over_B_squared": 0.2368
+    },
+    {
+      "K": 100,
+      "q": 2720,
+      "expected_noise_norm_squared_over_B_squared": 2.176
+    },
+    {
+      "K": 1000,
+      "q": 296,
+      "expected_noise_norm_squared_over_B_squared": 0.002368
+    },
+    {
+      "K": 1000,
+      "q": 2720,
+      "expected_noise_norm_squared_over_B_squared": 0.02176
+    }
+  ],
+  "source_sha256": "1959a5392fae0a7615f8ce3aac74396fecca8be0d1736368c974677f2e8a8966",
+  "protocol_sha256": "7d37991245afcab3262b745aec12adbf2986b7db2af44e5e50ebfc299d8d2b36",
+  "all_assertions_passed": true
+}

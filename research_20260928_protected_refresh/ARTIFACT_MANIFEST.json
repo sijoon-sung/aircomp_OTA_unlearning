@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-28",
+  "scope": "Theory and synthetic GPU/PHY feasibility only, not real-data performance or established novelty",
+  "files": [
+    {
+      "path": "PROTOCOL_KO.md",
+      "bytes": 2582,
+      "sha256": "7d37991245afcab3262b745aec12adbf2986b7db2af44e5e50ebfc299d8d2b36"
+    },
+    {
+      "path": "README_KO.md",
+      "bytes": 17244,
+      "sha256": "e3256c61fc1b43a8cbadc71b09804cd33748f62f9ebcf2a5fbd682b27561c9d4"
+    },
+    {
+      "path": "results/verification.json",
+      "bytes": 9613,
+      "sha256": "6698347bec7e387b1d2737c0af4c8512aa1086571c9f8cbb55418512dd99c9e5"
+    },
+    {
+      "path": "verify_theory.py",
+      "bytes": 9856,
+      "sha256": "1959a5392fae0a7615f8ce3aac74396fecca8be0d1736368c974677f2e8a8966"
+    }
+  ]
+}
