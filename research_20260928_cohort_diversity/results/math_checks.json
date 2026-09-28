@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "selection_statistics": {
+    "2": {
+      "expected_inverse_minimum": 12.476649250079015,
+      "MC_inverse_minimum": 12.39845098755158,
+      "maximum_CDF_error": 0.0023833564970524856
+    },
+    "4": {
+      "expected_inverse_minimum": 6.116365324634299,
+      "MC_inverse_minimum": 6.095505238762433,
+      "maximum_CDF_error": 0.001366361855416276
+    },
+    "8": {
+      "expected_inverse_minimum": 4.044042574111007,
+      "MC_inverse_minimum": 4.0338776762658,
+      "maximum_CDF_error": 0.0011077851760650237
+    }
+  },
+  "gate_single_try_probability": 0.23692775868212165,
+  "gate_completion_exact": 0.8850456944272749,
+  "gate_completion_MC": 0.8853300000000001,
+  "gate_attempts_exact": 3.73550866032001,
+  "gate_attempts_MC": 3.74121,
+  "all_client_MAC_error": 1.7763568394002505e-15,
+  "power": {
+    "mean": 0.5621531109348314,
+    "peak": 3.999999951808274
+  },
+  "quadratic_deletion_identity": 2.7755575615628914e-17,
+  "CSI_conditions_paired": true,
+  "static_bank_identical": true,
+  "available_repeat_budgets": {
+    "Original": 64,
+    "V1": 56,
+    "SubspaceV1": 639,
+    "FD2-V1": 54,
+    "FD8-Original": 49,
+    "FD8-V1": 42,
+    "FD8-SubspaceV1": 625,
+    "CG-V1": 42,
+    "CG-SubspaceV1": 625
+  },
+  "code_sha256": "787ab34ffc5319c8c4ac382a162baa258d285cfcbc083bb5d7adfc1e846dd5a4",
+  "protocol_sha256": "cf8e1f5e9005f4a94c8356f284f0b6d2bcd5907c9f4f8bb37104dad4bd622aee",
+  "reused_code_sha256": "aae15d2d281a20f6e02bf4d2c18b194874727c610808404630bbf1520c3528d6"
+}

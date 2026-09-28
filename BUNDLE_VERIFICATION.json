@@ -10,7 +10,7 @@
   },
   "scope": "Initial archive integrity and current Markdown links; new GPU experiment has its own results/verification.json",
   "cost_variants": 13,
-  "markdown_local_links_checked": 107,
+  "markdown_local_links_checked": 128,
   "archived_code_and_frozen_protocol_hashes_preserved": true,
   "generated_outputs_with_only_platform_newline_changes": [],
   "gpu_training_rerun_by_this_verifier": false

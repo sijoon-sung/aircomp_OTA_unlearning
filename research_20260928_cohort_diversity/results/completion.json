@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "rows": 10368,
+  "elapsed_seconds": 87.12011770001845,
+  "peak_CUDA_allocated_bytes": 464960000,
+  "torch_version": "2.11.0+cu128",
+  "CUDA": "12.8",
+  "GPU": "NVIDIA GeForce RTX 3080",
+  "seeds": [
+    202609284,
+    202609285,
+    202609286
+  ],
+  "channel_draws": 32,
+  "correction_MC": 16,
+  "utility_MC": 1,
+  "data": {
+    "FashionMNIST": {
+      "t10k-images-idx3-ubyte": "5b4141f0afbad91edebe8549f8fcffe087ea10ca49f1dbef5c9a5cd8815ce37b",
+      "t10k-labels-idx1-ubyte": "0402a96d92fd2663957122ceb108a494c5af83dab82d92729df917d7dec38c34",
+      "train-images-idx3-ubyte": "c59f468a2f672dc815687fe0f83887768d799fd8a3f3276145d20f83aa44d888",
+      "train-labels-idx1-ubyte": "bad3541b69d912435c50bb6ba87bec294ff4f6a2e1246121d8633921760443d9"
+    },
+    "MNIST": {
+      "t10k-images-idx3-ubyte": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7",
+      "t10k-labels-idx1-ubyte": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2",
+      "train-images-idx3-ubyte": "ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db",
+      "train-labels-idx1-ubyte": "65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5"
+    }
+  },
+  "code_sha256": "787ab34ffc5319c8c4ac382a162baa258d285cfcbc083bb5d7adfc1e846dd5a4",
+  "protocol_sha256": "cf8e1f5e9005f4a94c8356f284f0b6d2bcd5907c9f4f8bb37104dad4bd622aee",
+  "reused_code_sha256": "aae15d2d281a20f6e02bf4d2c18b194874727c610808404630bbf1520c3528d6"
+}

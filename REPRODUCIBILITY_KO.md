@@ -4,6 +4,8 @@
 
 **바로 재실행할 수 있는 작업**
 
+Deep-fade 후속 보완은 [Cohort Diversity 안내](research_20260928_cohort_diversity/README_KO.md)를 따른다. 앞선 DS의 frozen ridge/PHY 함수를 가져오며 기존 소스는 변경하지 않는다. 순서는 math → run → FP32 feedback 감사 → summary다. 두 데이터셋 경로를 명시해야 하며, 외부 논문 vendor 코드는 필요 없다. `python research_20260928_cohort_diversity/summarize.py`는 저장된10,368행과 비용·지연·참여자 검사를 GPU 없이 수행한다.
+
 2026-09-28의 DS-Air 보완 GPU 실험은 [별도 재현 안내](research_20260928_ds_revision/README_KO.md)에 있다. FashionMNIST와 MNIST의 IDX 경로를 `--fashion`, `--mnist`로 받으며 vendor 코드가 필요 없다. 기존 결과의 원장/수학 일치 감사는 `python research_20260928_ds_revision/summarize.py`로 실행한다. 해당 실행 코드와 동결 프로토콜은 이 폴더의 `results/completion.json`에 해시가 기록되어 있다.
 
 저장소 루트에서 Python 3.10 이상으로 실행한다. PyTorch나 GPU가 필요하지 않다.

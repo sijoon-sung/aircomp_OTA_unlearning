@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "rows": 10368,
+  "groups": 108,
+  "raw_files": 6,
+  "maximum_cost_error": 0.0,
+  "maximum_MC_standard_error_multiple": 4.672790821661205,
+  "equal_mean_bias_error": 7.105427357601002e-15,
+  "all_completed_sessions_include_nine_clients": true,
+  "no_timeout_counted_as_success": true,
+  "all_power_and_active_budget_checks": true,
+  "paired_CSI_math_check": true,
+  "static_bank_selection_sessions": 192,
+  "FP32_feedback_decisions_verified": 10368,
+  "source_and_protocol_hashes_match": true,
+  "privacy_certificate": false,
+  "scope": "Implementation/cost audit; not a privacy or deletion certificate"
+}

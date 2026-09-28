@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "decisions_compared": 10368,
+  "decisions_changed_by_FP32_feedback": 0,
+  "interpretation": "Exact decision equivalence on recorded sessions, not an all-input theorem",
+  "audit_code_sha256": "df48f572b71203680094766f58e50e7a7b97364ca207e689d29243ad0ad3b319",
+  "code_sha256": "787ab34ffc5319c8c4ac382a162baa258d285cfcbc083bb5d7adfc1e846dd5a4",
+  "protocol_sha256": "cf8e1f5e9005f4a94c8356f284f0b6d2bcd5907c9f4f8bb37104dad4bd622aee",
+  "reused_code_sha256": "aae15d2d281a20f6e02bf4d2c18b194874727c610808404630bbf1520c3528d6"
+}

@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-28",
+  "scope": "Cohort diversity follow-up; no earlier experiment overwritten",
+  "files": [
+    {
+      "path": "audit_feedback.py",
+      "bytes": 2008,
+      "sha256": "df48f572b71203680094766f58e50e7a7b97364ca207e689d29243ad0ad3b319"
+    },
+    {
+      "path": "comparison.pdf",
+      "bytes": 29818,
+      "sha256": "d3094288b4bd6385a459ad9d005f03d46bc8dddc5edd083233014daa9c5260a3"
+    },
+    {
+      "path": "comparison.png",
+      "bytes": 227170,
+      "sha256": "44bf7c6e2873ad1fc514d65f72576a32d5f36105812b10447760a81fce115bf8"
+    },
+    {
+      "path": "METHOD_KO.md",
+      "bytes": 10901,
+      "sha256": "2db4cadde92a6d615125187dc523f779313db0db4051d36631d0cbc7eb3d28d6"
+    },
+    {
+      "path": "PROTOCOL_KO.md",
+      "bytes": 6016,
+      "sha256": "cf8e1f5e9005f4a94c8356f284f0b6d2bcd5907c9f4f8bb37104dad4bd622aee"
+    },
+    {
+      "path": "README_KO.md",
+      "bytes": 11447,
+      "sha256": "9646726b74cb06ec30e774b57a35f1cf05957aa72e312d8f7aeb6ccd39477ef9"
+    },
+    {
+      "path": "RESULT_TABLES_KO.md",
+      "bytes": 10108,
+      "sha256": "b8a0d1f0b121bf1112276b76b1ff55ca60c541b802a809bceb68ac21e5a89afe"
+    },
+    {
+      "path": "results/completion.json",
+      "bytes": 1507,
+      "sha256": "edab2a35390217f72b86fcaf6f2c36289cd5b37ee8d619aab26d252d5173dc50"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609284.json",
+      "bytes": 5481273,
+      "sha256": "a72361874f1c17804847aa5ee82f6fd03774f22017963efcd326440d87ce5e3e"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609285.json",
+      "bytes": 5530778,
+      "sha256": "f3d91183576080c928c4b317de1094c3a4a06cd4d6ba9f7ac6ef4beb4acc47eb"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609286.json",
+      "bytes": 5538653,
+      "sha256": "aa600cc5c73c077478ec70ad9fae262a510b3f1c5288bf0265f85c044d9aa0fd"
+    },
+    {
+      "path": "results/feedback_verification.json",
+      "bytes": 559,
+      "sha256": "aeed0305dd9bc5fd12f015dee334d9f2f1b60bcc4476500135b2d621a73e6650"
+    },
+    {
+      "path": "results/math_checks.json",
+      "bytes": 1560,
+      "sha256": "5f9a3502d975cfbb7182e8116d26d54a11cefe9d9c777db0ecc67e1e359ce93f"
+    },
+    {
+      "path": "results/MNIST_seed202609284.json",
+      "bytes": 5521242,
+      "sha256": "cd55aea864de6dd795aa41442fcf7ca2b37b884ff146e778b43136eaebf1a4e6"
+    },
+    {
+      "path": "results/MNIST_seed202609285.json",
+      "bytes": 5542095,
+      "sha256": "22daa5b160a0d8e58d49d3b7bfd9f0a02b13524a55c2db87c3302f6265acf733"
+    },
+    {
+      "path": "results/MNIST_seed202609286.json",
+      "bytes": 5459630,
+      "sha256": "e7e12b85697f80f44552abaa23f8b66f5ba6eaaad3a7e561a6f1c1cfc2c7577b"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 305470,
+      "sha256": "d55945d53fc1c99f369ea2faab1932d4d7a828e13fa7c3dc5a86ad28d6ba4abe"
+    },
+    {
+      "path": "results/verification.json",
+      "bytes": 645,
+      "sha256": "c20927134d3d06afc5ddf1aa57daa2dbe1b87c20018f62a42dce35a1f230f6e4"
+    },
+    {
+      "path": "run_experiment.py",
+      "bytes": 13769,
+      "sha256": "787ab34ffc5319c8c4ac382a162baa258d285cfcbc083bb5d7adfc1e846dd5a4"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 12645,
+      "sha256": "5b496346ea7355ff749b113a0541a49bf0debb6d272fcea3097431bc92d9bc6c"
+    }
+  ],
+  "file_count": 20,
+  "total_bytes": 33707294,
+  "source_commit_before_study": "bda08d444e852eea6d09c2bee85d2001b8c403a5",
+  "contains_dataset_or_checkpoint": false
+}
