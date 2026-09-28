@@ -1,0 +1,383 @@
+{
+  "method": "Latent4-Q16-W8",
+  "config": {
+    "kind": "digital",
+    "q": 16,
+    "width": 8,
+    "bits": 4
+  },
+  "seed": 313,
+  "rounds": 80,
+  "batch": 64,
+  "local_steps": 5,
+  "groups": 4,
+  "sensors_per_group": 4,
+  "dataset": {
+    "train": 12000,
+    "validation": 2000,
+    "test": 3000,
+    "cohort_histograms": [
+      [
+        0,
+        400,
+        600,
+        0,
+        1000,
+        200,
+        800,
+        0,
+        0,
+        0
+      ],
+      [
+        200,
+        800,
+        0,
+        800,
+        200,
+        0,
+        0,
+        600,
+        400,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        400,
+        600,
+        800,
+        200
+      ],
+      [
+        0,
+        0,
+        600,
+        400,
+        0,
+        1000,
+        0,
+        0,
+        0,
+        1000
+      ]
+    ],
+    "train_index_sha": "e11906f5ca940a3fe0490faf73dffeee7d0daf9006bf103576d6579d4aeaf673",
+    "validation_index_sha": "85accd59726150d3f189685975f991c326af8d854e39bfda0ba3b7c7ba51bdc6",
+    "test_index_sha": "7ecbe0ddb4b37cd4cbe48a376b2e79010988168554773e28f164e6c193c750cb",
+    "raw_sha": {
+      "t10k-images-idx3-ubyte": "5b4141f0afbad91edebe8549f8fcffe087ea10ca49f1dbef5c9a5cd8815ce37b",
+      "t10k-labels-idx1-ubyte": "0402a96d92fd2663957122ceb108a494c5af83dab82d92729df917d7dec38c34",
+      "train-images-idx3-ubyte": "c59f468a2f672dc815687fe0f83887768d799fd8a3f3276145d20f83aa44d888",
+      "train-labels-idx1-ubyte": "bad3541b69d912435c50bb6ba87bec294ff4f6a2e1246121d8633921760443d9"
+    }
+  },
+  "history": [
+    {
+      "round": 10,
+      "validation": {
+        "accuracy": 0.3365,
+        "loss": 1.8006996383666993
+      },
+      "ledger": {
+        "forward_uses": 1592336.3639753822,
+        "backward_uses": 1249658.025005183,
+        "control_uses": 181322.9732472742,
+        "pilot_uses": 10836.0,
+        "sync_ul_uses": 31301671.525166906,
+        "sync_dl_uses": 11983811.843658574,
+        "ul_energy": 32930627.21456393,
+        "dl_energy": 13389009.516489396,
+        "total_uses": 46319636.73105332,
+        "modeled_radio_seconds": 46.31963673105332,
+        "modeled_ul_joules_at_1W_1MHz": 32.93062721456393,
+        "modeled_dl_joules_at_1W_1MHz": 13.389009516489397,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 20,
+      "validation": {
+        "accuracy": 0.561,
+        "loss": 1.112928720474243
+      },
+      "ledger": {
+        "forward_uses": 3148090.840379593,
+        "backward_uses": 2468206.6004472873,
+        "control_uses": 359730.17642957595,
+        "pilot_uses": 21636.0,
+        "sync_ul_uses": 64201722.35162787,
+        "sync_dl_uses": 24012786.699751105,
+        "ul_energy": 67423878.75074296,
+        "dl_energy": 26788293.917892516,
+        "total_uses": 94212172.66863543,
+        "modeled_radio_seconds": 94.21217266863543,
+        "modeled_ul_joules_at_1W_1MHz": 67.42387875074296,
+        "modeled_dl_joules_at_1W_1MHz": 26.788293917892517,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 30,
+      "validation": {
+        "accuracy": 0.65,
+        "loss": 0.9098355159759521
+      },
+      "ledger": {
+        "forward_uses": 4703350.429062817,
+        "backward_uses": 3655603.7662340463,
+        "control_uses": 535912.0668801494,
+        "pilot_uses": 32436.0,
+        "sync_ul_uses": 100701953.14167757,
+        "sync_dl_uses": 39844923.92953126,
+        "ul_energy": 105517520.3590938,
+        "dl_energy": 43956658.974292144,
+        "total_uses": 149474179.33338585,
+        "modeled_radio_seconds": 149.47417933338585,
+        "modeled_ul_joules_at_1W_1MHz": 105.5175203590938,
+        "modeled_dl_joules_at_1W_1MHz": 43.95665897429215,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 40,
+      "validation": {
+        "accuracy": 0.655,
+        "loss": 0.8937941703796387
+      },
+      "ledger": {
+        "forward_uses": 6506346.068952168,
+        "backward_uses": 5297847.950227543,
+        "control_uses": 770921.1092802408,
+        "pilot_uses": 43236.0,
+        "sync_ul_uses": 132453472.67594141,
+        "sync_dl_uses": 50309299.41591108,
+        "ul_energy": 139115316.68097436,
+        "dl_energy": 56265806.53933813,
+        "total_uses": 195381123.22031245,
+        "modeled_radio_seconds": 195.38112322031245,
+        "modeled_ul_joules_at_1W_1MHz": 139.11531668097436,
+        "modeled_dl_joules_at_1W_1MHz": 56.26580653933813,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 50,
+      "validation": {
+        "accuracy": 0.647,
+        "loss": 0.8867064943313598
+      },
+      "ledger": {
+        "forward_uses": 8086836.1462039,
+        "backward_uses": 6564408.742385127,
+        "control_uses": 954596.2191350731,
+        "pilot_uses": 54036.0,
+        "sync_ul_uses": 164759666.7406814,
+        "sync_dl_uses": 62037082.44258301,
+        "ul_energy": 173038989.12053648,
+        "dl_energy": 69417637.17045215,
+        "total_uses": 242456626.2909885,
+        "modeled_radio_seconds": 242.4566262909885,
+        "modeled_ul_joules_at_1W_1MHz": 173.03898912053648,
+        "modeled_dl_joules_at_1W_1MHz": 69.41763717045215,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 60,
+      "validation": {
+        "accuracy": 0.6745,
+        "loss": 0.828260859489441
+      },
+      "ledger": {
+        "forward_uses": 9767363.97327292,
+        "backward_uses": 8007124.130418166,
+        "control_uses": 1167044.9394428565,
+        "pilot_uses": 64836.0,
+        "sync_ul_uses": 199505922.9622887,
+        "sync_dl_uses": 74297619.51807474,
+        "ul_energy": 209510170.97422412,
+        "dl_energy": 83299740.54927358,
+        "total_uses": 292809911.5234974,
+        "modeled_radio_seconds": 292.8099115234974,
+        "modeled_ul_joules_at_1W_1MHz": 209.5101709742241,
+        "modeled_dl_joules_at_1W_1MHz": 83.29974054927358,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 70,
+      "validation": {
+        "accuracy": 0.684,
+        "loss": 0.8281937351226807
+      },
+      "ledger": {
+        "forward_uses": 11339609.926672028,
+        "backward_uses": 9244732.731360469,
+        "control_uses": 1348884.8393942611,
+        "pilot_uses": 75636.0,
+        "sync_ul_uses": 232680083.0272768,
+        "sync_dl_uses": 85777770.10235967,
+        "ul_energy": 244295276.23229992,
+        "dl_energy": 96171440.3947636,
+        "total_uses": 340466716.6270632,
+        "modeled_radio_seconds": 340.4667166270632,
+        "modeled_ul_joules_at_1W_1MHz": 244.29527623229993,
+        "modeled_dl_joules_at_1W_1MHz": 96.17144039476361,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 80,
+      "validation": {
+        "accuracy": 0.685,
+        "loss": 0.811091796875
+      },
+      "ledger": {
+        "forward_uses": 12906480.44943913,
+        "backward_uses": 10450472.45322275,
+        "control_uses": 1526874.2424588818,
+        "pilot_uses": 86436.0,
+        "sync_ul_uses": 264748178.71229047,
+        "sync_dl_uses": 97461210.62964574,
+        "ul_energy": 277968891.0698192,
+        "dl_energy": 109210761.41723792,
+        "total_uses": 387179652.487057,
+        "modeled_radio_seconds": 387.17965248705696,
+        "modeled_ul_joules_at_1W_1MHz": 277.9688910698192,
+        "modeled_dl_joules_at_1W_1MHz": 109.21076141723792,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    }
+  ],
+  "tests": {
+    "rician_20dB_csi0": [
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      }
+    ],
+    "rician_10dB_csi0": [
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      }
+    ],
+    "rayleigh_20dB_csi0": [
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      }
+    ],
+    "rician_20dB_csi0.05": [
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      },
+      {
+        "accuracy": 0.6846666666666666,
+        "loss": 0.8427900123596191
+      }
+    ]
+  },
+  "ledger": {
+    "forward_uses": 12906480.44943913,
+    "backward_uses": 10450472.45322275,
+    "control_uses": 1526874.2424588818,
+    "pilot_uses": 86436.0,
+    "sync_ul_uses": 264748178.71229047,
+    "sync_dl_uses": 97461210.62964574,
+    "ul_energy": 277968891.0698192,
+    "dl_energy": 109210761.41723792,
+    "total_uses": 387179652.487057,
+    "modeled_radio_seconds": 387.17965248705696,
+    "modeled_ul_joules_at_1W_1MHz": 277.9688910698192,
+    "modeled_dl_joules_at_1W_1MHz": 109.21076141723792,
+    "max_block_power": 0.0,
+    "max_symbol_power": 0.0,
+    "mean_forward_noise_nmse": 0.0
+  },
+  "compute": {
+    "client_forward_MAC_per_sample": 83104,
+    "client_MACs": [
+      83104,
+      83104,
+      83104,
+      83104
+    ],
+    "encoder_MAC": [
+      70560,
+      70560,
+      70560,
+      70560
+    ],
+    "projection_MAC": [
+      12544,
+      12544,
+      12544,
+      12544
+    ],
+    "server_forward_MAC_per_sample": 3392,
+    "client_parameters": 13792,
+    "client_parameter_gradient_Adam_bytes": 220672,
+    "client_cut_activation_bytes_batch": 200704,
+    "global_parameters": 58666
+  },
+  "gpu_wall_seconds": 8.348177400010172,
+  "process_peak_cuda_bytes": 131573760,
+  "torch_version": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "train_snr": 10.0,
+  "correction_gpu_milliseconds": 0,
+  "trace_mean": null,
+  "trace_negative_fraction": null,
+  "code_sha": "cd404f5be915bd4f87ad69eac4ef5d23bb124400d597d14a16771d4324a09c3f"
+}

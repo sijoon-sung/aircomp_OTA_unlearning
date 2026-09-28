@@ -1,0 +1,8 @@
+{
+  "forward_max_error": 6.217248937900877e-15,
+  "backward_max_error": 7.105427357601002e-15,
+  "separate_loss": 0.002475685137730357,
+  "wrongly_summed_loss": 0.6931471805599453,
+  "max_average_symbol_power": 0.9999999999999998,
+  "passed": true
+}

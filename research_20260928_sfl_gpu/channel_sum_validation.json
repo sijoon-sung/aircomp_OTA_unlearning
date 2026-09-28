@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "forward_max_error": 1.0658141036401503e-14,
+  "backward_max_error": 0.0,
+  "input_channels": 8,
+  "output_channels": 12,
+  "devices": 4,
+  "scope": "one dense convolution partitioned across input channels; exact CSI/no noise; activation after sum",
+  "nonlinear_order_example": {
+    "partials": [
+      1.0,
+      -1.0
+    ],
+    "relu_after_sum": 0.0,
+    "sum_of_relus": 1.0
+  },
+  "raw_channel_sum_counterexample": {
+    "channel_features": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        0.0
+      ]
+    ],
+    "raw_sums": [
+      2.0,
+      2.0
+    ],
+    "weights": [
+      1.0,
+      2.0
+    ],
+    "correct_outputs": [
+      3.0,
+      2.0
+    ]
+  },
+  "limitation": "Does not assert arbitrary independently nonlinear submodels sum to the original dense network."
+}

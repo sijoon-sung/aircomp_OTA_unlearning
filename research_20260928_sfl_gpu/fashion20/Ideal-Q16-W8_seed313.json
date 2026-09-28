@@ -1,0 +1,383 @@
+{
+  "method": "Ideal-Q16-W8",
+  "config": {
+    "kind": "ideal",
+    "q": 16,
+    "width": 8,
+    "bits": 32
+  },
+  "seed": 313,
+  "rounds": 80,
+  "batch": 64,
+  "local_steps": 5,
+  "groups": 4,
+  "sensors_per_group": 4,
+  "dataset": {
+    "train": 12000,
+    "validation": 2000,
+    "test": 3000,
+    "cohort_histograms": [
+      [
+        0,
+        400,
+        600,
+        0,
+        1000,
+        200,
+        800,
+        0,
+        0,
+        0
+      ],
+      [
+        200,
+        800,
+        0,
+        800,
+        200,
+        0,
+        0,
+        600,
+        400,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        400,
+        600,
+        800,
+        200
+      ],
+      [
+        0,
+        0,
+        600,
+        400,
+        0,
+        1000,
+        0,
+        0,
+        0,
+        1000
+      ]
+    ],
+    "train_index_sha": "e11906f5ca940a3fe0490faf73dffeee7d0daf9006bf103576d6579d4aeaf673",
+    "validation_index_sha": "85accd59726150d3f189685975f991c326af8d854e39bfda0ba3b7c7ba51bdc6",
+    "test_index_sha": "7ecbe0ddb4b37cd4cbe48a376b2e79010988168554773e28f164e6c193c750cb",
+    "raw_sha": {
+      "t10k-images-idx3-ubyte": "5b4141f0afbad91edebe8549f8fcffe087ea10ca49f1dbef5c9a5cd8815ce37b",
+      "t10k-labels-idx1-ubyte": "0402a96d92fd2663957122ceb108a494c5af83dab82d92729df917d7dec38c34",
+      "train-images-idx3-ubyte": "c59f468a2f672dc815687fe0f83887768d799fd8a3f3276145d20f83aa44d888",
+      "train-labels-idx1-ubyte": "bad3541b69d912435c50bb6ba87bec294ff4f6a2e1246121d8633921760443d9"
+    }
+  },
+  "history": [
+    {
+      "round": 10,
+      "validation": {
+        "accuracy": 0.3515,
+        "loss": 1.766703483581543
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 20,
+      "validation": {
+        "accuracy": 0.6065,
+        "loss": 1.0461986694335939
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 30,
+      "validation": {
+        "accuracy": 0.67,
+        "loss": 0.8426478595733643
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 40,
+      "validation": {
+        "accuracy": 0.69,
+        "loss": 0.7807708911895752
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 50,
+      "validation": {
+        "accuracy": 0.718,
+        "loss": 0.7461602325439454
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 60,
+      "validation": {
+        "accuracy": 0.7185,
+        "loss": 0.723562726020813
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 70,
+      "validation": {
+        "accuracy": 0.7185,
+        "loss": 0.7214107332229615
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    },
+    {
+      "round": 80,
+      "validation": {
+        "accuracy": 0.715,
+        "loss": 0.7361969394683838
+      },
+      "ledger": {
+        "forward_uses": 0.0,
+        "backward_uses": 0.0,
+        "control_uses": 0.0,
+        "pilot_uses": 0.0,
+        "sync_ul_uses": 0.0,
+        "sync_dl_uses": 0.0,
+        "ul_energy": 0.0,
+        "dl_energy": 0.0,
+        "total_uses": 0.0,
+        "modeled_radio_seconds": 0.0,
+        "modeled_ul_joules_at_1W_1MHz": 0.0,
+        "modeled_dl_joules_at_1W_1MHz": 0.0,
+        "max_block_power": 0.0,
+        "max_symbol_power": 0.0,
+        "mean_forward_noise_nmse": 0.0
+      }
+    }
+  ],
+  "tests": {
+    "rician_20dB_csi0": [
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      }
+    ],
+    "rician_10dB_csi0": [
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      }
+    ],
+    "rayleigh_20dB_csi0": [
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      }
+    ],
+    "rician_20dB_csi0.05": [
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      },
+      {
+        "accuracy": 0.713,
+        "loss": 0.7529372463226318
+      }
+    ]
+  },
+  "ledger": {
+    "forward_uses": 0.0,
+    "backward_uses": 0.0,
+    "control_uses": 0.0,
+    "pilot_uses": 0.0,
+    "sync_ul_uses": 0.0,
+    "sync_dl_uses": 0.0,
+    "ul_energy": 0.0,
+    "dl_energy": 0.0,
+    "total_uses": 0.0,
+    "modeled_radio_seconds": 0.0,
+    "modeled_ul_joules_at_1W_1MHz": 0.0,
+    "modeled_dl_joules_at_1W_1MHz": 0.0,
+    "max_block_power": 0.0,
+    "max_symbol_power": 0.0,
+    "mean_forward_noise_nmse": 0.0
+  },
+  "compute": {
+    "client_forward_MAC_per_sample": 83104,
+    "client_MACs": [
+      83104,
+      83104,
+      83104,
+      83104
+    ],
+    "encoder_MAC": [
+      70560,
+      70560,
+      70560,
+      70560
+    ],
+    "projection_MAC": [
+      12544,
+      12544,
+      12544,
+      12544
+    ],
+    "server_forward_MAC_per_sample": 3392,
+    "client_parameters": 13792,
+    "client_parameter_gradient_Adam_bytes": 220672,
+    "client_cut_activation_bytes_batch": 200704,
+    "global_parameters": 58666
+  },
+  "gpu_wall_seconds": 8.027525999990758,
+  "process_peak_cuda_bytes": 131573760,
+  "torch_version": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "train_snr": 20.0,
+  "correction_gpu_milliseconds": 0,
+  "trace_mean": null,
+  "trace_negative_fraction": null,
+  "code_sha": "cd404f5be915bd4f87ad69eac4ef5d23bb124400d597d14a16771d4324a09c3f"
+}
