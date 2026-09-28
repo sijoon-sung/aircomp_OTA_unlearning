@@ -1,0 +1,156 @@
+{
+  "date": "2026-09-28",
+  "scope": "CR-Air real-data fixed-head CUDA feasibility and explicit radio cost model; no raw client data or checkpoints",
+  "files": [
+    {
+      "path": "comparison.pdf",
+      "bytes": 30599,
+      "sha256": "ff87fcd95b39de558b222cd6ce1e9d6b440ca4d32471c17f72fad9f1a23aeaac"
+    },
+    {
+      "path": "comparison.png",
+      "bytes": 220881,
+      "sha256": "2bec4abb785a92e38fd856a1d729d4aa3f958edd237e1b8ab64024e2047b1a43"
+    },
+    {
+      "path": "PROTOCOL_KO.md",
+      "bytes": 8722,
+      "sha256": "5999d7dc7e359eee13e05bbf435dbb2c6dfcc5757d2ec120f47cbb94db8d7598"
+    },
+    {
+      "path": "README_KO.md",
+      "bytes": 11635,
+      "sha256": "62c1d55c968cc6d6678b64fa066d372cec287266c07ba32be54fe025374b2631"
+    },
+    {
+      "path": "RESULT_TABLES_KO.md",
+      "bytes": 16794,
+      "sha256": "67844f9ee98faf60c35b4d15875159e36559c2fb7798b66f97ff0e8fc767a25d"
+    },
+    {
+      "path": "results/completion.json",
+      "bytes": 1447,
+      "sha256": "51d14ad695e9281667eb23c9ca9c3023f26c4b09b2dd3c5572c05162ff2ee0dd"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609290_K10.json",
+      "bytes": 745047,
+      "sha256": "e9e09f5f01be75069ef5b4131a714c8bb1fea18d6b98dea8ae6010c4d8894693"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609290_K100.json",
+      "bytes": 746191,
+      "sha256": "4449d959e1ea6c0fb89880991501eb96c97212bc43bcdfffbab0f6bccf410e83"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609290_K1000.json",
+      "bytes": 751018,
+      "sha256": "b5dd74e234c867244201c04d998488d7e3a44705eb688ff97be63fe507d7f902"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609291_K10.json",
+      "bytes": 744282,
+      "sha256": "424266d1bcb3216609e42c4e78f550e5f1b2c85c12785db0d6a2897409c6d0b8"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609291_K100.json",
+      "bytes": 746101,
+      "sha256": "a6684be879b4a465f04d81d89c78c4c0f7dcfe75190992a9191b59a7757acd1b"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609291_K1000.json",
+      "bytes": 751032,
+      "sha256": "1219b6cc00623ffe3a34a3e522b21a64e2d41f2560624fe89e7a74b79ab17887"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609292_K10.json",
+      "bytes": 747311,
+      "sha256": "aa893c7da7e9144d1b0ceabeaa85889b5a229436338c8f865486526fe14711f0"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609292_K100.json",
+      "bytes": 745822,
+      "sha256": "365054937b142f819822982e015b6246348077e293e40e6b132162d471a07762"
+    },
+    {
+      "path": "results/FashionMNIST_seed202609292_K1000.json",
+      "bytes": 750912,
+      "sha256": "995f65f016b23deb647c54f824e3a0611f5f24ced68616313d2c70a3f7dfddd5"
+    },
+    {
+      "path": "results/math_checks.json",
+      "bytes": 296,
+      "sha256": "87c98e67638265d86f3ba8d54f5394d6bf91157b943a21cc4385b849abd959e0"
+    },
+    {
+      "path": "results/MNIST_seed202609290_K10.json",
+      "bytes": 744313,
+      "sha256": "ab5182681188c5eff3ab5fdce205fea094a6bfc5391c3f4913d910cf436987f3"
+    },
+    {
+      "path": "results/MNIST_seed202609290_K100.json",
+      "bytes": 743701,
+      "sha256": "7a40382332a56f598d862481d1ec685f982dc533c3f8f28a193622f38c3a6af0"
+    },
+    {
+      "path": "results/MNIST_seed202609290_K1000.json",
+      "bytes": 748656,
+      "sha256": "5af718fbebc8eef9058d089dc45b4e06325bf18754af821b526d858078cde65f"
+    },
+    {
+      "path": "results/MNIST_seed202609291_K10.json",
+      "bytes": 741828,
+      "sha256": "ac716173446b98e088d0b83f85815192872eb7da8b81157caa0392cfcb85fb87"
+    },
+    {
+      "path": "results/MNIST_seed202609291_K100.json",
+      "bytes": 743872,
+      "sha256": "502ca397a0e119fbd8ed069cde08694205887f3fdf0abb60debef02f396bcc4c"
+    },
+    {
+      "path": "results/MNIST_seed202609291_K1000.json",
+      "bytes": 748216,
+      "sha256": "81743824d67660a2fd2ca16432536a6fd70adf930e80afc97db81bd640bfba18"
+    },
+    {
+      "path": "results/MNIST_seed202609292_K10.json",
+      "bytes": 742385,
+      "sha256": "d7faefcb3168fd71a052874381bcfeffd604e429789ed4176df8ae2b229a03d7"
+    },
+    {
+      "path": "results/MNIST_seed202609292_K100.json",
+      "bytes": 743637,
+      "sha256": "73632a7b71880fd6889b59d2d0ce278621ada7430a101f7ec9f0a620fae44f0a"
+    },
+    {
+      "path": "results/MNIST_seed202609292_K1000.json",
+      "bytes": 748828,
+      "sha256": "5a3ad3299a4937c960eec1c52a64d8b892d4dd585bb645f9842545191440e696"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 370418,
+      "sha256": "011ddd104172c15079ac8bc27c6d7a048b0b7c90ebeca7aba077da30ad414073"
+    },
+    {
+      "path": "results/verification.json",
+      "bytes": 1601,
+      "sha256": "b3d97abd71e2b56ac022be3ad8369c3f93cee9cc849d43e6bd44de7400764b08"
+    },
+    {
+      "path": "run.log",
+      "bytes": 5247,
+      "sha256": "2b9072f37d9e902eea75af4bb107b9209fad5cce68207b84d15ed1b8212eab1a"
+    },
+    {
+      "path": "run_experiment.py",
+      "bytes": 15813,
+      "sha256": "6cdaef02518ef7f7a5de82f7d69304662dfb15c73ceee355ae6dc3373046deab"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 13580,
+      "sha256": "63df85e7592027e5d51f5af010e608dd97ea40fc682c0e11e6b6a42f5225defa"
+    }
+  ]
+}

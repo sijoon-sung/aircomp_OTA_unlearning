@@ -2,6 +2,8 @@
 
 2026-09-28 기준, 세 가지 AirComp 언러닝 방법의 수학적 조건, Original/V1 비교, 실패 기록과 비용 산정을 모은 연구 저장소다. 이전 날짜 문서는 당시의 탐색 결과이며, 이후 수정 사항을 덮어쓰지 않았다.
 
+**최신 실제 데이터 검증: CR-Air** — [GPU 결과와 판정](research_20260928_cr_realdata/README_KO.md) · [전체 수치](research_20260928_cr_realdata/RESULT_TABLES_KO.md). MNIST/FashionMNIST, K10/100/1000, 새 seed3개, 5개 채널 조건의5,760개 평가행을 추가했다. 정확 CSI에서는 삭제 상쇄/전체 관측 privacy cap을 통과했지만, K1000 CR-Power 정확도는 FashionMNIST45.16%(clean56.37%), MNIST29.91%(clean43.24%)였다. payload energy는약82.8%, 총 삭제 shared real uses는8.8–9.8% 줄었지만 pilot/control/CSI/head를 포함한 정규화 TX energy는 개선되지 않았다. 5% CSI 오차에서는 A의 잔여 영향과 privacy cap 초과도 발생했다. **사전 실용 채택 기준은 실패**이며, 공개 고정16차원 random feature head에서의 제한된 결과다.
+
 **세 조건을 함께 다루는 새 구조 후보: CR-Air** — [수식·선행연구·가정·GPU 수치 검산](research_20260928_protected_refresh/README_KO.md). 처음부터 noisy 충분통계로 학습하고 삭제 때 A의 음의 통계와 잔존 통계를 공중 합산하는 구조다. 한 번의 fixed 삭제/정확 CSI 아래 최종 noisy 재학습분포 일치와 전체 관측 client-DP 식을 검산했다. 같은 출력분포·공통 privacy cap의 단위 채널 예시에서 payload 에너지 상한63.0% 감소, 총 전송량0.40% 증가다. **실제 데이터 성능 검증이 아니며**, 10-client에서는 privacy noise가 학습을 크게 해칠 위험이 있다. frozen public encoder, 작은 head/충분한 client 수를 전제로 탐색할 후보이고, 신규성·실용성 확정이 아니다.
 
 **최신 deep-fade 보완: Cohort Diversity** — [GPU 결과](research_20260928_cohort_diversity/README_KO.md) · [알고리즘·수식·비용](research_20260928_cohort_diversity/METHOD_KO.md). 잔존9명을 모두 유지하면서 공유 주파수8개 중 자원을 고르는 FD8-Subspace를 검증했다. 새 seed3개, 조건당32개 channel/H draw로10,368개 평가 기록을 추가했다. 20dB 독립 Rayleigh에서 같은 예산 Subspace 대비 오차가 FashionMNIST `.9695 → .4873`, MNIST `1.7897 → .6360`으로 감소했다(미삭제=1). 탐색비를 포함한 사전 주 기준은 통과했지만, MNIST4/96개 session은 여전히 E>=1이다. 완전히 정적인 후보/큰 경로손실의 실패, 대기 방식의 timeout·지연과 gradient 복원 위험도 공개했다. 주파수 availability/coherence 가정이 있는 결과이며 프라이버시 보장이나 신규성 확정은 아니다.

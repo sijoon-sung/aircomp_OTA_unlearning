@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mean_error": 1.1102230246251565e-16,
+  "raw_repetition_noise_variance": 5.960208465056119,
+  "code_sha256": "6cdaef02518ef7f7a5de82f7d69304662dfb15c73ceee355ae6dc3373046deab",
+  "protocol_sha256": "5999d7dc7e359eee13e05bbf435dbb2c6dfcc5757d2ec120f47cbb94db8d7598"
+}

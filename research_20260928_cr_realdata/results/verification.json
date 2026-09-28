@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "rows": 5760,
+  "configuration_files": 18,
+  "evaluated_utility_models": 11520,
+  "parameter_noise_realizations": 46080,
+  "exact_max_KL": 2.9258642899048276e-27,
+  "exact_max_model_relative_error": 0.0,
+  "exact_max_rho": 0.5,
+  "max_power": 0.9996763030102279,
+  "decisions": [
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Fixed",
+      "deletion_and_privacy_pass": true,
+      "utility_pass": false,
+      "radio_pass": false,
+      "adopt": false,
+      "accuracy_loss_to_clean_pp": 11.15208333333334
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Power",
+      "deletion_and_privacy_pass": true,
+      "utility_pass": false,
+      "radio_pass": false,
+      "adopt": false,
+      "accuracy_loss_to_clean_pp": 11.215104166666674
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Fixed",
+      "deletion_and_privacy_pass": true,
+      "utility_pass": false,
+      "radio_pass": false,
+      "adopt": false,
+      "accuracy_loss_to_clean_pp": 13.477708333333332
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Power",
+      "deletion_and_privacy_pass": true,
+      "utility_pass": false,
+      "radio_pass": false,
+      "adopt": false,
+      "accuracy_loss_to_clean_pp": 13.329791666666663
+    }
+  ],
+  "source_sha256": "6cdaef02518ef7f7a5de82f7d69304662dfb15c73ceee355ae6dc3373046deab",
+  "protocol_sha256": "5999d7dc7e359eee13e05bbf435dbb2c6dfcc5757d2ec120f47cbb94db8d7598",
+  "summary_code_sha256": "63df85e7592027e5d51f5af010e608dd97ea40fc682c0e11e6b6a42f5225defa"
+}

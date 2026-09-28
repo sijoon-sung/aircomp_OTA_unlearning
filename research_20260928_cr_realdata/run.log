@@ -1,0 +1,109 @@
+FashionMNIST seed=202609290 K=10 unit complete
+FashionMNIST seed=202609290 K=10 rayleigh complete
+FashionMNIST seed=202609290 K=10 weak_A complete
+FashionMNIST seed=202609290 K=10 weak_R complete
+FashionMNIST seed=202609290 K=10 csi5 complete
+SAVED FashionMNIST seed=202609290 K=10, 320 rows, 0.37s
+FashionMNIST seed=202609290 K=100 unit complete
+FashionMNIST seed=202609290 K=100 rayleigh complete
+FashionMNIST seed=202609290 K=100 weak_A complete
+FashionMNIST seed=202609290 K=100 weak_R complete
+FashionMNIST seed=202609290 K=100 csi5 complete
+SAVED FashionMNIST seed=202609290 K=100, 320 rows, 0.15s
+FashionMNIST seed=202609290 K=1000 unit complete
+FashionMNIST seed=202609290 K=1000 rayleigh complete
+FashionMNIST seed=202609290 K=1000 weak_A complete
+FashionMNIST seed=202609290 K=1000 weak_R complete
+FashionMNIST seed=202609290 K=1000 csi5 complete
+SAVED FashionMNIST seed=202609290 K=1000, 320 rows, 0.18s
+FashionMNIST seed=202609291 K=10 unit complete
+FashionMNIST seed=202609291 K=10 rayleigh complete
+FashionMNIST seed=202609291 K=10 weak_A complete
+FashionMNIST seed=202609291 K=10 weak_R complete
+FashionMNIST seed=202609291 K=10 csi5 complete
+SAVED FashionMNIST seed=202609291 K=10, 320 rows, 0.15s
+FashionMNIST seed=202609291 K=100 unit complete
+FashionMNIST seed=202609291 K=100 rayleigh complete
+FashionMNIST seed=202609291 K=100 weak_A complete
+FashionMNIST seed=202609291 K=100 weak_R complete
+FashionMNIST seed=202609291 K=100 csi5 complete
+SAVED FashionMNIST seed=202609291 K=100, 320 rows, 0.15s
+FashionMNIST seed=202609291 K=1000 unit complete
+FashionMNIST seed=202609291 K=1000 rayleigh complete
+FashionMNIST seed=202609291 K=1000 weak_A complete
+FashionMNIST seed=202609291 K=1000 weak_R complete
+FashionMNIST seed=202609291 K=1000 csi5 complete
+SAVED FashionMNIST seed=202609291 K=1000, 320 rows, 0.17s
+FashionMNIST seed=202609292 K=10 unit complete
+FashionMNIST seed=202609292 K=10 rayleigh complete
+FashionMNIST seed=202609292 K=10 weak_A complete
+FashionMNIST seed=202609292 K=10 weak_R complete
+FashionMNIST seed=202609292 K=10 csi5 complete
+SAVED FashionMNIST seed=202609292 K=10, 320 rows, 0.15s
+FashionMNIST seed=202609292 K=100 unit complete
+FashionMNIST seed=202609292 K=100 rayleigh complete
+FashionMNIST seed=202609292 K=100 weak_A complete
+FashionMNIST seed=202609292 K=100 weak_R complete
+FashionMNIST seed=202609292 K=100 csi5 complete
+SAVED FashionMNIST seed=202609292 K=100, 320 rows, 0.15s
+FashionMNIST seed=202609292 K=1000 unit complete
+FashionMNIST seed=202609292 K=1000 rayleigh complete
+FashionMNIST seed=202609292 K=1000 weak_A complete
+FashionMNIST seed=202609292 K=1000 weak_R complete
+FashionMNIST seed=202609292 K=1000 csi5 complete
+SAVED FashionMNIST seed=202609292 K=1000, 320 rows, 0.17s
+MNIST seed=202609290 K=10 unit complete
+MNIST seed=202609290 K=10 rayleigh complete
+MNIST seed=202609290 K=10 weak_A complete
+MNIST seed=202609290 K=10 weak_R complete
+MNIST seed=202609290 K=10 csi5 complete
+SAVED MNIST seed=202609290 K=10, 320 rows, 0.16s
+MNIST seed=202609290 K=100 unit complete
+MNIST seed=202609290 K=100 rayleigh complete
+MNIST seed=202609290 K=100 weak_A complete
+MNIST seed=202609290 K=100 weak_R complete
+MNIST seed=202609290 K=100 csi5 complete
+SAVED MNIST seed=202609290 K=100, 320 rows, 0.16s
+MNIST seed=202609290 K=1000 unit complete
+MNIST seed=202609290 K=1000 rayleigh complete
+MNIST seed=202609290 K=1000 weak_A complete
+MNIST seed=202609290 K=1000 weak_R complete
+MNIST seed=202609290 K=1000 csi5 complete
+SAVED MNIST seed=202609290 K=1000, 320 rows, 0.18s
+MNIST seed=202609291 K=10 unit complete
+MNIST seed=202609291 K=10 rayleigh complete
+MNIST seed=202609291 K=10 weak_A complete
+MNIST seed=202609291 K=10 weak_R complete
+MNIST seed=202609291 K=10 csi5 complete
+SAVED MNIST seed=202609291 K=10, 320 rows, 0.15s
+MNIST seed=202609291 K=100 unit complete
+MNIST seed=202609291 K=100 rayleigh complete
+MNIST seed=202609291 K=100 weak_A complete
+MNIST seed=202609291 K=100 weak_R complete
+MNIST seed=202609291 K=100 csi5 complete
+SAVED MNIST seed=202609291 K=100, 320 rows, 0.15s
+MNIST seed=202609291 K=1000 unit complete
+MNIST seed=202609291 K=1000 rayleigh complete
+MNIST seed=202609291 K=1000 weak_A complete
+MNIST seed=202609291 K=1000 weak_R complete
+MNIST seed=202609291 K=1000 csi5 complete
+SAVED MNIST seed=202609291 K=1000, 320 rows, 0.17s
+MNIST seed=202609292 K=10 unit complete
+MNIST seed=202609292 K=10 rayleigh complete
+MNIST seed=202609292 K=10 weak_A complete
+MNIST seed=202609292 K=10 weak_R complete
+MNIST seed=202609292 K=10 csi5 complete
+SAVED MNIST seed=202609292 K=10, 320 rows, 0.15s
+MNIST seed=202609292 K=100 unit complete
+MNIST seed=202609292 K=100 rayleigh complete
+MNIST seed=202609292 K=100 weak_A complete
+MNIST seed=202609292 K=100 weak_R complete
+MNIST seed=202609292 K=100 csi5 complete
+SAVED MNIST seed=202609292 K=100, 320 rows, 0.15s
+MNIST seed=202609292 K=1000 unit complete
+MNIST seed=202609292 K=1000 rayleigh complete
+MNIST seed=202609292 K=1000 weak_A complete
+MNIST seed=202609292 K=1000 weak_R complete
+MNIST seed=202609292 K=1000 csi5 complete
+SAVED MNIST seed=202609292 K=1000, 320 rows, 0.17s
+COMPLETE 5760 rows, 3.78s
