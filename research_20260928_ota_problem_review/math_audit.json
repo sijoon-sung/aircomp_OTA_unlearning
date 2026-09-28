@@ -1,0 +1,260 @@
+{
+  "kind": "exact rational algebra; CPU; no dataset, GPU, Monte Carlo, or RF measurement",
+  "scope": "frozen update estimation; not multi-round neural-network training",
+  "K": 4,
+  "S": 2,
+  "D_real": 2,
+  "sigma_squared": 0.1,
+  "target_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "rows": [
+    {
+      "lambda": 0.0,
+      "expected_coefficient": [
+        0.5,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ],
+      "mean": 0.0,
+      "bias_squared": 0.25,
+      "sampling_variance": 1.0,
+      "receiver_noise_variance": 0.18888888888888888,
+      "mse_per_coordinate": 1.4388888888888889,
+      "payload_real_uses": 1,
+      "sum_tx_energy_unit_symbol_duration": 4,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_random"
+    },
+    {
+      "lambda": 0.0,
+      "expected_coefficient": [
+        0.5,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ],
+      "mean": 0.0,
+      "bias_squared": 0.25,
+      "sampling_variance": 0.5,
+      "receiver_noise_variance": 0.09444444444444444,
+      "mse_per_coordinate": 0.8444444444444444,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_random"
+    },
+    {
+      "lambda": 0.0,
+      "expected_coefficient": [
+        0.5,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ],
+      "mean": 0.0,
+      "bias_squared": 0.25,
+      "sampling_variance": 0.0,
+      "receiver_noise_variance": 0.09444444444444444,
+      "mse_per_coordinate": 0.34444444444444444,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_balanced_cycle"
+    },
+    {
+      "lambda": 0.5,
+      "expected_coefficient": [
+        0.375,
+        0.20833333333333334,
+        0.20833333333333334,
+        0.20833333333333334
+      ],
+      "mean": -0.25,
+      "bias_squared": 0.0625,
+      "sampling_variance": 1.0,
+      "receiver_noise_variance": 0.24513888888888888,
+      "mse_per_coordinate": 1.3076388888888888,
+      "payload_real_uses": 1,
+      "sum_tx_energy_unit_symbol_duration": 4,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_random"
+    },
+    {
+      "lambda": 0.5,
+      "expected_coefficient": [
+        0.375,
+        0.20833333333333334,
+        0.20833333333333334,
+        0.20833333333333334
+      ],
+      "mean": -0.25,
+      "bias_squared": 0.0625,
+      "sampling_variance": 0.5,
+      "receiver_noise_variance": 0.12256944444444444,
+      "mse_per_coordinate": 0.6850694444444444,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_random"
+    },
+    {
+      "lambda": 0.5,
+      "expected_coefficient": [
+        0.375,
+        0.20833333333333334,
+        0.20833333333333334,
+        0.20833333333333334
+      ],
+      "mean": -0.25,
+      "bias_squared": 0.0625,
+      "sampling_variance": 0.0,
+      "receiver_noise_variance": 0.12256944444444444,
+      "mse_per_coordinate": 0.18506944444444445,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_balanced_cycle"
+    },
+    {
+      "lambda": 1.0,
+      "expected_coefficient": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": -0.5,
+      "bias_squared": 0.0,
+      "sampling_variance": 1.0,
+      "receiver_noise_variance": 0.325,
+      "mse_per_coordinate": 1.325,
+      "payload_real_uses": 1,
+      "sum_tx_energy_unit_symbol_duration": 4,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_random"
+    },
+    {
+      "lambda": 1.0,
+      "expected_coefficient": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": -0.5,
+      "bias_squared": 0.0,
+      "sampling_variance": 0.5,
+      "receiver_noise_variance": 0.1625,
+      "mse_per_coordinate": 0.6625,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_random"
+    },
+    {
+      "lambda": 1.0,
+      "expected_coefficient": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": -0.5,
+      "bias_squared": 0.0,
+      "sampling_variance": 0.0,
+      "receiver_noise_variance": 0.1625,
+      "mse_per_coordinate": 0.1625,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "fixed lambda; no learned scheduler",
+      "method": "segmented_balanced_cycle"
+    },
+    {
+      "lambda": 0.6915887850467289,
+      "expected_coefficient": [
+        0.32710280373831774,
+        0.22429906542056074,
+        0.22429906542056074,
+        0.22429906542056074
+      ],
+      "mean": -0.34579439252336447,
+      "bias_squared": 0.023779369377238187,
+      "sampling_variance": 1.0,
+      "receiver_noise_variance": 0.27294960258537865,
+      "mse_per_coordinate": 1.2967289719626167,
+      "payload_real_uses": 1,
+      "sum_tx_energy_unit_symbol_duration": 4,
+      "selection": "oracle: exact frozen-signal MSE, NOT a proposed algorithm",
+      "method": "oracle_lambda_random"
+    },
+    {
+      "lambda": 0.8324873096446701,
+      "expected_coefficient": [
+        0.2918781725888325,
+        0.23604060913705585,
+        0.23604060913705585,
+        0.23604060913705585
+      ],
+      "mean": -0.41624365482233505,
+      "bias_squared": 0.0070151253575201624,
+      "sampling_variance": 0.0,
+      "receiver_noise_variance": 0.14780720966786054,
+      "mse_per_coordinate": 0.1548223350253807,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "oracle: exact frozen-signal MSE, NOT a proposed algorithm",
+      "method": "oracle_lambda_balanced_cycle"
+    },
+    {
+      "method": "full_model_unbiased_OTA",
+      "mean": -0.5,
+      "bias_squared": 0.0,
+      "sampling_variance": 0.0,
+      "receiver_noise_variance": 0.1625,
+      "mse_per_coordinate": 0.1625,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8
+    },
+    {
+      "method": "full_model_standard_LMMSE_OTA",
+      "mean": -0.18181818181818182,
+      "bias_squared": 0.1012396694214876,
+      "sampling_variance": 0.0,
+      "receiver_noise_variance": 0.05165289256198347,
+      "mse_per_coordinate": 0.15289256198347106,
+      "payload_real_uses": 2,
+      "sum_tx_energy_unit_symbol_duration": 8,
+      "selection": "standard unit-independent-source LMMSE; NOT oracle signal tuning"
+    }
+  ],
+  "interference_counterexample": {
+    "lambda": 1.0,
+    "expected_coefficient": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "mean": -0.39,
+    "bias_squared": 0.0121,
+    "sampling_variance": 0.7396,
+    "receiver_noise_variance": 0.325,
+    "mse_per_coordinate": 1.0767,
+    "payload_real_uses": 1,
+    "sum_tx_energy_unit_symbol_duration": 4,
+    "selection": "fixed lambda; no learned scheduler"
+  },
+  "quadratic_learning_example": {
+    "local_objective": "f_k(theta)=0.5*(theta-c_k)^2; c=(1,-1,-1,-1)",
+    "true_minimizer": -0.5,
+    "uncorrected_mean_dynamics_fixed_point": 0.0,
+    "objective_excess_at_uncorrected_fixed_point": 0.125,
+    "qualification": "mean drift fixed point; not almost-sure noisy SGD convergence"
+  },
+  "checks_passed": 5
+}
