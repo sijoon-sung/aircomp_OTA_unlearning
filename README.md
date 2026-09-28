@@ -2,6 +2,8 @@
 
 2026-09-28 기준, 세 가지 AirComp 언러닝 방법의 수학적 조건, Original/V1 비교, 실패 기록과 비용 산정을 모은 연구 저장소다. 이전 날짜 문서는 당시의 탐색 결과이며, 이후 수정 사항을 덮어쓰지 않았다.
 
+**최신 통신 trade-off 검증: CR-Air** — [판정·수식·통신 비용](research_20260928_cr_comm_tradeoff/README_KO.md) · [전체 수치](research_20260928_cr_comm_tradeoff/RESULT_TABLES_KO.md) · [복사 prefix 관측의 privacy 정정](research_20260928_cr_comm_tradeoff/PRIVACY_CORRECTION_KO.md). 프라이버시 완화를 허용한 후속 CUDA 실험 21,600행을 추가했다. 전체 frame client-DP 상한 ε≈17.57, K1000, 정확 CSI Rayleigh에서 Independent와 같은 최종 noisy 재학습분포를 유지하며 평균 삭제 symbol을 FashionMNIST20.11%/MNIST12.29% 줄였다. session별 중앙값 절감은6.04%/5.59%이고 counted TX energy 절감은0.1% 미만이다. 정확도는53.03%/38.45%(clean56.30%/43.27%)다. A-Only는 훨씬 빠르지만 final noise가2배이며 정확도가 낮다. **강한 privacy·실용 classifier·신규성 확정이 아닌 제한된 통신 설계의 예비 결과**다. 동결 raw JSON의 nominal privacy 값은 prefix 관측을 빠뜨렸으므로 정정 문서와 full-frame fields를 사용해야 한다.
+
 **최신 실제 데이터 검증: CR-Air** — [GPU 결과와 판정](research_20260928_cr_realdata/README_KO.md) · [전체 수치](research_20260928_cr_realdata/RESULT_TABLES_KO.md). MNIST/FashionMNIST, K10/100/1000, 새 seed3개, 5개 채널 조건의5,760개 평가행을 추가했다. 정확 CSI에서는 삭제 상쇄/전체 관측 privacy cap을 통과했지만, K1000 CR-Power 정확도는 FashionMNIST45.16%(clean56.37%), MNIST29.91%(clean43.24%)였다. payload energy는약82.8%, 총 삭제 shared real uses는8.8–9.8% 줄었지만 pilot/control/CSI/head를 포함한 정규화 TX energy는 개선되지 않았다. 5% CSI 오차에서는 A의 잔여 영향과 privacy cap 초과도 발생했다. **사전 실용 채택 기준은 실패**이며, 공개 고정16차원 random feature head에서의 제한된 결과다.
 
 **세 조건을 함께 다루는 새 구조 후보: CR-Air** — [수식·선행연구·가정·GPU 수치 검산](research_20260928_protected_refresh/README_KO.md). 처음부터 noisy 충분통계로 학습하고 삭제 때 A의 음의 통계와 잔존 통계를 공중 합산하는 구조다. 한 번의 fixed 삭제/정확 CSI 아래 최종 noisy 재학습분포 일치와 전체 관측 client-DP 식을 검산했다. 같은 출력분포·공통 privacy cap의 단위 채널 예시에서 payload 에너지 상한63.0% 감소, 총 전송량0.40% 증가다. **실제 데이터 성능 검증이 아니며**, 10-client에서는 privacy noise가 학습을 크게 해칠 위험이 있다. frozen public encoder, 작은 head/충분한 client 수를 전제로 탐색할 후보이고, 신규성·실용성 확정이 아니다.
@@ -56,6 +58,7 @@
 
 **저장소 구성과 실행**
 
+- `research_20260928_cr_comm_tradeoff/`: privacy 완화 sweep, 정수 frame 통신·에너지, A-Only 비교와 복사 prefix 포함 privacy 감사.
 - `research_20260928_cohort_diversity/`: 전원 참여를 유지하는 주파수 선택/인과적 대기, 탐색비·지연·timeout 포함 GPU 검증.
 - `research_20260928_ds_revision/`: DS 보완 Switch/부분공간, 두 데이터셋 GPU 결과, Newton 대조군, 전력·전체 비용·복원 공격 감사.
 - `research_20260927_methodology/`: 최신 수식, 송수신 절차, 정보 공개 조건, 780개 평가 행 감사와 GPU 검증 기록.

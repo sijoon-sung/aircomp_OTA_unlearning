@@ -1,0 +1,505 @@
+{
+  "passed": true,
+  "rows": 21600,
+  "group_count": 450,
+  "config_count": 18,
+  "counted_waveform_cases": 24,
+  "max_waveform_variance_relative_error": 0.02400412103022731,
+  "source_sha256": "abf52482dff17d80d5887ec72f72b82a862b1bed79b8aa2de4d6bac06ed317ae",
+  "dependency_sha256": "6cdaef02518ef7f7a5de82f7d69304662dfb15c73ceee355ae6dc3373046deab",
+  "protocol_sha256": "85f475887f0dbecb4c5ddf98a05f83846be90115bc172fe3c979eaf90f499181",
+  "summary_sha256": "8da2a476be908b7913eb7284d4bfff9dac7f4203399f6a4fe5c0e5b52af1a00c",
+  "first_passing_nominal_rho_both_datasets": {
+    "CR-Fixed": 4.0,
+    "CR-Power": 2.0,
+    "CR-Uses": 2.0
+  },
+  "first_passing_full_frame_rho_both_datasets": {
+    "CR-Fixed": 8.0,
+    "CR-Power": 4.0,
+    "CR-Uses": 4.0
+  },
+  "full_frame_accounting_sha256": "77607507d8dcf9df1c43500017bd66f2feb8c6066209aae40d63379d2b8fdd7a",
+  "decisions": [
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 0.5,
+      "full_frame_rho_cap": 1.0,
+      "full_frame_epsilon_cap": 7.786140424415112,
+      "clean_gap_pp": 10.90916666666667,
+      "seed_clean_gaps_pp": [
+        10.841562500000007,
+        11.064062500000006,
+        10.821875000000002
+      ],
+      "communication_reduction_pct": 4.788704948670941,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 0.5,
+      "full_frame_rho_cap": 1.0,
+      "full_frame_epsilon_cap": 7.786140424415112,
+      "clean_gap_pp": 10.920625000000006,
+      "seed_clean_gaps_pp": [
+        11.006562500000005,
+        10.936875000000008,
+        10.8184375
+      ],
+      "communication_reduction_pct": 5.889866163562118,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 0.5,
+      "full_frame_rho_cap": 1.0,
+      "full_frame_epsilon_cap": 7.786140424415112,
+      "clean_gap_pp": 10.919791666666672,
+      "seed_clean_gaps_pp": [
+        11.006562500000005,
+        10.934375000000006,
+        10.8184375
+      ],
+      "communication_reduction_pct": 5.889866163562118,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 1.0,
+      "full_frame_rho_cap": 2.0,
+      "full_frame_epsilon_cap": 11.597051824376162,
+      "clean_gap_pp": 6.286875000000003,
+      "seed_clean_gaps_pp": [
+        6.269687500000004,
+        6.462812500000004,
+        6.128124999999995
+      ],
+      "communication_reduction_pct": 9.187819850803546,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 1.0,
+      "full_frame_rho_cap": 2.0,
+      "full_frame_epsilon_cap": 11.597051824376162,
+      "clean_gap_pp": 6.281250000000005,
+      "seed_clean_gaps_pp": [
+        6.278750000000005,
+        6.410937500000008,
+        6.154062500000002
+      ],
+      "communication_reduction_pct": 11.400071485161888,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 1.0,
+      "full_frame_rho_cap": 2.0,
+      "full_frame_epsilon_cap": 11.597051824376162,
+      "clean_gap_pp": 6.281770833333333,
+      "seed_clean_gaps_pp": [
+        6.278750000000005,
+        6.412500000000004,
+        6.154062500000002
+      ],
+      "communication_reduction_pct": 11.400071485161888,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 2.0,
+      "full_frame_rho_cap": 4.0,
+      "full_frame_epsilon_cap": 17.572280848830225,
+      "clean_gap_pp": 3.3098958333333317,
+      "seed_clean_gaps_pp": [
+        3.375312500000005,
+        3.456250000000005,
+        3.098124999999996
+      ],
+      "communication_reduction_pct": 16.194700379164328,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 2.0,
+      "full_frame_rho_cap": 4.0,
+      "full_frame_epsilon_cap": 17.572280848830225,
+      "clean_gap_pp": 3.270729166666675,
+      "seed_clean_gaps_pp": [
+        3.3265625000000076,
+        3.393437500000007,
+        3.0921874999999988
+      ],
+      "communication_reduction_pct": 20.11278005141358,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 2.0,
+      "full_frame_rho_cap": 4.0,
+      "full_frame_epsilon_cap": 17.572280848830225,
+      "clean_gap_pp": 3.272187500000001,
+      "seed_clean_gaps_pp": [
+        3.3265625000000076,
+        3.397812500000008,
+        3.0921874999999988
+      ],
+      "communication_reduction_pct": 20.11278005141358,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 4.0,
+      "full_frame_rho_cap": 8.0,
+      "full_frame_epsilon_cap": 27.194103648752325,
+      "clean_gap_pp": 1.5733333333333377,
+      "seed_clean_gaps_pp": [
+        1.6621875000000008,
+        1.6687500000000077,
+        1.3890625000000045
+      ],
+      "communication_reduction_pct": 26.089753432816376,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 4.0,
+      "full_frame_rho_cap": 8.0,
+      "full_frame_epsilon_cap": 27.194103648752325,
+      "clean_gap_pp": 1.5494791666666674,
+      "seed_clean_gaps_pp": [
+        1.6346875000000094,
+        1.6187500000000021,
+        1.3950000000000018
+      ],
+      "communication_reduction_pct": 32.403878814951305,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 4.0,
+      "full_frame_rho_cap": 8.0,
+      "full_frame_epsilon_cap": 27.194103648752325,
+      "clean_gap_pp": 1.550000000000007,
+      "seed_clean_gaps_pp": [
+        1.6346875000000094,
+        1.6203125000000096,
+        1.3950000000000018
+      ],
+      "communication_reduction_pct": 32.403878814951305,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 8.0,
+      "full_frame_rho_cap": 16.0,
+      "full_frame_epsilon_cap": 43.14456169766045,
+      "clean_gap_pp": 0.7205208333333379,
+      "seed_clean_gaps_pp": [
+        0.8109374999999974,
+        0.8043750000000016,
+        0.5462500000000037
+      ],
+      "communication_reduction_pct": 37.50189088605458,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 8.0,
+      "full_frame_rho_cap": 16.0,
+      "full_frame_epsilon_cap": 43.14456169766045,
+      "clean_gap_pp": 0.7127083333333339,
+      "seed_clean_gaps_pp": [
+        0.8143750000000005,
+        0.7806250000000015,
+        0.5431249999999999
+      ],
+      "communication_reduction_pct": 46.61174112787906,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "FashionMNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 8.0,
+      "full_frame_rho_cap": 16.0,
+      "full_frame_epsilon_cap": 43.14456169766045,
+      "clean_gap_pp": 0.7119791666666653,
+      "seed_clean_gaps_pp": [
+        0.8143750000000005,
+        0.7784375000000066,
+        0.5431249999999999
+      ],
+      "communication_reduction_pct": 46.61174112787906,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 0.5,
+      "full_frame_rho_cap": 1.0,
+      "full_frame_epsilon_cap": 7.786140424415112,
+      "clean_gap_pp": 13.418437500000003,
+      "seed_clean_gaps_pp": [
+        13.558749999999996,
+        13.553750000000003,
+        13.142812500000002
+      ],
+      "communication_reduction_pct": 2.636215789058738,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 0.5,
+      "full_frame_rho_cap": 1.0,
+      "full_frame_epsilon_cap": 7.786140424415112,
+      "clean_gap_pp": 13.295104166666667,
+      "seed_clean_gaps_pp": [
+        13.325937499999995,
+        13.503437499999999,
+        13.055937499999997
+      ],
+      "communication_reduction_pct": 3.2060696402476663,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 0.5,
+      "full_frame_rho_cap": 1.0,
+      "full_frame_epsilon_cap": 7.786140424415112,
+      "clean_gap_pp": 13.295104166666667,
+      "seed_clean_gaps_pp": [
+        13.325937499999995,
+        13.503437499999999,
+        13.055937499999997
+      ],
+      "communication_reduction_pct": 3.2060696402476663,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 1.0,
+      "full_frame_rho_cap": 2.0,
+      "full_frame_epsilon_cap": 11.597051824376162,
+      "clean_gap_pp": 8.55572916666667,
+      "seed_clean_gaps_pp": [
+        8.770937499999999,
+        8.615937500000005,
+        8.280312499999997
+      ],
+      "communication_reduction_pct": 5.222633757883366,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 1.0,
+      "full_frame_rho_cap": 2.0,
+      "full_frame_epsilon_cap": 11.597051824376162,
+      "clean_gap_pp": 8.531770833333335,
+      "seed_clean_gaps_pp": [
+        8.595937499999994,
+        8.630312500000004,
+        8.369062499999997
+      ],
+      "communication_reduction_pct": 6.5891431968230885,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 1.0,
+      "full_frame_rho_cap": 2.0,
+      "full_frame_epsilon_cap": 11.597051824376162,
+      "clean_gap_pp": 8.531770833333335,
+      "seed_clean_gaps_pp": [
+        8.595937499999994,
+        8.630312500000004,
+        8.369062499999997
+      ],
+      "communication_reduction_pct": 6.5891431968230885,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 2.0,
+      "full_frame_rho_cap": 4.0,
+      "full_frame_epsilon_cap": 17.572280848830225,
+      "clean_gap_pp": 4.888854166666667,
+      "seed_clean_gaps_pp": [
+        5.004999999999998,
+        4.920625000000001,
+        4.740937499999998
+      ],
+      "communication_reduction_pct": 9.869571654245302,
+      "mean_criterion_pass": false,
+      "all_seeds_within_5pp": false
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 2.0,
+      "full_frame_rho_cap": 4.0,
+      "full_frame_epsilon_cap": 17.572280848830225,
+      "clean_gap_pp": 4.822812500000001,
+      "seed_clean_gaps_pp": [
+        4.924062499999998,
+        4.8925,
+        4.6518749999999995
+      ],
+      "communication_reduction_pct": 12.289418498146155,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 2.0,
+      "full_frame_rho_cap": 4.0,
+      "full_frame_epsilon_cap": 17.572280848830225,
+      "clean_gap_pp": 4.822812500000001,
+      "seed_clean_gaps_pp": [
+        4.924062499999998,
+        4.8925,
+        4.6518749999999995
+      ],
+      "communication_reduction_pct": 12.289418498146155,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 4.0,
+      "full_frame_rho_cap": 8.0,
+      "full_frame_epsilon_cap": 27.194103648752325,
+      "clean_gap_pp": 2.5304166666666683,
+      "seed_clean_gaps_pp": [
+        2.664687500000001,
+        2.5462499999999997,
+        2.380312499999998
+      ],
+      "communication_reduction_pct": 17.231469251210086,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 4.0,
+      "full_frame_rho_cap": 8.0,
+      "full_frame_epsilon_cap": 27.194103648752325,
+      "clean_gap_pp": 2.4755208333333334,
+      "seed_clean_gaps_pp": [
+        2.5824999999999987,
+        2.530312499999998,
+        2.313749999999998
+      ],
+      "communication_reduction_pct": 21.505819328296194,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 4.0,
+      "full_frame_rho_cap": 8.0,
+      "full_frame_epsilon_cap": 27.194103648752325,
+      "clean_gap_pp": 2.4755208333333334,
+      "seed_clean_gaps_pp": [
+        2.5824999999999987,
+        2.530312499999998,
+        2.313749999999998
+      ],
+      "communication_reduction_pct": 21.505819328296194,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Fixed",
+      "nominal_rho_cap": 8.0,
+      "full_frame_rho_cap": 16.0,
+      "full_frame_epsilon_cap": 43.14456169766045,
+      "clean_gap_pp": 1.213333333333333,
+      "seed_clean_gaps_pp": [
+        1.3478125000000007,
+        1.1928125000000012,
+        1.0993749999999969
+      ],
+      "communication_reduction_pct": 27.45209055808504,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Power",
+      "nominal_rho_cap": 8.0,
+      "full_frame_rho_cap": 16.0,
+      "full_frame_epsilon_cap": 43.14456169766045,
+      "clean_gap_pp": 1.162291666666665,
+      "seed_clean_gaps_pp": [
+        1.2737499999999957,
+        1.1406250000000007,
+        1.0724999999999985
+      ],
+      "communication_reduction_pct": 34.17317385799775,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    },
+    {
+      "dataset": "MNIST",
+      "method": "CR-Uses",
+      "nominal_rho_cap": 8.0,
+      "full_frame_rho_cap": 16.0,
+      "full_frame_epsilon_cap": 43.14456169766045,
+      "clean_gap_pp": 1.162291666666665,
+      "seed_clean_gaps_pp": [
+        1.2737499999999957,
+        1.1406250000000007,
+        1.0724999999999985
+      ],
+      "communication_reduction_pct": 34.17317385799775,
+      "mean_criterion_pass": true,
+      "all_seeds_within_5pp": true
+    }
+  ]
+}
