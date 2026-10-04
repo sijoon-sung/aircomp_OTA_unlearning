@@ -1,5 +1,7 @@
 # AirComp OTA Unlearning — 실험 및 비용 기록
 
+**2026-10-05 SISA–AirComp 결과 보관 브랜치:** [현재 판단·실험별 상태·한계·원자료 안내](SISA_AIRCOMP_STATUS_KO.md). 데이터 중심 배정의 이득만으로 AirComp 고유 기여를 주장하지 않는다. 10월 3일 실험들과 10월 4일 부분 실행(18조건 중10조건·200삭제 완료)을 함께 보존했다. 아래 문서는 과거 시점의 연구 기록이다.
+
 2026-09-28 기준, 세 가지 AirComp 언러닝 방법의 수학적 조건, Original/V1 비교, 실패 기록과 비용 산정을 모은 연구 저장소다. 이전 날짜 문서는 당시의 탐색 결과이며, 이후 수정 사항을 덮어쓰지 않았다.
 
 **현재 연구 범위 변경: OTA-FL 전반, SFL 별도, 언러닝 필수 조건 제외** — [문헌·문제·해결 후보 검토](research_20260928_ota_problem_review/README_KO.md) · [선행연구와 겹침](research_20260928_ota_problem_review/LITERATURE_KO.md) · [SFL 별도 비교](research_20260928_ota_problem_review/SFL_SEPARATE_KO.md). SegOTA의 분할 그룹 가중치/간섭 문제를 첫 검증 후보로 남겼다. 작은 CPU 산술 검산에서 단순 보정은 분할 집계 내부에서는 개선됐지만 같은 payload 시간·에너지의 전체 모델 LMMSE를 이기지 못했다. 신규성 또는 CNN 성능을 확인한 결과가 아니며, [작은 실험의 비교군·중단 조건](research_20260928_ota_problem_review/EXPERIMENT_PLAN_KO.md)을 정리했다. 아래 언러닝 실험들은 이전 범위의 기록이다.

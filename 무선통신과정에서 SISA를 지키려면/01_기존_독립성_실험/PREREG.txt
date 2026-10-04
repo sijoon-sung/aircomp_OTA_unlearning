@@ -1,0 +1,16 @@
+실행 전 기록 2026-10-03 — 무선 혼합과 SISA 삭제 범위의 인과 진단
+첫 줄: 가설=데이터 의존 shard 간 간섭은 삭제 영향을 다른 모델로 전파하고 정확한 선형 분리는 이를 제거한다 | 독립변수=수신 방식·간섭·CSI 오차·잡음 | 종속변수=미삭제 shard 변화·부분/전체 재학습 오차·test MSE·자원 | 통제=고정 shard·데이터·학습량·초기상태·난수 | 상태=실행 전
+
+범위: CPU 합성 ridge regression, 3 shards x 4 clients, client당 64개, feature 8+intercept, test 2048개. 이는 알고리즘 의존성 진단이며 이미지 신경망 성능 검증/새 프로토콜/실제 RF 실험/암호학적 보안 증명이 아니다.
+학습: full-batch GD, lr .04, L2 .02(intercept 제외), 100 rounds. 각 shard의 4번째 client는 round20에서 최초 도입. round20 직전 model을 checkpoint로 저장. 따라서 삭제 대상은 해당 checkpoint에 영향을 주지 않았다. 삭제는 shard0/1/2의 4번째 client 한 명씩, 각각 별도 요청. source와 동일 routing·스케줄·정규화 규칙으로 재학습. 초기학습20 rounds는 client당3명, 이후4명. 삭제 reference는 요청 client만 계속 제외. 삭제 모델의 로컬 평균은 잔여 표본 수로 재정규화.
+시나리오: seeds 41001~41020, 혼합 rho=0/.01/.1/.3, receiver noise std=0/.01, 수신 방식 4종(orthogonal / mixed / zf_exact / zf_csi_error). 총640 source runs, 각3삭제 x(full replay/local replay/sham local replay), GPU 사용0.
+채널: 이미 shard 내부 합이 만들어졌다고 가정한 실수 등가 MIMO 모델 y=A g+n. A 대각1, 비대각rho, 수신 안테나/관측 차원3. MIMO라는 추가 자원을 명시하며 SISO에서 1관측으로3합을 복원한다고 주장하지 않음. 이것은 client별 precoder/전력 제약을 완전히 구현한 채널이 아니다.
+수신: mixed B=A; zf_exact W=inverse(A), B=W A; zf_csi_error W=inverse(A+.02 E), B=W A(E 독립표준정규 고정); orthogonal B=I. 수신 잡음은 zf에서 W n, 나머지 n. source/full/local/sham은 대응하는 동일 원시 잡음 draw 사용. 삭제 후에도 W/A 고정하여 재최적화·noise-law 변경 효과를 배제. 잡음 결합에 의한 경로별 비교이며 일반적인 분포 동일성 증명이 아님.
+primary H1: full reference의 미삭제 shard 최종 파라미터가 source에서 변하는지. 상대 변화=norm(diff)/max(1,norm(source)). 1e-9 초과를 수치 변화로 판정. 해당 변화는 삭제 외 모든 조건을 고정했으므로 본 모형에서 삭제 영향 전파의 증거.
+H2: 정확한 분리 시 affected-only replay가 같은 프로토콜 전체 reference와 상대오차1e-9 이하로 일치. 부동소수 허용 오차 사용; bitwise exact 주장 금지. CSI 오차에서는 잔여 B 비대각 크기와 실패 기록.
+local replay 정의: 미삭제 shard는 source 최종 모델을 그대로 유지하고 송신/학습하지 않음. 삭제 shard만 안전한 checkpoint에서 재학습하며 다른 shard의 송신 gradient는0. 수신기와 noise는 고정. 다른 shard gradient 이력 저장을 해결책으로 사용하지 않음.
+중요 대조: mixed에서 local-only는 다른 shard 신호도 제거하므로 삭제 외의 집계 변경이 포함된다. 같은 local-only 절차를 삭제 없이 실행하는 sham을 별도 측정. local/reference 불일치 하나만으로 삭제 누출을 판정하지 않고 primary H1을 사용한다.
+수신 자원: orthogonal 전체3D/round, local D/round; simultaneous 전체D/round, local D/round(D=9). 각 source/full/local 동일 송신 client 활성 전력 가정이 아니라 채널사용 수만 계산. 동시 전체와 local은 같은 시간-주파수 사용량일 수 있음. model compute calls는 full 3배 vs local1배. CSI/pilot/제어/암호/부호화/실패 재전송 제외. 실용 절감으로 주장하지 않음.
+품질: 공통 test set에서 shard 예측 평균의 MSE 보고. true task=shared linear teacher; client별 feature mean과 label offset으로 이질성 생성. MSE 우열은 합성문제 한정. unlearning 품질 지표는 test MSE 차이가 아닌 reference 일치와 영향 전파.
+한계/중단: finite/condition-number 체크 실패 시 실패 저장. 새로운 secure aggregation 기법은 구현하지 않음. ZF는 기존 기준선. H1/H2 성공은 신규성 근거가 아님. 사전 범위 후 추가 GPU 실험 자동 진행 안 함.
+원자료: 이 폴더 results.json, raw_states.npz, scenario_inputs.npz, audit.json, report.html. 기존 결과 보존.

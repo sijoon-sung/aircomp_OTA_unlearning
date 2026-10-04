@@ -1,0 +1,224 @@
+{
+  "passed": true,
+  "paired_replay_cases": 45,
+  "maxabs_reference": 0.0,
+  "checks": [
+    {
+      "file": "61001_all_source.json",
+      "events_checked": 640
+    },
+    {
+      "file": "61001_all_delete_11.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_all_delete_18.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_all_delete_2.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_all_delete_7.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_all_delete_9.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_mild_source.json",
+      "events_checked": 960
+    },
+    {
+      "file": "61001_mild_delete_11.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_mild_delete_18.json",
+      "events_checked": 100
+    },
+    {
+      "file": "61001_mild_delete_2.json",
+      "events_checked": 140
+    },
+    {
+      "file": "61001_mild_delete_7.json",
+      "events_checked": 120
+    },
+    {
+      "file": "61001_mild_delete_9.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_late_source.json",
+      "events_checked": 960
+    },
+    {
+      "file": "61001_late_delete_11.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61001_late_delete_18.json",
+      "events_checked": 40
+    },
+    {
+      "file": "61001_late_delete_2.json",
+      "events_checked": 120
+    },
+    {
+      "file": "61001_late_delete_7.json",
+      "events_checked": 80
+    },
+    {
+      "file": "61001_late_delete_9.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_all_source.json",
+      "events_checked": 640
+    },
+    {
+      "file": "61002_all_delete_15.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_all_delete_17.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_all_delete_3.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_all_delete_8.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_all_delete_9.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_mild_source.json",
+      "events_checked": 960
+    },
+    {
+      "file": "61002_mild_delete_15.json",
+      "events_checked": 100
+    },
+    {
+      "file": "61002_mild_delete_17.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_mild_delete_3.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_mild_delete_8.json",
+      "events_checked": 120
+    },
+    {
+      "file": "61002_mild_delete_9.json",
+      "events_checked": 140
+    },
+    {
+      "file": "61002_late_source.json",
+      "events_checked": 960
+    },
+    {
+      "file": "61002_late_delete_15.json",
+      "events_checked": 40
+    },
+    {
+      "file": "61002_late_delete_17.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_late_delete_3.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61002_late_delete_8.json",
+      "events_checked": 80
+    },
+    {
+      "file": "61002_late_delete_9.json",
+      "events_checked": 120
+    },
+    {
+      "file": "61003_all_source.json",
+      "events_checked": 640
+    },
+    {
+      "file": "61003_all_delete_1.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_all_delete_14.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_all_delete_15.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_all_delete_2.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_all_delete_7.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_mild_source.json",
+      "events_checked": 960
+    },
+    {
+      "file": "61003_mild_delete_1.json",
+      "events_checked": 140
+    },
+    {
+      "file": "61003_mild_delete_14.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_mild_delete_15.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_mild_delete_2.json",
+      "events_checked": 100
+    },
+    {
+      "file": "61003_mild_delete_7.json",
+      "events_checked": 120
+    },
+    {
+      "file": "61003_late_source.json",
+      "events_checked": 960
+    },
+    {
+      "file": "61003_late_delete_1.json",
+      "events_checked": 120
+    },
+    {
+      "file": "61003_late_delete_14.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_late_delete_15.json",
+      "events_checked": 160
+    },
+    {
+      "file": "61003_late_delete_2.json",
+      "events_checked": 40
+    },
+    {
+      "file": "61003_late_delete_7.json",
+      "events_checked": 80
+    }
+  ],
+  "scope": "same-seed affected-shard from-scratch reference; unchanged shards reused, not independent four-shard retraining"
+}

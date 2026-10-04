@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "exact_cases": 8,
+  "paired_group_channel_histogram_match": true,
+  "natural_epsilon_C_invariant": true,
+  "mse_C_squared": true
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_seconds": 1881.3776241999585,
+  "gpu_board_Wh": 83.98151548141308,
+  "local_calls": 475212.0,
+  "external_payment": 0,
+  "primary_source_cases": 57,
+  "diagnostic_source_cases": 8,
+  "primary_deletions": 63,
+  "diagnostic_deletions": 8,
+  "preflight_cases": 1,
+  "energy_note": "Approximate sampled whole-board integral; preflight shorter than 5s has no integration interval, not zero actual energy"
+}

@@ -1,0 +1,12 @@
+실행 전 기록 — 2026-10-03
+가설: 논리적으로 독립적인 SISA shard도 주파수 분리 AirComp의 잔여 CFO로 다른 shard update가 수신되면 학습 영향의 격리가 깨진다. 반대로 이상적 동기화에서는 일반 수신 잡음만으로 격리가 깨지지 않는다.
+독립변수: residual CFO 범위 e=0/.01/.05/.1 (부반송파 간격으로 정규화), shard 사이 guard tone수0/4, 수신 잡음 std0/.01, 실제 OFDM/교차shard 항만 제거한 oracle 대조.
+종속변수: cross-shard 수신행렬 에너지비, 삭제가 미삭제 shard 모델에 준 상대 변화, 부분/전체 재학습 모델 상대오차, test 예측 RMS 차이와 MSE, 수치 격리 실패 건수.
+통제: 12clients, 3고정shards, client당64 synthetic regression samples, feature8+intercept,100rounds,fullbatch GD lr .04,L2 .02(intercept제외),같은 데이터·초기모델·paired noise. seed41001~41020(이전 데이터 조건 재사용). 모든 client round0부터 참여, 안전한 rollback은 초기화0. round checkpoint를 slicing 절감으로 해석하지 않는다. shard간 model averaging/knowledge transfer 없음; 최종 평가만 예측 ensemble.
+통신: SISO OFDM Nfft64, CP8, 각shard9tones에9개 실수 gradient 좌표. 동일shard client는 동일tone에동시송신. shard별tone는서로겹치지않음. guard0 tones4..12/13..21/22..30, guard4 tones4..12/17..25/30..38. flat unit channels(완전 amplitude equalization), perfect timing, no multipath. client별 CFO=e*Uniform[-1,1] static. 유효 OFDM 블록내 phase ramp를 IFFT→곱셈→FFT로 구현하며 block 중심 common phase는 완전히 보상했다고 가정. 실제 환경의 typical CFO 분포를 주장하지 않음. CFO tracking/ICI cancellation 없음. peak power/PA clipping/pilot 등 생략, 고정 송신 gain이므로 실용 통신비용 비교 아님.
+수신: client별 주파수 누설 행렬은 FFT로 실제 생성. shard receiver는 해당tone의 실수부를 활성client수로 나눠 자기모델 업데이트. deletion 후 해당shard만 denominator4→3. noise는 복소 time-domain iid 단위분산샘플 x sigma; FFT unitary, 서로 다른 tones. source/full/local/sham에 같은 draw 사용.
+oracle: 자기shard 내부 CFO 왜곡은 그대로 두고 다른shard로 가는 행렬 block만0. 구현 가능한 새수신기가 아니라 교차 간섭의 인과 분리를 위한 대조군. OFDM CFO0와 oracle에서 동일 난수 기반 격리 통과가 필요.
+정의: full reference=삭제client를 제외하고 모든shard를 같은프로토콜로 초기화부터학습. local replay=삭제shard만 초기화부터학습, 다른shard는source최종모델유지·송신하지않음. sham=삭제없이 같은local-only 절차. local mismatch에는 다른shard 침묵효과가포함되므로 영향전파의주지표는 source vs full의미삭제shard 변화.
+판정: 상대오차 norm(diff)/max(1,norm(reference)); >1e-9 수치격리실패. 별도로1e-4/1e-3 초과건수보고(실용위험기준아님). 정확도/MSE저하와격리실패를구분. H1은 CFO>0에서미삭제shard 변화가 생기고 대응oracle에서사라지는지로판정. 보편적AirComp실패/보안공격/통계적exact-unlearning불가능성을주장하지않음.
+규모:20seeds×4CFO×2guard×2noise×2mode=640source, 각각3삭제target(client3/7/11), 1920 full+1920 local+1920 sham. CPU만사용. 기존자료덮어쓰기없음. 결과와무차이모두보고. 추가확장없음.
+독립검증: 저장한 수신행렬과 직접 IFFT/CFO/FFT waveform 출력 비교, affine matrix closed-form으로학습reference재계산, source/init/oracle대조검증. 실행코드·사전기록hash저장.

@@ -1,0 +1,10 @@
+{
+  "pid": 2552,
+  "gpu_inventory": "pid, process_name, used_gpu_memory [MiB]\n37064, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.917.9434.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.5.3",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "code_sha256": "454ef4e2546a472b120e4b7fa78e91446e01fc60a9df4a07464edae4fc5f9d0b",
+  "prereg_sha256": "97f49118d6a032a35be5fe76b6c26568d15115893f563f2da833f06ea18c5096",
+  "core_sha256": "4e14ee7aebee0b52974fffc10e952da24fde2313d7fe8e8a2aa3ff8f61825944"
+}

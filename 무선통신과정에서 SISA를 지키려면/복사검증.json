@@ -1,0 +1,42 @@
+[
+  {
+    "file": "audit_report.py",
+    "sha256": "EBAFA6817C735F307A253DE50954552C2ECFEA0C4D11E584FBCC0DC0A8A5E25C",
+    "matched": true
+  },
+  {
+    "file": "audit.json",
+    "sha256": "BD892FB104C4F7AE11DEDEF11F9C42C18246390BD89CFB89BA9D2265CFE11421",
+    "matched": true
+  },
+  {
+    "file": "PREREG.txt",
+    "sha256": "6230E0545753504A55B2B9FF93613F32645DDE333853604839C2B47B859ED57E",
+    "matched": true
+  },
+  {
+    "file": "raw_states.npz",
+    "sha256": "380F4FC70205FBFB3B9AE4F57A3C6A27446CB21B20B68508B713CE98F581E088",
+    "matched": true
+  },
+  {
+    "file": "report.html",
+    "sha256": "F9C2E0A0CFA7186B28866C13DB72193C6ECF6860C148288010C8C5EF173B45D7",
+    "matched": true
+  },
+  {
+    "file": "results.json",
+    "sha256": "061B6459914D73BECF9176BECFC0F1D137BF72FB344950EEBE203A7167117ED7",
+    "matched": true
+  },
+  {
+    "file": "run.py",
+    "sha256": "079B5465A791747A40814F9FC1A4F4411E4A28C271F16767B8709B6808D5DA46",
+    "matched": true
+  },
+  {
+    "file": "scenario_inputs.npz",
+    "sha256": "F5214F93900677005C3D9967DECCF8A637A40AAB6B1D3F0BBA03F86632DF0D79",
+    "matched": true
+  }
+]

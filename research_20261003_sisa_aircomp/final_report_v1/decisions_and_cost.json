@@ -1,0 +1,66 @@
+{
+  "primary_grouping": {
+    "chosen_K": 4,
+    "eligible_selection": true,
+    "additional_grouping_success": false,
+    "confirmation_ratio_of_mean_total_re": 0.9211159113947449,
+    "confirmation_ratio_of_mean_ul_re": 0.7904570278815751,
+    "confirmation_ratio_of_mean_total_re_dl6": 0.8650351757754808,
+    "confirmation_mean_accuracy_delta_pp": -0.6500000000000061,
+    "total_re_wins": 1,
+    "scope": "3-seed baseband pilot, not a novelty proof or privacy certification"
+  },
+  "codec_exploratory_pass": true,
+  "codec_DL_saving_vs_full": 0.15557518259007097,
+  "codec_total_saving_vs_full": 0.09414702618979043,
+  "codec_total_saving_vs_raw": 0.13579056872838458,
+  "packet_checks": 1080,
+  "codec_final_model_equal": true,
+  "cost": {
+    "seconds": 592.1680452999426,
+    "gpu_board_Wh": 25.101474405860237,
+    "local_calls": 149832,
+    "external_payment": 0,
+    "run_counts": {
+      "preflight_v1": 1,
+      "run_v1": 25,
+      "codec_v1": 9
+    },
+    "runs": [
+      {
+        "run": "preflight_v1",
+        "seconds": 1.9345778999850154,
+        "gpu_board_Wh": 0.0,
+        "sampling_seconds": 5,
+        "external_payment": 0,
+        "scope": "whole GPU board; not whole host, electricity tariff unavailable",
+        "error": null,
+        "completed_cases": 1,
+        "local_calls": 192
+      },
+      {
+        "run": "run_v1",
+        "seconds": 535.1718762000091,
+        "gpu_board_Wh": 23.561596843766836,
+        "sampling_seconds": 5,
+        "external_payment": 0,
+        "scope": "whole GPU board; not whole host, electricity tariff unavailable",
+        "error": null,
+        "completed_cases": 25,
+        "local_calls": 139920
+      },
+      {
+        "run": "codec_v1",
+        "seconds": 55.06159119994845,
+        "gpu_board_Wh": 1.5398775620934035,
+        "sampling_seconds": 5,
+        "external_payment": 0,
+        "scope": "whole GPU board; not whole host, electricity tariff unavailable",
+        "error": null,
+        "completed_cases": 9,
+        "local_calls": 9720
+      }
+    ],
+    "limit": "5-second GPU board samples, preflight shorter than sample interval; host/CPU-only analysis/electricity price not included"
+  }
+}

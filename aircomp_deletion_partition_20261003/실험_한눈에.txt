@@ -1,0 +1,14 @@
+무엇을 확인? 같은 무선4슬롯에서 삭제후 집계품질을 고려한 배정이 학습만 고려한 배정과 달라지고 도움이 되는가?
+독립변수: 배정5종(random/channel/data/train_joint/delete_joint).
+종속변수: 삭제160round 정확도, 정확도목표까지의rounds/통신량, client연산량, 집계잡음.
+통제조건: 20clients, 4shards, 각3~8명, FashionMNIST, 3seeds, CNN38282, R=1, 전력1, 명목20dB.
+삭제확률: 예측하지 않음. 각seed에서20명을각각삭제하여균일평균과최악값을계산.
+AirCluster차이: 동적개인화배정 대신 삭제용고정배정과 삭제후집합의무선비용을사용. AirCluster의MIMO성능비교는미실행.
+정식삭제기준: 원학습과같은160round 삭제제외재학습. 조기정확도도달은보조지표이며exact삭제인증이아님.
+실행: 15학습조건, 300개개별삭제, 초기재현검증15건, fixed160추가검증15건. 중간체크포인트재사용/지연참여없음.
+읽는순서: report.html -> ALGORITHM.txt -> PREREG.txt와AMENDMENT_FIXED160.txt -> analysis.json -> results.json/fixed160_results.json.
+실행코드: run.py -> repair_fixed160.py -> report.py. GPU는각각순차한worker.
+Python: C:/Users/DISLAB/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe
+PYTHONPATH: C:/Users/DISLAB/Desktop/split_learning/ota_ful/.analysis;C:/Users/DISLAB/Desktop/split_learning/ota_ful/.deps_cuda
+환경: CUBLAS_WORKSPACE_CONFIG=:4096:8, OMP_NUM_THREADS=2, OPENBLAS_NUM_THREADS=1, PYTHONDONTWRITEBYTECODE=1.
+재실행은새형제폴더에서할것. 원자료덮어쓰기금지.

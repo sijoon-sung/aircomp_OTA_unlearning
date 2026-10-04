@@ -1,0 +1,1820 @@
+[
+  {
+    "seed": 61001,
+    "policy": "all",
+    "entry": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "matched": true,
+    "target_dev": 0.7165000343322754,
+    "selected": {
+      "round": 160,
+      "dev": 0.7265000343322754,
+      "test": 0.7221999764442444,
+      "cost": {
+        "total_re": 4634222862.0,
+        "total_re_dl6": 4372884408.666667,
+        "ul_reals": 4242066702.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 25600.0,
+        "control_bits": 245760.0,
+        "local_calls": 3200.0,
+        "local_steps": 6400.0,
+        "ul_signal_energy": 304187937.11516535
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.7265000343322754,
+      "test": 0.7221999764442444,
+      "cost": {
+        "total_re": 4634222862.0,
+        "total_re_dl6": 4372884408.666667,
+        "ul_reals": 4242066702.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 25600.0,
+        "control_bits": 245760.0,
+        "local_calls": 3200.0,
+        "local_steps": 6400.0,
+        "ul_signal_energy": 304187937.11516535
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 11,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7080000042915344,
+        "test": 0.7084999680519104,
+        "cost": {
+          "total_re": 2823481348.0,
+          "total_re_dl6": 2758146734.6666665,
+          "ul_reals": 2725448708.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 140672315.18756008
+        },
+        "reference_cost": {
+          "total_re": 2823481348.0,
+          "total_re_dl6": 2758146734.6666665,
+          "ul_reals": 2725448708.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 140672315.18756008
+        }
+      },
+      {
+        "deleted": 9,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7250000238418579,
+        "test": 0.7289999723434448,
+        "cost": {
+          "total_re": 2438402710.0,
+          "total_re_dl6": 2373068096.6666665,
+          "ul_reals": 2340370070.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 86635927.59648183
+        },
+        "reference_cost": {
+          "total_re": 2438402710.0,
+          "total_re_dl6": 2373068096.6666665,
+          "ul_reals": 2340370070.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 86635927.59648183
+        }
+      },
+      {
+        "deleted": 2,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7190000414848328,
+        "test": 0.7184000015258789,
+        "cost": {
+          "total_re": 2823481348.0,
+          "total_re_dl6": 2758146734.6666665,
+          "ul_reals": 2725448708.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 181937057.60047528
+        },
+        "reference_cost": {
+          "total_re": 2823481348.0,
+          "total_re_dl6": 2758146734.6666665,
+          "ul_reals": 2725448708.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 181937057.60047528
+        }
+      },
+      {
+        "deleted": 7,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7280000448226929,
+        "test": 0.723800003528595,
+        "cost": {
+          "total_re": 2823481348.0,
+          "total_re_dl6": 2758146734.6666665,
+          "ul_reals": 2725448708.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 180569431.11077127
+        },
+        "reference_cost": {
+          "total_re": 2823481348.0,
+          "total_re_dl6": 2758146734.6666665,
+          "ul_reals": 2725448708.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 180569431.11077127
+        }
+      },
+      {
+        "deleted": 18,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7310000061988831,
+        "test": 0.7156999707221985,
+        "cost": {
+          "total_re": 2652973320.0,
+          "total_re_dl6": 2587638706.6666665,
+          "ul_reals": 2554940680.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 98662776.18959463
+        },
+        "reference_cost": {
+          "total_re": 2652973320.0,
+          "total_re_dl6": 2587638706.6666665,
+          "ul_reals": 2554940680.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 98662776.18959463
+        }
+      }
+    ],
+    "expected_delete_re": 2712364014.8,
+    "mean_deleted_test": 0.7190799832344055,
+    "checkpoint_bytes": 612512,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61001,
+    "policy": "mild",
+    "entry": [
+      0,
+      0,
+      20,
+      40,
+      60
+    ],
+    "matched": true,
+    "target_dev": 0.7165000343322754,
+    "selected": {
+      "round": 160,
+      "dev": 0.7250000238418579,
+      "test": 0.7192999720573425,
+      "cost": {
+        "total_re": 7635627308.0,
+        "total_re_dl6": 7374288854.666667,
+        "ul_reals": 7243490348.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 21760.0,
+        "control_bits": 215040.0,
+        "local_calls": 2720.0,
+        "local_steps": 5440.0,
+        "ul_signal_energy": 332970388.29033154
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.7250000238418579,
+      "test": 0.7192999720573425,
+      "cost": {
+        "total_re": 7635627308.0,
+        "total_re_dl6": 7374288854.666667,
+        "ul_reals": 7243490348.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 21760.0,
+        "control_bits": 215040.0,
+        "local_calls": 2720.0,
+        "local_steps": 5440.0,
+        "ul_signal_energy": 332970388.29033154
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 11,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7015000581741333,
+        "test": 0.7005000114440918,
+        "cost": {
+          "total_re": 8720971776.0,
+          "total_re_dl6": 8655637162.666666,
+          "ul_reals": 8622943936.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 186729977.4019182
+        },
+        "reference_cost": {
+          "total_re": 8720971776.0,
+          "total_re_dl6": 8655637162.666666,
+          "ul_reals": 8622943936.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 186729977.4019182
+        }
+      },
+      {
+        "deleted": 9,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7305000424385071,
+        "test": 0.7286999821662903,
+        "cost": {
+          "total_re": 2708171164.0,
+          "total_re_dl6": 2642836550.6666665,
+          "ul_reals": 2610143324.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 74693829.75444017
+        },
+        "reference_cost": {
+          "total_re": 2708171164.0,
+          "total_re_dl6": 2642836550.6666665,
+          "ul_reals": 2610143324.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 74693829.75444017
+        }
+      },
+      {
+        "deleted": 2,
+        "entry_round": 20,
+        "replay_rounds": 140,
+        "maxabs_reference": 0.0,
+        "dev": 0.7140000462532043,
+        "test": 0.7105000019073486,
+        "cost": {
+          "total_re": 3675594146.0,
+          "total_re_dl6": 3618426359.3333335,
+          "ul_reals": 3589817986.0,
+          "dl_bits": 171503360.0,
+          "pilot_reals": 4000.0,
+          "control_bits": 40960.0,
+          "local_calls": 500.0,
+          "local_steps": 1000.0,
+          "ul_signal_energy": 176702039.9484901
+        },
+        "reference_cost": {
+          "total_re": 4946443940.0,
+          "total_re_dl6": 4881109326.666667,
+          "ul_reals": 4848415300.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4320.0,
+          "control_bits": 44800.0,
+          "local_calls": 540.0,
+          "local_steps": 1080.0,
+          "ul_signal_energy": 208278479.1690908
+        }
+      },
+      {
+        "deleted": 7,
+        "entry_round": 40,
+        "replay_rounds": 120,
+        "maxabs_reference": 0.0,
+        "dev": 0.7220000624656677,
+        "test": 0.7173999547958374,
+        "cost": {
+          "total_re": 2356126212.0,
+          "total_re_dl6": 2307125252.0,
+          "ul_reals": 2282602532.0,
+          "dl_bits": 147002880.0,
+          "pilot_reals": 3680.0,
+          "control_bits": 37120.0,
+          "local_calls": 460.0,
+          "local_steps": 920.0,
+          "ul_signal_energy": 138584606.88427982
+        },
+        "reference_cost": {
+          "total_re": 4220503174.0,
+          "total_re_dl6": 4155168560.666667,
+          "ul_reals": 4122473734.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4480.0,
+          "control_bits": 46080.0,
+          "local_calls": 560.0,
+          "local_steps": 1120.0,
+          "ul_signal_energy": 194251401.0577893
+        }
+      },
+      {
+        "deleted": 18,
+        "entry_round": 60,
+        "replay_rounds": 100,
+        "maxabs_reference": 0.0,
+        "dev": 0.7270000576972961,
+        "test": 0.7145999670028687,
+        "cost": {
+          "total_re": 1654452394.0,
+          "total_re_dl6": 1613618260.6666667,
+          "ul_reals": 1593181994.0,
+          "dl_bits": 122502400.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 32000.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 64275938.87412519
+        },
+        "reference_cost": {
+          "total_re": 3850929546.0,
+          "total_re_dl6": 3785594932.6666665,
+          "ul_reals": 3752899306.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4640.0,
+          "control_bits": 47360.0,
+          "local_calls": 580.0,
+          "local_steps": 1160.0,
+          "ul_signal_energy": 131605471.74537641
+        }
+      }
+    ],
+    "expected_delete_re": 3823063138.4,
+    "mean_deleted_test": 0.7143399834632873,
+    "checkpoint_bytes": 2450048,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61001,
+    "policy": "late",
+    "entry": [
+      0,
+      0,
+      40,
+      80,
+      120
+    ],
+    "matched": true,
+    "target_dev": 0.7165000343322754,
+    "selected": {
+      "round": 160,
+      "dev": 0.7200000286102295,
+      "test": 0.7134000062942505,
+      "cost": {
+        "total_re": 10601965442.0,
+        "total_re_dl6": 10340626988.666666,
+        "ul_reals": 10209847682.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 17920.0,
+        "control_bits": 184320.0,
+        "local_calls": 2240.0,
+        "local_steps": 4480.0,
+        "ul_signal_energy": 369386136.88887703
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.7200000286102295,
+      "test": 0.7134000062942505,
+      "cost": {
+        "total_re": 10601965442.0,
+        "total_re_dl6": 10340626988.666666,
+        "ul_reals": 10209847682.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 17920.0,
+        "control_bits": 184320.0,
+        "local_calls": 2240.0,
+        "local_steps": 4480.0,
+        "ul_signal_energy": 369386136.88887703
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 11,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7000000476837158,
+        "test": 0.694599986076355,
+        "cost": {
+          "total_re": 14742916986.0,
+          "total_re_dl6": 14677582372.666666,
+          "ul_reals": 14644893946.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 256778021.44512075
+        },
+        "reference_cost": {
+          "total_re": 14742916986.0,
+          "total_re_dl6": 14677582372.666666,
+          "ul_reals": 14644893946.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 256778021.44512075
+        }
+      },
+      {
+        "deleted": 9,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7230000495910645,
+        "test": 0.725600004196167,
+        "cost": {
+          "total_re": 2953209446.0,
+          "total_re_dl6": 2887874832.6666665,
+          "ul_reals": 2855186406.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 54835040.120885834
+        },
+        "reference_cost": {
+          "total_re": 2953209446.0,
+          "total_re_dl6": 2887874832.6666665,
+          "ul_reals": 2855186406.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 54835040.120885834
+        }
+      },
+      {
+        "deleted": 2,
+        "entry_round": 40,
+        "replay_rounds": 120,
+        "maxabs_reference": 0.0,
+        "dev": 0.7155000567436218,
+        "test": 0.7069000005722046,
+        "cost": {
+          "total_re": 4457459474.0,
+          "total_re_dl6": 4408458514.0,
+          "ul_reals": 4383939794.0,
+          "dl_bits": 147002880.0,
+          "pilot_reals": 2880.0,
+          "control_bits": 30720.0,
+          "local_calls": 360.0,
+          "local_steps": 720.0,
+          "ul_signal_energy": 153816793.85123768
+        },
+        "reference_cost": {
+          "total_re": 7047777202.0,
+          "total_re_dl6": 6982442588.666667,
+          "ul_reals": 6949752562.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3520.0,
+          "control_bits": 38400.0,
+          "local_calls": 440.0,
+          "local_steps": 880.0,
+          "ul_signal_energy": 228683175.2538301
+        }
+      },
+      {
+        "deleted": 7,
+        "entry_round": 80,
+        "replay_rounds": 80,
+        "maxabs_reference": 0.0,
+        "dev": 0.7155000567436218,
+        "test": 0.7098000049591064,
+        "cost": {
+          "total_re": 1859447064.0,
+          "total_re_dl6": 1826779757.3333335,
+          "ul_reals": 1810432344.0,
+          "dl_bits": 98001920.0,
+          "pilot_reals": 2240.0,
+          "control_bits": 23040.0,
+          "local_calls": 280.0,
+          "local_steps": 560.0,
+          "ul_signal_energy": 92137531.49223608
+        },
+        "reference_cost": {
+          "total_re": 5618443768.0,
+          "total_re_dl6": 5553109154.666667,
+          "ul_reals": 5520417528.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3840.0,
+          "control_bits": 40960.0,
+          "local_calls": 480.0,
+          "local_steps": 960.0,
+          "ul_signal_energy": 209961931.42439392
+        }
+      },
+      {
+        "deleted": 18,
+        "entry_round": 120,
+        "replay_rounds": 40,
+        "maxabs_reference": 0.0,
+        "dev": 0.7245000600814819,
+        "test": 0.7123000025749207,
+        "cost": {
+          "total_re": 663626150.0,
+          "total_re_dl6": 647292496.6666666,
+          "ul_reals": 639117990.0,
+          "dl_bits": 49000960.0,
+          "pilot_reals": 1280.0,
+          "control_bits": 12800.0,
+          "local_calls": 160.0,
+          "local_steps": 320.0,
+          "ul_signal_energy": 24523238.9325746
+        },
+        "reference_cost": {
+          "total_re": 5077099606.0,
+          "total_re_dl6": 5011764992.666667,
+          "ul_reals": 4979071766.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 166201898.59479675
+        }
+      }
+    ],
+    "expected_delete_re": 4935331824.0,
+    "mean_deleted_test": 0.7098399996757507,
+    "checkpoint_bytes": 2450048,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61002,
+    "policy": "all",
+    "entry": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "matched": true,
+    "target_dev": 0.7255000376701355,
+    "selected": {
+      "round": 160,
+      "dev": 0.7355000376701355,
+      "test": 0.7148999571800232,
+      "cost": {
+        "total_re": 5329117726.0,
+        "total_re_dl6": 5067779272.666667,
+        "ul_reals": 4936961566.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 25600.0,
+        "control_bits": 245760.0,
+        "local_calls": 3200.0,
+        "local_steps": 6400.0,
+        "ul_signal_energy": 311241079.55697703
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.7355000376701355,
+      "test": 0.7148999571800232,
+      "cost": {
+        "total_re": 5329117726.0,
+        "total_re_dl6": 5067779272.666667,
+        "ul_reals": 4936961566.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 25600.0,
+        "control_bits": 245760.0,
+        "local_calls": 3200.0,
+        "local_steps": 6400.0,
+        "ul_signal_energy": 311241079.55697703
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 3,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7365000247955322,
+        "test": 0.7128999829292297,
+        "cost": {
+          "total_re": 1233706452.0,
+          "total_re_dl6": 1168371838.6666667,
+          "ul_reals": 1135673812.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 44523122.80084154
+        },
+        "reference_cost": {
+          "total_re": 1233706452.0,
+          "total_re_dl6": 1168371838.6666667,
+          "ul_reals": 1135673812.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 44523122.80084154
+        }
+      },
+      {
+        "deleted": 17,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7205000519752502,
+        "test": 0.6958999633789062,
+        "cost": {
+          "total_re": 1252043530.0,
+          "total_re_dl6": 1186708916.6666667,
+          "ul_reals": 1154010890.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 74606386.93863031
+        },
+        "reference_cost": {
+          "total_re": 1252043530.0,
+          "total_re_dl6": 1186708916.6666667,
+          "ul_reals": 1154010890.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 74606386.93863031
+        }
+      },
+      {
+        "deleted": 9,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.737500011920929,
+        "test": 0.7181000113487244,
+        "cost": {
+          "total_re": 1252043530.0,
+          "total_re_dl6": 1186708916.6666667,
+          "ul_reals": 1154010890.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 77891616.63528983
+        },
+        "reference_cost": {
+          "total_re": 1252043530.0,
+          "total_re_dl6": 1186708916.6666667,
+          "ul_reals": 1154010890.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 77891616.63528983
+        }
+      },
+      {
+        "deleted": 8,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7395000457763672,
+        "test": 0.714199960231781,
+        "cost": {
+          "total_re": 958803410.0,
+          "total_re_dl6": 893468796.6666667,
+          "ul_reals": 860770770.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 61162240.838179976
+        },
+        "reference_cost": {
+          "total_re": 958803410.0,
+          "total_re_dl6": 893468796.6666667,
+          "ul_reals": 860770770.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 61162240.838179976
+        }
+      },
+      {
+        "deleted": 15,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7260000109672546,
+        "test": 0.7062999606132507,
+        "cost": {
+          "total_re": 1252043530.0,
+          "total_re_dl6": 1186708916.6666667,
+          "ul_reals": 1154010890.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 74328432.6492845
+        },
+        "reference_cost": {
+          "total_re": 1252043530.0,
+          "total_re_dl6": 1186708916.6666667,
+          "ul_reals": 1154010890.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 74328432.6492845
+        }
+      }
+    ],
+    "expected_delete_re": 1189728090.4,
+    "mean_deleted_test": 0.7094799757003785,
+    "checkpoint_bytes": 612512,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61002,
+    "policy": "mild",
+    "entry": [
+      0,
+      0,
+      20,
+      40,
+      60
+    ],
+    "matched": true,
+    "target_dev": 0.7255000376701355,
+    "selected": {
+      "round": 160,
+      "dev": 0.7345000505447388,
+      "test": 0.7124999761581421,
+      "cost": {
+        "total_re": 7172223698.0,
+        "total_re_dl6": 6910885244.666667,
+        "ul_reals": 6780086738.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 21760.0,
+        "control_bits": 215040.0,
+        "local_calls": 2720.0,
+        "local_steps": 5440.0,
+        "ul_signal_energy": 343237722.93402445
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.7345000505447388,
+      "test": 0.7124999761581421,
+      "cost": {
+        "total_re": 7172223698.0,
+        "total_re_dl6": 6910885244.666667,
+        "ul_reals": 6780086738.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 21760.0,
+        "control_bits": 215040.0,
+        "local_calls": 2720.0,
+        "local_steps": 5440.0,
+        "ul_signal_energy": 343237722.93402445
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 3,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7325000166893005,
+        "test": 0.7109000086784363,
+        "cost": {
+          "total_re": 1391921158.0,
+          "total_re_dl6": 1326586544.6666667,
+          "ul_reals": 1293893318.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 47778093.95733077
+        },
+        "reference_cost": {
+          "total_re": 1391921158.0,
+          "total_re_dl6": 1326586544.6666667,
+          "ul_reals": 1293893318.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 47778093.95733077
+        }
+      },
+      {
+        "deleted": 17,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6950000524520874,
+        "test": 0.6703000068664551,
+        "cost": {
+          "total_re": 3201358170.0,
+          "total_re_dl6": 3136023556.666667,
+          "ul_reals": 3103330330.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 105773911.21949887
+        },
+        "reference_cost": {
+          "total_re": 3201358170.0,
+          "total_re_dl6": 3136023556.666667,
+          "ul_reals": 3103330330.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 105773911.21949887
+        }
+      },
+      {
+        "deleted": 9,
+        "entry_round": 20,
+        "replay_rounds": 140,
+        "maxabs_reference": 0.0,
+        "dev": 0.7365000247955322,
+        "test": 0.7145000100135803,
+        "cost": {
+          "total_re": 1484906696.0,
+          "total_re_dl6": 1427738909.3333333,
+          "ul_reals": 1399130536.0,
+          "dl_bits": 171503360.0,
+          "pilot_reals": 4000.0,
+          "control_bits": 40960.0,
+          "local_calls": 500.0,
+          "local_steps": 1000.0,
+          "ul_signal_energy": 85319018.81662364
+        },
+        "reference_cost": {
+          "total_re": 1923467528.0,
+          "total_re_dl6": 1858132914.6666667,
+          "ul_reals": 1825438888.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4320.0,
+          "control_bits": 44800.0,
+          "local_calls": 540.0,
+          "local_steps": 1080.0,
+          "ul_signal_energy": 93756580.09043202
+        }
+      },
+      {
+        "deleted": 8,
+        "entry_round": 40,
+        "replay_rounds": 120,
+        "maxabs_reference": 0.0,
+        "dev": 0.7400000095367432,
+        "test": 0.7152999639511108,
+        "cost": {
+          "total_re": 807045082.0,
+          "total_re_dl6": 758044122.0,
+          "ul_reals": 733521402.0,
+          "dl_bits": 147002880.0,
+          "pilot_reals": 3680.0,
+          "control_bits": 37120.0,
+          "local_calls": 460.0,
+          "local_steps": 920.0,
+          "ul_signal_energy": 54974394.01232092
+        },
+        "reference_cost": {
+          "total_re": 1444981610.0,
+          "total_re_dl6": 1379646996.6666667,
+          "ul_reals": 1346952170.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4480.0,
+          "control_bits": 46080.0,
+          "local_calls": 560.0,
+          "local_steps": 1120.0,
+          "ul_signal_energy": 75459696.67076658
+        }
+      },
+      {
+        "deleted": 15,
+        "entry_round": 60,
+        "replay_rounds": 100,
+        "maxabs_reference": 0.0,
+        "dev": 0.7280000448226929,
+        "test": 0.708299994468689,
+        "cost": {
+          "total_re": 783613458.0,
+          "total_re_dl6": 742779324.6666666,
+          "ul_reals": 722343058.0,
+          "dl_bits": 122502400.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 32000.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 49205794.45204338
+        },
+        "reference_cost": {
+          "total_re": 1578127206.0,
+          "total_re_dl6": 1512792592.6666667,
+          "ul_reals": 1480096966.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4640.0,
+          "control_bits": 47360.0,
+          "local_calls": 580.0,
+          "local_steps": 1160.0,
+          "ul_signal_energy": 81764089.7771951
+        }
+      }
+    ],
+    "expected_delete_re": 1533768912.8,
+    "mean_deleted_test": 0.7038599967956543,
+    "checkpoint_bytes": 2450048,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61002,
+    "policy": "late",
+    "entry": [
+      0,
+      0,
+      40,
+      80,
+      120
+    ],
+    "matched": true,
+    "target_dev": 0.7255000376701355,
+    "selected": {
+      "round": 160,
+      "dev": 0.7365000247955322,
+      "test": 0.7142999768257141,
+      "cost": {
+        "total_re": 8928812350.0,
+        "total_re_dl6": 8667473896.666666,
+        "ul_reals": 8536694590.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 17920.0,
+        "control_bits": 184320.0,
+        "local_calls": 2240.0,
+        "local_steps": 4480.0,
+        "ul_signal_energy": 382291329.02419186
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.7365000247955322,
+      "test": 0.7142999768257141,
+      "cost": {
+        "total_re": 8928812350.0,
+        "total_re_dl6": 8667473896.666666,
+        "ul_reals": 8536694590.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 17920.0,
+        "control_bits": 184320.0,
+        "local_calls": 2240.0,
+        "local_steps": 4480.0,
+        "ul_signal_energy": 382291329.02419186
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 3,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7325000166893005,
+        "test": 0.7127000093460083,
+        "cost": {
+          "total_re": 1578196570.0,
+          "total_re_dl6": 1512861956.6666667,
+          "ul_reals": 1480173530.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 44904244.47313487
+        },
+        "reference_cost": {
+          "total_re": 1578196570.0,
+          "total_re_dl6": 1512861956.6666667,
+          "ul_reals": 1480173530.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 44904244.47313487
+        }
+      },
+      {
+        "deleted": 17,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.7080000042915344,
+        "test": 0.686199963092804,
+        "cost": {
+          "total_re": 5130804452.0,
+          "total_re_dl6": 5065469838.666667,
+          "ul_reals": 5032781412.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 128760349.82810462
+        },
+        "reference_cost": {
+          "total_re": 5130804452.0,
+          "total_re_dl6": 5065469838.666667,
+          "ul_reals": 5032781412.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 128760349.82810462
+        }
+      },
+      {
+        "deleted": 9,
+        "entry_round": 40,
+        "replay_rounds": 120,
+        "maxabs_reference": 0.0,
+        "dev": 0.7420000433921814,
+        "test": 0.7150999903678894,
+        "cost": {
+          "total_re": 1721406652.0,
+          "total_re_dl6": 1672405692.0,
+          "ul_reals": 1647886972.0,
+          "dl_bits": 147002880.0,
+          "pilot_reals": 2880.0,
+          "control_bits": 30720.0,
+          "local_calls": 360.0,
+          "local_steps": 720.0,
+          "ul_signal_energy": 86678763.00887142
+        },
+        "reference_cost": {
+          "total_re": 2592786016.0,
+          "total_re_dl6": 2527451402.6666665,
+          "ul_reals": 2494761376.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3520.0,
+          "control_bits": 38400.0,
+          "local_calls": 440.0,
+          "local_steps": 880.0,
+          "ul_signal_energy": 108989277.03935301
+        }
+      },
+      {
+        "deleted": 8,
+        "entry_round": 80,
+        "replay_rounds": 80,
+        "maxabs_reference": 0.0,
+        "dev": 0.737500011920929,
+        "test": 0.7155999541282654,
+        "cost": {
+          "total_re": 653832038.0,
+          "total_re_dl6": 621164731.3333334,
+          "ul_reals": 604817318.0,
+          "dl_bits": 98001920.0,
+          "pilot_reals": 2240.0,
+          "control_bits": 23040.0,
+          "local_calls": 280.0,
+          "local_steps": 560.0,
+          "ul_signal_energy": 38320003.95529279
+        },
+        "reference_cost": {
+          "total_re": 1926412842.0,
+          "total_re_dl6": 1861078228.6666667,
+          "ul_reals": 1828386602.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3840.0,
+          "control_bits": 40960.0,
+          "local_calls": 480.0,
+          "local_steps": 960.0,
+          "ul_signal_energy": 87241869.44932568
+        }
+      },
+      {
+        "deleted": 15,
+        "entry_round": 120,
+        "replay_rounds": 40,
+        "maxabs_reference": 0.0,
+        "dev": 0.7310000061988831,
+        "test": 0.7098000049591064,
+        "cost": {
+          "total_re": 305230066.0,
+          "total_re_dl6": 288896412.6666667,
+          "ul_reals": 280721906.0,
+          "dl_bits": 49000960.0,
+          "pilot_reals": 1280.0,
+          "control_bits": 12800.0,
+          "local_calls": 160.0,
+          "local_steps": 320.0,
+          "ul_signal_energy": 19384738.147002168
+        },
+        "reference_cost": {
+          "total_re": 1895406022.0,
+          "total_re_dl6": 1830071408.6666667,
+          "ul_reals": 1797378182.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 87991864.62198816
+        }
+      }
+    ],
+    "expected_delete_re": 1877893955.6,
+    "mean_deleted_test": 0.7078799843788147,
+    "checkpoint_bytes": 2450048,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61003,
+    "policy": "all",
+    "entry": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "matched": true,
+    "target_dev": 0.661500027179718,
+    "selected": {
+      "round": 160,
+      "dev": 0.671500027179718,
+      "test": 0.6717999577522278,
+      "cost": {
+        "total_re": 5637364390.0,
+        "total_re_dl6": 5376025936.666667,
+        "ul_reals": 5245208230.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 25600.0,
+        "control_bits": 245760.0,
+        "local_calls": 3200.0,
+        "local_steps": 6400.0,
+        "ul_signal_energy": 423869216.0853414
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.671500027179718,
+      "test": 0.6717999577522278,
+      "cost": {
+        "total_re": 5637364390.0,
+        "total_re_dl6": 5376025936.666667,
+        "ul_reals": 5245208230.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 25600.0,
+        "control_bits": 245760.0,
+        "local_calls": 3200.0,
+        "local_steps": 6400.0,
+        "ul_signal_energy": 423869216.0853414
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 15,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6790000200271606,
+        "test": 0.6789000034332275,
+        "cost": {
+          "total_re": 1281329260.0,
+          "total_re_dl6": 1215994646.6666667,
+          "ul_reals": 1183296620.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 196931706.24192056
+        },
+        "reference_cost": {
+          "total_re": 1281329260.0,
+          "total_re_dl6": 1215994646.6666667,
+          "ul_reals": 1183296620.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 196931706.24192056
+        }
+      },
+      {
+        "deleted": 14,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6525000333786011,
+        "test": 0.6568999886512756,
+        "cost": {
+          "total_re": 1281329260.0,
+          "total_re_dl6": 1215994646.6666667,
+          "ul_reals": 1183296620.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 142191904.08768237
+        },
+        "reference_cost": {
+          "total_re": 1281329260.0,
+          "total_re_dl6": 1215994646.6666667,
+          "ul_reals": 1183296620.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 142191904.08768237
+        }
+      },
+      {
+        "deleted": 1,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6795000433921814,
+        "test": 0.6787999868392944,
+        "cost": {
+          "total_re": 924043354.0,
+          "total_re_dl6": 858708740.6666667,
+          "ul_reals": 826010714.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 110591855.2677057
+        },
+        "reference_cost": {
+          "total_re": 924043354.0,
+          "total_re_dl6": 858708740.6666667,
+          "ul_reals": 826010714.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 110591855.2677057
+        }
+      },
+      {
+        "deleted": 7,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6535000205039978,
+        "test": 0.6559999585151672,
+        "cost": {
+          "total_re": 1281329260.0,
+          "total_re_dl6": 1215994646.6666667,
+          "ul_reals": 1183296620.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 119429643.17954947
+        },
+        "reference_cost": {
+          "total_re": 1281329260.0,
+          "total_re_dl6": 1215994646.6666667,
+          "ul_reals": 1183296620.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 119429643.17954947
+        }
+      },
+      {
+        "deleted": 2,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6810000538825989,
+        "test": 0.677299976348877,
+        "cost": {
+          "total_re": 1275012730.0,
+          "total_re_dl6": 1209678116.6666667,
+          "ul_reals": 1176980090.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 131621127.76566042
+        },
+        "reference_cost": {
+          "total_re": 1275012730.0,
+          "total_re_dl6": 1209678116.6666667,
+          "ul_reals": 1176980090.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 5120.0,
+          "control_bits": 51200.0,
+          "local_calls": 640.0,
+          "local_steps": 1280.0,
+          "ul_signal_energy": 131621127.76566042
+        }
+      }
+    ],
+    "expected_delete_re": 1208608772.8,
+    "mean_deleted_test": 0.6695799827575684,
+    "checkpoint_bytes": 612512,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61003,
+    "policy": "mild",
+    "entry": [
+      0,
+      0,
+      20,
+      40,
+      60
+    ],
+    "matched": true,
+    "target_dev": 0.661500027179718,
+    "selected": {
+      "round": 160,
+      "dev": 0.6805000305175781,
+      "test": 0.6779999732971191,
+      "cost": {
+        "total_re": 9533534022.0,
+        "total_re_dl6": 9272195568.666666,
+        "ul_reals": 9141397062.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 21760.0,
+        "control_bits": 215040.0,
+        "local_calls": 2720.0,
+        "local_steps": 5440.0,
+        "ul_signal_energy": 507875422.54776657
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.6805000305175781,
+      "test": 0.6779999732971191,
+      "cost": {
+        "total_re": 9533534022.0,
+        "total_re_dl6": 9272195568.666666,
+        "ul_reals": 9141397062.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 21760.0,
+        "control_bits": 215040.0,
+        "local_calls": 2720.0,
+        "local_steps": 5440.0,
+        "ul_signal_energy": 507875422.54776657
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 15,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6845000386238098,
+        "test": 0.6869999766349792,
+        "cost": {
+          "total_re": 2466152360.0,
+          "total_re_dl6": 2400817746.6666665,
+          "ul_reals": 2368124520.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 209975849.33049807
+        },
+        "reference_cost": {
+          "total_re": 2466152360.0,
+          "total_re_dl6": 2400817746.6666665,
+          "ul_reals": 2368124520.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 209975849.33049807
+        }
+      },
+      {
+        "deleted": 14,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6575000286102295,
+        "test": 0.6610999703407288,
+        "cost": {
+          "total_re": 1800849482.0,
+          "total_re_dl6": 1735514868.6666667,
+          "ul_reals": 1702821642.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 123515601.52320454
+        },
+        "reference_cost": {
+          "total_re": 1800849482.0,
+          "total_re_dl6": 1735514868.6666667,
+          "ul_reals": 1702821642.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 123515601.52320454
+        }
+      },
+      {
+        "deleted": 1,
+        "entry_round": 20,
+        "replay_rounds": 140,
+        "maxabs_reference": 0.0,
+        "dev": 0.6880000233650208,
+        "test": 0.6868000030517578,
+        "cost": {
+          "total_re": 915729920.0,
+          "total_re_dl6": 858562133.3333334,
+          "ul_reals": 829953760.0,
+          "dl_bits": 171503360.0,
+          "pilot_reals": 4000.0,
+          "control_bits": 40960.0,
+          "local_calls": 500.0,
+          "local_steps": 1000.0,
+          "ul_signal_energy": 81347027.86478971
+        },
+        "reference_cost": {
+          "total_re": 1115372790.0,
+          "total_re_dl6": 1050038176.6666666,
+          "ul_reals": 1017344150.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4320.0,
+          "control_bits": 44800.0,
+          "local_calls": 540.0,
+          "local_steps": 1080.0,
+          "ul_signal_energy": 84217410.952335
+        }
+      },
+      {
+        "deleted": 7,
+        "entry_round": 40,
+        "replay_rounds": 120,
+        "maxabs_reference": 0.0,
+        "dev": 0.6600000262260437,
+        "test": 0.6583999991416931,
+        "cost": {
+          "total_re": 1069659602.0,
+          "total_re_dl6": 1020658642.0,
+          "ul_reals": 996135922.0,
+          "dl_bits": 147002880.0,
+          "pilot_reals": 3680.0,
+          "control_bits": 37120.0,
+          "local_calls": 460.0,
+          "local_steps": 920.0,
+          "ul_signal_energy": 91181751.05073325
+        },
+        "reference_cost": {
+          "total_re": 1558908842.0,
+          "total_re_dl6": 1493574228.6666667,
+          "ul_reals": 1460879402.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4480.0,
+          "control_bits": 46080.0,
+          "local_calls": 560.0,
+          "local_steps": 1120.0,
+          "ul_signal_energy": 113475738.00272664
+        }
+      },
+      {
+        "deleted": 2,
+        "entry_round": 60,
+        "replay_rounds": 100,
+        "maxabs_reference": 0.0,
+        "dev": 0.6835000514984131,
+        "test": 0.6807999610900879,
+        "cost": {
+          "total_re": 792609728.0,
+          "total_re_dl6": 751775594.6666666,
+          "ul_reals": 731339328.0,
+          "dl_bits": 122502400.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 32000.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 82406119.56537122
+        },
+        "reference_cost": {
+          "total_re": 1440005750.0,
+          "total_re_dl6": 1374671136.6666667,
+          "ul_reals": 1341975510.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4640.0,
+          "control_bits": 47360.0,
+          "local_calls": 580.0,
+          "local_steps": 1160.0,
+          "ul_signal_energy": 122384237.63367012
+        }
+      }
+    ],
+    "expected_delete_re": 1409000218.4,
+    "mean_deleted_test": 0.6748199820518493,
+    "checkpoint_bytes": 2450048,
+    "final_model_bytes": 612512,
+    "D": 38282
+  },
+  {
+    "seed": 61003,
+    "policy": "late",
+    "entry": [
+      0,
+      0,
+      40,
+      80,
+      120
+    ],
+    "matched": true,
+    "target_dev": 0.661500027179718,
+    "selected": {
+      "round": 160,
+      "dev": 0.6800000071525574,
+      "test": 0.6787999868392944,
+      "cost": {
+        "total_re": 13420745666.0,
+        "total_re_dl6": 13159407212.666666,
+        "ul_reals": 13028627906.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 17920.0,
+        "control_bits": 184320.0,
+        "local_calls": 2240.0,
+        "local_steps": 4480.0,
+        "ul_signal_energy": 638922393.1517197
+      }
+    },
+    "at160": {
+      "round": 160,
+      "dev": 0.6800000071525574,
+      "test": 0.6787999868392944,
+      "cost": {
+        "total_re": 13420745666.0,
+        "total_re_dl6": 13159407212.666666,
+        "ul_reals": 13028627906.0,
+        "dl_bits": 784015360.0,
+        "pilot_reals": 17920.0,
+        "control_bits": 184320.0,
+        "local_calls": 2240.0,
+        "local_steps": 4480.0,
+        "ul_signal_energy": 638922393.1517197
+      }
+    },
+    "deletions": [
+      {
+        "deleted": 15,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.6875000596046448,
+        "test": 0.6861000061035156,
+        "cost": {
+          "total_re": 3537966996.0,
+          "total_re_dl6": 3472632382.6666665,
+          "ul_reals": 3439943956.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 206849286.20876732
+        },
+        "reference_cost": {
+          "total_re": 3537966996.0,
+          "total_re_dl6": 3472632382.6666665,
+          "ul_reals": 3439943956.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 206849286.20876732
+        }
+      },
+      {
+        "deleted": 14,
+        "entry_round": 0,
+        "replay_rounds": 160,
+        "maxabs_reference": 0.0,
+        "dev": 0.659000039100647,
+        "test": 0.6635000109672546,
+        "cost": {
+          "total_re": 2226463958.0,
+          "total_re_dl6": 2161129344.6666665,
+          "ul_reals": 2128440918.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 98341110.83874087
+        },
+        "reference_cost": {
+          "total_re": 2226463958.0,
+          "total_re_dl6": 2161129344.6666665,
+          "ul_reals": 2128440918.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3200.0,
+          "control_bits": 35840.0,
+          "local_calls": 400.0,
+          "local_steps": 800.0,
+          "ul_signal_energy": 98341110.83874087
+        }
+      },
+      {
+        "deleted": 1,
+        "entry_round": 40,
+        "replay_rounds": 120,
+        "maxabs_reference": 0.0,
+        "dev": 0.6815000176429749,
+        "test": 0.6858999729156494,
+        "cost": {
+          "total_re": 864617210.0,
+          "total_re_dl6": 815616250.0,
+          "ul_reals": 791097530.0,
+          "dl_bits": 147002880.0,
+          "pilot_reals": 2880.0,
+          "control_bits": 30720.0,
+          "local_calls": 360.0,
+          "local_steps": 720.0,
+          "ul_signal_energy": 58777972.89085486
+        },
+        "reference_cost": {
+          "total_re": 1259921622.0,
+          "total_re_dl6": 1194587008.6666667,
+          "ul_reals": 1161896982.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3520.0,
+          "control_bits": 38400.0,
+          "local_calls": 440.0,
+          "local_steps": 880.0,
+          "ul_signal_energy": 66736771.81412593
+        }
+      },
+      {
+        "deleted": 7,
+        "entry_round": 80,
+        "replay_rounds": 80,
+        "maxabs_reference": 0.0,
+        "dev": 0.6620000600814819,
+        "test": 0.6656000018119812,
+        "cost": {
+          "total_re": 871005824.0,
+          "total_re_dl6": 838338517.3333334,
+          "ul_reals": 821991104.0,
+          "dl_bits": 98001920.0,
+          "pilot_reals": 2240.0,
+          "control_bits": 23040.0,
+          "local_calls": 280.0,
+          "local_steps": 560.0,
+          "ul_signal_energy": 56756638.94361059
+        },
+        "reference_cost": {
+          "total_re": 1796522016.0,
+          "total_re_dl6": 1731187402.6666665,
+          "ul_reals": 1698495776.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 3840.0,
+          "control_bits": 40960.0,
+          "local_calls": 480.0,
+          "local_steps": 960.0,
+          "ul_signal_energy": 94873402.21330634
+        }
+      },
+      {
+        "deleted": 2,
+        "entry_round": 120,
+        "replay_rounds": 40,
+        "maxabs_reference": 0.0,
+        "dev": 0.6845000386238098,
+        "test": 0.6821999549865723,
+        "cost": {
+          "total_re": 322380402.0,
+          "total_re_dl6": 306046748.6666667,
+          "ul_reals": 297872242.0,
+          "dl_bits": 49000960.0,
+          "pilot_reals": 1280.0,
+          "control_bits": 12800.0,
+          "local_calls": 160.0,
+          "local_steps": 320.0,
+          "ul_signal_energy": 28889412.199141532
+        },
+        "reference_cost": {
+          "total_re": 1567023026.0,
+          "total_re_dl6": 1501688412.6666667,
+          "ul_reals": 1468995186.0,
+          "dl_bits": 196003840.0,
+          "pilot_reals": 4160.0,
+          "control_bits": 43520.0,
+          "local_calls": 520.0,
+          "local_steps": 1040.0,
+          "ul_signal_energy": 99312793.61588776
+        }
+      }
+    ],
+    "expected_delete_re": 1564486878.0,
+    "mean_deleted_test": 0.6766599893569947,
+    "checkpoint_bytes": 2450048,
+    "final_model_bytes": 612512,
+    "D": 38282
+  }
+]

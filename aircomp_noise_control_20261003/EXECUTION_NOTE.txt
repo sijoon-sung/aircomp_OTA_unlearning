@@ -1,0 +1,6 @@
+첫 실행 중단: seed62001/channel의no_noise와nominal0dB 조건(2source/40삭제)을완료한뒤다음method의20dB호환검사에서assert 실패.
+원인: sim.sigma2가이전0dB실험의1로남아있는데기존20dB코드와비교함. 본학습조건루프에서는매조건sigma2를명시적으로설정했으므로완료된2조건의설정은정상.
+수정: 매method호환검사직전에sim.sigma2=.01로초기화. 원코드run_attempt1.py 및원provenance.json보존. 수정코드provenance_resume.json에기록.
+재개: 완료된summary를읽어결과에포함하고새로계산하지않음. 나머지16조건만실행. 완료2조건의source/delete별JSON은모두존재. 첫실행의최종states.pt는예외전저장되지않았으므로해당2조건의tensorartifact는없고metrics/events만보존.
+비용: 첫실행GPU샘플은메모리에만있어예외시소실. 따라서재개GPUWh만실측값으로보고하고총GPU에너지는미측정이라고명시. 첫실행원자료파일시간으로완료2조건의실행시간하한을별도기록. 재개는조건완료마다누적자원을저장하도록보완.
+실험조건/배정/성공기준변경없음.

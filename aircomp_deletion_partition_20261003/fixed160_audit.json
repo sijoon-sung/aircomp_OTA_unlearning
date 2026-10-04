@@ -1,0 +1,107 @@
+[
+  {
+    "seed": 62001,
+    "method": "random",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  },
+  {
+    "seed": 62001,
+    "method": "channel",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": 0.0
+  },
+  {
+    "seed": 62001,
+    "method": "data",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": 0.0
+  },
+  {
+    "seed": 62001,
+    "method": "train_joint",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": 0.0
+  },
+  {
+    "seed": 62001,
+    "method": "delete_joint",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": 0.0
+  },
+  {
+    "seed": 62002,
+    "method": "random",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  },
+  {
+    "seed": 62002,
+    "method": "channel",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  },
+  {
+    "seed": 62002,
+    "method": "data",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": 0.0
+  },
+  {
+    "seed": 62002,
+    "method": "train_joint",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  },
+  {
+    "seed": 62002,
+    "method": "delete_joint",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": 0.0
+  },
+  {
+    "seed": 62003,
+    "method": "random",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  },
+  {
+    "seed": 62003,
+    "method": "channel",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  },
+  {
+    "seed": 62003,
+    "method": "data",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": 0.0
+  },
+  {
+    "seed": 62003,
+    "method": "train_joint",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  },
+  {
+    "seed": 62003,
+    "method": "delete_joint",
+    "client": 0,
+    "metric_error": 0.0,
+    "parameter_error_if_extended": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "case": "confirm_s10611_K1_random_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10611_K4_random_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10611_K4_channel_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10612_K1_random_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10612_K4_random_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10612_K4_channel_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10613_K1_random_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10613_K4_random_norm",
+    "pass_all": true,
+    "packets": 120
+  },
+  {
+    "case": "confirm_s10613_K4_channel_norm",
+    "pass_all": true,
+    "packets": 120
+  }
+]

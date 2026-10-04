@@ -1,0 +1,32 @@
+{
+  "total_seconds": 537.1064540999942,
+  "gpu_board_Wh": 23.561596843766836,
+  "completed_cases": 26,
+  "external_payment": 0,
+  "disk_bytes": 127092478,
+  "runs": [
+    {
+      "run": "preflight_v1",
+      "seconds": 1.9345778999850154,
+      "gpu_board_Wh": 0.0,
+      "sampling_seconds": 5,
+      "external_payment": 0,
+      "scope": "whole GPU board; not whole host, electricity tariff unavailable",
+      "error": null,
+      "completed_cases": 1,
+      "local_calls": 192
+    },
+    {
+      "run": "run_v1",
+      "seconds": 535.1718762000091,
+      "gpu_board_Wh": 23.561596843766836,
+      "sampling_seconds": 5,
+      "external_payment": 0,
+      "scope": "whole GPU board; not whole host, electricity tariff unavailable",
+      "error": null,
+      "completed_cases": 25,
+      "local_calls": 139920
+    }
+  ],
+  "limits": "Board energy via 5-second samples; short preflight may have <2 samples. CPU audit/report not included; host/electricity cost not measured."
+}

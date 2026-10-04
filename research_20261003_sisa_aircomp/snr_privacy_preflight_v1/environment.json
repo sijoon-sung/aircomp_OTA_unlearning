@@ -1,0 +1,9 @@
+{
+  "pid": 53124,
+  "inventory": "pid, process_name, used_gpu_memory [MiB]\n37064, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.917.9434.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n",
+  "torch": "2.11.0+cu128",
+  "code_sha256": "08933868967f40824a86462210d2fdf083c18bd9df231f2a5863e9e2fb008ec1",
+  "base_sha256": "454ef4e2546a472b120e4b7fa78e91446e01fc60a9df4a07464edae4fc5f9d0b",
+  "core_sha256": "4e14ee7aebee0b52974fffc10e952da24fde2313d7fe8e8a2aa3ff8f61825944",
+  "prereg_sha256": "569d18681d0d43d89662ea65e793796452736cb56c4e254b40bb78eda5edfcab"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "source_configurations": 57,
+  "deletion_evaluations": 63,
+  "checkpoints": 252,
+  "radio_and_privacy_recomputed": true,
+  "paired_channels_histograms_partitions_matched": true,
+  "exact_models": "Worker independently trained full reference and replay; exact at all checkpoints"
+}

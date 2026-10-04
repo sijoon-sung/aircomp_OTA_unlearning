@@ -1,0 +1,50 @@
+[
+  {
+    "seed": 10802,
+    "method": "random",
+    "accuracy_delta_pp": 0.10999999999999899,
+    "mse_ratio": 0.25,
+    "epsilon_ratio": 3.9927637867563046,
+    "resource_ratio": 1.176408568179179
+  },
+  {
+    "seed": 10802,
+    "method": "channel",
+    "accuracy_delta_pp": 0.019999999999997797,
+    "mse_ratio": 0.25,
+    "epsilon_ratio": 3.9977741644091846,
+    "resource_ratio": 1.176408568179179
+  },
+  {
+    "seed": 10802,
+    "method": "joint",
+    "accuracy_delta_pp": -0.16000000000000458,
+    "mse_ratio": 0.25,
+    "epsilon_ratio": 3.996349135365424,
+    "resource_ratio": 1.176408568179179
+  },
+  {
+    "seed": 10803,
+    "method": "random",
+    "accuracy_delta_pp": 0.11999999999999789,
+    "mse_ratio": 0.25,
+    "epsilon_ratio": 3.992382731642949,
+    "resource_ratio": 1.176408568179179
+  },
+  {
+    "seed": 10803,
+    "method": "channel",
+    "accuracy_delta_pp": 0.13999999999999568,
+    "mse_ratio": 0.25,
+    "epsilon_ratio": 3.9983447618737085,
+    "resource_ratio": 1.176408568179179
+  },
+  {
+    "seed": 10803,
+    "method": "joint",
+    "accuracy_delta_pp": -0.28999999999999027,
+    "mse_ratio": 0.25,
+    "epsilon_ratio": 3.99688001484079,
+    "resource_ratio": 1.176408568179179
+  }
+]

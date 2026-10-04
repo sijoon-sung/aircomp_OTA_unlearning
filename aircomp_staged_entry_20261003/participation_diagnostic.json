@@ -1,0 +1,122 @@
+[
+  {
+    "policy": "all",
+    "position": 1,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 1779505686.6666667,
+    "mean_local_calls": 640.0
+  },
+  {
+    "policy": "all",
+    "position": 2,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 1657258500.0,
+    "mean_local_calls": 640.0
+  },
+  {
+    "policy": "all",
+    "position": 3,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 1666522744.0,
+    "mean_local_calls": 640.0
+  },
+  {
+    "policy": "all",
+    "position": 4,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 1687871339.3333333,
+    "mean_local_calls": 640.0
+  },
+  {
+    "policy": "all",
+    "position": 5,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 1726676526.6666667,
+    "mean_local_calls": 640.0
+  },
+  {
+    "policy": "mild",
+    "position": 1,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 4193015098.0,
+    "mean_local_calls": 520.0
+  },
+  {
+    "policy": "mild",
+    "position": 2,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 2570126272.0,
+    "mean_local_calls": 520.0
+  },
+  {
+    "policy": "mild",
+    "position": 3,
+    "entry": 20,
+    "mean_rounds": 140.0,
+    "mean_re": 2025410254.0,
+    "mean_local_calls": 500.0
+  },
+  {
+    "policy": "mild",
+    "position": 4,
+    "entry": 40,
+    "mean_rounds": 120.0,
+    "mean_re": 1410943632.0,
+    "mean_local_calls": 460.0
+  },
+  {
+    "policy": "mild",
+    "position": 5,
+    "entry": 60,
+    "mean_rounds": 100.0,
+    "mean_re": 1076891860.0,
+    "mean_local_calls": 400.0
+  },
+  {
+    "policy": "late",
+    "position": 1,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 6619693517.333333,
+    "mean_local_calls": 400.0
+  },
+  {
+    "policy": "late",
+    "position": 2,
+    "entry": 0,
+    "mean_rounds": 160.0,
+    "mean_re": 3436825952.0,
+    "mean_local_calls": 400.0
+  },
+  {
+    "policy": "late",
+    "position": 3,
+    "entry": 40,
+    "mean_rounds": 120.0,
+    "mean_re": 2347827778.6666665,
+    "mean_local_calls": 360.0
+  },
+  {
+    "policy": "late",
+    "position": 4,
+    "entry": 80,
+    "mean_rounds": 80.0,
+    "mean_re": 1128094975.3333333,
+    "mean_local_calls": 280.0
+  },
+  {
+    "policy": "late",
+    "position": 5,
+    "entry": 120,
+    "mean_rounds": 40.0,
+    "mean_re": 430412206.0,
+    "mean_local_calls": 160.0
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "selected_designs_recomputed": 270,
+  "all_partition_memberships_checked": 5775,
+  "objective_minima_checked": 90,
+  "conflicts": [
+    {
+      "seed": 31020,
+      "scenario": "wide_coupled",
+      "deletion_only_saving_pct": 2.2222222222222143,
+      "initial_increase_pct": 14.28571428571428
+    },
+    {
+      "seed": 31021,
+      "scenario": "wide_coupled",
+      "deletion_only_saving_pct": 1.5151515151515138,
+      "initial_increase_pct": 9.090909090909083
+    }
+  ],
+  "audit_seconds": 0.4340793000301346
+}

@@ -1,0 +1,9 @@
+{
+  "test_delta_pp": 5.090000000000005,
+  "dev_delta_pp": 6.35,
+  "C01_test": 0.6635,
+  "C1_test": 0.7144,
+  "C01_clip": 0.9421875,
+  "C1_clip": 0.0,
+  "criterion_pass": true
+}

@@ -1,0 +1,31 @@
+{
+  "chosen_K": 4,
+  "eligible_selection": true,
+  "candidates": [
+    {
+      "K": 2,
+      "eligible": true,
+      "score": 0.7335008799010021,
+      "candidate_dev": 0.6795,
+      "random_dev": 0.6915,
+      "global_dev": 0.678
+    },
+    {
+      "K": 4,
+      "eligible": true,
+      "score": 0.6811379910028827,
+      "candidate_dev": 0.6975,
+      "random_dev": 0.7125,
+      "global_dev": 0.678
+    },
+    {
+      "K": 5,
+      "eligible": true,
+      "score": 0.7701584477686195,
+      "candidate_dev": 0.7085,
+      "random_dev": 0.7175,
+      "global_dev": 0.678
+    }
+  ],
+  "rule": "Preregistered dev-only selection; test never used; K2 exploratory fallback if none eligible"
+}

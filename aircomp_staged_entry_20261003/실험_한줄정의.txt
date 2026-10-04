@@ -1,0 +1,11 @@
+가설: 참여 시점을 늦추면 정확도를 유지하면서 삭제 replay 통신이 줄어든다.
+독립변수(바꾼 것): shard 내부 5명의 최초 참여 라운드. all=0/0/0/0/0, mild=0/0/20/40/60, late=0/0/40/80/120.
+종속변수(잰 것): 학습·삭제 후 정확도, 최초 학습·삭제 replay의 정규화 통신량, 로컬 학습 횟수, 서버 체크포인트 저장량.
+통제조건: 동일 seed에서 데이터·shard 배정·초기 모델·채널·학습규칙 고정. shard 수4, shard당5명. 모든 shard 순차 송신.
+성공기준: dev 기준 충족 + 초기/삭제후 test 평균 하락1%p 이내 + 평균 삭제 통신10% 이상 절감.
+실행범위: 3seed x 3정책, 각 정책에서 고정 shard0의5명 각각 삭제. 실제 결과는 report.html 및 results.json 참조.
+재현: run.py는 원자료를 덮어쓰지 않음. 재실행 시 새 형제 폴더에 run.py/PREREG.txt/report.py를 복사하고 동일 상위 research 폴더를 유지할 것.
+Python: C:/Users/DISLAB/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe
+PYTHONPATH: C:/Users/DISLAB/Desktop/split_learning/ota_ful/.analysis;C:/Users/DISLAB/Desktop/split_learning/ota_ful/.deps_cuda
+환경: CUBLAS_WORKSPACE_CONFIG=:4096:8, OMP_NUM_THREADS=2, OPENBLAS_NUM_THREADS=1, PYTHONDONTWRITEBYTECODE=1.
+순서: GPU 사용자 작업 확인 -> run.py 단일 worker -> report.py. report.py는 CPU에서 원자료 기반 비용 검산 및 보고서 작성.

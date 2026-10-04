@@ -1,0 +1,29 @@
+가설: 같은4슬롯/전력/학습예산에서 삭제후 집계품질을 고려한 고정 shard 배정이 최초학습만 고려한 배정보다 실제 삭제후 정확도 도달 통신을 줄이는가? | 독립변수: 배정 목적함수 | 종속변수: 정확도, 삭제후 목표도달 rounds/RE, worstcase, 집계오차, 저장 | 상태: 실행 전
+
+1. 연구 정의와 AirCluster 차이
+AirCluster(Sami/Guler,TWC2024)는 개인화 모델을 위한 매round local-loss 기반 cluster 선택 및 MIMO ZF/sketching. 본 실험은 삭제 영향 국소화를 위한 학습 전 고정 배정, 전역 ensemble 예측, single-client 전체 삭제, 삭제후 집계 비용을 고려한 설계. AirCluster 전체 물리계층/동적 배정 재현 아님; 채널-only 비교군을 AirCluster라고 부르지 않는다. 본 결과로 AirCluster 성능 우위/문헌 최초성 주장 안함. SISO 순차 AirComp 기준선에서 배정 목적의 순수 효과를 검증. OFDM/MIMO/간섭 sweep/단계적 참여는 이번 실험에 없음.
+원문 https://basakguler.github.io/SG_TWC_2023.pdf ; KNOT https://iqua.ece.toronto.edu/papers/ningxinsu-infocom23.pdf
+
+2. 고정 조건
+FashionMNIST train12000/dev2000/test10000; 20clients Dirichlet alpha .5, seeds62001/62002/62003. 기존 CNN38282 parameters. 4shards, 각3~8clients, 모든client t0부터 참여. 슬롯 S=4는 round당4개의 전체update 전송block; block당 D real channel uses, R=1 고정. 동일 라운드 예산160. 로컬 SGD2steps, batch64, lr.05, momentum0, update L2 clip1, equal-client aggregation, ensemble uniform mean. shard별 init는 seed만 같게(shared initial vector)하여 임의 group label 따른 초기화 편향 제거.
+source 모든정책160rounds. synthetic flat SISO perfectCSI/phase/timing, perclient average symbol power P=1; baseline h amplitude10^(Uniform[-20,0]/20), perround iid uniform(.85,1.15). sigma²=.01 (명목20dB, 실제집계SNR 아님). beta=1/(n*hmin*sqrt(D)); MSE=D*beta²*sigma². fixed targetMSE 반복송신 금지. 데이터/채널 독립생성. future fading은 배정에 제공하지 않고 base_h만 사용.
+
+3. 배정 알고리즘
+random: deterministic balanced5/5/5/5.
+channel: mean_s q(G_s) 최소화. q(G)=1/(|G|²*min(h_G)²).
+data: mean_s JS(mean client label-hist in shard, global mean client histogram) 최소화.
+train_joint: .5*data/random_data + .5*mean_s q(G_s)/random_source_q 최소화.
+delete_joint: .5*data/random_data + .5*[sum_u q(G(u) minus u)/N]/random_delete_q 최소화.
+마지막 두 방법의 유일한 score 차이는 삭제전/후 radio항. 삭제확률 예측 없음; all20 균일 평가. q는 잡음/수렴부담 대리값이며 실제 rounds나 삭제비용과 동일하다고 주장하지 않는다. 실제 정확도도달 비용으로 타당성 확인.
+검색: 동일 random배정과 channel-sorted balanced배정 2개 시작점, 최대15회 best-improvement 이동/교환. min3 max8 유지. objective 감소만 허용, lexicographic deterministic tie. 5방법 모두 동일 검색제한(랜덤은 검색 안함). 비용 source/삭제 radio, dataJS, counts, metadata 및 검색시간 기록. 교환만이 아니라 이동 포함하여 불균등 shard 허용. 모든선택 train histogram/baseCSI만 사용, dev/test는 배정에 사용안함. 서버에client10-class counts20*10*32bits + count/channel20*64bits 공개(7680bits), 추가privacy보장 없음. data 기반routing은 삭제데이터 정보잔류 가능, 정확삭제 검증은 공개 고정routing 조건부 모델에 한정; metadata삭제는 별도 미해결범위.
+
+4. 삭제와 동일품질 비용 비교
+20명 전부 개별삭제, 연속삭제 아님. 해당shard 초기화부터 residual clients로 train. 다른shards source160 model 유지. checkpoint=초기상태; replay단축/entry scheduling 없음. noise/minibatch는 client,group,absolute round key로 고정(모델결과 검증용); deletion 이후n/hmin과 집계평균을 재계산.
+각seed random방법의 각client 삭제를160rounds까지 실행, 매40round마다 평가. 그client random160 dev정확도−1%p를 공통 삭제후 목표로 사용. random도40/80/120/160중 최초도달 모델을선택. 나머지방법은40round마다 평가해 최초도달시 중단, 상한240. 선택은dev만, test로선택안함. 미도달은240 하한/censored로 표시하고 완료비용으로 평균내지 않는다. source 모델은 모두160rounds 고정이므로 source품질 차이도 반드시 보고한다. 후보 미도달률>0이면 모든client에 대한 달성 주장 금지. 평균결과는 all20와 같은 client끼리 paired comparisons, median/worst, seeds별 결과 포함. 1%p 허용은 동일 정확도의 근사조건이며 검증test gap도 별도 확인.
+구조검증: 각seed/방법의client0 한건씩 independently affected-shard retrain at selectedT, maxabs<=1e-6. 나머지3shards tensor 변경없음 hash검증은 모든300삭제. source와삭제원자료 histories 최대240는실험용만 저장. 분포적exact unlearning, 공개배정/metadata삭제, 실제RF, secure aggregation검증아님.
+
+5. 비용 정의
+active shard block 1개/round = D analog real uses. source1round=4D; delete1round=D. P=1평균symbol power; peakpower미모델링. downlink broadcast32D bits/active shard, pilot8n real uses, control64n+64 bits. normalizedRE=UL+pilot+(DL+control)/2 (2bits/use 가정); 별도DL6bits/use 민감도. 디지털bits/analoguses도분리. 총4slot frame 기다리는고정주기 latency=4D*T와 재할당가능 occupied uses=D*T 구분. 연산client_calls/steps, RF normalized energy, 실제GPU Wh, 모델저장(4models+sharedinit) 기록. gradient histories저장금지. setup histogram채널7680bits 별도 원가; 초기통신에추가. random/channel도동일정보예산을허용하되미사용.
+
+6. 판정(탐색3seed)
+delete_joint vs train_joint: source test 평균차이>=−1%p; 선택삭제test 평균차이>=−1%p; 60/60client목표도달; 평균삭제 RE10% 이상절감시 실용후보. threshold부근40round격자에의한불확실성보고. 성공/실패/차이없음 모두보고. random/channel/data 비교도동일표. objective 감소와 실제비용감소구분. matchedclients만 보고 성공 주장금지. CPU대리값감사/물리식검산 후GPU 한worker, 유휴확인. 추가sweep 자동실행없음. 총15source+300deletion+15independent reference 최대330runs.

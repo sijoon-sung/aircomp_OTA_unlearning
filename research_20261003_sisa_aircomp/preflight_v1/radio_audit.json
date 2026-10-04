@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "mode": "fixed",
+      "noiseless_maxabs": 3.469446951953614e-18,
+      "max_power": 0.03990894076025656,
+      "repeats": 26,
+      "mse_expected": 9.627088188680684e-05,
+      "mse_measured": 9.65439640204497e-05,
+      "mse_relative_error": 0.0028366015589631477,
+      "disjoint_bin_leakage": 0.0
+    },
+    {
+      "mode": "norm",
+      "noiseless_maxabs": 3.469446951953614e-18,
+      "max_power": 1.0,
+      "repeats": 1,
+      "mse_expected": 9.989379197611396e-05,
+      "mse_measured": 9.972151818037861e-05,
+      "mse_relative_error": 0.001724569588634095,
+      "disjoint_bin_leakage": 0.0
+    }
+  ],
+  "tdma": 10.0,
+  "elastic_fdma": 10.0,
+  "fixed_fdma": 21.0,
+  "passed": true
+}

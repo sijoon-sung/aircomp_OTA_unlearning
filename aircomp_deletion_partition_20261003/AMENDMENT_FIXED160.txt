@@ -1,0 +1,5 @@
+2026-10-03 主실행 진행 중 검증 정의 보완. 일부 학습결과를 본 뒤의 사후 보완이므로 원 PREREG과 별도 보존.
+원 PREREG의 dev 목표도달 비용은 유용한 품질-통신 지표지만, 원 학습이160rounds인 상태에서 삭제재학습을일찍중단하면160round 삭제제외기준모델과동일하지않을수있다. 따라서 이 지표만으로 exact SISA 성능개선 주장 금지.
+모든300삭제에 fixed160 결과를 추가확인한다. 원실행에서160까지진행한경우 curve160 활용. 160미만중단은 저장된종료모델에서 동일round별난수/채널로160까지연장. 160이상실행하여curve160있는경우중복실행안함. 임계값/배정/가중치/seed 변경없음. 각15조건 client0는160round 초기화독립재실행하여 결과정확도(연장모델있으면parameter도)검증.
+최종보고: (A)고정160 exact replay 조건의 모델/통신/연산/잡음차이; (B)공통정확도목표조기도달 비용, exact삭제보장지표아님. A에서는모든삭제가160×D analoguses이므로UL통신이달라질수없고control/pilot및연산은groupsize따라변한다. 따라서 B절감=exactunlearning통신절감으로표현금지. 원사전성공기준 판정은품질지표로보존하되exact기여와분리.
+추가실행은기존300삭제의부족한구간연장 및15reference만, 새로운조건sweep없음. 총비용합산. 프로그램repair_fixed160.py, fixed160_results.json, fixed160_resource.json, fixed160_audit.json 별도저장.

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "replay_pairs_recomputed": 1920,
+  "checkpoint_recomputed": 640,
+  "max_absolute_error": 7.993605777301127e-15,
+  "seconds": 3.098644100013189
+}

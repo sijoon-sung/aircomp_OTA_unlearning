@@ -1,0 +1,11 @@
+실행 전 기록 2026-10-03
+가설: client별 다른 채널에서 shard 간 간섭을 정확히 제거하면 안테나 자유도 제약과 잡음/반복 비용이 생긴다.
+독립변수: 수신 안테나 M=4/8/9/12/16, 공간상관 r=0/.8, 전체3shard 동시 ZF vs shard별 시간분리.
+종속변수: 선형 정확분리 가능 여부, 단위평균의 잡음 계수, 목표 MSE 반복 수, 총 channel uses, ZF 잔여 간섭.
+통제: 단일안테나 client12명, 고정3shard(4명씩), 완전 CSI, perfect sync, scalar complex precoder, per-symbol power cap1, 균등가중치, 30 paired seeds(51001~51030), 동일 채널. 데이터/모델 학습 없음. 총300채널 환경. CPU만 실행.
+채널 H=Mx12 complex Gaussian, spatial covariance R_ab=r^abs(a-b), client amplitude 10^(Uniform[-10,0]/20). M 증가에 따른 array gain은 정규화하지 않음. r는 client 데이터와의 상관이 아니라 안테나 공간상관.
+설계: shard g 수신 w는 다른8client 채널의 Hermitian nullspace에 있어야 함. generic rank8이므로 M<=8이면 nonzero w가 없음. scalar precoder로 이 조건을 없앨 수 없음(모든 client 비영 송신 가정). M>8은 nullspace 내 후보 중 min_i |w^H h_i|를 최대화. 후보=projected own-channel vectors, principal eigenvector, 128 random unit vectors. 전역 최적 ZF라 주장하지 않음. 시간분리는 전체 수신공간에서 같은 후보 탐색. ZF 후보를 시간분리 후보에 포함해 포함관계 보장.
+평균수신 계수 eta=1/(m min_i|w^Hh_i|), b_i=1/(m eta w^Hh_i), 따라서 |b_i|<=1, desired coefficient=1/m, other coefficient=0. 각 client 입력 symbol variance<=1 가정. unit-norm w, raw noise variance .01, aggregate per-coordinate MSE=.01 eta^2/Rrepeat. 목표1e-3, Rrepeat=ceil(MSE/target), 최소1. 반복 독립잡음.
+자원: 한 좌표 기준 동시= max_g R_g(먼저 끝난 shard는 침묵, w 고정), 시간분리=sum_g R_g. pilot/control/DL 제외. 실측 latency/총에너지 아님. 실패를 평균에서 제외하여 성공처럼 보고하지 않으며 feasible count 별도.
+판정: feasibility 실패 기록; feasible에서는 ZF/time의 평균 noise coefficient 비율 및 total channel uses 비율 보고. ZF 추가비용의 실용 신호는 환경별30seeds 중20개 이상에서 동시 channel uses가 시간분리보다 큼. 이 기준은 기존 ZF 전체 최적성의 반증이 아닌 후보 수신기 결과다.
+검증: 실제 복소 H,w,b로 desired계수1/m·cross계수0 오차<1e-9, max|b|<=1+1e-9, PSD/finite 확인. 기존 실험은 재실행하지 않고 복사/해시검증. 새 학습/보안/프라이버시 검증 없음.

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "events": 44360,
+  "max_power": 0.4253351970183452,
+  "reference_cases": 15,
+  "reference_maxabs": 0.0,
+  "unchanged_cases": 300,
+  "seconds": 0.28856500005349517
+}

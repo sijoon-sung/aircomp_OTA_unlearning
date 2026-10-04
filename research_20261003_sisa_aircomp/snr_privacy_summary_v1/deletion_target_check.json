@@ -1,0 +1,65 @@
+[
+  {
+    "case": "s10801_K4_random_snr10_R1_natural",
+    "deleted": 0,
+    "accuracy": 0.6641,
+    "total_re": 520818240.0,
+    "epsilon": 7209850.27556573
+  },
+  {
+    "case": "s10801_K4_random_snr10_R1_natural",
+    "deleted": 7,
+    "accuracy": 0.6368,
+    "total_re": 520818240.0,
+    "epsilon": 4716531.603890306
+  },
+  {
+    "case": "s10801_K4_random_snr10_R1_natural",
+    "deleted": 14,
+    "accuracy": 0.6345,
+    "total_re": 520818240.0,
+    "epsilon": 7186507.0882290965
+  },
+  {
+    "case": "s10801_K4_channel_snr10_R1_natural",
+    "deleted": 0,
+    "accuracy": 0.6485,
+    "total_re": 520818240.0,
+    "epsilon": 22199834.946843144
+  },
+  {
+    "case": "s10801_K4_channel_snr10_R1_natural",
+    "deleted": 7,
+    "accuracy": 0.6546,
+    "total_re": 520818240.0,
+    "epsilon": 22199834.946843144
+  },
+  {
+    "case": "s10801_K4_channel_snr10_R1_natural",
+    "deleted": 14,
+    "accuracy": 0.6417,
+    "total_re": 520818240.0,
+    "epsilon": 22199834.946843144
+  },
+  {
+    "case": "s10801_K4_joint_snr10_R1_natural",
+    "deleted": 0,
+    "accuracy": 0.663,
+    "total_re": 520818240.0,
+    "epsilon": 10723195.982732628
+  },
+  {
+    "case": "s10801_K4_joint_snr10_R1_natural",
+    "deleted": 7,
+    "accuracy": 0.6508,
+    "total_re": 520818240.0,
+    "epsilon": 10723195.982732628
+  },
+  {
+    "case": "s10801_K4_joint_snr10_R1_natural",
+    "deleted": 14,
+    "accuracy": 0.6408,
+    "total_re": 520818240.0,
+    "epsilon": 10723195.982732628
+  }
+]

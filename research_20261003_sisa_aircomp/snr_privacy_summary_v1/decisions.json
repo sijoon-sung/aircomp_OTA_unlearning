@@ -1,0 +1,56 @@
+[
+  {
+    "snr": 0,
+    "baseline": "random",
+    "mean_accuracy_delta_pp": -1.0366666666666708,
+    "all_targets_feasible": false,
+    "mean_target_saving": null,
+    "improved_seeds": 0,
+    "practical_pass": false
+  },
+  {
+    "snr": 0,
+    "baseline": "channel",
+    "mean_accuracy_delta_pp": 0.39999999999999664,
+    "all_targets_feasible": false,
+    "mean_target_saving": null,
+    "improved_seeds": 0,
+    "practical_pass": false
+  },
+  {
+    "snr": 10,
+    "baseline": "random",
+    "mean_accuracy_delta_pp": -1.216666666666666,
+    "all_targets_feasible": false,
+    "mean_target_saving": null,
+    "improved_seeds": 0,
+    "practical_pass": false
+  },
+  {
+    "snr": 10,
+    "baseline": "channel",
+    "mean_accuracy_delta_pp": 0.6333333333333339,
+    "all_targets_feasible": false,
+    "mean_target_saving": null,
+    "improved_seeds": 0,
+    "practical_pass": false
+  },
+  {
+    "snr": 20,
+    "baseline": "random",
+    "mean_accuracy_delta_pp": -1.363333333333335,
+    "all_targets_feasible": false,
+    "mean_target_saving": null,
+    "improved_seeds": 0,
+    "practical_pass": false
+  },
+  {
+    "snr": 20,
+    "baseline": "channel",
+    "mean_accuracy_delta_pp": 0.410000000000003,
+    "all_targets_feasible": false,
+    "mean_target_saving": null,
+    "improved_seeds": 0,
+    "practical_pass": false
+  }
+]

@@ -1,0 +1,866 @@
+[
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "random",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "channel",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 8,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 100,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 100000,
+    "feasible": false,
+    "best": null
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "method": "joint",
+    "epsilon_limit": 10000000,
+    "feasible": false,
+    "best": null
+  }
+]

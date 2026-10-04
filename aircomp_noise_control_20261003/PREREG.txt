@@ -1,0 +1,16 @@
+가설: 채널 중심 배정의 정확도 손실은 무선 잡음 때문인가, 잡음을 제거해도 남는 고정 배정/학습 구조의 효과인가? | 독립변수: 수신 noise variance만0/.01/1로변경 | 종속변수: source/삭제160round test accuracy, worst-class recall, 동일배정의noise penalty | 통제: 배정/크기/데이터/초기화/배치/채널/라운드/전력/전송량 | 상태: 실행 전
+
+범위: 기존 aircomp_deletion_partition_20261003의 seeds62001/62002/62003, channel/data/delete_joint 세배정을 변경없이 재사용한다. 방법재검색, objective가중치수정, seed선택/제거없음. 모든20client삭제를개별실행. source160round, delete160round, 조기중단없음. 2개새noise조건 x3배정 x3seed =18source +360deletion, representativeclient0 재현검증18개. noise .01은이전실행 source/fixed160원자료 재사용하고새실행으로표현안함(9조건180삭제). 전체표는27조건540삭제(재사용포함).
+
+조건: no_noise sigma²0(이상적대조), nominal20dB sigma².01(기존), nominal0dB sigma²1(스트레스,실제측정환경대표값아님). 평균symbol전력1, receivernoise만100배변경. R=1, fixed4slots, block D실수전송. 모든h/배정고정. noise 벡터동일standard-normal방향에sqrt(variance)만변경. 명목SNR이며유효집계SNR아님. no_noise에서채널별역보상은유지하되수신잡음은0이므로powerlimit을만족하는정확한평균집계.
+데이터/model/학습: FashionMNIST12000/2000/10000, Dirichlet.5, 20clients/4shards3~8명; CNN38282; 동일초기값; local2steps×64 lr.05, clipping1, momentum0, 동일절대round/client별배치seed. 사용dataset indices/pool및baseh가이전실행과같은지assert. 새Sim의sigma².01 1step을기존Sim과seed/배정별exact 비교. 클래스별metrics및비용원자료기록. server공개histogram/routing조건부모델,metadata삭제보장아님.
+
+대조 논리:
+1. 같은배정의Acc(noise)-Acc(no_noise)를계산한다: 데이터/크기/모델을고정한수신잡음의개입효과.
+2. method간no_noise차이는잡음으로설명불가. 이를data편중만의인과효과로단정하지않음(배정크기/데이터구성/클라이언트협업효과포함).
+3. 차이의차이 [Acc_channel(noise)-Acc_channel(0)]-[Acc_data(noise)-Acc_data(0)]로channel배정의noise강건성이득을측정. delete_joint도같이비교.
+4. 3seed별부호와평균모두보고. noise-only영향1%p이상이면실용적으로관찰할효과; no_noise채널-데이터gap이평균−1%p이하이고3seed모두음수이면잡음외효과가남는것으로판정. 0dB에서순위역전시noise조건의존성을보고하되유리한그조건만선택하지않음.
+5. fixed160/R1이므로같은배정/삭제자의무선통신량과localcalls는모든noise조건에서같아야함. 정확도를맞추기위한추가학습/전송은이번에하지않음. 강한잡음에서학습실패도그대로보고.
+
+보장/한계: 합성채널/이상적CSI, RF실측아님. AirCluster MIMO재현아님. 무잡음대조로데이터배정전체효과와수신잡음효과를분리할수있으나data구성과shardsize의개별기여는분리못함. seed3개=확증통계아님. 유리한결과선택/실패제외/조건변경금지. 현재알고리즘의성능과문제없음을미리보장하지않음.
+실행비용: GPU유휴확인후singleworker. 18source+360delete+18reference 외자동확장안함. 코드/원자료SHA256, actualGPUWh,총시간/localcalls기록. 기존폴더덮어쓰기금지. 신규폴더results/report에서재사용과실행명시.

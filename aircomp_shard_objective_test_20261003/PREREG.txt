@@ -1,0 +1,14 @@
+실행 전 기록 — 2026-10-03
+가설 H1: 삭제에 따라 AirComp 병목 채널/평균 가중치가 바뀌면 초기학습 최적 배정과 기대 삭제 비용 최적 배정은 달라질 수 있다.
+독립변수: 배정 목적(initial / deletion / joint), 채널 조건(narrow: -3~0dB, wide: -20~0dB), 데이터-채널 연결(independent / coupled).
+종속변수: 최적 배정 일치, 기대 삭제 UL RE, 최악 삭제 UL RE, 초기 UL RE, 삭제 전후 histogram JS.
+통제: 12 clients, 3 shards, 4 clients/shard, 10 classes, Dirichlet(.5), 균일 단일 client 삭제 확률, 동일 데이터/채널/실행 rounds, 동일 배정 후보와 대표성 제약.
+규모: 30 seeds(31001~31030) x 3 환경(narrow independent / wide independent / wide coupled). 각 환경의 모든 균등 무라벨 partition 5775개 열거. 각 partition에서 12개 단일 client 삭제 평가. CPU만 사용. 학습/GPU/실제 무선 실행 없음.
+대표성 제약: 각 환경에서 모든 partition의 평균 shard histogram JS를 정렬한 하위 20% 경계 이하만 허용. 목적 간 완전히 같은 후보 집합. 모든 client 표본 수 같다고 가정. 이는 정확도 보장이 아니다.
+AirComp: 이상적 SISO, 완전 CSI/동기화, bounded update C=1, D=38282, Pmax=1, 좌표별 목표 MSE eta=1e-4. sigma2=D*eta, 따라서 반복 수 R=ceil(1/(m^2 min(h)^2)), 최소 1. 삭제 후 m=3, 남은 client의 min(h)로 재계산. update/독립 잡음 반복 평균. 한 라운드 UL real channel uses = D*R. 디지털 DL/CSI/control/계산 비용 제외. initial은 전체 3 shards 합, deletion은 삭제된 shard만. 에너지와 실제 지연은 측정하지 않음.
+목적: initial=min source cost; deletion=min expected deletion cost; joint=min .5 source/min_source + .5 deletion/min_deletion. 동점은 상대 목적이 작은 해 우선, 다음 canonical partition 순. 모든 비용은 동일 rounds의 한 라운드 정규화; 실제 재학습 rounds/정확도를 검증하지 않음.
+음성 대조: 삭제 후 shard 비용을 원래 비용 그대로 고정하면 uniform equal-size 조건에서 기대 삭제 비용=초기비용/3임을 모든 partition에서 검증.
+H1 지지 기준: initial과 deletion 사이의 엄격한 목적 충돌(각 목적의 최소값을 동시에 달성하는 partition 없음)이 존재. 단순 동점 중 다른 partition 선택은 증거로 사용하지 않음.
+실용 후보 기준(환경별): joint가 initial 대비 기대 삭제 UL을 5% 이상 줄이고 초기 UL 증가 10% 이하인 seed가 30개 중 20개 이상. 평균/중앙값/최악 비용/대표성 변화도 모두 보고. 비용 후보일 뿐 정확도/신규성 증명 아님.
+H1 확인되어도 학습 일반화, 기존 clustering 대비 우월성, exact unlearning, OFDM/MIMO, 프라이버시, 논문 신규성은 이번 실험의 검증 범위 밖.
+원자료: 이 폴더 results.json, partitions.json, scenarios.json, per_partition.json.gz, report.html. 기존 결과 덮어쓰기 금지.

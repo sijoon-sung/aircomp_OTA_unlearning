@@ -1,0 +1,14 @@
+{
+  "status": "paused_waiting_for_other_gpu_job",
+  "completed_conditions": 10,
+  "completed_deletion_scenarios": 200,
+  "completed_model_trajectories": 245,
+  "active_seconds_from_provenance_to_pause": 858.2341909408569,
+  "local_calls_lower_bound": 212800,
+  "aggregation_rounds_lower_bound": 51000,
+  "exclusive_observed_gpu_board_Wh_lower_bound": 29.47308792630235,
+  "external_payment": 0,
+  "own_suspended_pid": 6380,
+  "other_gpu_pid": 48040,
+  "note": "Partial trajectories and unfinished reference excluded from lower bounds. Shared GPU interval energy cannot be attributed to this experiment."
+}

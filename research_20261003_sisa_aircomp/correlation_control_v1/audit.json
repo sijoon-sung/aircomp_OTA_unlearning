@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "cases": 18,
+  "checks": [
+    {
+      "seed": 10701,
+      "partition_matched": true,
+      "channel_marginals_matched": true,
+      "random_routing_fixed": true,
+      "paired_channels_matched": true,
+      "probabilities_exact": true
+    },
+    {
+      "seed": 10702,
+      "partition_matched": true,
+      "channel_marginals_matched": true,
+      "random_routing_fixed": true,
+      "paired_channels_matched": true,
+      "probabilities_exact": true
+    },
+    {
+      "seed": 10703,
+      "partition_matched": true,
+      "channel_marginals_matched": true,
+      "random_routing_fixed": true,
+      "paired_channels_matched": true,
+      "probabilities_exact": true
+    }
+  ],
+  "source_calls": 86400,
+  "reference_calls": 82080,
+  "replay_calls": 17280
+}

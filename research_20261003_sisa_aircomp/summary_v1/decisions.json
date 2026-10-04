@@ -1,0 +1,11 @@
+{
+  "chosen_K": 4,
+  "eligible_selection": true,
+  "additional_grouping_success": false,
+  "confirmation_ratio_of_mean_total_re": 0.9211159113947449,
+  "confirmation_ratio_of_mean_ul_re": 0.7904570278815751,
+  "confirmation_ratio_of_mean_total_re_dl6": 0.8650351757754808,
+  "confirmation_mean_accuracy_delta_pp": -0.6500000000000061,
+  "total_re_wins": 1,
+  "scope": "3-seed baseband pilot, not a novelty proof or privacy certification"
+}

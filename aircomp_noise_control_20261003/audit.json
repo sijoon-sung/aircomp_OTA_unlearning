@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "new_conditions": 18,
+  "new_deletions": 360,
+  "reused_conditions": 9,
+  "reused_deletions": 180,
+  "paired_cost_checks": 360,
+  "events_checked": 57600,
+  "max_reference_error": 0.0,
+  "seconds": 0.33800959994550794
+}

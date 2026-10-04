@@ -1,0 +1,56 @@
+[
+  {
+    "seed": 62001,
+    "method": "channel",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62001,
+    "method": "data",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62001,
+    "method": "delete_joint",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62002,
+    "method": "channel",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62002,
+    "method": "data",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62002,
+    "method": "delete_joint",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62003,
+    "method": "channel",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62003,
+    "method": "data",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  },
+  {
+    "seed": 62003,
+    "method": "delete_joint",
+    "legacy_step_error": 0.0,
+    "data_and_channel_equal": true
+  }
+]

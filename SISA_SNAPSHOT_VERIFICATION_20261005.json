@@ -1,0 +1,21 @@
+{
+  "snapshot_date": "2026-10-05",
+  "passed": true,
+  "included_file_hashes_verified": 2576,
+  "python_files_syntax_checked": 33,
+  "json_files_parsed": 2055,
+  "compressed_files_checked": 431,
+  "complete_latest_conditions": 10,
+  "complete_latest_deletion_scenarios": 200,
+  "planned_latest_conditions": 18,
+  "source_files_preserved": true,
+  "new_gpu_experiments_executed_during_export": false,
+  "checkpoint_models_included": false,
+  "notes": [
+    "Existing repository .gitattributes uses * -text, preserving archived hashes across platforms.",
+    "per_partition.json.gz contains JSON Lines despite its filename; every line was parsed.",
+    "No matches for the targeted private-key and common API-token signatures in exported source/text/JSON files. This is a limited scan, not a comprehensive security audit.",
+    "Model checkpoints and dataset cache remain local. Excluded checkpoints have hashes in the export manifest.",
+    "Full latest-experiment analysis requires 18 complete conditions; only 10 are present."
+  ]
+}

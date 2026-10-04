@@ -1,0 +1,182 @@
+[
+  {
+    "seed": 10801,
+    "snr": 0,
+    "baseline": "random",
+    "accuracy_delta_pp": -0.029999999999996696,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 1.485846110285561
+  },
+  {
+    "seed": 10801,
+    "snr": 0,
+    "baseline": "channel",
+    "accuracy_delta_pp": 1.0400000000000076,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.4836873816686834
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "baseline": "random",
+    "accuracy_delta_pp": -0.10999999999999899,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 1.4872980121478623
+  },
+  {
+    "seed": 10801,
+    "snr": 10,
+    "baseline": "channel",
+    "accuracy_delta_pp": 1.4500000000000068,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.48303043731671913
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "baseline": "random",
+    "accuracy_delta_pp": -0.07999999999999119,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 1.487760447836801
+  },
+  {
+    "seed": 10801,
+    "snr": 20,
+    "baseline": "channel",
+    "accuracy_delta_pp": 1.550000000000007,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.48282184147919704
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "baseline": "random",
+    "accuracy_delta_pp": -2.63000000000001,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 3.9204718033651442
+  },
+  {
+    "seed": 10802,
+    "snr": 0,
+    "baseline": "channel",
+    "accuracy_delta_pp": 0.8999999999999897,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.3720075774186441
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "baseline": "random",
+    "accuracy_delta_pp": -2.749999999999997,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 3.935608822631854
+  },
+  {
+    "seed": 10802,
+    "snr": 10,
+    "baseline": "channel",
+    "accuracy_delta_pp": 1.31,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.3714366956921302
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "baseline": "random",
+    "accuracy_delta_pp": -3.1300000000000106,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 3.9404449812788815
+  },
+  {
+    "seed": 10802,
+    "snr": 20,
+    "baseline": "channel",
+    "accuracy_delta_pp": 0.8099999999999996,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.3712555947936372
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "baseline": "random",
+    "accuracy_delta_pp": -0.45000000000000595,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 5.945292382991004
+  },
+  {
+    "seed": 10803,
+    "snr": 0,
+    "baseline": "channel",
+    "accuracy_delta_pp": -0.7400000000000073,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.28169778745805346
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "baseline": "random",
+    "accuracy_delta_pp": -0.7900000000000018,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 5.9741023293709965
+  },
+  {
+    "seed": 10803,
+    "snr": 10,
+    "baseline": "channel",
+    "accuracy_delta_pp": -0.8600000000000052,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.28125319196187865
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "baseline": "random",
+    "accuracy_delta_pp": -0.880000000000003,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 5.9833118460957975
+  },
+  {
+    "seed": 10803,
+    "snr": 20,
+    "baseline": "channel",
+    "accuracy_delta_pp": -1.1299999999999977,
+    "baseline_target": false,
+    "joint_target": false,
+    "target_saving": null,
+    "epsilon_ratio": 0.2811122671736941
+  }
+]

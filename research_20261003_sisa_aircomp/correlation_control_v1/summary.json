@@ -1,0 +1,41 @@
+[
+  {
+    "level": 0.0,
+    "accuracy_delta_pp": -0.296666666666671,
+    "worst_recall_delta_pp": 1.4000000000000004,
+    "total_re_saving": 0.0562746983410329,
+    "ul_saving": -0.04765997537223402,
+    "source_re_saving": 0.09480262765809482,
+    "shard_js_delta": -0.004854450927752936,
+    "random_accuracy": 0.7298,
+    "channel_accuracy": 0.7268333333333333,
+    "improved_seeds": 2,
+    "practical_pass": false
+  },
+  {
+    "level": 0.5,
+    "accuracy_delta_pp": 0.0500000000000019,
+    "worst_recall_delta_pp": -3.099999999999999,
+    "total_re_saving": 0.19129139652146607,
+    "ul_saving": 0.4764879348500137,
+    "source_re_saving": 0.15588144222264003,
+    "shard_js_delta": 0.0024933200723800584,
+    "random_accuracy": 0.7300999999999999,
+    "channel_accuracy": 0.7305999999999999,
+    "improved_seeds": 3,
+    "practical_pass": true
+  },
+  {
+    "level": 1.0,
+    "accuracy_delta_pp": -0.19666666666666352,
+    "worst_recall_delta_pp": 1.3666666666666651,
+    "total_re_saving": 0.20881972675643357,
+    "ul_saving": 0.4445258037949536,
+    "source_re_saving": 0.2038383136471368,
+    "shard_js_delta": 0.021863228257840334,
+    "random_accuracy": 0.7302666666666667,
+    "channel_accuracy": 0.7283,
+    "improved_seeds": 2,
+    "practical_pass": true
+  }
+]

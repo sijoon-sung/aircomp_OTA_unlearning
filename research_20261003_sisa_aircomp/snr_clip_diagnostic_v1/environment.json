@@ -1,0 +1,6 @@
+{
+  "inventory": "pid, process_name, used_gpu_memory [MiB]\n37064, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.917.9434.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n",
+  "driver_sha": "856fb558de7ba098884cc0dfb616896732f07cefb7ed02791185a1cd86169aa2",
+  "engine_sha": "08933868967f40824a86462210d2fdf083c18bd9df231f2a5863e9e2fb008ec1",
+  "amendment_sha": "0c9a081fd90ba1803ad796936b34c901b1b323989779c6108cbb62fc60301625"
+}

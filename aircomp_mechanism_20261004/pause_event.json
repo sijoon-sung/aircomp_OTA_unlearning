@@ -1,0 +1,7 @@
+{
+  "action": "suspend_own_worker",
+  "pid": 6380,
+  "other_gpu_pid": 48040,
+  "time": "2026-10-04T03:54:35.265790",
+  "reason": "another GPU job appeared; own start time 03:40:13 matches provenance 03:40:17"
+}

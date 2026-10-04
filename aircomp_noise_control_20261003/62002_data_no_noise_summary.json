@@ -1,0 +1,516 @@
+{
+  "seed": 62002,
+  "method": "data",
+  "noise": "no_noise",
+  "sigma2": 0.0,
+  "groups": [
+    [
+      0,
+      3,
+      5,
+      6,
+      13,
+      19
+    ],
+    [
+      1,
+      10,
+      12,
+      17
+    ],
+    [
+      2,
+      4,
+      8,
+      9,
+      15,
+      16
+    ],
+    [
+      7,
+      11,
+      14,
+      18
+    ]
+  ],
+  "source": {
+    "dev": 0.7305000424385071,
+    "dev_worst_recall": 0.1550000011920929,
+    "test": 0.7261999845504761,
+    "test_worst_recall": 0.1680000126361847
+  },
+  "source_cost": {
+    "ul_reals": 24500480.0,
+    "dl_bits": 784015360.0,
+    "pilot_reals": 25600.0,
+    "control_bits": 245760.0,
+    "total_re": 416656640.0,
+    "total_re_dl6": 155318186.66666666,
+    "local_calls": 3200.0,
+    "local_steps": 6400.0,
+    "signal_energy": 1901503.7773901839
+  },
+  "deletions": [
+    {
+      "client": 0,
+      "shard": 0,
+      "metrics": {
+        "dev": 0.7260000109672546,
+        "dev_worst_recall": 0.1599999964237213,
+        "test": 0.7208999991416931,
+        "test_worst_recall": 0.1720000058412552
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 509531.1608890366
+      },
+      "reference_maxabs": 0.0,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 1,
+      "shard": 1,
+      "metrics": {
+        "dev": 0.7285000085830688,
+        "dev_worst_recall": 0.1850000023841858,
+        "test": 0.7312999963760376,
+        "test_worst_recall": 0.23100000619888306
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 539827.8836149779
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 2,
+      "shard": 2,
+      "metrics": {
+        "dev": 0.7260000109672546,
+        "dev_worst_recall": 0.16499999165534973,
+        "test": 0.7224000096321106,
+        "test_worst_recall": 0.18800000846385956
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 971046.8862301018
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 3,
+      "shard": 0,
+      "metrics": {
+        "dev": 0.7325000166893005,
+        "dev_worst_recall": 0.17000000178813934,
+        "test": 0.7286999821662903,
+        "test_worst_recall": 0.18200001120567322
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 521619.9392767566
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 4,
+      "shard": 2,
+      "metrics": {
+        "dev": 0.7260000109672546,
+        "dev_worst_recall": 0.06499999761581421,
+        "test": 0.7260000109672546,
+        "test_worst_recall": 0.11000000685453415
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 444748.359030985
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 5,
+      "shard": 0,
+      "metrics": {
+        "dev": 0.7315000295639038,
+        "dev_worst_recall": 0.11999999731779099,
+        "test": 0.7221999764442444,
+        "test_worst_recall": 0.1420000046491623
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 496382.3306171708
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 6,
+      "shard": 0,
+      "metrics": {
+        "dev": 0.7305000424385071,
+        "dev_worst_recall": 0.10499999672174454,
+        "test": 0.7274999618530273,
+        "test_worst_recall": 0.12800000607967377
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 304338.1548688882
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 7,
+      "shard": 3,
+      "metrics": {
+        "dev": 0.721500039100647,
+        "dev_worst_recall": 0.20999999344348907,
+        "test": 0.7209999561309814,
+        "test_worst_recall": 0.2639999985694885
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 515825.85681447625
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 8,
+      "shard": 2,
+      "metrics": {
+        "dev": 0.7300000190734863,
+        "dev_worst_recall": 0.13499999046325684,
+        "test": 0.7245000004768372,
+        "test_worst_recall": 0.15400001406669617
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 446695.21471853607
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 9,
+      "shard": 2,
+      "metrics": {
+        "dev": 0.721500039100647,
+        "dev_worst_recall": 0.17999999225139618,
+        "test": 0.7179999947547913,
+        "test_worst_recall": 0.1940000057220459
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 285137.08266708005
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 10,
+      "shard": 1,
+      "metrics": {
+        "dev": 0.718500018119812,
+        "dev_worst_recall": 0.2199999988079071,
+        "test": 0.7198999524116516,
+        "test_worst_recall": 0.25300002098083496
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 243894.83905675446
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 11,
+      "shard": 3,
+      "metrics": {
+        "dev": 0.7280000448226929,
+        "dev_worst_recall": 0.029999999329447746,
+        "test": 0.7213999629020691,
+        "test_worst_recall": 0.039000000804662704
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 441883.3185204985
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 12,
+      "shard": 1,
+      "metrics": {
+        "dev": 0.7330000400543213,
+        "dev_worst_recall": 0.17499999701976776,
+        "test": 0.722599983215332,
+        "test_worst_recall": 0.20500001311302185
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 385124.58180089557
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 13,
+      "shard": 0,
+      "metrics": {
+        "dev": 0.7350000143051147,
+        "dev_worst_recall": 0.11499999463558197,
+        "test": 0.7276999950408936,
+        "test_worst_recall": 0.13300000131130219
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 503186.3661675919
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 14,
+      "shard": 3,
+      "metrics": {
+        "dev": 0.7315000295639038,
+        "dev_worst_recall": 0.16499999165534973,
+        "test": 0.7268999814987183,
+        "test_worst_recall": 0.18000000715255737
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 398697.9205917147
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 15,
+      "shard": 2,
+      "metrics": {
+        "dev": 0.7345000505447388,
+        "dev_worst_recall": 0.17499999701976776,
+        "test": 0.7289999723434448,
+        "test_worst_recall": 0.17900000512599945
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 435626.96744546306
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 16,
+      "shard": 2,
+      "metrics": {
+        "dev": 0.7305000424385071,
+        "dev_worst_recall": 0.1599999964237213,
+        "test": 0.7261999845504761,
+        "test_worst_recall": 0.1770000010728836
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 458489.6638479956
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 17,
+      "shard": 1,
+      "metrics": {
+        "dev": 0.7280000448226929,
+        "dev_worst_recall": 0.04999999701976776,
+        "test": 0.7245999574661255,
+        "test_worst_recall": 0.07600000500679016
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 315838.52374949085
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 18,
+      "shard": 3,
+      "metrics": {
+        "dev": 0.7295000553131104,
+        "dev_worst_recall": 0.1899999976158142,
+        "test": 0.7253999710083008,
+        "test_worst_recall": 0.2150000035762787
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 3840.0,
+        "control_bits": 40960.0,
+        "total_re": 104151360.0,
+        "total_re_dl6": 38816746.666666664,
+        "local_calls": 480.0,
+        "local_steps": 960.0,
+        "signal_energy": 215507.22192282943
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    },
+    {
+      "client": 19,
+      "shard": 0,
+      "metrics": {
+        "dev": 0.7165000438690186,
+        "dev_worst_recall": 0.1850000023841858,
+        "test": 0.7181000113487244,
+        "test_worst_recall": 0.22700001299381256
+      },
+      "cost": {
+        "ul_reals": 6125120.0,
+        "dl_bits": 196003840.0,
+        "pilot_reals": 6400.0,
+        "control_bits": 61440.0,
+        "total_re": 104164160.0,
+        "total_re_dl6": 38829546.666666664,
+        "local_calls": 800.0,
+        "local_steps": 1600.0,
+        "signal_energy": 439761.6661353713
+      },
+      "reference_maxabs": null,
+      "mean_expected_mse": 0.0
+    }
+  ],
+  "mean_delete_test": 0.7242149829864502
+}
