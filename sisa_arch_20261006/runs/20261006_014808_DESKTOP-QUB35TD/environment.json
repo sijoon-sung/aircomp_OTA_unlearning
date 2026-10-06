@@ -1,0 +1,26 @@
+{
+ "python": "3.12.10",
+ "torch": "2.5.1+cu121",
+ "numpy": "2.5.3",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "host": "DESKTOP-QUB35TD",
+ "device": "cuda",
+ "gpu": "NVIDIA GeForce RTX 3080",
+ "args": {
+  "data": "C:\\Users\\DISLAB\\.gemini\\antigravity\\scratch\\aircomp_OTA_unlearning\\sisa_arch_20261006\\data",
+  "out": null,
+  "device": "auto",
+  "dataset": "fashionmnist",
+  "seeds": 5,
+  "draws": 1000,
+  "draws_e3": 300,
+  "seqs": 20,
+  "cost_draws": 200,
+  "rounds": 160,
+  "chunk": 64,
+  "eps": null,
+  "only": null,
+  "skip": null,
+  "quick": false
+ }
+}

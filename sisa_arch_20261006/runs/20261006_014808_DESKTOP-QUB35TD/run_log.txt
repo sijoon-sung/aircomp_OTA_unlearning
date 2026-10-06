@@ -1,0 +1,241 @@
+01:48:08 결과 폴더: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\sisa_arch_20261006\runs\20261006_014808_DESKTOP-QUB35TD
+01:48:08 장치: cuda NVIDIA GeForce RTX 3080 / torch 2.5.1+cu121
+01:48:08 데이터: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\sisa_arch_20261006\data\FashionMNIST\raw
+01:48:08 ===== G0 잡음 허용 한계 시작 =====
+01:48:09 [G0] seed 71001: jobs=90
+01:48:23   round 40/160  pairs=380
+01:48:36   round 80/160  pairs=380
+01:48:49   round 120/160  pairs=380
+01:49:03   round 160/160  pairs=380
+01:49:05 [G0] seed 71001 done: eps=0:0.6921, eps=1:0.7074, eps=3:0.7207, eps=10:0.7442, eps=30:0.7045, eps=100:0.5447, eps=300:0.1112, eps=1000:0.0990, eps=3000:0.0985, eps=10000:0.0746
+01:49:05 [G0] seed 71002: jobs=90
+01:49:18   round 40/160  pairs=380
+01:49:31   round 80/160  pairs=380
+01:49:45   round 120/160  pairs=380
+01:49:58   round 160/160  pairs=380
+01:50:00 [G0] seed 71002 done: eps=0:0.6865, eps=1:0.7101, eps=3:0.7271, eps=10:0.7311, eps=30:0.6637, eps=100:0.5468, eps=300:0.1008, eps=1000:0.0917, eps=3000:0.0816, eps=10000:0.1018
+01:50:00 [G0] seed 71003: jobs=90
+01:50:13   round 40/160  pairs=380
+01:50:27   round 80/160  pairs=380
+01:50:40   round 120/160  pairs=380
+01:50:54   round 160/160  pairs=380
+01:50:56 [G0] seed 71003 done: eps=0:0.6995, eps=1:0.7013, eps=3:0.7143, eps=10:0.7331, eps=30:0.7172, eps=100:0.5796, eps=300:0.0955, eps=1000:0.0999, eps=3000:0.1197, eps=10000:0.0853
+01:50:56 [G0] seed 71004: jobs=90
+01:51:09   round 40/160  pairs=380
+01:51:23   round 80/160  pairs=380
+01:51:36   round 120/160  pairs=380
+01:51:50   round 160/160  pairs=380
+01:51:51 [G0] seed 71004 done: eps=0:0.6817, eps=1:0.6882, eps=3:0.7064, eps=10:0.7288, eps=30:0.7150, eps=100:0.4454, eps=300:0.1314, eps=1000:0.1003, eps=3000:0.1133, eps=10000:0.1093
+01:51:51 [G0] seed 71005: jobs=90
+01:52:05   round 40/160  pairs=380
+01:52:18   round 80/160  pairs=380
+01:52:32   round 120/160  pairs=380
+01:52:46   round 160/160  pairs=380
+01:52:47 [G0] seed 71005 done: eps=0:0.7079, eps=1:0.7080, eps=3:0.7238, eps=10:0.7254, eps=30:0.6667, eps=100:0.6270, eps=300:0.3342, eps=1000:0.0926, eps=3000:0.0811, eps=10000:0.0737
+01:52:47 ===== G0 잡음 허용 한계 끝: 완료, 4.7분 =====
+01:52:47 ===== E1 삭제해도 바뀌지 않는 배정 시작 =====
+01:53:07 [E1-a] draws 200/1000
+01:53:09 [E1-a] draws 400/1000
+01:53:10 [E1-a] draws 600/1000
+01:53:11 [E1-a] draws 800/1000
+01:53:12 [E1-a] draws 1000/1000
+01:53:12 [E1-b] seed 71001: jobs=155
+01:53:39   round 40/160  pairs=732
+01:54:05   round 80/160  pairs=732
+01:54:32   round 120/160  pairs=732
+01:54:58   round 160/160  pairs=732
+01:55:01 [E1-b] seed 71001 done
+01:55:01 [E1-b] seed 71002: jobs=155
+01:55:27   round 40/160  pairs=732
+01:55:54   round 80/160  pairs=732
+01:56:20   round 120/160  pairs=732
+01:56:46   round 160/160  pairs=732
+01:56:49 [E1-b] seed 71002 done
+01:56:49 [E1-b] seed 71003: jobs=152
+01:57:15   round 40/160  pairs=727
+01:57:42   round 80/160  pairs=727
+01:58:08   round 120/160  pairs=727
+01:58:35   round 160/160  pairs=727
+01:58:37 [E1-b] seed 71003 done
+01:58:37 [E1-b] seed 71004: jobs=155
+01:59:04   round 40/160  pairs=734
+01:59:30   round 80/160  pairs=734
+01:59:57   round 120/160  pairs=734
+02:00:23   round 160/160  pairs=734
+02:00:26 [E1-b] seed 71004 done
+02:00:26 [E1-b] seed 71005: jobs=155
+02:00:53   round 40/160  pairs=731
+02:01:19   round 80/160  pairs=731
+02:01:46   round 120/160  pairs=731
+02:02:12   round 160/160  pairs=731
+02:02:15 [E1-b] seed 71005 done
+02:02:15 ===== E1 삭제해도 바뀌지 않는 배정 끝: 완료, 9.5분 =====
+02:02:15 ===== E2 채널 순서 참여 시점 시작 =====
+02:02:26 [E2-a] draws 200/1000
+02:02:37 [E2-a] draws 400/1000
+02:02:48 [E2-a] draws 600/1000
+02:02:59 [E2-a] draws 800/1000
+02:03:10 [E2-a] draws 1000/1000
+02:03:10 [E2-b] seed 71001 pass1 jobs=80
+02:03:19   round 40/160  pairs=260
+02:03:32   round 80/160  pairs=400
+02:03:47   round 120/160  pairs=400
+02:04:01   round 160/160  pairs=400
+02:04:03 [E2-b] seed 71001 pass2 jobs=402
+02:04:24   round 40/160  pairs=701
+02:05:14   round 80/160  pairs=1608
+02:06:13   round 120/160  pairs=1608
+02:07:12   round 160/160  pairs=1608
+02:07:20 [E2-b] seed 71001 done
+02:07:20 [E2-b] seed 71002 pass1 jobs=80
+02:07:28   round 40/160  pairs=256
+02:07:42   round 80/160  pairs=400
+02:07:56   round 120/160  pairs=400
+02:08:11   round 160/160  pairs=400
+02:08:12 [E2-b] seed 71002 pass2 jobs=402
+02:08:33   round 40/160  pairs=701
+02:09:23   round 80/160  pairs=1608
+02:10:22   round 120/160  pairs=1608
+02:11:21   round 160/160  pairs=1608
+02:11:30 [E2-b] seed 71002 done
+02:11:30 [E2-b] seed 71003 pass1 jobs=80
+02:11:38   round 40/160  pairs=268
+02:11:51   round 80/160  pairs=400
+02:12:06   round 120/160  pairs=400
+02:12:21   round 160/160  pairs=400
+02:12:22 [E2-b] seed 71003 pass2 jobs=402
+02:12:44   round 40/160  pairs=741
+02:13:35   round 80/160  pairs=1608
+02:14:34   round 120/160  pairs=1608
+02:15:33   round 160/160  pairs=1608
+02:15:41 [E2-b] seed 71003 done
+02:15:41 [E2-b] seed 71004 pass1 jobs=80
+02:15:49   round 40/160  pairs=268
+02:16:03   round 80/160  pairs=400
+02:16:17   round 120/160  pairs=400
+02:16:32   round 160/160  pairs=400
+02:16:33 [E2-b] seed 71004 pass2 jobs=402
+02:16:55   round 40/160  pairs=737
+02:17:44   round 80/160  pairs=1608
+02:18:44   round 120/160  pairs=1608
+02:19:43   round 160/160  pairs=1608
+02:19:51 [E2-b] seed 71004 done
+02:19:51 [E2-b] seed 71005 pass1 jobs=80
+02:19:59   round 40/160  pairs=256
+02:20:12   round 80/160  pairs=400
+02:20:27   round 120/160  pairs=400
+02:20:41   round 160/160  pairs=400
+02:20:42 [E2-b] seed 71005 pass2 jobs=402
+02:21:03   round 40/160  pairs=685
+02:21:53   round 80/160  pairs=1608
+02:22:52   round 120/160  pairs=1608
+02:23:51   round 160/160  pairs=1608
+02:23:59 [E2-b] seed 71005 done
+02:23:59 ===== E2 채널 순서 참여 시점 끝: 완료, 21.7분 =====
+02:23:59 ===== E3 연속 삭제와 shard 크기 시작 =====
+02:24:15 [E3-a] draws 60/300
+02:24:31 [E3-a] draws 120/300
+02:24:45 [E3-a] draws 180/300
+02:25:00 [E3-a] draws 240/300
+02:25:15 [E3-a] draws 300/300
+02:25:16 [E3-b] seed 71001: jobs=46
+02:25:22   round 40/160  pairs=174
+02:25:28   round 80/160  pairs=174
+02:25:34   round 120/160  pairs=174
+02:25:41   round 160/160  pairs=174
+02:25:42 [E3-b] seed 71001 done
+02:25:42 [E3-b] seed 71002: jobs=60
+02:25:49   round 40/160  pairs=214
+02:25:57   round 80/160  pairs=214
+02:26:05   round 120/160  pairs=214
+02:26:12   round 160/160  pairs=214
+02:26:14 [E3-b] seed 71002 done
+02:26:14 [E3-b] seed 71003: jobs=63
+02:26:22   round 40/160  pairs=226
+02:26:30   round 80/160  pairs=226
+02:26:38   round 120/160  pairs=226
+02:26:46   round 160/160  pairs=226
+02:26:47 [E3-b] seed 71003 done
+02:26:47 [E3-b] seed 71004: jobs=57
+02:26:55   round 40/160  pairs=209
+02:27:02   round 80/160  pairs=209
+02:27:10   round 120/160  pairs=209
+02:27:18   round 160/160  pairs=209
+02:27:19 [E3-b] seed 71004 done
+02:27:19 [E3-b] seed 71005: jobs=53
+02:27:26   round 40/160  pairs=192
+02:27:32   round 80/160  pairs=192
+02:27:39   round 120/160  pairs=192
+02:27:46   round 160/160  pairs=192
+02:27:47 [E3-b] seed 71005 done
+02:27:47 ===== E3 연속 삭제와 shard 크기 끝: 완료, 3.8분 =====
+02:27:47 ===== E4 삭제 중 대역 몰아주기 시작 =====
+02:27:49 [E4-a] draws 200/1000
+02:27:51 [E4-a] draws 400/1000
+02:27:53 [E4-a] draws 600/1000
+02:27:55 [E4-a] draws 800/1000
+02:27:57 [E4-a] draws 1000/1000
+02:27:57 [E4-b] seed 71001: jobs=52
+02:28:05   round 40/160  pairs=212
+02:28:13   round 80/160  pairs=212
+02:28:20   round 120/160  pairs=212
+02:28:28   round 160/160  pairs=212
+02:28:29 [E4-b] seed 71001 done
+02:28:29 [E4-b] seed 71002: jobs=52
+02:28:37   round 40/160  pairs=212
+02:28:45   round 80/160  pairs=212
+02:28:52   round 120/160  pairs=212
+02:29:00   round 160/160  pairs=212
+02:29:01 [E4-b] seed 71002 done
+02:29:01 [E4-b] seed 71003: jobs=52
+02:29:09   round 40/160  pairs=212
+02:29:17   round 80/160  pairs=212
+02:29:25   round 120/160  pairs=212
+02:29:33   round 160/160  pairs=212
+02:29:34 [E4-b] seed 71003 done
+02:29:34 [E4-b] seed 71004: jobs=52
+02:29:41   round 40/160  pairs=212
+02:29:49   round 80/160  pairs=212
+02:29:57   round 120/160  pairs=212
+02:30:04   round 160/160  pairs=212
+02:30:05 [E4-b] seed 71004 done
+02:30:05 [E4-b] seed 71005: jobs=52
+02:30:13   round 40/160  pairs=212
+02:30:21   round 80/160  pairs=212
+02:30:29   round 120/160  pairs=212
+02:30:36   round 160/160  pairs=212
+02:30:37 [E4-b] seed 71005 done
+02:30:37 ===== E4 삭제 중 대역 몰아주기 끝: 완료, 2.8분 =====
+02:30:37 ===== E5 guard 대역과 누설 시작 =====
+02:30:38 [E5] seed 71001: systems=31, 삭제 대상 shard=0
+02:30:56   round 40/160  pairs=449
+02:31:14   round 80/160  pairs=449
+02:31:32   round 120/160  pairs=449
+02:31:50   round 160/160  pairs=449
+02:31:53 [E5] seed 71001 done
+02:31:53 [E5] seed 71002: systems=31, 삭제 대상 shard=1
+02:32:11   round 40/160  pairs=449
+02:32:29   round 80/160  pairs=449
+02:32:48   round 120/160  pairs=449
+02:33:06   round 160/160  pairs=449
+02:33:09 [E5] seed 71002 done
+02:33:09 [E5] seed 71003: systems=31, 삭제 대상 shard=1
+02:33:28   round 40/160  pairs=449
+02:33:46   round 80/160  pairs=449
+02:34:04   round 120/160  pairs=449
+02:34:22   round 160/160  pairs=449
+02:34:26 [E5] seed 71003 done
+02:34:26 [E5] seed 71004: systems=31, 삭제 대상 shard=1
+02:34:45   round 40/160  pairs=449
+02:35:03   round 80/160  pairs=449
+02:35:21   round 120/160  pairs=449
+02:35:40   round 160/160  pairs=449
+02:35:43 [E5] seed 71004 done
+02:35:43 [E5] seed 71005: systems=31, 삭제 대상 shard=0
+02:36:02   round 40/160  pairs=449
+02:36:20   round 80/160  pairs=449
+02:36:38   round 120/160  pairs=449
+02:36:56   round 160/160  pairs=449
+02:37:00 [E5] seed 71005 done
+02:37:00 ===== E5 guard 대역과 누설 끝: 완료, 6.4분 =====
+02:37:00 전체 완료. 요약: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\sisa_arch_20261006\runs\20261006_014808_DESKTOP-QUB35TD\SUMMARY_KO.md
