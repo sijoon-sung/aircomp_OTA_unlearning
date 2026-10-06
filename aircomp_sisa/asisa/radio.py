@@ -26,6 +26,18 @@
           반복이 있으면 한 라운드에 max_k R_k 개 슬롯을 쓰고 슬롯 r 에는 R_k > r 인 shard 만 보낸다.
           shard k 는 자기 R_k 슬롯을 평균하므로 shard j 의 간섭은 min(R_j, R_k)/R_k 배가 된다.
   ideal : 채널 없이 평균에 제곱합 기대값 noise_mse 인 잡음만 더한다 (허용 잡음 측정용).
+
+코드 분할의 코드 (code)
+  walsh : Hadamard 행. 시간 오차가 없으면 완전 직교.
+  pn    : 무작위 ±1. 상호상관 ~ 1/sqrt(L).
+  zcz   : 길이 L 의 walsh 칩 사이마다 0 칩을 gap 개 넣는다 (칩 수 L(gap+1)). 수신기는 0..gap 칩 늦게 온 신호를 모두 모으는
+          창(window) 템플릿 t_k = sum_{m=0}^{gap} roll(c_k, m) 으로 역확산한다. 시간 오차가 gap 칩 미만이면
+          다른 shard 와의 상관이 정확히 0 (영 상관 구간, zero correlation zone) 이고 자기 신호는 그대로 모인다.
+          대가: 칩 수 (gap+1) 배, 0 칩 구간의 잡음도 모이므로 잡음 (gap+1) 배.
+  일반식: 수신 템플릿 t, 송신 코드 c 일 때 g_ik = t_k . c_i^eff / (t_k . c_k), 잡음 분산 = sigma2 |t_k|^2 / (t_k . c_k)^2.
+  칩 타이밍 오차 delta = m + f (정수 m, 소수 f):  c^eff = (1 - f) roll(c, m) + f roll(c, m + 1).
+전력 정렬 weakest (code 전용): 같은 자원을 쓰는 shard 들이 모두 가장 약한 shard 의 최대 크기 beta = max_k beta_min_k 로 도착한다.
+  도착 크기가 같아지는 선택 중 잡음이 가장 작지만, 각 shard 의 전력이 다른 shard 의 채널에 의존한다.
 """
 import math
 from dataclasses import dataclass, field
@@ -38,12 +50,13 @@ from .util import key
 class RadioConfig:
     sigma2: float = 0.01        # 수신 잡음 분산 (실수 심볼·칩당). 명목 SNR = P / sigma2
     eps: float = EPS            # 반복 기준 허용 집계 오차. 0 이면 반복하지 않음
-    align: str = 'maxpow'       # 'maxpow' | 'common'
+    align: str = 'maxpow'       # 'maxpow' | 'common' | 'weakest'(code 전용)
     target: float = None        # common 의 목표 집계 오차 (None 이면 eps)
     n_nom: float = None         # common 의 명목 인원 (None 이면 그 shard 의 인원)
     mux: str = 'orth'           # 'orth' | 'code' | 'ideal'
-    code: str = 'walsh'         # mux='code': 'walsh' | 'pn'
-    L: int = 4                  # mux='code': 코드 길이
+    code: str = 'walsh'         # mux='code': 'walsh' | 'pn' | 'zcz'
+    L: int = 4                  # mux='code': 코드 길이 (zcz 는 바탕 walsh 길이)
+    gap: int = 1                # code='zcz': walsh 칩 사이에 넣는 0 칩 수 (견디는 시간 오차 = gap 칩 미만)
     delay_max: float = 0.0      # mux='code': 칩 타이밍 오차 상한
     blocks: float = 1.0         # mux='orth': 동시에 쓰는 자원 블록 수
     noise_mse: float = 0.0      # mux='ideal': 더하는 잡음의 제곱합 기대값
@@ -77,8 +90,9 @@ def new_diag():
     return dict(own_energy=0.0, leak_energy=0.0, noise_energy=0.0, alpha=0.0, beta=0.0, repeats=0.0, slots=0.0,
                 leak_by_src={}, u_leak={})
 
-def plan(cfg, n, hmin, D, L=1):
-    """shard 하나의 (beta, 반복 R). 수신 scale 은 alpha = beta / n."""
+def plan(cfg, n, hmin, D, L=1, beta_force=None):
+    """shard 하나의 (beta, 반복 R). 수신 scale 은 alpha = beta / n. L 은 처리 이득 (직교 블록 1, 코드 분할은 코드에 따라).
+    beta_force: align='weakest' 에서 system 이 정한 공통 beta."""
     P_eff = cfg.P / cfg.blocks
     beta_min = cfg.C / (hmin * math.sqrt(P_eff * D))
     if cfg.align == 'common':
@@ -86,6 +100,8 @@ def plan(cfg, n, hmin, D, L=1):
         beta0 = (cfg.n_nom or n) * math.sqrt(target * L / (D * cfg.sigma2))
         if beta_min <= beta0:
             return beta0, 1
+    elif cfg.align == 'weakest':
+        beta_min = max(beta_min, beta_force)
     elif cfg.align != 'maxpow':
         raise ValueError(cfg.align)
     mse1 = D * (beta_min / n) ** 2 * cfg.sigma2 / L
@@ -120,29 +136,41 @@ def transmit_ideal(cfg, X, noise_key):
     d = new_diag(); d['own_energy'] = float(X.mean(0).pow(2).sum())
     return r, Ledger(rounds=1, tx_count=n, mse_sum=cfg.noise_mse), d
 
+def _walsh(L, K):
+    L = 1 << max(0, math.ceil(math.log2(max(L, K))))
+    H = np.array([[1.0]])
+    while H.shape[0] < L:
+        H = np.block([[H, H], [H, -H]])
+    return H[:K].copy()
+
 def make_codes(cfg, K, seed):
+    """반환: (송신 코드 [K, 칩 수], 수신 템플릿 [K, 칩 수])."""
     if cfg.code == 'walsh':
-        L = 1 << max(0, math.ceil(math.log2(max(cfg.L, K))))
-        H = np.array([[1.0]])
-        while H.shape[0] < L:
-            H = np.block([[H, H], [H, -H]])
-        return H[:K].copy()
+        c = _walsh(cfg.L, K); return c, c
     if cfg.code == 'pn':
-        return np.stack([np.random.default_rng(key(seed, 'pn', k, cfg.L)).choice([-1.0, 1.0], cfg.L) for k in range(K)])
+        c = np.stack([np.random.default_rng(key(seed, 'pn', k, cfg.L)).choice([-1.0, 1.0], cfg.L) for k in range(K)]); return c, c
+    if cfg.code == 'zcz':
+        w = _walsh(cfg.L, K); g = cfg.gap
+        c = np.zeros((K, w.shape[1] * (g + 1))); c[:, ::g + 1] = w
+        return c, sum(np.roll(c, m, axis=1) for m in range(g + 1))
     raise ValueError(cfg.code)
 
 class CodeSystem:
     """같은 자원에 동시에 보내는 shard 묶음 하나 (mux='code')."""
     def __init__(self, cfg, n_codes, seed, delays):
-        self.cfg = cfg; self.codes = make_codes(cfg, n_codes, seed); self.L = self.codes.shape[1]; self.delays = delays
+        self.cfg = cfg; self.codes, self.tmpl = make_codes(cfg, n_codes, seed); self.delays = delays
+        self.chips = self.codes.shape[1]
+        self.norm = float(self.tmpl[0] @ self.codes[0])                       # t_k . c_k (모든 코드에서 같음)
+        self.pgain = self.norm ** 2 / float(self.tmpl[0] @ self.tmpl[0])     # 처리 이득: 잡음 분산 = sigma2 / pgain
+        self.cenergy = float(self.codes[0] @ self.codes[0])                  # 심볼 하나를 펼친 칩 에너지 배수
         self._g = {}; self._gt = {}
 
     def gain(self, i, s_tx, s_rx):
-        """client i (코드 s_tx) 의 신호가 코드 s_rx 로 역확산될 때의 이득 g."""
+        """client i (코드 s_tx) 의 신호가 템플릿 s_rx 로 역확산될 때의 이득 g."""
         k = (i, s_tx, s_rx)
         if k not in self._g:
-            c = self.codes[s_tx]; d = self.delays[i]
-            self._g[k] = float(self.codes[s_rx] @ ((1 - d) * c + d * np.roll(c, 1)) / self.L)
+            c = self.codes[s_tx]; d = self.delays[i]; m = int(math.floor(d)); f = d - m
+            self._g[k] = float(self.tmpl[s_rx] @ ((1 - f) * np.roll(c, m) + f * np.roll(c, m + 1)) / self.norm)
         return self._g[k]
 
     def _gains(self, ids, s_tx, s_rx, dtype, device):
@@ -154,12 +182,13 @@ class CodeSystem:
     def transmit(self, shards, noise_key, track=()):
         """shards: [(코드 번호, X [n, D], client id 목록, 채널 진폭)]. track: 다른 shard 로 새는 양을 따로 잴 client.
         반환: {코드: 추정 [D]}, {코드: Ledger}, {코드: 진단}."""
-        cfg, L = self.cfg, self.L
+        cfg = self.cfg
         D = shards[0][1].shape[1]; dev = shards[0][1].device; dt = shards[0][1].dtype
-        plans = {s: plan(cfg, X.shape[0], float(np.min(hs)), D, L) for s, X, ids, hs in shards}
+        bf = max(cfg.C / (float(np.min(hs)) * math.sqrt(cfg.P * D)) for _, _, _, hs in shards) if cfg.align == 'weakest' else None
+        plans = {s: plan(cfg, X.shape[0], float(np.min(hs)), D, self.pgain, bf) for s, X, ids, hs in shards}
         Rmax = max(R for _, R in plans.values())
-        Z = [_gaussian(noise_key if r == 0 else key(noise_key, 'slot', r), (L, D), dev, dt, math.sqrt(cfg.sigma2)) for r in range(Rmax)]
-        codes = torch.as_tensor(self.codes, dtype=dt, device=dev)
+        Z = [_gaussian(noise_key if r == 0 else key(noise_key, 'slot', r), (self.chips, D), dev, dt, math.sqrt(cfg.sigma2)) for r in range(Rmax)]
+        tmpl = torch.as_tensor(self.tmpl, dtype=dt, device=dev)
         arrive, info = {}, {}
         for s, X, ids, hs in shards:
             beta, R = plans[s]
@@ -167,7 +196,7 @@ class CodeSystem:
             S = X / (h[:, None] * beta)
             pr = float(((S * S).mean(1) / cfg.P).max()); assert pr <= 1 + 1e-6, f'전력 상한 위반 {pr}'
             arrive[s] = h[:, None] * S                                   # 도착 진폭 x_i / beta
-            info[s] = (list(ids), X.shape[0], pr, float((S * S).sum()) * L * R)
+            info[s] = (list(ids), X.shape[0], pr, float((S * S).sum()) * self.cenergy * R)
         out, leds, diags = {}, {}, {}
         for s, X, ids, hs in shards:
             beta, R = plans[s]; n = X.shape[0]; alpha = beta / n
@@ -185,13 +214,13 @@ class CodeSystem:
                 for u in track:
                     if u in ids2:
                         q = ids2.index(u); d['u_leak'][u] = float((alpha * w * g[q] * A[q]).pow(2).sum())
-            noise = sum((codes[s][:, None] * Z[r]).sum(0) for r in range(R)) / (L * R)
+            noise = sum((tmpl[s][:, None] * Z[r]).sum(0) for r in range(R)) / (self.norm * R)
             out[s] = alpha * (own + leak + noise)
             d.update(own_energy=float((alpha * own).pow(2).sum()), leak_energy=float((alpha * leak).pow(2).sum()),
                      noise_energy=float((alpha * noise).pow(2).sum()), alpha=alpha, beta=beta, repeats=float(R), slots=float(Rmax))
             diags[s] = d
-            leds[s] = Ledger(ul_symbols=L * D * Rmax, ul_time=L * D * Rmax, dl_bits=32 * D, energy=info[s][3], repeats=R, rounds=1,
-                             tx_count=n, mse_sum=D * alpha * alpha * cfg.sigma2 / (L * R), max_power_ratio=info[s][2])
+            leds[s] = Ledger(ul_symbols=self.chips * D * Rmax, ul_time=self.chips * D * Rmax, dl_bits=32 * D, energy=info[s][3], repeats=R, rounds=1,
+                             tx_count=n, mse_sum=D * alpha * alpha * cfg.sigma2 / (self.pgain * R), max_power_ratio=info[s][2])
         return out, leds, diags
 
 def digital_ledger(cfg, hs, D):

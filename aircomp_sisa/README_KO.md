@@ -18,7 +18,7 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 
 | 옵션 | 기본 | 설명 |
 |---|---|---|
-| `--only` | 전부 | `noise,resources,assignment,interference` 중 일부 |
+| `--only` | 전부 | `noise,resources,assignment,interference,codes,placement` 중 일부 |
 | `--seeds` / `--rounds` | 5 / 160 | |
 | `--eps` | 10 | 허용 집계 오차. noise 실험의 측정값 |
 | `--chunk` | 64 | vmap 묶음 크기. GPU 메모리가 부족하면 32 |
@@ -33,7 +33,9 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 | `noise` | 정확도를 해치지 않는 집계 잡음은 어디까지인가 (eps*) | G0 |
 | `resources` | shard 수 K 에 따라 학습 자원, 삭제 비용(심볼·에너지·계산·시간)이 어떻게 변하는가. shard 가 작을수록 서버가 개인 정보를 얼마나 읽어 내는가 | P0 (b)(c) |
 | `assignment` | shard 배정 규칙에 따라 학습 비용과 삭제 비용이 교환되는가 | P1 |
-| `interference` | 같은 자원에 동시에 보내는 shard 사이 간섭이 삭제 대상의 흔적을 다른 shard 에 남기는가. 전력 정렬이 그 간섭을 약한 shard 로 몰아주는가 (near-far) | P0-A + P2 |
+| `interference` | 같은 자원에 동시에 보내는 shard 사이 간섭이 삭제 대상의 흔적을 다른 shard 에 남기는가. 전력 정렬이 그 간섭을 약한 shard 로 몰아주는가 (near-far) | P0-A + P2 (도착 크기를 가장 약한 shard 에 맞추는 경우 추가) |
+| `codes` | 시간 오차에 강한 코드(ZCZ: walsh 칩 사이에 0 칩을 넣고 창으로 모아 받음)로 shard 간 간섭을 구조적으로 0 으로 만들 수 있는가. 대가(칩 수, 잡음)는 | 새로 추가 |
+| `placement` | 같은 자원을 쓰는 shard 를 어떻게 배정해야 하는가. 배정이 near-far, 흔적, 삭제 비용, 최소 인원(노출), 삭제 안정성을 어떻게 바꾸는가 | 새로 추가 |
 
 각 실험 파일 맨 위 설명에 설정·측정·판정 기준을 적었다. 보고서의 "읽는 법" 절에 가설이 맞을 때 보여야 하는 모습을 적었다.
 
@@ -47,6 +49,9 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
   - 공통 수신 크기: β = n_nom √(eps L / (D σ²)) (공개 상수). 못 맞추는 shard 만 최대 전력. n_nom 을 비우면 그 shard 의 인원 (= 집계 오차를 eps 에 맞춤)
   - 최대 전력의 집계 오차가 eps 를 넘으면 R = ⌈오차/eps⌉ 번 반복
 - 다중화: `orth` (shard 마다 직교 블록, 간섭 없음) / `code` (같은 자원에 코드로 동시 전송, 칩 타이밍 오차가 있으면 shard 사이 간섭) / `ideal` (평균에 정해진 크기의 잡음만, noise 실험용)
+- 코드: `walsh`, `pn`, `zcz` (walsh 칩 사이에 0 칩 gap 개, 수신기는 0..gap 칩 늦은 신호를 모두 모으는 창으로 역확산. 시간 오차 gap 칩 미만이면 간섭 0, 대가는 칩 수와 잡음 (gap+1) 배)
+- 전력 정렬 `weakest` (코드 분할 전용): 같은 자원을 쓰는 shard 가 모두 가장 약한 shard 의 최대 크기로 도착
+- 흔적의 크기: 파라미터 차이 ||W(u 있음) − W(u 없이 처음부터)|| / ||W(u 없이)|| 와 그 난수 기준선. 예측 불일치는 작은 흔적에도 몇 % 로 포화되어 참고용 (P2 실측)
 - 짝 비교: minibatch 와 잡음은 (seed, 라운드, client, salt) 로 정해진다. "u 있음" 과 "u 없이 처음부터" 는 같은 배치·잡음을 쓰므로 차이는 u 에서만 나온다. salt 를 바꾼 학습이 "학습 난수 변동" 기준선이다.
 
 ## 4. 폴더
@@ -65,5 +70,5 @@ aircomp_sisa/
     channel.py    채널, shard 배정 규칙
     radio.py      AirComp 물리 계층 (전력 정렬, 반복, 직교 블록, 코드 분할, 장부)
     fl.py         라운드 루프 (로컬 학습 -> system 별 전송 -> 모델 갱신)
-    exp/          noise, resources, assignment, interference
+    exp/          noise, resources, assignment, interference, codes, placement (+ deletion.py 공통 측정)
 ```

@@ -3,7 +3,10 @@
   noise        허용 집계 잡음 eps* (다른 실험의 eps 기준)
   resources    shard 수 K 에 따른 자원·삭제 비용, shard 크기에 따른 개인 노출
   assignment   shard 배정 규칙별 학습 비용과 삭제 비용
-  interference 같은 자원에 동시에 보내는 shard 사이의 간섭과 near-far, 언러닝 흔적
+  interference 같은 자원에 동시에 보내는 shard 사이의 간섭과 near-far: 도착 크기를 어떻게 맞추면 흔적이 줄어드는가
+  codes        시간 오차에 강한 코드(ZCZ)로 간섭을 구조적으로 0 으로 만들 때의 대가
+  placement    같은 자원을 쓰는 shard 의 배정이 바꾸는 것들 (near-far, 흔적, 삭제 비용, 노출, 안정성)
+  (deletion.py 는 interference·codes·placement 가 함께 쓰는 학습 경로 구성과 측정)
 """
 from types import SimpleNamespace
 import math
