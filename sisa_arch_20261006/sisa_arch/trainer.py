@@ -148,7 +148,11 @@ def run_jobs(tr, jobs, h, seed, log_every=0, logger=None):
         clip_flag = (nrm > CLIP).float()
         for ji in sorted(set(p[0] for p in pairs)):
             j = jobs[ji]; act = [i for i in members[ji] if j.entry[i] <= t]
-            var, info = costmodel.noise_var(len(act), h[t, act], **_rg(j.regime))
+            if 'var_fn' in j.regime:   # 무선 제어를 외부에서 정하는 경우 (X2: 공통 scale, MIMO ZF)
+                var = float(j.regime['var_fn'](t, act))
+                info = dict(R=1.0, ul_uses=0.0, total_re=0.0, energy=float('nan'), ul_time=0.0, dl_time=0.0, mse=var * tr.D)
+            else:
+                var, info = costmodel.noise_var(len(act), h[t, act], **_rg(j.regime))
             upd = sums[ji] / cnt[ji]
             if var > 0:
                 upd = upd + noise_vec(seed, j.tape, t, j.salt, tr.D, dev) * math.sqrt(var)

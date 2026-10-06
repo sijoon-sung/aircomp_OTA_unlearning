@@ -13,10 +13,10 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-ORDER = ['g0', 'e1', 'e2', 'e3', 'e4', 'e5']
-MODULES = {'g0': 'g0_noise', 'e1': 'e1_stable', 'e2': 'e2_entry', 'e3': 'e3_lifetime', 'e4': 'e4_bandwidth', 'e5': 'e5_guard'}
+ORDER = ['g0', 'e1', 'e2', 'e3', 'e4', 'e5', 'x1', 'x2']
+MODULES = {'g0': 'g0_noise', 'e1': 'e1_stable', 'e2': 'e2_entry', 'e3': 'e3_lifetime', 'e4': 'e4_bandwidth', 'e5': 'e5_guard', 'x1': 'x1_lifecycle', 'x2': 'x2_radio'}
 TITLES = {'g0': 'G0 잡음 허용 한계', 'e1': 'E1 삭제해도 바뀌지 않는 배정', 'e2': 'E2 채널 순서 참여 시점',
-          'e3': 'E3 연속 삭제와 shard 크기', 'e4': 'E4 삭제 중 대역 몰아주기', 'e5': 'E5 guard 대역과 누설'}
+          'e3': 'E3 연속 삭제와 shard 크기', 'e4': 'E4 삭제 중 대역 몰아주기', 'e5': 'E5 guard 대역과 누설', 'x1': 'X1 수명 비용과 손익분기', 'x2': 'X2 무선 제어 격리와 노출'}
 
 def parse():
     ap = argparse.ArgumentParser(description='SISA-AirComp 아키텍처 실험')
@@ -29,6 +29,8 @@ def parse():
     ap.add_argument('--draws-e3', type=int, default=300, help='E3 채널 draw 수')
     ap.add_argument('--seqs', type=int, default=20, help='E3 draw 당 삭제 순서 수')
     ap.add_argument('--cost-draws', type=int, default=200, help='E1 비용 계산 draw 수')
+    ap.add_argument('--draws-x1', type=int, default=300, help='X1 채널 draw 수')
+    ap.add_argument('--search-draws', type=int, default=100, help='X1 배정 탐색 draw 수')
     ap.add_argument('--rounds', type=int, default=160)
     ap.add_argument('--chunk', type=int, default=64, help='한 번에 계산할 client 수. GPU 메모리 부족이면 64 나 32')
     ap.add_argument('--eps', type=float, default=None, help='G0 대신 쓸 집계 오차 한계(직접 지정)')
@@ -48,7 +50,7 @@ def main():
     common.setup_torch()
     device = common.pick_device(a.device)
     if a.quick:
-        a.seeds, a.draws, a.draws_e3, a.seqs, a.cost_draws, a.rounds = 1, 12, 3, 3, 6, 20
+        a.seeds, a.draws, a.draws_e3, a.seqs, a.cost_draws, a.rounds, a.draws_x1, a.search_draws = 1, 12, 3, 3, 6, 20, 4, 2
     stamp = time.strftime('%Y%m%d_%H%M%S')
     out = Path(a.out) if a.out else HERE / 'runs' / f'{stamp}_{socket.gethostname()}{"_quick" if a.quick else ""}'
     out.mkdir(parents=True, exist_ok=True)
@@ -64,7 +66,8 @@ def main():
 
     todo = [e for e in ORDER if (not a.only or e in a.only.split(',')) and (not a.skip or e not in a.skip.split(','))]
     cfg = dict(out=out, raw=raw, device=device, seeds=[71001 + k for k in range(a.seeds)], draws=a.draws, draws_e3=a.draws_e3,
-               seqs=a.seqs, cost_draws=a.cost_draws, T=a.rounds, chunk=a.chunk, quick=a.quick, eps=a.eps, repetition_matters=None)
+               seqs=a.seqs, cost_draws=a.cost_draws, T=a.rounds, chunk=a.chunk, quick=a.quick, eps=a.eps, repetition_matters=None,
+               draws_x1=a.draws_x1, search_draws=a.search_draws)
     status = {}
     for e in todo:
         if e != 'g0' and cfg['eps'] is None:
