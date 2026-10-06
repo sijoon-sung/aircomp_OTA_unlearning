@@ -11,9 +11,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / 'sisa_arch_20261006'))
 
-ORDER = ['p0', 'p1']
-MODULES = {'p0': 'exp_p0_problem', 'p1': 'exp_p1_assignment'}
-TITLES = {'p0': 'P0 문제 상황 확인', 'p1': 'P1 배정 트레이드오프'}
+ORDER = ['p0a', 'p0', 'p1']
+MODULES = {'p0a': 'exp_p0a_cdma', 'p0': 'exp_p0_problem', 'p1': 'exp_p1_assignment'}
+TITLES = {'p0a': 'P0-A 코드 분리 간섭과 흔적', 'p0': 'P0 자원·노출', 'p1': 'P1 배정 트레이드오프'}
 
 def main():
     for st in (sys.stdout, sys.stderr):
@@ -59,7 +59,7 @@ def main():
     L = ['# 라운드 단위 AirComp-SISA 시뮬레이션 요약', '', '| 실험 | 상태 | 시간(분) |', '|---|---|---|']
     L += [f'| {TITLES[e]} | {status[e]["status"]} | {status[e].get("seconds", 0) / 60:.1f} |' for e in todo]
     for e in todo:
-        p = out / {'p0': 'p0_problem', 'p1': 'p1_assignment'}[e] / 'REPORT_KO.md'
+        p = out / {'p0a': 'p0a_cdma', 'p0': 'p0_problem', 'p1': 'p1_assignment'}[e] / 'REPORT_KO.md'
         if p.exists(): L += ['', '---', '', p.read_text(encoding='utf-8')]
     (out / 'SUMMARY_KO.md').write_text('\n'.join(L), encoding='utf-8'); log(f'요약: {out / "SUMMARY_KO.md"}')
 

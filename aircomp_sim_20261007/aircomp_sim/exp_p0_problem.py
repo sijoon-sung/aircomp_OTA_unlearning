@@ -169,23 +169,12 @@ def table(hd, rows):
 
 def run(cfg, log):
     out = cfg['out'] / 'p0_problem'; out.mkdir(parents=True, exist_ok=True)
-    A = part_a(cfg, log); B = part_b(cfg, log); Cc = part_c(cfg, log)
+    A = []   # (a) 는 코드 분리 실험 P0-A(exp_p0a_cdma.py)로 대체
+    B = part_b(cfg, log); Cc = part_c(cfg, log)
     write_json(out / 'results.json', dict(a=A, b=B, c=Cc, eps=cfg['eps']))
     L = ['# P0 — 문제 상황 확인 (라운드 단위 AirComp 시뮬레이션)', '',
          f'N=20, K={K}, {cfg["T"]}라운드, seed {len(cfg["seeds"])}개, eps={cfg["eps"]}. 매 라운드 송신 전력 계산·심볼 송신·채널 가산·수신·장부가 실제로 실행된다.', '',
-         '## (a) 무선 제어 공유와 삭제 대상의 흔적', '',
-         '"미삭제 shard 불일치": 삭제하지 않은 shard 의 모델이 u 있을 때 vs u 없이 무선 제어까지 다시 계산해 처음부터 학습했을 때 예측이 다른 test 표본 비율. '
-         '"잡음 비"와 "송신 횟수 비"는 u 의 유무로 미삭제 shard 의 집계 잡음·송신 횟수가 얼마나 바뀌었는지(1 이면 변화 없음).', '']
-    tb = []
-    for cn in CTRL:
-        for s2 in sorted(set(r['sigma2'] for r in A), reverse=True):
-            for tn in ['weakest', 'median']:
-                sel = [r for r in A if r['ctrl'] == cn and r['sigma2'] == s2 and r['target'] == tn]
-                if not sel: continue
-                m = lambda f: float(np.mean([r[f] for r in sel]))
-                tb.append([CTRL_KO[cn], f'{snr_db(s2)}dB', '최약' if tn == 'weakest' else '중간', fmt(m('unaff_mse_ratio')), fmt(m('unaff_tx_ratio')),
-                           pct(m('unaff_dis')), fmt(m('unaff_rel'), 4), pct(m('yard_dis')), pct(m('ens_dis_sisa_ref')), pp(m('acc_sisa') - m('acc_ref'))])
-    L.append(table(['무선 제어', 'SNR', '삭제 대상', '잡음 비', '송신 횟수 비', '미삭제 shard 불일치', '파라미터 상대 차이', '난수 변동', '앙상블 불일치(SISA-ref)', '앙상블 정확도 차이'], tb))
+         '(a) 간섭과 흔적은 P0-A 보고서(p0a_cdma/REPORT_KO.md)를 본다.', '']
     L += ['', '## (b) shard 수 K 에 따른 실제 장부 (20dB, 삭제 대상 평균)', '']
     tb = []
     for m in ['maxpow', 'minen']:
