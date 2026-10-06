@@ -1,0 +1,3606 @@
+{
+ "rows": [
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7141000032424927,
+   "del_acc": 0.7080399751663208,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2237646.125152588,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 12.119087718747648,
+    "max_power_ratio": 0.3171360492706299,
+    "mean_mse": 0.0189360745605432
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 627845.840258789,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.761252332925599,
+    "max_power_ratio": 0.038357168436050415,
+    "mean_mse": 0.005951565416156998
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7050999999046326,
+   "del_acc": 0.704319977760315,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3910075.5334472656,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 7.428982406326505,
+    "max_power_ratio": 0.3074071705341339,
+    "mean_mse": 0.011607785009885165
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 838630.4469238281,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 2.1170601456106093,
+    "max_power_ratio": 0.0754368007183075,
+    "mean_mse": 0.0026463251820132614
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7110999822616577,
+   "del_acc": 0.7067199945449829,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2233503.3104248047,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.072122054726313,
+    "max_power_ratio": 0.39050397276878357,
+    "mean_mse": 0.020425190710509862
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 430928.32514648436,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.257653166725659,
+    "max_power_ratio": 0.04399633109569549,
+    "mean_mse": 0.005322066458407075
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "bins",
+   "sizes": [
+    6,
+    4,
+    1,
+    9
+   ],
+   "acc": 0.6793000102043152,
+   "del_acc": 0.6779249757528305,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4077471.5688323975,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 20.04883399099445,
+    "max_power_ratio": 0.4223097264766693,
+    "mean_mse": 0.03132630311092883
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1303529.4485473633,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 1040.0,
+    "compute_calls": 1040.0,
+    "mse_sum": 2.1223697342147396,
+    "max_power_ratio": 0.11079631000757217,
+    "mean_mse": 0.0033162027097105307
+   },
+   "n_del": 4
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "hash",
+   "sizes": [
+    4,
+    4,
+    4,
+    8
+   ],
+   "acc": 0.7037999629974365,
+   "del_acc": 0.7047399878501892,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2026071.985321045,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 17.507586556062606,
+    "max_power_ratio": 0.33009782433509827,
+    "mean_mse": 0.027355603993847823
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 472973.26981201174,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 608.0,
+    "compute_calls": 608.0,
+    "mse_sum": 7.504252058852439,
+    "max_power_ratio": 0.0602398157119751,
+    "mean_mse": 0.009380315073565548
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7031999826431274,
+   "del_acc": 0.69683997631073,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1718625.8309936523,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.004762455953884,
+    "max_power_ratio": 0.2791649401187897,
+    "mean_mse": 0.020319941337427944
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 449697.9653015137,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.847973021052946,
+    "max_power_ratio": 0.04859161078929901,
+    "mean_mse": 0.006059966276316183
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7024999856948853,
+   "del_acc": 0.7019999861717224,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1884937.313659668,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.00503550134259,
+    "max_power_ratio": 0.4338398575782776,
+    "mean_mse": 0.020320367970847797
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 387349.51732177736,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.230643971522861,
+    "max_power_ratio": 0.05554631948471069,
+    "mean_mse": 0.005288304964403576
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.703000009059906,
+   "del_acc": 0.7036799669265748,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1883391.5505065918,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.00503550134259,
+    "max_power_ratio": 0.4338398575782776,
+    "mean_mse": 0.020320367970847797
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 385367.8403533936,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.230643971522861,
+    "max_power_ratio": 0.05554631948471069,
+    "mean_mse": 0.005288304964403576
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "maxpow",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7129999995231628,
+   "del_acc": 0.7100199818611145,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2018477.731918335,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.004762455953884,
+    "max_power_ratio": 0.3722848892211914,
+    "mean_mse": 0.020319941337427944
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 485595.8487335205,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.41742835691802,
+    "max_power_ratio": 0.033131462335586545,
+    "mean_mse": 0.005521785446147525
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7360999584197998,
+   "del_acc": 0.7355799913406372,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5492.983609378338,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005987889016978443,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2406.8480829954146,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00016958097694441676,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7441999912261963,
+   "del_acc": 0.7401199698448181,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5767.217600420117,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0007738338899798691,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1255.4596696794033,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00020848000422120095,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7512999773025513,
+   "del_acc": 0.7488999724388122,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5519.387467682362,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0006301627727225423,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1345.1311407089233,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00017301851185038685,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "bins",
+   "sizes": [
+    6,
+    4,
+    1,
+    9
+   ],
+   "acc": 0.7229999899864197,
+   "del_acc": 0.7224249988794327,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 6841.656985223293,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.005973439197987318,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1546.533261148259,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 1040.0,
+    "compute_calls": 1040.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001934585307026282,
+    "mean_mse": 2.5
+   },
+   "n_del": 4
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "hash",
+   "sizes": [
+    4,
+    4,
+    4,
+    8
+   ],
+   "acc": 0.7418999671936035,
+   "del_acc": 0.738979971408844,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5469.9331694841385,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0015730184968560934,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2031.0430791020394,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 608.0,
+    "compute_calls": 608.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00047776531428098676,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7315999865531921,
+   "del_acc": 0.7311199903488159,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5491.186262667179,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005987889016978443,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2406.8480829954146,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00016958097694441676,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7335000038146973,
+   "del_acc": 0.7338599920272827,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5488.9701166749,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005987889016978443,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2406.524166560173,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00016958097694441676,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7512999773025513,
+   "del_acc": 0.7478999733924866,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5522.697579681873,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0006530430400744081,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1345.1311407089233,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00017301851185038685,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81001,
+   "mode": "minen",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7364999651908875,
+   "del_acc": 0.7355199813842773,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5499.830221056938,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000687457446474582,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2411.653252744675,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001826670253649354,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7032999992370605,
+   "del_acc": 0.700659990310669,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2636818.260620117,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 7.1077138500492145,
+    "max_power_ratio": 0.21542346477508545,
+    "mean_mse": 0.011105802890701897
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 485647.6963745117,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1.5900809653726689,
+    "max_power_ratio": 0.05397413969039917,
+    "mean_mse": 0.001987601206715836
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7150999903678894,
+   "del_acc": 0.7124400019645691,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3530240.997528076,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 5.574240266693589,
+    "max_power_ratio": 0.19936971366405487,
+    "mean_mse": 0.008709750416708732
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 770584.0556396485,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1.0934777726611853,
+    "max_power_ratio": 0.08364038467407227,
+    "mean_mse": 0.0013668472158264817
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7026000022888184,
+   "del_acc": 0.7023199915885925,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1918247.142501831,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 8.78017730402171,
+    "max_power_ratio": 0.16151943802833557,
+    "mean_mse": 0.01371902703753392
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 466823.29934387206,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 2.1697203770247677,
+    "max_power_ratio": 0.038350948691368104,
+    "mean_mse": 0.0027121504712809595
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "bins",
+   "sizes": [
+    1,
+    4,
+    10,
+    5
+   ],
+   "acc": 0.7125999927520752,
+   "del_acc": 0.710674986243248,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3681374.569076538,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 111.81605893653864,
+    "max_power_ratio": 0.2732993960380554,
+    "mean_mse": 0.1747125920883416
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1447948.3959350586,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 1240.0,
+    "compute_calls": 1240.0,
+    "mse_sum": 0.22450790058601128,
+    "max_power_ratio": 0.09432381391525269,
+    "mean_mse": 0.00035079359466564264
+   },
+   "n_del": 4
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "hash",
+   "sizes": [
+    7,
+    8,
+    3,
+    2
+   ],
+   "acc": 0.6851999759674072,
+   "del_acc": 0.684499979019165,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1896278.6469421387,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 7.784742961333862,
+    "max_power_ratio": 0.24915404617786407,
+    "mean_mse": 0.012163660877084159
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 586863.1690124512,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 864.0,
+    "compute_calls": 864.0,
+    "mse_sum": 2.2174589386078454,
+    "max_power_ratio": 0.04632684886455536,
+    "mean_mse": 0.002771823673259807
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7091000080108643,
+   "del_acc": 0.7083399653434753,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1934278.7873535156,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 8.779868410880312,
+    "max_power_ratio": 0.22443923354148865,
+    "mean_mse": 0.013718544392000487
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 444972.9111602783,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 2.987334396139162,
+    "max_power_ratio": 0.03844538927078247,
+    "mean_mse": 0.0037341679951739524
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7121999859809875,
+   "del_acc": 0.7114399909973145,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1947420.2106628418,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 8.779868410880312,
+    "max_power_ratio": 0.20516018569469452,
+    "mean_mse": 0.013718544392000487
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 429113.45585632324,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 2.193491537410524,
+    "max_power_ratio": 0.05188719034194946,
+    "mean_mse": 0.002741864421763155
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7069999575614929,
+   "del_acc": 0.7060399770736694,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1902023.9738616943,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 8.779868410880313,
+    "max_power_ratio": 0.20516018569469452,
+    "mean_mse": 0.01371854439200049
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 474551.171295166,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1.9037724277338994,
+    "max_power_ratio": 0.06334275603294373,
+    "mean_mse": 0.0023797155346673747
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "maxpow",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7074999809265137,
+   "del_acc": 0.7036999940872193,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1886919.2335510254,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 8.779868410880312,
+    "max_power_ratio": 0.1838167905807495,
+    "mean_mse": 0.013718544392000487
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 417591.1367034912,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 2.987019052877698,
+    "max_power_ratio": 0.034398579597473146,
+    "mean_mse": 0.0037337738160971223
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7494999766349792,
+   "del_acc": 0.7480199813842774,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3195.695440456271,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0003863883321173489,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 639.2899726167321,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00012016391847282648,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7493000030517578,
+   "del_acc": 0.7461199760437012,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3174.651421561837,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000816343177575618,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 695.2780425876379,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00017621980514377357,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7408999800682068,
+   "del_acc": 0.7382199764251709,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3020.5884315669537,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005271031986922026,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 841.5911944568157,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00012268006103113293,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "bins",
+   "sizes": [
+    1,
+    4,
+    10,
+    5
+   ],
+   "acc": 0.7404999732971191,
+   "del_acc": 0.7371999770402908,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 11987.313076734543,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.01123427227139473,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 269.64951764419675,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 1240.0,
+    "compute_calls": 1240.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 3.0510711440001614e-05,
+    "mean_mse": 2.5
+   },
+   "n_del": 4
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "hash",
+   "sizes": [
+    7,
+    8,
+    3,
+    2
+   ],
+   "acc": 0.7321000099182129,
+   "del_acc": 0.7284599900245666,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2873.845345646143,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005088240141049027,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 890.2612621545792,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 864.0,
+    "compute_calls": 864.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001234472612850368,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7490999698638916,
+   "del_acc": 0.7479399800300598,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3193.3772421330214,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0003863883321173489,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 639.2899726167321,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00012016391847282648,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7497000098228455,
+   "del_acc": 0.7482399821281434,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3193.8662615269423,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0003863883321173489,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 639.2899726167321,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00012016391847282648,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7493000030517578,
+   "del_acc": 0.7459399700164795,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3174.651421561837,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000816343177575618,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 695.2217118531465,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00017621980514377357,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81002,
+   "mode": "minen",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7493000030517578,
+   "del_acc": 0.7460999727249146,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3174.651421561837,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000816343177575618,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 695.1919277697801,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00017621980514377357,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7024999856948853,
+   "del_acc": 0.7020999789237976,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2210888.443786621,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 15.310385695360967,
+    "max_power_ratio": 0.2492334097623825,
+    "mean_mse": 0.02392247764900151
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 375765.7186950684,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.123059884493943,
+    "max_power_ratio": 0.05734218955039978,
+    "mean_mse": 0.005153824855617429
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7127000093460083,
+   "del_acc": 0.7132399797439575,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3403797.6900634766,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 10.010161059848052,
+    "max_power_ratio": 0.2478037178516388,
+    "mean_mse": 0.015640876656012583
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 740631.9623657226,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 2.8901983039384573,
+    "max_power_ratio": 0.042491310834884645,
+    "mean_mse": 0.0036127478799230723
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7109999656677246,
+   "del_acc": 0.7100799798965454,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1572687.5726013184,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 21.612389856712394,
+    "max_power_ratio": 0.12966294586658478,
+    "mean_mse": 0.033769359151113114
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 314351.23868408205,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 7.249141447692732,
+    "max_power_ratio": 0.038247761130332944,
+    "mean_mse": 0.009061426809615915
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "bins",
+   "sizes": [
+    6,
+    4,
+    4,
+    6
+   ],
+   "acc": 0.7220999598503113,
+   "del_acc": 0.7220799803733826,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3268460.108642578,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 8.295550054579717,
+    "max_power_ratio": 0.1952364146709442,
+    "mean_mse": 0.012961796960280807
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 816011.8674072266,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 736.0,
+    "compute_calls": 736.0,
+    "mse_sum": 3.0662189404930498,
+    "max_power_ratio": 0.04339238405227661,
+    "mean_mse": 0.003832773675616312
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "hash",
+   "sizes": [
+    10,
+    5,
+    2,
+    3
+   ],
+   "acc": 0.7024999856948853,
+   "del_acc": 0.7034799814224243,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2041651.1344299316,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 24.156219969582175,
+    "max_power_ratio": 0.17675568163394928,
+    "mean_mse": 0.03774409370247215
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 448433.40490722656,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 832.0,
+    "compute_calls": 832.0,
+    "mse_sum": 13.22209978806652,
+    "max_power_ratio": 0.0485449880361557,
+    "mean_mse": 0.016527624735083152
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7155999541282654,
+   "del_acc": 0.714359986782074,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1815214.259765625,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 21.612389856712394,
+    "max_power_ratio": 0.20545659959316254,
+    "mean_mse": 0.033769359151113114
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 511140.6406799316,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 7.602247099034088,
+    "max_power_ratio": 0.052768373489379884,
+    "mean_mse": 0.00950280887379261
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7141000032424927,
+   "del_acc": 0.7129999876022339,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1672616.4216461182,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 21.612389856712394,
+    "max_power_ratio": 0.21412807703018188,
+    "mean_mse": 0.033769359151113114
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 350699.1156066895,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 6.7077877910999275,
+    "max_power_ratio": 0.0438262939453125,
+    "mean_mse": 0.008384734738874909
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7159000039100647,
+   "del_acc": 0.7139199852943421,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1779075.125579834,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 21.612389856712394,
+    "max_power_ratio": 0.23055090010166168,
+    "mean_mse": 0.033769359151113114
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 402575.67464599607,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 7.585009940250171,
+    "max_power_ratio": 0.040025508403778075,
+    "mean_mse": 0.009481262425312715
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "maxpow",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7181999683380127,
+   "del_acc": 0.7164199948310852,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1705406.5613098145,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 21.612389856712394,
+    "max_power_ratio": 0.21412807703018188,
+    "mean_mse": 0.033769359151113114
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 405362.73453369143,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 7.581464986408731,
+    "max_power_ratio": 0.0438262939453125,
+    "mean_mse": 0.009476831233010914
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7511000037193298,
+   "del_acc": 0.7477399826049804,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 7587.978947430849,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0013698673574253917,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1494.6773303985597,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0003582715755328536,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7432999610900879,
+   "del_acc": 0.7428599834442139,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 7596.534740619361,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0014136623358353972,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1729.3915323734284,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0008162718266248703,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7389000058174133,
+   "del_acc": 0.7369799852371216,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 7574.663995504379,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0012334496714174747,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2041.3431997299194,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00039549809880554674,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "bins",
+   "sizes": [
+    6,
+    4,
+    4,
+    6
+   ],
+   "acc": 0.7426999807357788,
+   "del_acc": 0.7410599946975708,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 6123.461199842393,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000554713187739253,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2271.288486890495,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 736.0,
+    "compute_calls": 736.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0006671640556305646,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "hash",
+   "sizes": [
+    10,
+    5,
+    2,
+    3
+   ],
+   "acc": 0.7271999716758728,
+   "del_acc": 0.7273199915885925,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 10704.063130736351,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0032069324515759945,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 4413.165610766411,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 832.0,
+    "compute_calls": 832.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.002100481279194355,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7511000037193298,
+   "del_acc": 0.7478599905967712,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 7588.9889705479145,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0013569080037996173,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1494.6773303985597,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0003582715755328536,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7511000037193298,
+   "del_acc": 0.7481199979782105,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 7588.9889705479145,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0013569080037996173,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1492.9828470230102,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0003582715755328536,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7511000037193298,
+   "del_acc": 0.7478599905967712,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 7588.9889705479145,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0013569080037996173,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1494.6773303985597,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0003582715755328536,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81003,
+   "mode": "minen",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7513999938964844,
+   "del_acc": 0.7466799736022949,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 7617.6514494121075,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0013704582815989852,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1490.256545573473,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0003596071852371097,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6976000070571899,
+   "del_acc": 0.6927199840545655,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1825680.4655456543,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 12.736147823475967,
+    "max_power_ratio": 0.10427512973546982,
+    "mean_mse": 0.0199002309741812
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 340296.46615600586,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 3.975247081405224,
+    "max_power_ratio": 0.08668522238731384,
+    "mean_mse": 0.00496905885175653
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6983999609947205,
+   "del_acc": 0.6947799921035767,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3376400.4407348633,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 7.246545220209898,
+    "max_power_ratio": 0.2027997374534607,
+    "mean_mse": 0.011322726906577965
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 649495.2708129883,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1.8708730930636677,
+    "max_power_ratio": 0.05668540000915527,
+    "mean_mse": 0.002338591366329585
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6919999718666077,
+   "del_acc": 0.686959981918335,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1651662.0461730957,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 12.736147823475967,
+    "max_power_ratio": 0.13684861361980438,
+    "mean_mse": 0.0199002309741812
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 373844.20021362306,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 3.9766896962458995,
+    "max_power_ratio": 0.07307460904121399,
+    "mean_mse": 0.004970862120307374
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "bins",
+   "sizes": [
+    5,
+    4,
+    7,
+    4
+   ],
+   "acc": 0.7014999985694885,
+   "del_acc": 0.6972399711608886,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3395358.7263183594,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 8.103763952313447,
+    "max_power_ratio": 0.1814967840909958,
+    "mean_mse": 0.01266213117548976
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 705381.9634155274,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 704.0,
+    "compute_calls": 704.0,
+    "mse_sum": 2.113734550487213,
+    "max_power_ratio": 0.038355565071105956,
+    "mean_mse": 0.002642168188109016
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "hash",
+   "sizes": [
+    5,
+    7,
+    4,
+    4
+   ],
+   "acc": 0.6905999779701233,
+   "del_acc": 0.6825799822807312,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1610295.7245483398,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.938887355142121,
+    "max_power_ratio": 0.13819126784801483,
+    "mean_mse": 0.021779511492409566
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 353735.46512451174,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 736.0,
+    "compute_calls": 736.0,
+    "mse_sum": 3.8269557465636566,
+    "max_power_ratio": 0.027058175206184386,
+    "mean_mse": 0.004783694683204571
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6902999877929688,
+   "del_acc": 0.6852199912071228,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1900323.8631896973,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 12.736147823475967,
+    "max_power_ratio": 0.15079036355018616,
+    "mean_mse": 0.0199002309741812
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 474699.90668334963,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.662909388437915,
+    "max_power_ratio": 0.037187546491622925,
+    "mean_mse": 0.005828636735547394
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6956999897956848,
+   "del_acc": 0.6924799680709839,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1806699.2757263184,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 12.736147823475967,
+    "max_power_ratio": 0.14589941501617432,
+    "mean_mse": 0.0199002309741812
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 473458.22618408204,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.51433464687351,
+    "max_power_ratio": 0.060783791542053225,
+    "mean_mse": 0.0056429183085918875
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6983000040054321,
+   "del_acc": 0.6942799806594848,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2083818.4446411133,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 12.736147823475967,
+    "max_power_ratio": 0.23664414882659912,
+    "mean_mse": 0.0199002309741812
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 463670.53938598634,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.641118530088652,
+    "max_power_ratio": 0.04042431116104126,
+    "mean_mse": 0.005801398162610815
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "maxpow",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6894999742507935,
+   "del_acc": 0.6841399908065796,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1728678.4819641113,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 12.736147823475967,
+    "max_power_ratio": 0.14296551048755646,
+    "mean_mse": 0.0199002309741812
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 454215.67383422854,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.51317456031385,
+    "max_power_ratio": 0.048728182911872864,
+    "mean_mse": 0.005641468200392312
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.733299970626831,
+   "del_acc": 0.7244999766349792,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4851.6001262664795,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.00043441791785880923,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1181.5503055810927,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 9.901555022224784e-05,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7389000058174133,
+   "del_acc": 0.7355599880218506,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5619.739945083857,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000778167333919555,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1145.4367897123097,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001612418214790523,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7322999835014343,
+   "del_acc": 0.7268799781799317,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4532.37153762579,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005283497739583254,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1311.8333829760552,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00024389938917011023,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "bins",
+   "sizes": [
+    5,
+    4,
+    7,
+    4
+   ],
+   "acc": 0.738099992275238,
+   "del_acc": 0.7355999827384949,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 6195.553424313664,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000778167333919555,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1311.4244268298148,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 704.0,
+    "compute_calls": 704.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001612418214790523,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "hash",
+   "sizes": [
+    5,
+    7,
+    4,
+    4
+   ],
+   "acc": 0.7376999855041504,
+   "del_acc": 0.7315999865531921,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5382.713929891586,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0018902153242379427,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1099.6129306316375,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 736.0,
+    "compute_calls": 736.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00012209371197968721,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7319999933242798,
+   "del_acc": 0.7261999607086181,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4526.424687802792,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005299128824844956,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1311.8333829760552,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00024389938917011023,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7321999669075012,
+   "del_acc": 0.7261999726295472,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4526.999004781246,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005283497739583254,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1312.9408421874045,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00024389938917011023,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7321999669075012,
+   "del_acc": 0.7259599685668945,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4526.999004781246,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005283497739583254,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1311.8333829760552,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00024389938917011023,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81004,
+   "mode": "minen",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7340999841690063,
+   "del_acc": 0.7273199915885925,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4526.602042019367,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0005283497739583254,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1308.7060558080673,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00021322714164853095,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.69159996509552,
+   "del_acc": 0.6838799834251403,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1803033.9504852295,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.521683422574814,
+    "max_power_ratio": 0.12988631427288055,
+    "mean_mse": 0.021127630347773145
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 431453.50880737306,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 5.909159464019007,
+    "max_power_ratio": 0.029152119159698488,
+    "mean_mse": 0.007386449330023759
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7044999599456787,
+   "del_acc": 0.6894599795341492,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3684469.585144043,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 7.568371272384442,
+    "max_power_ratio": 0.1540471613407135,
+    "mean_mse": 0.01182558011310069
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 799951.8744140625,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 2.177217620512213,
+    "max_power_ratio": 0.031908091902732846,
+    "mean_mse": 0.002721522025640266
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7057999968528748,
+   "del_acc": 0.6930799841880798,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1946338.7040100098,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.513482960443238,
+    "max_power_ratio": 0.2687775790691376,
+    "mean_mse": 0.021114817125692558
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 438853.815826416,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.275393589210355,
+    "max_power_ratio": 0.04354603588581085,
+    "mean_mse": 0.005344241986512945
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "bins",
+   "sizes": [
+    4,
+    9,
+    4,
+    3
+   ],
+   "acc": 0.6944999694824219,
+   "del_acc": 0.6870799899101258,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 3379279.323654175,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 9.412514592059042,
+    "max_power_ratio": 0.21259960532188416,
+    "mean_mse": 0.014707054050092252
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 808769.6596984863,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 768.0,
+    "compute_calls": 768.0,
+    "mse_sum": 2.826047430416277,
+    "max_power_ratio": 0.03652611672878266,
+    "mean_mse": 0.003532559288020346
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "hash",
+   "sizes": [
+    3,
+    8,
+    3,
+    6
+   ],
+   "acc": 0.7053999900817871,
+   "del_acc": 0.6902999758720398,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 2188332.5151519775,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 11.476675198289325,
+    "max_power_ratio": 0.14868463575839996,
+    "mean_mse": 0.01793230499732707
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 400531.68392944336,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 512.0,
+    "compute_calls": 512.0,
+    "mse_sum": 4.193839529657055,
+    "max_power_ratio": 0.03321693241596222,
+    "mean_mse": 0.005242299412071319
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7064999938011169,
+   "del_acc": 0.70065997838974,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1911037.920074463,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.513482960443238,
+    "max_power_ratio": 0.1351936310529709,
+    "mean_mse": 0.021114817125692558
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 487604.3319610596,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.824891400163642,
+    "max_power_ratio": 0.027298766374588012,
+    "mean_mse": 0.006031114250204553
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6829999685287476,
+   "del_acc": 0.6715599894523621,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1782819.4382324219,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.513482960443238,
+    "max_power_ratio": 0.14517873525619507,
+    "mean_mse": 0.021114817125692558
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 421521.8499343872,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.138071052009929,
+    "max_power_ratio": 0.04032737910747528,
+    "mean_mse": 0.0051725888150124105
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.6855999827384949,
+   "del_acc": 0.6764399886131287,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1861068.0252990723,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.513482960443238,
+    "max_power_ratio": 0.14336161315441132,
+    "mean_mse": 0.021114817125692558
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 465007.4527008057,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.780633417910309,
+    "max_power_ratio": 0.02873355746269226,
+    "mean_mse": 0.005975791772387886
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "maxpow",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.699400007724762,
+   "del_acc": 0.6933199763298035,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 1757969.6268920898,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 13.513482960443238,
+    "max_power_ratio": 0.16481228172779083,
+    "mean_mse": 0.021114817125692558
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 414845.49134979246,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 4.2302249690535065,
+    "max_power_ratio": 0.045977890491485596,
+    "mean_mse": 0.005287781211316883
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "random_split",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7157999873161316,
+   "del_acc": 0.7123999714851379,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5214.532443583012,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.000508040888234973,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 2176.372299039364,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00024836184456944466,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "rank_chunk",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7233999967575073,
+   "del_acc": 0.7184399843215943,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5463.198563054204,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.001105105853639543,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1380.7343866318465,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00012409106129780413,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "rank_rr",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7268999814987183,
+   "del_acc": 0.7219199895858764,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5486.429943561554,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.001081432681530714,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1536.8762889504433,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001828927779570222,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "bins",
+   "sizes": [
+    4,
+    9,
+    4,
+    3
+   ],
+   "acc": 0.7148000001907349,
+   "del_acc": 0.7094599723815918,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5627.604912959039,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0012693454045802355,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1394.623667526245,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 768.0,
+    "compute_calls": 768.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00021358216181397439,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "hash",
+   "sizes": [
+    3,
+    8,
+    3,
+    6
+   ],
+   "acc": 0.7084000110626221,
+   "del_acc": 0.6997799873352051,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 4951.0918866992,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.0009909335058182478,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1282.6574339061976,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 512.0,
+    "compute_calls": 512.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00027283697854727504,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "lam0",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7256999611854553,
+   "del_acc": 0.7213799834251404,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5491.509048700333,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.001081432681530714,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1536.8762889504433,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001828927779570222,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "lam0.5",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7252999544143677,
+   "del_acc": 0.7211199998855591,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5487.518508911133,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.001081432681530714,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1537.205616915226,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.00019018062157556416,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "lam2",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7252999544143677,
+   "del_acc": 0.7210199952125549,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5487.518508911133,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.001081432681530714,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1536.8762889504433,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001828927779570222,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  },
+  {
+   "seed": 81005,
+   "mode": "minen",
+   "rule": "epsopt0.01",
+   "sizes": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "acc": 0.7233999967575073,
+   "del_acc": 0.7177199840545654,
+   "T": {
+    "ul_symbols": 24500480.0,
+    "ul_time": 24500480.0,
+    "dl_bits": 784015360.0,
+    "energy": 5463.198563054204,
+    "repeats": 640.0,
+    "rounds": 640,
+    "tx_count": 3200,
+    "compute_calls": 3200,
+    "mse_sum": 6400.0,
+    "max_power_ratio": 0.001105105853639543,
+    "mean_mse": 10.0
+   },
+   "U": {
+    "ul_symbols": 6125120.0,
+    "ul_time": 6125120.0,
+    "dl_bits": 196003840.0,
+    "energy": 1383.1805055230857,
+    "repeats": 160.0,
+    "rounds": 160.0,
+    "tx_count": 640.0,
+    "compute_calls": 640.0,
+    "mse_sum": 1600.0,
+    "max_power_ratio": 0.0001503532868809998,
+    "mean_mse": 2.0
+   },
+   "n_del": 5
+  }
+ ],
+ "dels_rule": "채널 순위 0/25/50/75/100%",
+ "eps": 10.0
+}

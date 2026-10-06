@@ -1,0 +1,23 @@
+{
+ "p0a": {
+  "name": "P0-A",
+  "status": "완료",
+  "seconds": 1145.5162415504456,
+  "gpu_board_Wh": 95.3497635925211,
+  "power_samples": 227
+ },
+ "p0": {
+  "name": "P0",
+  "status": "완료",
+  "seconds": 546.2128324508667,
+  "gpu_board_Wh": 45.718061363992405,
+  "power_samples": 109
+ },
+ "p1": {
+  "name": "P1",
+  "status": "완료",
+  "seconds": 601.5176239013672,
+  "gpu_board_Wh": 53.614564193464616,
+  "power_samples": 119
+ }
+}

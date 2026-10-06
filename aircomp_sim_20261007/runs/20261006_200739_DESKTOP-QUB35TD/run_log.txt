@@ -1,0 +1,230 @@
+20:07:39 결과 폴더: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\aircomp_sim_20261007\runs\20261006_200739_DESKTOP-QUB35TD
+20:07:39 장치: cuda NVIDIA GeForce RTX 3080
+20:07:52 데이터: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\aircomp_sim_20261007\data\FashionMNIST\raw
+20:07:52 ===== P0-A 코드 분리 간섭과 흔적 시작 =====
+20:07:52 [P0-A] seed 81001 walsh4_d0: shard jobs=44
+20:08:02   round 40/160 pairs=208
+20:08:11   round 80/160 pairs=208
+20:08:20   round 120/160 pairs=208
+20:08:29   round 160/160 pairs=208
+20:08:30 [P0-A] seed 81001 walsh4_d0.1: shard jobs=44
+20:08:39   round 40/160 pairs=208
+20:08:48   round 80/160 pairs=208
+20:08:57   round 120/160 pairs=208
+20:09:06   round 160/160 pairs=208
+20:09:07 [P0-A] seed 81001 walsh4_d0.3: shard jobs=44
+20:09:16   round 40/160 pairs=208
+20:09:25   round 80/160 pairs=208
+20:09:34   round 120/160 pairs=208
+20:09:43   round 160/160 pairs=208
+20:09:44 [P0-A] seed 81001 pn16_d0: shard jobs=44
+20:09:53   round 40/160 pairs=208
+20:10:02   round 80/160 pairs=208
+20:10:12   round 120/160 pairs=208
+20:10:22   round 160/160 pairs=208
+20:10:22 [P0-A] seed 81001 pn64_d0: shard jobs=44
+20:10:32   round 40/160 pairs=208
+20:10:41   round 80/160 pairs=208
+20:10:51   round 120/160 pairs=208
+20:11:00   round 160/160 pairs=208
+20:11:01 [P0-A] seed 81001 pn16_d0.1: shard jobs=44
+20:11:11   round 40/160 pairs=208
+20:11:20   round 80/160 pairs=208
+20:11:30   round 120/160 pairs=208
+20:11:39   round 160/160 pairs=208
+20:11:39 [P0-A] seed 81001 done
+20:11:39 [P0-A] seed 81002 walsh4_d0: shard jobs=44
+20:11:49   round 40/160 pairs=208
+20:11:58   round 80/160 pairs=208
+20:12:07   round 120/160 pairs=208
+20:12:17   round 160/160 pairs=208
+20:12:18 [P0-A] seed 81002 walsh4_d0.1: shard jobs=44
+20:12:27   round 40/160 pairs=208
+20:12:37   round 80/160 pairs=208
+20:12:46   round 120/160 pairs=208
+20:12:56   round 160/160 pairs=208
+20:12:57 [P0-A] seed 81002 walsh4_d0.3: shard jobs=44
+20:13:06   round 40/160 pairs=208
+20:13:16   round 80/160 pairs=208
+20:13:25   round 120/160 pairs=208
+20:13:34   round 160/160 pairs=208
+20:13:35 [P0-A] seed 81002 pn16_d0: shard jobs=44
+20:13:44   round 40/160 pairs=208
+20:13:53   round 80/160 pairs=208
+20:14:03   round 120/160 pairs=208
+20:14:12   round 160/160 pairs=208
+20:14:12 [P0-A] seed 81002 pn64_d0: shard jobs=44
+20:14:22   round 40/160 pairs=208
+20:14:31   round 80/160 pairs=208
+20:14:40   round 120/160 pairs=208
+20:14:49   round 160/160 pairs=208
+20:14:50 [P0-A] seed 81002 pn16_d0.1: shard jobs=44
+20:14:59   round 40/160 pairs=208
+20:15:08   round 80/160 pairs=208
+20:15:17   round 120/160 pairs=208
+20:15:27   round 160/160 pairs=208
+20:15:27 [P0-A] seed 81002 done
+20:15:27 [P0-A] seed 81003 walsh4_d0: shard jobs=44
+20:15:37   round 40/160 pairs=208
+20:15:46   round 80/160 pairs=208
+20:15:56   round 120/160 pairs=208
+20:16:05   round 160/160 pairs=208
+20:16:06 [P0-A] seed 81003 walsh4_d0.1: shard jobs=44
+20:16:16   round 40/160 pairs=208
+20:16:25   round 80/160 pairs=208
+20:16:35   round 120/160 pairs=208
+20:16:44   round 160/160 pairs=208
+20:16:45 [P0-A] seed 81003 walsh4_d0.3: shard jobs=44
+20:16:54   round 40/160 pairs=208
+20:17:04   round 80/160 pairs=208
+20:17:14   round 120/160 pairs=208
+20:17:23   round 160/160 pairs=208
+20:17:24 [P0-A] seed 81003 pn16_d0: shard jobs=44
+20:17:33   round 40/160 pairs=208
+20:17:42   round 80/160 pairs=208
+20:17:51   round 120/160 pairs=208
+20:18:01   round 160/160 pairs=208
+20:18:02 [P0-A] seed 81003 pn64_d0: shard jobs=44
+20:18:11   round 40/160 pairs=208
+20:18:21   round 80/160 pairs=208
+20:18:30   round 120/160 pairs=208
+20:18:40   round 160/160 pairs=208
+20:18:41 [P0-A] seed 81003 pn16_d0.1: shard jobs=44
+20:18:50   round 40/160 pairs=208
+20:19:00   round 80/160 pairs=208
+20:19:09   round 120/160 pairs=208
+20:19:19   round 160/160 pairs=208
+20:19:20 [P0-A] seed 81003 done
+20:19:20 [P0-A] seed 81004 walsh4_d0: shard jobs=44
+20:19:29   round 40/160 pairs=208
+20:19:38   round 80/160 pairs=208
+20:19:48   round 120/160 pairs=208
+20:19:57   round 160/160 pairs=208
+20:19:58 [P0-A] seed 81004 walsh4_d0.1: shard jobs=44
+20:20:07   round 40/160 pairs=208
+20:20:16   round 80/160 pairs=208
+20:20:25   round 120/160 pairs=208
+20:20:34   round 160/160 pairs=208
+20:20:35 [P0-A] seed 81004 walsh4_d0.3: shard jobs=44
+20:20:44   round 40/160 pairs=208
+20:20:53   round 80/160 pairs=208
+20:21:02   round 120/160 pairs=208
+20:21:12   round 160/160 pairs=208
+20:21:12 [P0-A] seed 81004 pn16_d0: shard jobs=44
+20:21:22   round 40/160 pairs=208
+20:21:31   round 80/160 pairs=208
+20:21:40   round 120/160 pairs=208
+20:21:49   round 160/160 pairs=208
+20:21:50 [P0-A] seed 81004 pn64_d0: shard jobs=44
+20:21:59   round 40/160 pairs=208
+20:22:09   round 80/160 pairs=208
+20:22:19   round 120/160 pairs=208
+20:22:28   round 160/160 pairs=208
+20:22:29 [P0-A] seed 81004 pn16_d0.1: shard jobs=44
+20:22:38   round 40/160 pairs=208
+20:22:48   round 80/160 pairs=208
+20:22:57   round 120/160 pairs=208
+20:23:07   round 160/160 pairs=208
+20:23:08 [P0-A] seed 81004 done
+20:23:08 [P0-A] seed 81005 walsh4_d0: shard jobs=44
+20:23:18   round 40/160 pairs=208
+20:23:27   round 80/160 pairs=208
+20:23:36   round 120/160 pairs=208
+20:23:45   round 160/160 pairs=208
+20:23:46 [P0-A] seed 81005 walsh4_d0.1: shard jobs=44
+20:23:55   round 40/160 pairs=208
+20:24:05   round 80/160 pairs=208
+20:24:15   round 120/160 pairs=208
+20:24:24   round 160/160 pairs=208
+20:24:25 [P0-A] seed 81005 walsh4_d0.3: shard jobs=44
+20:24:34   round 40/160 pairs=208
+20:24:44   round 80/160 pairs=208
+20:24:54   round 120/160 pairs=208
+20:25:03   round 160/160 pairs=208
+20:25:04 [P0-A] seed 81005 pn16_d0: shard jobs=44
+20:25:13   round 40/160 pairs=208
+20:25:23   round 80/160 pairs=208
+20:25:32   round 120/160 pairs=208
+20:25:41   round 160/160 pairs=208
+20:25:42 [P0-A] seed 81005 pn64_d0: shard jobs=44
+20:25:51   round 40/160 pairs=208
+20:26:00   round 80/160 pairs=208
+20:26:10   round 120/160 pairs=208
+20:26:19   round 160/160 pairs=208
+20:26:20 [P0-A] seed 81005 pn16_d0.1: shard jobs=44
+20:26:29   round 40/160 pairs=208
+20:26:38   round 80/160 pairs=208
+20:26:47   round 120/160 pairs=208
+20:26:56   round 160/160 pairs=208
+20:26:57 [P0-A] seed 81005 done
+20:26:57 ===== P0-A 코드 분리 간섭과 흔적 끝: 완료, 19.1분 =====
+20:26:57 ===== P0 자원·노출 시작 =====
+20:26:57 [P0-b] seed 81001: shard jobs=112
+20:27:20   round 40/160 pairs=588
+20:27:43   round 80/160 pairs=588
+20:28:06   round 120/160 pairs=588
+20:28:30   round 160/160 pairs=588
+20:28:32 [P0-b] seed 81001 done
+20:28:32 [P0-b] seed 81002: shard jobs=112
+20:28:55   round 40/160 pairs=588
+20:29:19   round 80/160 pairs=588
+20:29:42   round 120/160 pairs=588
+20:30:05   round 160/160 pairs=588
+20:30:07 [P0-b] seed 81002 done
+20:30:07 [P0-b] seed 81003: shard jobs=112
+20:30:30   round 40/160 pairs=588
+20:30:54   round 80/160 pairs=588
+20:31:17   round 120/160 pairs=588
+20:31:40   round 160/160 pairs=588
+20:31:42 [P0-b] seed 81003 done
+20:31:42 [P0-b] seed 81004: shard jobs=112
+20:32:05   round 40/160 pairs=588
+20:32:28   round 80/160 pairs=588
+20:32:51   round 120/160 pairs=588
+20:33:14   round 160/160 pairs=588
+20:33:16 [P0-b] seed 81004 done
+20:33:16 [P0-b] seed 81005: shard jobs=112
+20:33:39   round 40/160 pairs=588
+20:34:02   round 80/160 pairs=588
+20:34:25   round 120/160 pairs=588
+20:34:48   round 160/160 pairs=588
+20:34:51 [P0-b] seed 81005 done
+20:35:06 [P0-c] seed 81001 done
+20:35:20 [P0-c] seed 81002 done
+20:35:35 [P0-c] seed 81003 done
+20:35:49 [P0-c] seed 81004 done
+20:36:03 [P0-c] seed 81005 done
+20:36:03 ===== P0 자원·노출 끝: 완료, 9.1분 =====
+20:36:03 ===== P1 배정 트레이드오프 시작 =====
+20:36:04 [P1] seed 81001: shard jobs=160
+20:36:33   round 40/160 pairs=730
+20:37:02   round 80/160 pairs=730
+20:37:31   round 120/160 pairs=730
+20:38:00   round 160/160 pairs=730
+20:38:03 [P1] seed 81001 done
+20:38:03 [P1] seed 81002: shard jobs=160
+20:38:33   round 40/160 pairs=756
+20:39:03   round 80/160 pairs=756
+20:39:33   round 120/160 pairs=756
+20:40:02   round 160/160 pairs=756
+20:40:06 [P1] seed 81002 done
+20:40:06 [P1] seed 81003: shard jobs=162
+20:40:36   round 40/160 pairs=738
+20:41:05   round 80/160 pairs=738
+20:41:35   round 120/160 pairs=738
+20:42:04   round 160/160 pairs=738
+20:42:07 [P1] seed 81003 done
+20:42:08 [P1] seed 81004: shard jobs=162
+20:42:37   round 40/160 pairs=730
+20:43:06   round 80/160 pairs=730
+20:43:35   round 120/160 pairs=730
+20:44:04   round 160/160 pairs=730
+20:44:07 [P1] seed 81004 done
+20:44:08 [P1] seed 81005: shard jobs=162
+20:44:36   round 40/160 pairs=720
+20:45:05   round 80/160 pairs=720
+20:45:33   round 120/160 pairs=720
+20:46:02   round 160/160 pairs=720
+20:46:05 [P1] seed 81005 done
+20:46:05 ===== P1 배정 트레이드오프 끝: 완료, 10.0분 =====
+20:46:05 요약: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\aircomp_sim_20261007\runs\20261006_200739_DESKTOP-QUB35TD\SUMMARY_KO.md
