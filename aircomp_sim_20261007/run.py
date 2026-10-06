@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 """라운드 단위 AirComp-SISA 시뮬레이션 실행기.
 
-    python run.py                 # P0(문제 상황 확인) -> P1(배정 트레이드오프)
+    python run.py                 # P0-A -> P0 -> P1 -> P2 전부
+    python run.py --only p2       # P2(shard 사이 near-far)만
     python run.py --quick         # 수 분짜리 동작 확인
-    python run.py --only p1
-결과: runs/<시각>_<호스트>/{p0_problem,p1_assignment}/REPORT_KO.md, results.json, SUMMARY_KO.md
+결과: runs/<시각>_<호스트>/{p0a_cdma,p0_problem,p1_assignment,p2_nearfar}/REPORT_KO.md, results.json, SUMMARY_KO.md
 """
 import argparse, importlib, socket, sys, time, traceback
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parent / 'sisa_arch_20261006'))
 
-ORDER = ['p0a', 'p0', 'p1']
-MODULES = {'p0a': 'exp_p0a_cdma', 'p0': 'exp_p0_problem', 'p1': 'exp_p1_assignment'}
-TITLES = {'p0a': 'P0-A 코드 분리 간섭과 흔적', 'p0': 'P0 자원·노출', 'p1': 'P1 배정 트레이드오프'}
+ORDER = ['p0a', 'p0', 'p1', 'p2']
+MODULES = {'p0a': 'exp_p0a_cdma', 'p0': 'exp_p0_problem', 'p1': 'exp_p1_assignment', 'p2': 'exp_p2_nearfar'}
+TITLES = {'p0a': 'P0-A 코드 분리 간섭과 흔적', 'p0': 'P0 자원·노출', 'p1': 'P1 배정 트레이드오프', 'p2': 'P2 shard 사이 near-far'}
 
 def main():
     for st in (sys.stdout, sys.stderr):
@@ -59,7 +59,7 @@ def main():
     L = ['# 라운드 단위 AirComp-SISA 시뮬레이션 요약', '', '| 실험 | 상태 | 시간(분) |', '|---|---|---|']
     L += [f'| {TITLES[e]} | {status[e]["status"]} | {status[e].get("seconds", 0) / 60:.1f} |' for e in todo]
     for e in todo:
-        p = out / {'p0a': 'p0a_cdma', 'p0': 'p0_problem', 'p1': 'p1_assignment'}[e] / 'REPORT_KO.md'
+        p = out / {'p0a': 'p0a_cdma', 'p0': 'p0_problem', 'p1': 'p1_assignment', 'p2': 'p2_nearfar'}[e] / 'REPORT_KO.md'
         if p.exists(): L += ['', '---', '', p.read_text(encoding='utf-8')]
     (out / 'SUMMARY_KO.md').write_text('\n'.join(L), encoding='utf-8'); log(f'요약: {out / "SUMMARY_KO.md"}')
 
