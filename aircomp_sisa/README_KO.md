@@ -18,7 +18,7 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 
 | 옵션 | 기본 | 설명 |
 |---|---|---|
-| `--only` | 전부 | `noise,resources,assignment,interference,codes,placement,control,stability,differencing,dropout` 중 일부 |
+| `--only` | 전부 | `noise,resources,assignment,interference,codes,placement,control,stability,differencing,dropout,lifecycle,subcarrier` 중 일부 |
 | `--seeds` / `--rounds` | 5 / 160 | |
 | `--eps` | 10 | 허용 집계 오차. noise 실험의 측정값 |
 | `--chunk` | 64 | vmap 묶음 크기. GPU 메모리가 부족하면 32 |
@@ -39,6 +39,8 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 | `stability` (E2) | 불안정한 배정에서 정확성에 필요한 재학습 shard 수, u 의 shard 만 재학습한 SISA 와 전체 재학습의 차이, 해시 + 국소 병합 (제안) | 새로 추가 |
 | `differencing` (E3) | 재학습 때 서버가 삭제 전후 shard 합을 모두 보면 차분으로 u (와 첫 라운드 이탈자) 의 update 가 드러나는가. 새 초기값 재학습 (제안) 이 막는가 | 새로 추가 |
 | `dropout` (E4) | 학습 중 이탈로 shard 합의 실제 인원이 줄 때 노출이 얼마나 커지는가. 라운드 최소 인원 규칙 (제안) 의 대가 | 새로 추가 |
+| `lifecycle` (E2b) | 삭제·신규 참여가 이어질 때 배정·삭제 처리 방법별 누적 계산·통신·지연과 노출 (해시, 병합, 정지, 묶음, slicing, 부하 상한 해시, K 조정). slicing 정확성·정지의 정확도 손해 GPU 확인 | 새로 추가 |
+| `subcarrier` (R1~R3) | TDMA 대신 FDMA·채널 인식 OFDMA·TDMA+FDMA 혼합·보호 대역으로 shard 를 배치할 때 라운드 시간, 잡음·반복, 주파수 오차로 인한 shard 간 섞임과 흔적 | 새로 추가 |
 | `placement` | 같은 자원을 쓰는 shard 를 어떻게 배정해야 하는가. 배정이 near-far, 흔적, 삭제 비용, 최소 인원(노출), 삭제 안정성을 어떻게 바꾸는가 | 새로 추가 |
 
 각 실험 파일 맨 위 설명에 설정·측정·판정 기준을 적었다. 보고서의 "읽는 법" 절에 가설이 맞을 때 보여야 하는 모습을 적었다.
@@ -55,6 +57,8 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 - 다중화: `orth` (shard 마다 직교 블록, 간섭 없음) / `code` (같은 자원에 코드로 동시 전송, 칩 타이밍 오차가 있으면 shard 사이 간섭) / `ideal` (평균에 정해진 크기의 잡음만, noise 실험용)
 - 코드: `walsh`, `pn`, `zcz` (walsh 칩 사이에 0 칩 gap 개, 수신기는 0..gap 칩 늦은 신호를 모두 모으는 창으로 역확산. 시간 오차 gap 칩 미만이면 간섭 0, 대가는 칩 수와 잡음 (gap+1) 배)
 - 전력 정렬 `weakest` (코드 분할 전용): 같은 자원을 쓰는 shard 가 모두 가장 약한 shard 의 최대 크기로 도착
+- OFDM (`mux='ofdm'`, `OfdmSystem`): 부반송파 64개 × 시간 슬롯 G 개. 주파수 선택적 채널 (4-tap), client 주파수 오차 (이웃 부반송파로 새는 간섭), 배치 방식 (연속 블록, 블록 위치 채널 인식, 섞어 배치, 부반송파 채널 인식), 보호 부반송파, 블록 순서. 기기 총전력 P 를 자기 부반송파에 나누므로 부반송파를 적게 쓰는 FDMA 는 부반송파당 전력이 크다.
+- 시간 slicing (`Shard.entry`, `Shard.t0`): client 마다 참여 라운드를 두고, 체크포인트에서 이어 재학습할 수 있다.
 - 이탈·스케줄링 (`asisa/fl.py`): client 는 라운드마다 확률 drop 으로 빠질 수 있고 (client·라운드로 정해져 모든 학습 경로에서 같음), `sched=('shard'|'global', q)` 면 채널 하위 q 는 송신하지 않는다. `align='global'` (직교 블록) 은 같은 system 전체의 최약 송신자 기준 전력 정렬. `min_present` 는 그 라운드 인원이 모자라면 보내지 않는 규칙. `noise_salt` 는 배치는 같고 잡음만 독립인 전송을 만든다.
 - 흔적의 크기: 파라미터 차이 ||W(u 있음) − W(u 없이 처음부터)|| / ||W(u 없이)|| 와 그 난수 기준선. 예측 불일치는 작은 흔적에도 몇 % 로 포화되어 참고용 (P2 실측)
 - 짝 비교: minibatch 와 잡음은 (seed, 라운드, client, salt) 로 정해진다. "u 있음" 과 "u 없이 처음부터" 는 같은 배치·잡음을 쓰므로 차이는 u 에서만 나온다. salt 를 바꾼 학습이 "학습 난수 변동" 기준선이다.
@@ -75,5 +79,5 @@ aircomp_sisa/
     channel.py    채널, shard 배정 규칙
     radio.py      AirComp 물리 계층 (전력 정렬, 반복, 직교 블록, 코드 분할, 장부)
     fl.py         라운드 루프 (로컬 학습 -> system 별 전송 -> 모델 갱신)
-    exp/          noise, resources, assignment, interference, codes, placement, control, stability, differencing, dropout (+ deletion.py 공통 측정)
+    exp/          noise, resources, assignment, interference, codes, placement, control, stability, differencing, dropout, lifecycle, subcarrier (+ deletion.py 공통 측정)
 ```

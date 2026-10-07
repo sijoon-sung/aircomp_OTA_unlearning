@@ -26,6 +26,7 @@
           반복이 있으면 한 라운드에 max_k R_k 개 슬롯을 쓰고 슬롯 r 에는 R_k > r 인 shard 만 보낸다.
           shard k 는 자기 R_k 슬롯을 평균하므로 shard j 의 간섭은 min(R_j, R_k)/R_k 배가 된다.
   ideal : 채널 없이 평균에 제곱합 기대값 noise_mse 인 잡음만 더한다 (허용 잡음 측정용).
+  ofdm  : 부반송파 F 개 x 시간 슬롯 G 개에 shard 를 배치 (TDMA, FDMA, OFDMA, 혼합, 보호 대역). 아래 OfdmSystem 참고.
 
 코드 분할의 코드 (code)
   walsh : Hadamard 행. 시간 오차가 없으면 완전 직교.
@@ -57,13 +58,19 @@ class RadioConfig:
     sched: tuple = None         # None | ('shard'|'global', q): 이번 라운드 채널이 (shard 안 | system 전체) 하위 q 분위수 미만이면 송신하지 않음
     target: float = None        # common 의 목표 집계 오차 (None 이면 eps)
     n_nom: float = None         # common 의 명목 인원 (None 이면 그 shard 의 인원)
-    mux: str = 'orth'           # 'orth' | 'code' | 'ideal'
+    mux: str = 'orth'           # 'orth' | 'code' | 'ideal' | 'ofdm'
     code: str = 'walsh'         # mux='code': 'walsh' | 'pn' | 'zcz'
     L: int = 4                  # mux='code': 코드 길이 (zcz 는 바탕 walsh 길이)
     gap: int = 1                # code='zcz': walsh 칩 사이에 넣는 0 칩 수 (견디는 시간 오차 = gap 칩 미만)
     delay_max: float = 0.0      # mux='code': 칩 타이밍 오차 상한
     blocks: float = 1.0         # mux='orth': 동시에 쓰는 자원 블록 수
     noise_mse: float = 0.0      # mux='ideal': 더하는 잡음의 제곱합 기대값
+    F: int = 64                 # mux='ofdm': 부반송파 수
+    groups: int = 1             # mux='ofdm': 시간 슬롯 수 G (shard slot % G 가 슬롯). G = shard 수면 TDMA
+    alloc: str = 'block'        # mux='ofdm': 'block' | 'block_aware' | 'interleave' | 'aware'
+    guard: int = 0              # mux='ofdm': 블록 사이 보호 부반송파 수
+    block_order: str = 'fixed'  # mux='ofdm', alloc='block': 'fixed' | 'beta'
+    cfo: float = 0.0            # mux='ofdm': client 주파수 오차 상한 (부반송파 간격 단위)
     P: float = P_MAX
     C: float = CLIP
 
@@ -226,6 +233,139 @@ class CodeSystem:
             diags[s] = d
             leds[s] = Ledger(ul_symbols=self.chips * D * Rmax, ul_time=self.chips * D * Rmax, dl_bits=32 * D, energy=info[s][3], repeats=R, rounds=1,
                              tx_count=n, mse_sum=D * alpha * alpha * cfg.sigma2 / (self.pgain * R), max_power_ratio=info[s][2])
+        return out, leds, diags
+
+
+# ---------------------------------------------------------------- OFDM (부반송파 단위) 다중 shard 전송
+def freq_gain(seed, i, t, F, taps=4):
+    """client i 의 라운드 t 주파수 선택적 채널 크기 |H_i(f)| (지수 감쇠 L-tap Rayleigh, 평균 전력 1)."""
+    rng = np.random.default_rng(key(seed, 'freqsel', i, t))
+    p = np.exp(-np.arange(taps)); p /= p.sum()
+    a = (rng.normal(size=taps) + 1j * rng.normal(size=taps)) * np.sqrt(p / 2)
+    return np.abs(np.fft.fft(a, F))
+
+def ici_coeff(eps, F):
+    """주파수 오차 eps (부반송파 간격 단위) 일 때 부반송파 f 의 신호가 f+d 로 새는 계수 c(d) (실수 근사, d = 0..F-1, 순환)."""
+    if abs(eps) < 1e-12:
+        c = np.zeros(F); c[0] = 1.0; return c
+    d = np.arange(F)
+    return np.sin(np.pi * eps) / (F * np.sin(np.pi * (d + eps) / F))
+
+class OfdmSystem:
+    """같은 system 의 shard 들을 OFDM 부반송파·시간 슬롯에 배치해 보낸다 (mux='ofdm').
+
+    시간 슬롯 G 개 (shard 의 slot 번호 % G 가 슬롯). 같은 슬롯의 shard 들은 부반송파 F 개를 나눠 쓴다.
+      alloc='block'       연속 블록, 블록 사이 보호 부반송파 guard 개. block_order='fixed' (slot 순) | 'beta' (shard 최약 채널 순, 이웃끼리 도착 크기가 비슷)
+      alloc='block_aware' 연속 블록, 라운드마다 블록 위치를 shard 들의 채널에 맞춰 고름 (가장 나쁜 shard 의 beta 를 최소화하는 배치)
+      alloc='interleave'  부반송파 f -> 슬롯 안 shard (f mod m). 이웃이 모두 다른 shard
+      alloc='aware'       부반송파마다 'shard 안 최약 member 의 채널' 이 큰 shard 에 배정 (shard 당 F/m 개, 조각남)
+    G = K 이면 TDMA (shard 마다 슬롯 하나, 부반송파 전부), G = 1 이면 순수 FDMA/OFDMA.
+    전력: 기기 하나의 OFDM 심볼당 총전력 P 를 자기 부반송파 a 개에 나눔 -> 부반송파당 P/a. 부반송파당 잡음 sigma2/F
+      (그래서 TDMA 는 이전 직교 블록 모델과 같은 SNR 이고, 부반송파를 F/m 개만 쓰면 부반송파당 SNR 이 m 배).
+    채널 역보상: s_i(f) = x / (h_i H_i(f) beta). beta = C sqrt(max_i mean_{f in A} (h_i H_i(f))^-2) / sqrt(p_sc D) (평균 전력 기준).
+    주파수 오차: client 마다 eps_i ~ U[-cfo, cfo] (정적). 받은 격자 Y[t, g] = sum_i sum_f s_i h_i H_i(f) c_i(g - f) + Z.
+      다른 shard 의 부반송파로 새는 성분이 shard 간 간섭이다 (다른 파라미터 번호에 섞인다). 같은 shard 안 새는 성분은 자기 신호 왜곡.
+    시간: 슬롯마다 max_k ceil(D R_k / a_k) 개 OFDM 심볼. 보고는 D/F 심볼 단위 (TDMA 반복 없음 = K).
+    """
+    def __init__(self, cfg, seed, device):
+        self.cfg = cfg; self.seed = seed; self.F = cfg.F
+        self.eps = cfg.cfo * np.array([np.random.default_rng(key(seed, 'cfo', i)).uniform(-1, 1) for i in range(64)])
+        self._C = {}
+
+    def C(self, i, dt, device):
+        if i not in self._C:
+            c = ici_coeff(self.eps[i], self.F)
+            self._C[i] = torch.as_tensor(np.stack([np.roll(c, f) for f in range(self.F)]), dtype=dt, device=device)   # C[f, g] = c(g - f)
+        return self._C[i]
+
+    def allocate(self, group, H):
+        """group: [(slot, ids, hs)], H: {client: |h_i H_i(f)| [F]}. 반환 {slot: 부반송파 번호 배열} (모두 같은 개수)."""
+        cfg, F = self.cfg, self.F; m = len(group)
+        if m == 1:
+            return {group[0][0]: np.arange(F)}
+        def worst_inv(ids, A):
+            return max(float(np.mean(1.0 / H[i][A] ** 2)) for i in ids)
+        if cfg.alloc in ('block', 'block_aware'):
+            g = cfg.guard; w = (F - g * m) // m             # 부반송파 간섭은 순환이므로 마지막 블록과 첫 블록 사이에도 보호 대역
+            blocks = [np.arange(b * (w + g), b * (w + g) + w) for b in range(m)]
+            if cfg.alloc == 'block':
+                order = sorted(group, key=lambda x: x[0]) if cfg.block_order == 'fixed' else sorted(group, key=lambda x: float(np.min(x[2])))
+                return {sl: blocks[b] for b, (sl, ids, hs) in enumerate(order)}
+            import itertools
+            best = min(itertools.permutations(range(m)), key=lambda p: max(worst_inv(group[q][1], blocks[p[q]]) for q in range(m)))
+            return {group[q][0]: blocks[best[q]] for q in range(m)}
+        if cfg.alloc == 'interleave':
+            order = sorted(group, key=lambda x: x[0])
+            return {sl: np.arange(b, F - F % m, m) for b, (sl, ids, hs) in enumerate(order)}
+        if cfg.alloc == 'aware':
+            quota = F // m; M = np.stack([np.min([H[i] for i in ids], axis=0) for _, ids, _ in group])   # [m, F] shard 안 최약 member 의 채널
+            out = {q: [] for q in range(m)}; used = set()
+            for idx in np.argsort(-M, axis=None):
+                q, f = divmod(int(idx), F)
+                if f in used or len(out[q]) >= quota:
+                    continue
+                out[q].append(f); used.add(f)
+            return {group[q][0]: np.array(sorted(out[q])) for q in range(m)}
+        raise ValueError(cfg.alloc)
+
+    def transmit(self, shards, noise_key, track, t):
+        cfg, F = self.cfg, self.F
+        D = shards[0][1].shape[1]; dev = shards[0][1].device; dt = shards[0][1].dtype
+        sig_sc = cfg.sigma2 / F
+        groups = {}
+        for sh in shards:
+            groups.setdefault(sh[0] % cfg.groups, []).append(sh)
+        out, leds, diags, total_rows = {}, {}, {}, 0
+        for gk, grp in sorted(groups.items()):
+            H = {i: hs_i * freq_gain(self.seed, i, t, F) for _, _, ids, hs in grp for i, hs_i in zip(ids, hs)}
+            A = self.allocate([(sl, ids, hs) for sl, X, ids, hs in grp], H)
+            a = min(len(v) for v in A.values()); A = {sl: v[:a] for sl, v in A.items()}
+            p_sc = cfg.P / a; rows = -(-D // a)
+            plans = {}
+            for sl, X, ids, hs in grp:
+                n = X.shape[0]; beta = cfg.C * np.sqrt(max(float(np.mean(1.0 / H[i][A[sl]] ** 2)) for i in ids)) / np.sqrt(p_sc * D)
+                mse1 = D * (beta / n) ** 2 * sig_sc
+                plans[sl] = (beta, max(1, int(np.ceil(mse1 / cfg.eps - 1e-9))) if cfg.eps > 0 else 1)
+            Rmax = max(R for _, R in plans.values()); total_rows += rows * Rmax
+            Gsh, Gu, info = {}, {}, {}
+            for sl, X, ids, hs in grp:
+                beta, R = plans[sl]; Asl = torch.as_tensor(A[sl], device=dev)
+                acc = torch.zeros(rows, F, device=dev, dtype=dt); energy = 0.0; pr = 0.0
+                for q, i in enumerate(ids):
+                    arr = torch.zeros(rows * a, device=dev, dtype=dt); arr[:D] = X[q] / beta
+                    loc = arr.view(rows, a)
+                    hl = torch.as_tensor(H[i][A[sl]], dtype=dt, device=dev)
+                    s2 = (loc / hl[None, :]) ** 2
+                    energy += float(s2.sum()) * R; pr = max(pr, float(s2.sum()) / D / p_sc)
+                    full = torch.zeros(rows, F, device=dev, dtype=dt); full[:, Asl] = loc
+                    Pi = full @ self.C(i, dt, dev)
+                    acc += Pi
+                    if i in track:
+                        Gu[i] = (sl, Pi)
+                Gsh[sl] = acc; info[sl] = (list(ids), X.shape[0], energy, pr, Asl)
+            Z = [_gaussian(noise_key if r == 0 else key(noise_key, 'slot', r), (rows, F), dev, dt, np.sqrt(sig_sc)) for r in range(Rmax)]
+            for sl, X, ids, hs in grp:
+                beta, R = plans[sl]; n = X.shape[0]; alpha = beta / n; Asl = info[sl][4]
+                read = lambda M: M[:, Asl].reshape(-1)[:D]
+                own = read(Gsh[sl]); leak = torch.zeros(D, device=dev, dtype=dt); d = new_diag()
+                for s2_, G2 in Gsh.items():
+                    if s2_ == sl:
+                        continue
+                    w = min(plans[s2_][1], R) / R; term = w * read(G2)
+                    leak += term; d['leak_by_src'][s2_] = float((alpha * term).pow(2).sum())
+                for u, (su, Pu) in Gu.items():
+                    if su != sl:
+                        d['u_leak'][u] = float((alpha * min(plans[su][1], R) / R * read(Pu)).pow(2).sum())
+                noise = sum(read(Z[r]) for r in range(R)) / R
+                out[sl] = alpha * (own + leak + noise)
+                d.update(own_energy=float((alpha * own).pow(2).sum()), leak_energy=float((alpha * leak).pow(2).sum()),
+                         noise_energy=float((alpha * noise).pow(2).sum()), alpha=alpha, beta=beta, repeats=float(R))
+                diags[sl] = d
+                leds[sl] = Ledger(dl_bits=32 * D, energy=info[sl][2], repeats=R, rounds=1, tx_count=n,
+                                  mse_sum=D * alpha * alpha * sig_sc / R, max_power_ratio=info[sl][3])
+        for sl in out:
+            diags[sl]['slots'] = total_rows * F / D                     # 라운드 시간 (D/F 심볼 단위)
+            leds[sl].ul_symbols = total_rows * F; leds[sl].ul_time = total_rows
         return out, leds, diags
 
 def digital_ledger(cfg, hs, D):

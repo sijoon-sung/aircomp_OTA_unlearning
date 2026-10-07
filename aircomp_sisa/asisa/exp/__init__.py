@@ -10,6 +10,8 @@
   stability    E2 불안정한 배정의 재학습 범위, 해시 + 국소 병합
   differencing E3 재학습 때 삭제 전후 shard 합의 차분으로 개인 update 가 드러나는가, 새 초기값 재학습
   dropout      E4 학습 중 이탈이 shard 합의 노출과 잡음에 주는 영향, 최소 인원 규칙
+  lifecycle    E2b 삭제·참여가 이어질 때 배정·삭제 처리 방법별 누적 비용과 노출
+  subcarrier   R1~R3 FDMA, 채널 인식 OFDMA, TDMA+FDMA 혼합, 보호 대역
   (deletion.py 는 interference·codes·placement 가 함께 쓰는 학습 경로 구성과 측정)
 """
 from types import SimpleNamespace

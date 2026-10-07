@@ -108,6 +108,27 @@ def main():
     r, l, d = transmit_orth(RadioConfig(sigma2=.01, align='global'), X[1], hs[1], 1, bf)
     check('직교 블록 전체 정렬: beta = 전체 최약 노드 기준, 전력 상한 준수', abs(d['beta'] - bf) < 1e-12 and l.max_power_ratio <= 1 + 1e-6,
           f'beta 비 {d["beta"] / plan(RadioConfig(sigma2=.01), 5, 0.1, D)[0]:.2f} (shard 자기 기준 대비)')
+    # OFDM: 주파수 오차가 없으면 블록이든 섞어 배치든 간섭 0·정확 복원, 같은 시간에 FDMA 는 부반송파당 전력이 K 배라 잡음이 작다
+    from asisa.radio import OfdmSystem
+    sh = [(k, X[k], groups[k], hs[k]) for k in range(K)]
+    for alloc in ['block', 'interleave', 'aware', 'block_aware']:
+        o = OfdmSystem(RadioConfig(sigma2=1e-30, eps=0, mux='ofdm', alloc=alloc), 1, 'cpu')
+        out, l, d = o.transmit(sh, 3, (), 0)
+        err = max(float((out[k] - X[k].mean(0)).abs().max()) for k in range(K)); lk = max(d[k]['leak_energy'] for k in range(K))
+        check(f'OFDM {alloc}, 주파수 오차 0: 간섭 0·정확 복원', err < 1e-6 and lk == 0, f'오차 {err:.1e}, 시간 {d[0]["slots"]:.2f} (D/F 단위)')
+    mt = OfdmSystem(RadioConfig(sigma2=1.0, eps=0, mux='ofdm', groups=K), 1, 'cpu').transmit(sh, 3, (), 0)
+    mf = OfdmSystem(RadioConfig(sigma2=1.0, eps=0, mux='ofdm', groups=1, alloc='block'), 1, 'cpu').transmit(sh, 3, (), 0)
+    rt = np.mean([mt[1][k].mse_sum for k in range(K)]) / np.mean([mf[1][k].mse_sum for k in range(K)])
+    check('같은 라운드 시간에서 FDMA 집계 오차가 TDMA 보다 작음 (부반송파당 전력 K 배)', abs(mt[2][0]['slots'] - mf[2][0]['slots']) < 1e-9 and rt > 1.5,
+          f'시간 TDMA {mt[2][0]["slots"]:.2f} / FDMA {mf[2][0]["slots"]:.2f}, 집계 오차 비 TDMA/FDMA {rt:.2f} (K={K})')
+    lk = {}
+    for alloc, g in [('interleave', 0), ('block', 0), ('block', 2), ('block', 4)]:
+        o = OfdmSystem(RadioConfig(sigma2=1e-30, eps=0, mux='ofdm', alloc=alloc, guard=g, cfo=0.05), 1, 'cpu')
+        lk[(alloc, g)] = np.mean([o.transmit(sh, 3, (), 0)[2][k]['leak_energy'] / o.transmit(sh, 3, (), 0)[2][k]['own_energy'] for k in range(K)])
+    check('주파수 오차 0.05: 섞어 배치 > 블록 > 보호 대역 2 > 보호 대역 4 순으로 간섭', lk[('interleave', 0)] > lk[('block', 0)] > lk[('block', 2)] > lk[('block', 4)] > 0,
+          ', '.join(f'{a} g{g}: {v:.2e}' for (a, g), v in lk.items()))
+    tg = OfdmSystem(RadioConfig(sigma2=1.0, eps=0, mux='ofdm', alloc='block', guard=4), 1, 'cpu').transmit(sh, 3, (), 0)[2][0]['slots']
+    check('보호 대역은 부반송파를 줄여 라운드 시간을 늘림', tg > mf[2][0]['slots'], f'보호 4: {tg:.2f}, 보호 0: {mf[2][0]["slots"]:.2f}')
     print('모두 통과' if OK else '실패 항목 있음')
     sys.exit(0 if OK else 1)
 

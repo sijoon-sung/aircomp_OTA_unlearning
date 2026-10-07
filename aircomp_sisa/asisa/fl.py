@@ -15,7 +15,7 @@ shard 모델 여러 개(학습 경로 하나씩)를 라운드마다 함께 진�
 from dataclasses import dataclass
 import numpy as np
 import torch
-from .radio import Ledger, new_diag, transmit_orth, transmit_ideal, CodeSystem
+from .radio import Ledger, new_diag, transmit_orth, transmit_ideal, CodeSystem, OfdmSystem
 from .util import key
 from .config import N_CLIENTS
 
@@ -32,6 +32,8 @@ class Shard:
     drop: float = 0.0         # 라운드마다 client 가 참여하지 못할 확률 (client·라운드로 정해짐, 같은 seed 면 모든 경로에서 같음)
     absent: dict = None       # {라운드: 그 라운드에 빠지는 client 집합} (지정 이탈)
     min_present: int = 0      # 송신 인원이 이보다 적으면 그 라운드는 보내지 않는다 (shard 자기 정보만 쓰는 규칙)
+    t0: int = 0               # 이 라운드부터 학습 (체크포인트에서 재학습할 때)
+    entry: dict = None        # {client: 처음 참여하는 라운드} (시간 slicing). 없으면 모두 0
     noise_salt: str = None    # 잡음 난수만 따로 바꿀 때 (None 이면 salt). 배치는 같고 채널 잡음은 독립인 두 전송을 만들 때 쓴다
 
 DIAG_SUM = ('own_energy', 'leak_energy', 'noise_energy', 'alpha', 'beta', 'repeats', 'slots')
@@ -59,14 +61,17 @@ def train(tr, shards, h, w0, seed, radio_of, track_of=None, log=None, log_every=
         cfg = radio_of(name)
         if cfg.mux == 'code':
             code_sys[name] = CodeSystem(cfg, 1 + max(shards[j].slot for j in idx), seed, chip_delays(seed, cfg.delay_max))
+        elif cfg.mux == 'ofdm':
+            code_sys[name] = OfdmSystem(cfg, seed, tr.device)
     T_all = max(s.T for s in shards)
     for t in range(T_all):
-        live = [j for j, s in enumerate(shards) if t < s.T]
+        live = [j for j, s in enumerate(shards) if s.t0 <= t < s.T]
         for j in live:
             if t in shards[j].save_at:
                 ckpts[j][t] = W[j].clone()
         present = {j: [i for i in shards[j].members if not is_absent(seed, i, t, shards[j].drop)
-                       and not (shards[j].absent and i in shards[j].absent.get(t, ()))] for j in live}
+                       and not (shards[j].absent and i in shards[j].absent.get(t, ()))
+                       and not (shards[j].entry and shards[j].entry.get(i, 0) > t)] for j in live}
         act = dict(present)
         for name, idx in systems.items():
             cfg = radio_of(name); lj = [j for j in idx if j in present]
@@ -97,7 +102,12 @@ def train(tr, shards, h, w0, seed, radio_of, track_of=None, log=None, log_every=
             if not ja:
                 continue
             cfg = radio_of(name); res = {}
-            if cfg.mux == 'code':
+            if cfg.mux == 'ofdm':
+                out, ld, dg = code_sys[name].transmit(
+                    [(shards[j].slot, U[rows[j]], act[j], h[t, act[j]]) for j in ja],
+                    key(seed, t, 'noise', nsalt(shards[ja[0]])), track_of(name) if track_of else (), t)
+                res = {j: (out[shards[j].slot], ld[shards[j].slot], dg[shards[j].slot]) for j in ja}
+            elif cfg.mux == 'code':
                 out, ld, dg = code_sys[name].transmit(
                     [(shards[j].slot, U[rows[j]], act[j], h[t, act[j]]) for j in ja],
                     key(seed, t, 'noise', nsalt(shards[ja[0]])), track_of(name) if track_of else ())
