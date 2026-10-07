@@ -1,0 +1,63 @@
+{
+ "noise": {
+  "eps_star": 10,
+  "status": "완료",
+  "seconds": 288.62460112571716,
+  "gpu_board_Wh": 26.36037907247113
+ },
+ "resources": {
+  "status": "완료",
+  "seconds": 545.1352517604828,
+  "gpu_board_Wh": 44.76799028880795
+ },
+ "assignment": {
+  "status": "완료",
+  "seconds": 597.1255555152893,
+  "gpu_board_Wh": 53.508197336801224
+ },
+ "interference": {
+  "status": "완료",
+  "seconds": 4198.171713352203,
+  "gpu_board_Wh": 356.51089127919175
+ },
+ "codes": {
+  "status": "완료",
+  "seconds": 1660.5171568393707,
+  "gpu_board_Wh": 143.03610158684387
+ },
+ "placement": {
+  "status": "완료",
+  "seconds": 1740.3955280780792,
+  "gpu_board_Wh": 149.18843151044248
+ },
+ "control": {
+  "status": "완료",
+  "seconds": 763.3244669437408,
+  "gpu_board_Wh": 68.11544879619149
+ },
+ "stability": {
+  "status": "완료",
+  "seconds": 446.1004433631897,
+  "gpu_board_Wh": 40.02455050918857
+ },
+ "differencing": {
+  "status": "완료",
+  "seconds": 57.62708568572998,
+  "gpu_board_Wh": 4.853515212900109
+ },
+ "dropout": {
+  "status": "완료",
+  "seconds": 209.2741720676422,
+  "gpu_board_Wh": 17.865478514399793
+ },
+ "lifecycle": {
+  "status": "완료",
+  "seconds": 38.29401397705078,
+  "gpu_board_Wh": 2.8889665894392462
+ },
+ "subcarrier": {
+  "status": "완료",
+  "seconds": 4277.683203697205,
+  "gpu_board_Wh": 298.97809778342247
+ }
+}

@@ -1,0 +1,804 @@
+14:08:39 결과 폴더: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\aircomp_sisa\runs\20261007_140839_DESKTOP-QUB35TD
+14:08:39 장치: cuda
+14:08:39 ===== noise: 허용 집계 잡음 시작 =====
+14:08:40 [noise] seed 81001: shard 모델 90개
+14:08:54   라운드 40/160  (shard, member) 쌍=380
+14:09:08   라운드 80/160  (shard, member) 쌍=380
+14:09:22   라운드 120/160  (shard, member) 쌍=380
+14:09:36   라운드 160/160  (shard, member) 쌍=380
+14:09:37 [noise] seed 81001 끝
+14:09:37 [noise] seed 81002: shard 모델 90개
+14:09:51   라운드 40/160  (shard, member) 쌍=380
+14:10:05   라운드 80/160  (shard, member) 쌍=380
+14:10:19   라운드 120/160  (shard, member) 쌍=380
+14:10:33   라운드 160/160  (shard, member) 쌍=380
+14:10:35 [noise] seed 81002 끝
+14:10:35 [noise] seed 81003: shard 모델 90개
+14:10:49   라운드 40/160  (shard, member) 쌍=380
+14:11:03   라운드 80/160  (shard, member) 쌍=380
+14:11:17   라운드 120/160  (shard, member) 쌍=380
+14:11:31   라운드 160/160  (shard, member) 쌍=380
+14:11:33 [noise] seed 81003 끝
+14:11:33 [noise] seed 81004: shard 모델 90개
+14:11:47   라운드 40/160  (shard, member) 쌍=380
+14:12:01   라운드 80/160  (shard, member) 쌍=380
+14:12:15   라운드 120/160  (shard, member) 쌍=380
+14:12:29   라운드 160/160  (shard, member) 쌍=380
+14:12:30 [noise] seed 81004 끝
+14:12:30 [noise] seed 81005: shard 모델 90개
+14:12:44   라운드 40/160  (shard, member) 쌍=380
+14:12:58   라운드 80/160  (shard, member) 쌍=380
+14:13:12   라운드 120/160  (shard, member) 쌍=380
+14:13:26   라운드 160/160  (shard, member) 쌍=380
+14:13:28 [noise] seed 81005 끝
+14:13:28 ===== noise 끝: 완료, 4.8분 =====
+14:13:28 ===== resources: 자원·삭제 비용·노출 시작 =====
+14:13:28 [resources] seed 81001: shard 모델 112개
+14:13:51   라운드 40/160  (shard, member) 쌍=588
+14:14:14   라운드 80/160  (shard, member) 쌍=588
+14:14:37   라운드 120/160  (shard, member) 쌍=588
+14:15:00   라운드 160/160  (shard, member) 쌍=588
+14:15:02 [resources] seed 81001 비용 끝
+14:15:02 [resources] seed 81002: shard 모델 112개
+14:15:25   라운드 40/160  (shard, member) 쌍=588
+14:15:48   라운드 80/160  (shard, member) 쌍=588
+14:16:11   라운드 120/160  (shard, member) 쌍=588
+14:16:34   라운드 160/160  (shard, member) 쌍=588
+14:16:36 [resources] seed 81002 비용 끝
+14:16:36 [resources] seed 81003: shard 모델 112개
+14:16:59   라운드 40/160  (shard, member) 쌍=588
+14:17:23   라운드 80/160  (shard, member) 쌍=588
+14:17:46   라운드 120/160  (shard, member) 쌍=588
+14:18:09   라운드 160/160  (shard, member) 쌍=588
+14:18:11 [resources] seed 81003 비용 끝
+14:18:11 [resources] seed 81004: shard 모델 112개
+14:18:34   라운드 40/160  (shard, member) 쌍=588
+14:18:58   라운드 80/160  (shard, member) 쌍=588
+14:19:21   라운드 120/160  (shard, member) 쌍=588
+14:19:44   라운드 160/160  (shard, member) 쌍=588
+14:19:46 [resources] seed 81004 비용 끝
+14:19:46 [resources] seed 81005: shard 모델 112개
+14:20:09   라운드 40/160  (shard, member) 쌍=588
+14:20:32   라운드 80/160  (shard, member) 쌍=588
+14:20:54   라운드 120/160  (shard, member) 쌍=588
+14:21:17   라운드 160/160  (shard, member) 쌍=588
+14:21:19 [resources] seed 81005 비용 끝
+14:21:34 [resources] seed 81001 노출 끝
+14:21:49 [resources] seed 81002 노출 끝
+14:22:04 [resources] seed 81003 노출 끝
+14:22:18 [resources] seed 81004 노출 끝
+14:22:33 [resources] seed 81005 노출 끝
+14:22:33 ===== resources 끝: 완료, 9.1분 =====
+14:22:33 ===== assignment: 배정의 학습·삭제 비용 시작 =====
+14:22:33 [assignment] seed 81001: shard 모델 160개
+14:23:03   라운드 40/160  (shard, member) 쌍=730
+14:23:32   라운드 80/160  (shard, member) 쌍=730
+14:24:00   라운드 120/160  (shard, member) 쌍=730
+14:24:29   라운드 160/160  (shard, member) 쌍=730
+14:24:32 [assignment] seed 81001 끝
+14:24:32 [assignment] seed 81002: shard 모델 160개
+14:25:02   라운드 40/160  (shard, member) 쌍=756
+14:25:32   라운드 80/160  (shard, member) 쌍=756
+14:26:02   라운드 120/160  (shard, member) 쌍=756
+14:26:32   라운드 160/160  (shard, member) 쌍=756
+14:26:34 [assignment] seed 81002 끝
+14:26:35 [assignment] seed 81003: shard 모델 162개
+14:27:04   라운드 40/160  (shard, member) 쌍=738
+14:27:33   라운드 80/160  (shard, member) 쌍=738
+14:28:02   라운드 120/160  (shard, member) 쌍=738
+14:28:31   라운드 160/160  (shard, member) 쌍=738
+14:28:34 [assignment] seed 81003 끝
+14:28:34 [assignment] seed 81004: shard 모델 162개
+14:29:03   라운드 40/160  (shard, member) 쌍=730
+14:29:32   라운드 80/160  (shard, member) 쌍=730
+14:30:01   라운드 120/160  (shard, member) 쌍=730
+14:30:30   라운드 160/160  (shard, member) 쌍=730
+14:30:33 [assignment] seed 81004 끝
+14:30:33 [assignment] seed 81005: shard 모델 162개
+14:31:02   라운드 40/160  (shard, member) 쌍=720
+14:31:31   라운드 80/160  (shard, member) 쌍=720
+14:31:59   라운드 120/160  (shard, member) 쌍=720
+14:32:28   라운드 160/160  (shard, member) 쌍=720
+14:32:30 [assignment] seed 81005 끝
+14:32:30 ===== assignment 끝: 완료, 10.0분 =====
+14:32:30 ===== interference: shard 간 간섭과 도착 크기 맞추기 시작 =====
+14:32:30 [interference] seed 81001 채널 정렬 자르기 walsh4_d0: shard 모델 108개
+14:32:53   라운드 40/160  (shard, member) 쌍=516
+14:33:15   라운드 80/160  (shard, member) 쌍=516
+14:33:38   라운드 120/160  (shard, member) 쌍=516
+14:34:01   라운드 160/160  (shard, member) 쌍=516
+14:34:02 [interference] seed 81001 채널 정렬 자르기 walsh4_d0.3: shard 모델 108개
+14:34:26   라운드 40/160  (shard, member) 쌍=516
+14:34:49   라운드 80/160  (shard, member) 쌍=516
+14:35:12   라운드 120/160  (shard, member) 쌍=516
+14:35:35   라운드 160/160  (shard, member) 쌍=516
+14:35:37 [interference] seed 81001 채널 정렬 자르기 pn16_d0: shard 모델 108개
+14:35:59   라운드 40/160  (shard, member) 쌍=516
+14:36:22   라운드 80/160  (shard, member) 쌍=516
+14:36:45   라운드 120/160  (shard, member) 쌍=516
+14:37:08   라운드 160/160  (shard, member) 쌍=516
+14:37:10 [interference] seed 81001 채널 돌려 담기 walsh4_d0: shard 모델 108개
+14:37:33   라운드 40/160  (shard, member) 쌍=516
+14:37:55   라운드 80/160  (shard, member) 쌍=516
+14:38:18   라운드 120/160  (shard, member) 쌍=516
+14:38:40   라운드 160/160  (shard, member) 쌍=516
+14:38:42 [interference] seed 81001 채널 돌려 담기 walsh4_d0.3: shard 모델 108개
+14:39:05   라운드 40/160  (shard, member) 쌍=516
+14:39:27   라운드 80/160  (shard, member) 쌍=516
+14:39:50   라운드 120/160  (shard, member) 쌍=516
+14:40:14   라운드 160/160  (shard, member) 쌍=516
+14:40:16 [interference] seed 81001 채널 돌려 담기 pn16_d0: shard 모델 108개
+14:40:38   라운드 40/160  (shard, member) 쌍=516
+14:41:01   라운드 80/160  (shard, member) 쌍=516
+14:41:24   라운드 120/160  (shard, member) 쌍=516
+14:41:47   라운드 160/160  (shard, member) 쌍=516
+14:41:48 [interference] seed 81001 무작위 walsh4_d0: shard 모델 108개
+14:42:12   라운드 40/160  (shard, member) 쌍=516
+14:42:35   라운드 80/160  (shard, member) 쌍=516
+14:42:58   라운드 120/160  (shard, member) 쌍=516
+14:43:22   라운드 160/160  (shard, member) 쌍=516
+14:43:23 [interference] seed 81001 무작위 walsh4_d0.3: shard 모델 108개
+14:43:46   라운드 40/160  (shard, member) 쌍=516
+14:44:09   라운드 80/160  (shard, member) 쌍=516
+14:44:31   라운드 120/160  (shard, member) 쌍=516
+14:44:54   라운드 160/160  (shard, member) 쌍=516
+14:44:56 [interference] seed 81001 무작위 pn16_d0: shard 모델 108개
+14:45:18   라운드 40/160  (shard, member) 쌍=516
+14:45:40   라운드 80/160  (shard, member) 쌍=516
+14:46:03   라운드 120/160  (shard, member) 쌍=516
+14:46:26   라운드 160/160  (shard, member) 쌍=516
+14:46:27 [interference] seed 81001 끝
+14:46:28 [interference] seed 81002 채널 정렬 자르기 walsh4_d0: shard 모델 108개
+14:46:51   라운드 40/160  (shard, member) 쌍=516
+14:47:14   라운드 80/160  (shard, member) 쌍=516
+14:47:37   라운드 120/160  (shard, member) 쌍=516
+14:48:00   라운드 160/160  (shard, member) 쌍=516
+14:48:01 [interference] seed 81002 채널 정렬 자르기 walsh4_d0.3: shard 모델 108개
+14:48:25   라운드 40/160  (shard, member) 쌍=516
+14:48:48   라운드 80/160  (shard, member) 쌍=516
+14:49:11   라운드 120/160  (shard, member) 쌍=516
+14:49:34   라운드 160/160  (shard, member) 쌍=516
+14:49:36 [interference] seed 81002 채널 정렬 자르기 pn16_d0: shard 모델 108개
+14:49:58   라운드 40/160  (shard, member) 쌍=516
+14:50:20   라운드 80/160  (shard, member) 쌍=516
+14:50:42   라운드 120/160  (shard, member) 쌍=516
+14:51:04   라운드 160/160  (shard, member) 쌍=516
+14:51:06 [interference] seed 81002 채널 돌려 담기 walsh4_d0: shard 모델 108개
+14:51:28   라운드 40/160  (shard, member) 쌍=516
+14:51:51   라운드 80/160  (shard, member) 쌍=516
+14:52:14   라운드 120/160  (shard, member) 쌍=516
+14:52:37   라운드 160/160  (shard, member) 쌍=516
+14:52:39 [interference] seed 81002 채널 돌려 담기 walsh4_d0.3: shard 모델 108개
+14:53:03   라운드 40/160  (shard, member) 쌍=516
+14:53:26   라운드 80/160  (shard, member) 쌍=516
+14:53:49   라운드 120/160  (shard, member) 쌍=516
+14:54:12   라운드 160/160  (shard, member) 쌍=516
+14:54:13 [interference] seed 81002 채널 돌려 담기 pn16_d0: shard 모델 108개
+14:54:36   라운드 40/160  (shard, member) 쌍=516
+14:54:59   라운드 80/160  (shard, member) 쌍=516
+14:55:22   라운드 120/160  (shard, member) 쌍=516
+14:55:44   라운드 160/160  (shard, member) 쌍=516
+14:55:46 [interference] seed 81002 무작위 walsh4_d0: shard 모델 108개
+14:56:08   라운드 40/160  (shard, member) 쌍=516
+14:56:31   라운드 80/160  (shard, member) 쌍=516
+14:56:53   라운드 120/160  (shard, member) 쌍=516
+14:57:16   라운드 160/160  (shard, member) 쌍=516
+14:57:17 [interference] seed 81002 무작위 walsh4_d0.3: shard 모델 108개
+14:57:40   라운드 40/160  (shard, member) 쌍=516
+14:58:03   라운드 80/160  (shard, member) 쌍=516
+14:58:26   라운드 120/160  (shard, member) 쌍=516
+14:58:49   라운드 160/160  (shard, member) 쌍=516
+14:58:51 [interference] seed 81002 무작위 pn16_d0: shard 모델 108개
+14:59:14   라운드 40/160  (shard, member) 쌍=516
+14:59:37   라운드 80/160  (shard, member) 쌍=516
+14:59:59   라운드 120/160  (shard, member) 쌍=516
+15:00:22   라운드 160/160  (shard, member) 쌍=516
+15:00:24 [interference] seed 81002 끝
+15:00:24 [interference] seed 81003 채널 정렬 자르기 walsh4_d0: shard 모델 108개
+15:00:47   라운드 40/160  (shard, member) 쌍=516
+15:01:10   라운드 80/160  (shard, member) 쌍=516
+15:01:34   라운드 120/160  (shard, member) 쌍=516
+15:01:56   라운드 160/160  (shard, member) 쌍=516
+15:01:58 [interference] seed 81003 채널 정렬 자르기 walsh4_d0.3: shard 모델 108개
+15:02:21   라운드 40/160  (shard, member) 쌍=516
+15:02:44   라운드 80/160  (shard, member) 쌍=516
+15:03:06   라운드 120/160  (shard, member) 쌍=516
+15:03:29   라운드 160/160  (shard, member) 쌍=516
+15:03:31 [interference] seed 81003 채널 정렬 자르기 pn16_d0: shard 모델 108개
+15:03:53   라운드 40/160  (shard, member) 쌍=516
+15:04:16   라운드 80/160  (shard, member) 쌍=516
+15:04:39   라운드 120/160  (shard, member) 쌍=516
+15:05:02   라운드 160/160  (shard, member) 쌍=516
+15:05:04 [interference] seed 81003 채널 돌려 담기 walsh4_d0: shard 모델 108개
+15:05:28   라운드 40/160  (shard, member) 쌍=516
+15:05:51   라운드 80/160  (shard, member) 쌍=516
+15:06:14   라운드 120/160  (shard, member) 쌍=516
+15:06:38   라운드 160/160  (shard, member) 쌍=516
+15:06:40 [interference] seed 81003 채널 돌려 담기 walsh4_d0.3: shard 모델 108개
+15:07:04   라운드 40/160  (shard, member) 쌍=516
+15:07:27   라운드 80/160  (shard, member) 쌍=516
+15:07:50   라운드 120/160  (shard, member) 쌍=516
+15:08:13   라운드 160/160  (shard, member) 쌍=516
+15:08:15 [interference] seed 81003 채널 돌려 담기 pn16_d0: shard 모델 108개
+15:08:37   라운드 40/160  (shard, member) 쌍=516
+15:08:59   라운드 80/160  (shard, member) 쌍=516
+15:09:22   라운드 120/160  (shard, member) 쌍=516
+15:09:44   라운드 160/160  (shard, member) 쌍=516
+15:09:46 [interference] seed 81003 무작위 walsh4_d0: shard 모델 108개
+15:10:09   라운드 40/160  (shard, member) 쌍=516
+15:10:33   라운드 80/160  (shard, member) 쌍=516
+15:10:56   라운드 120/160  (shard, member) 쌍=516
+15:11:20   라운드 160/160  (shard, member) 쌍=516
+15:11:22 [interference] seed 81003 무작위 walsh4_d0.3: shard 모델 108개
+15:11:45   라운드 40/160  (shard, member) 쌍=516
+15:12:08   라운드 80/160  (shard, member) 쌍=516
+15:12:32   라운드 120/160  (shard, member) 쌍=516
+15:12:55   라운드 160/160  (shard, member) 쌍=516
+15:12:57 [interference] seed 81003 무작위 pn16_d0: shard 모델 108개
+15:13:20   라운드 40/160  (shard, member) 쌍=516
+15:13:42   라운드 80/160  (shard, member) 쌍=516
+15:14:05   라운드 120/160  (shard, member) 쌍=516
+15:14:27   라운드 160/160  (shard, member) 쌍=516
+15:14:29 [interference] seed 81003 끝
+15:14:29 [interference] seed 81004 채널 정렬 자르기 walsh4_d0: shard 모델 108개
+15:14:51   라운드 40/160  (shard, member) 쌍=516
+15:15:14   라운드 80/160  (shard, member) 쌍=516
+15:15:36   라운드 120/160  (shard, member) 쌍=516
+15:15:59   라운드 160/160  (shard, member) 쌍=516
+15:16:01 [interference] seed 81004 채널 정렬 자르기 walsh4_d0.3: shard 모델 108개
+15:16:24   라운드 40/160  (shard, member) 쌍=516
+15:16:47   라운드 80/160  (shard, member) 쌍=516
+15:17:11   라운드 120/160  (shard, member) 쌍=516
+15:17:34   라운드 160/160  (shard, member) 쌍=516
+15:17:36 [interference] seed 81004 채널 정렬 자르기 pn16_d0: shard 모델 108개
+15:17:58   라운드 40/160  (shard, member) 쌍=516
+15:18:21   라운드 80/160  (shard, member) 쌍=516
+15:18:44   라운드 120/160  (shard, member) 쌍=516
+15:19:07   라운드 160/160  (shard, member) 쌍=516
+15:19:08 [interference] seed 81004 채널 돌려 담기 walsh4_d0: shard 모델 108개
+15:19:32   라운드 40/160  (shard, member) 쌍=516
+15:19:54   라운드 80/160  (shard, member) 쌍=516
+15:20:17   라운드 120/160  (shard, member) 쌍=516
+15:20:40   라운드 160/160  (shard, member) 쌍=516
+15:20:41 [interference] seed 81004 채널 돌려 담기 walsh4_d0.3: shard 모델 108개
+15:21:04   라운드 40/160  (shard, member) 쌍=516
+15:21:27   라운드 80/160  (shard, member) 쌍=516
+15:21:49   라운드 120/160  (shard, member) 쌍=516
+15:22:12   라운드 160/160  (shard, member) 쌍=516
+15:22:14 [interference] seed 81004 채널 돌려 담기 pn16_d0: shard 모델 108개
+15:22:37   라운드 40/160  (shard, member) 쌍=516
+15:23:00   라운드 80/160  (shard, member) 쌍=516
+15:23:23   라운드 120/160  (shard, member) 쌍=516
+15:23:46   라운드 160/160  (shard, member) 쌍=516
+15:23:48 [interference] seed 81004 무작위 walsh4_d0: shard 모델 108개
+15:24:11   라운드 40/160  (shard, member) 쌍=516
+15:24:34   라운드 80/160  (shard, member) 쌍=516
+15:24:58   라운드 120/160  (shard, member) 쌍=516
+15:25:21   라운드 160/160  (shard, member) 쌍=516
+15:25:23 [interference] seed 81004 무작위 walsh4_d0.3: shard 모델 108개
+15:25:45   라운드 40/160  (shard, member) 쌍=516
+15:26:08   라운드 80/160  (shard, member) 쌍=516
+15:26:31   라운드 120/160  (shard, member) 쌍=516
+15:26:53   라운드 160/160  (shard, member) 쌍=516
+15:26:55 [interference] seed 81004 무작위 pn16_d0: shard 모델 108개
+15:27:17   라운드 40/160  (shard, member) 쌍=516
+15:27:39   라운드 80/160  (shard, member) 쌍=516
+15:28:02   라운드 120/160  (shard, member) 쌍=516
+15:28:25   라운드 160/160  (shard, member) 쌍=516
+15:28:27 [interference] seed 81004 끝
+15:28:27 [interference] seed 81005 채널 정렬 자르기 walsh4_d0: shard 모델 108개
+15:28:50   라운드 40/160  (shard, member) 쌍=516
+15:29:13   라운드 80/160  (shard, member) 쌍=516
+15:29:36   라운드 120/160  (shard, member) 쌍=516
+15:29:59   라운드 160/160  (shard, member) 쌍=516
+15:30:01 [interference] seed 81005 채널 정렬 자르기 walsh4_d0.3: shard 모델 108개
+15:30:24   라운드 40/160  (shard, member) 쌍=516
+15:30:48   라운드 80/160  (shard, member) 쌍=516
+15:31:11   라운드 120/160  (shard, member) 쌍=516
+15:31:33   라운드 160/160  (shard, member) 쌍=516
+15:31:35 [interference] seed 81005 채널 정렬 자르기 pn16_d0: shard 모델 108개
+15:31:58   라운드 40/160  (shard, member) 쌍=516
+15:32:20   라운드 80/160  (shard, member) 쌍=516
+15:32:42   라운드 120/160  (shard, member) 쌍=516
+15:33:04   라운드 160/160  (shard, member) 쌍=516
+15:33:06 [interference] seed 81005 채널 돌려 담기 walsh4_d0: shard 모델 108개
+15:33:29   라운드 40/160  (shard, member) 쌍=516
+15:33:51   라운드 80/160  (shard, member) 쌍=516
+15:34:15   라운드 120/160  (shard, member) 쌍=516
+15:34:38   라운드 160/160  (shard, member) 쌍=516
+15:34:40 [interference] seed 81005 채널 돌려 담기 walsh4_d0.3: shard 모델 108개
+15:35:03   라운드 40/160  (shard, member) 쌍=516
+15:35:27   라운드 80/160  (shard, member) 쌍=516
+15:35:50   라운드 120/160  (shard, member) 쌍=516
+15:36:13   라운드 160/160  (shard, member) 쌍=516
+15:36:15 [interference] seed 81005 채널 돌려 담기 pn16_d0: shard 모델 108개
+15:36:38   라운드 40/160  (shard, member) 쌍=516
+15:37:01   라운드 80/160  (shard, member) 쌍=516
+15:37:24   라운드 120/160  (shard, member) 쌍=516
+15:37:46   라운드 160/160  (shard, member) 쌍=516
+15:37:48 [interference] seed 81005 무작위 walsh4_d0: shard 모델 108개
+15:38:11   라운드 40/160  (shard, member) 쌍=516
+15:38:33   라운드 80/160  (shard, member) 쌍=516
+15:38:56   라운드 120/160  (shard, member) 쌍=516
+15:39:18   라운드 160/160  (shard, member) 쌍=516
+15:39:20 [interference] seed 81005 무작위 walsh4_d0.3: shard 모델 108개
+15:39:43   라운드 40/160  (shard, member) 쌍=516
+15:40:06   라운드 80/160  (shard, member) 쌍=516
+15:40:30   라운드 120/160  (shard, member) 쌍=516
+15:40:54   라운드 160/160  (shard, member) 쌍=516
+15:40:55 [interference] seed 81005 무작위 pn16_d0: shard 모델 108개
+15:41:18   라운드 40/160  (shard, member) 쌍=516
+15:41:41   라운드 80/160  (shard, member) 쌍=516
+15:42:03   라운드 120/160  (shard, member) 쌍=516
+15:42:26   라운드 160/160  (shard, member) 쌍=516
+15:42:28 [interference] seed 81005 끝
+15:42:28 ===== interference 끝: 완료, 70.0분 =====
+15:42:28 ===== codes: 시간 오차에 강한 코드(ZCZ) 시작 =====
+15:42:28 [codes] seed 81001 시간 오차 상한 0.0: shard 모델 36개
+15:42:36   라운드 40/160  (shard, member) 쌍=172
+15:42:44   라운드 80/160  (shard, member) 쌍=172
+15:42:51   라운드 120/160  (shard, member) 쌍=172
+15:42:59   라운드 160/160  (shard, member) 쌍=172
+15:43:00 [codes] seed 81001 시간 오차 상한 0.5: shard 모델 180개
+15:43:36   라운드 40/160  (shard, member) 쌍=860
+15:44:12   라운드 80/160  (shard, member) 쌍=860
+15:44:49   라운드 120/160  (shard, member) 쌍=860
+15:45:25   라운드 160/160  (shard, member) 쌍=860
+15:45:28 [codes] seed 81001 시간 오차 상한 1.5: shard 모델 180개
+15:46:05   라운드 40/160  (shard, member) 쌍=860
+15:46:43   라운드 80/160  (shard, member) 쌍=860
+15:47:20   라운드 120/160  (shard, member) 쌍=860
+15:47:57   라운드 160/160  (shard, member) 쌍=860
+15:48:00 [codes] seed 81001 끝
+15:48:00 [codes] seed 81002 시간 오차 상한 0.0: shard 모델 36개
+15:48:07   라운드 40/160  (shard, member) 쌍=172
+15:48:15   라운드 80/160  (shard, member) 쌍=172
+15:48:23   라운드 120/160  (shard, member) 쌍=172
+15:48:30   라운드 160/160  (shard, member) 쌍=172
+15:48:31 [codes] seed 81002 시간 오차 상한 0.5: shard 모델 180개
+15:49:08   라운드 40/160  (shard, member) 쌍=860
+15:49:45   라운드 80/160  (shard, member) 쌍=860
+15:50:21   라운드 120/160  (shard, member) 쌍=860
+15:50:58   라운드 160/160  (shard, member) 쌍=860
+15:51:01 [codes] seed 81002 시간 오차 상한 1.5: shard 모델 180개
+15:51:37   라운드 40/160  (shard, member) 쌍=860
+15:52:14   라운드 80/160  (shard, member) 쌍=860
+15:52:52   라운드 120/160  (shard, member) 쌍=860
+15:53:29   라운드 160/160  (shard, member) 쌍=860
+15:53:32 [codes] seed 81002 끝
+15:53:32 [codes] seed 81003 시간 오차 상한 0.0: shard 모델 36개
+15:53:40   라운드 40/160  (shard, member) 쌍=172
+15:53:47   라운드 80/160  (shard, member) 쌍=172
+15:53:55   라운드 120/160  (shard, member) 쌍=172
+15:54:02   라운드 160/160  (shard, member) 쌍=172
+15:54:03 [codes] seed 81003 시간 오차 상한 0.5: shard 모델 180개
+15:54:40   라운드 40/160  (shard, member) 쌍=860
+15:55:18   라운드 80/160  (shard, member) 쌍=860
+15:55:54   라운드 120/160  (shard, member) 쌍=860
+15:56:31   라운드 160/160  (shard, member) 쌍=860
+15:56:34 [codes] seed 81003 시간 오차 상한 1.5: shard 모델 180개
+15:57:10   라운드 40/160  (shard, member) 쌍=860
+15:57:47   라운드 80/160  (shard, member) 쌍=860
+15:58:24   라운드 120/160  (shard, member) 쌍=860
+15:59:02   라운드 160/160  (shard, member) 쌍=860
+15:59:05 [codes] seed 81003 끝
+15:59:05 [codes] seed 81004 시간 오차 상한 0.0: shard 모델 36개
+15:59:13   라운드 40/160  (shard, member) 쌍=172
+15:59:20   라운드 80/160  (shard, member) 쌍=172
+15:59:28   라운드 120/160  (shard, member) 쌍=172
+15:59:35   라운드 160/160  (shard, member) 쌍=172
+15:59:36 [codes] seed 81004 시간 오차 상한 0.5: shard 모델 180개
+16:00:13   라운드 40/160  (shard, member) 쌍=860
+16:00:50   라운드 80/160  (shard, member) 쌍=860
+16:01:27   라운드 120/160  (shard, member) 쌍=860
+16:02:04   라운드 160/160  (shard, member) 쌍=860
+16:02:07 [codes] seed 81004 시간 오차 상한 1.5: shard 모델 180개
+16:02:44   라운드 40/160  (shard, member) 쌍=860
+16:03:20   라운드 80/160  (shard, member) 쌍=860
+16:03:57   라운드 120/160  (shard, member) 쌍=860
+16:04:34   라운드 160/160  (shard, member) 쌍=860
+16:04:37 [codes] seed 81004 끝
+16:04:37 [codes] seed 81005 시간 오차 상한 0.0: shard 모델 36개
+16:04:45   라운드 40/160  (shard, member) 쌍=172
+16:04:52   라운드 80/160  (shard, member) 쌍=172
+16:05:00   라운드 120/160  (shard, member) 쌍=172
+16:05:08   라운드 160/160  (shard, member) 쌍=172
+16:05:08 [codes] seed 81005 시간 오차 상한 0.5: shard 모델 180개
+16:05:45   라운드 40/160  (shard, member) 쌍=860
+16:06:22   라운드 80/160  (shard, member) 쌍=860
+16:07:00   라운드 120/160  (shard, member) 쌍=860
+16:07:36   라운드 160/160  (shard, member) 쌍=860
+16:07:39 [codes] seed 81005 시간 오차 상한 1.5: shard 모델 180개
+16:08:16   라운드 40/160  (shard, member) 쌍=860
+16:08:53   라운드 80/160  (shard, member) 쌍=860
+16:09:29   라운드 120/160  (shard, member) 쌍=860
+16:10:06   라운드 160/160  (shard, member) 쌍=860
+16:10:09 [codes] seed 81005 끝
+16:10:09 ===== codes 끝: 완료, 27.7분 =====
+16:10:09 ===== placement: 같은 자원을 쓰는 shard 의 배정 시작 =====
+16:10:09 [placement] seed 81001 무작위: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:10:27   라운드 40/160  (shard, member) 쌍=396
+16:10:44   라운드 80/160  (shard, member) 쌍=396
+16:11:02   라운드 120/160  (shard, member) 쌍=396
+16:11:19   라운드 160/160  (shard, member) 쌍=396
+16:11:21 [placement] seed 81001 채널 정렬 자르기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:11:38   라운드 40/160  (shard, member) 쌍=396
+16:11:55   라운드 80/160  (shard, member) 쌍=396
+16:12:12   라운드 120/160  (shard, member) 쌍=396
+16:12:30   라운드 160/160  (shard, member) 쌍=396
+16:12:31 [placement] seed 81001 채널 돌려 담기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:12:49   라운드 40/160  (shard, member) 쌍=396
+16:13:06   라운드 80/160  (shard, member) 쌍=396
+16:13:23   라운드 120/160  (shard, member) 쌍=396
+16:13:40   라운드 160/160  (shard, member) 쌍=396
+16:13:42 [placement] seed 81001 채널 고정 구간: shard 크기 [6, 4, 1, 9], shard 모델 69개
+16:13:56   라운드 40/160  (shard, member) 쌍=339
+16:14:11   라운드 80/160  (shard, member) 쌍=339
+16:14:25   라운드 120/160  (shard, member) 쌍=339
+16:14:39   라운드 160/160  (shard, member) 쌍=339
+16:14:41 [placement] seed 81001 ID 해시: shard 크기 [4, 4, 4, 8], shard 모델 84개
+16:14:58   라운드 40/160  (shard, member) 쌍=396
+16:15:14   라운드 80/160  (shard, member) 쌍=396
+16:15:31   라운드 120/160  (shard, member) 쌍=396
+16:15:48   라운드 160/160  (shard, member) 쌍=396
+16:15:50 [placement] seed 81001 끝
+16:15:50 [placement] seed 81002 무작위: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:16:08   라운드 40/160  (shard, member) 쌍=396
+16:16:25   라운드 80/160  (shard, member) 쌍=396
+16:16:43   라운드 120/160  (shard, member) 쌍=396
+16:17:00   라운드 160/160  (shard, member) 쌍=396
+16:17:02 [placement] seed 81002 채널 정렬 자르기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:17:19   라운드 40/160  (shard, member) 쌍=396
+16:17:37   라운드 80/160  (shard, member) 쌍=396
+16:17:54   라운드 120/160  (shard, member) 쌍=396
+16:18:11   라운드 160/160  (shard, member) 쌍=396
+16:18:12 [placement] seed 81002 채널 돌려 담기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:18:30   라운드 40/160  (shard, member) 쌍=396
+16:18:48   라운드 80/160  (shard, member) 쌍=396
+16:19:05   라운드 120/160  (shard, member) 쌍=396
+16:19:22   라운드 160/160  (shard, member) 쌍=396
+16:19:24 [placement] seed 81002 채널 고정 구간: shard 크기 [1, 4, 10, 5], shard 모델 69개
+16:19:38   라운드 40/160  (shard, member) 쌍=339
+16:19:53   라운드 80/160  (shard, member) 쌍=339
+16:20:07   라운드 120/160  (shard, member) 쌍=339
+16:20:22   라운드 160/160  (shard, member) 쌍=339
+16:20:23 [placement] seed 81002 ID 해시: shard 크기 [7, 8, 3, 2], shard 모델 84개
+16:20:40   라운드 40/160  (shard, member) 쌍=396
+16:20:57   라운드 80/160  (shard, member) 쌍=396
+16:21:14   라운드 120/160  (shard, member) 쌍=396
+16:21:31   라운드 160/160  (shard, member) 쌍=396
+16:21:32 [placement] seed 81002 끝
+16:21:32 [placement] seed 81003 무작위: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:21:49   라운드 40/160  (shard, member) 쌍=396
+16:22:07   라운드 80/160  (shard, member) 쌍=396
+16:22:24   라운드 120/160  (shard, member) 쌍=396
+16:22:42   라운드 160/160  (shard, member) 쌍=396
+16:22:43 [placement] seed 81003 채널 정렬 자르기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:23:01   라운드 40/160  (shard, member) 쌍=396
+16:23:19   라운드 80/160  (shard, member) 쌍=396
+16:23:36   라운드 120/160  (shard, member) 쌍=396
+16:23:53   라운드 160/160  (shard, member) 쌍=396
+16:23:54 [placement] seed 81003 채널 돌려 담기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:24:12   라운드 40/160  (shard, member) 쌍=396
+16:24:29   라운드 80/160  (shard, member) 쌍=396
+16:24:47   라운드 120/160  (shard, member) 쌍=396
+16:25:04   라운드 160/160  (shard, member) 쌍=396
+16:25:06 [placement] seed 81003 채널 고정 구간: shard 크기 [6, 4, 4, 6], shard 모델 84개
+16:25:23   라운드 40/160  (shard, member) 쌍=396
+16:25:40   라운드 80/160  (shard, member) 쌍=396
+16:25:57   라운드 120/160  (shard, member) 쌍=396
+16:26:14   라운드 160/160  (shard, member) 쌍=396
+16:26:16 [placement] seed 81003 ID 해시: shard 크기 [10, 5, 2, 3], shard 모델 84개
+16:26:33   라운드 40/160  (shard, member) 쌍=396
+16:26:50   라운드 80/160  (shard, member) 쌍=396
+16:27:07   라운드 120/160  (shard, member) 쌍=396
+16:27:24   라운드 160/160  (shard, member) 쌍=396
+16:27:25 [placement] seed 81003 끝
+16:27:25 [placement] seed 81004 무작위: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:27:42   라운드 40/160  (shard, member) 쌍=396
+16:27:59   라운드 80/160  (shard, member) 쌍=396
+16:28:17   라운드 120/160  (shard, member) 쌍=396
+16:28:35   라운드 160/160  (shard, member) 쌍=396
+16:28:36 [placement] seed 81004 채널 정렬 자르기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:28:54   라운드 40/160  (shard, member) 쌍=396
+16:29:11   라운드 80/160  (shard, member) 쌍=396
+16:29:29   라운드 120/160  (shard, member) 쌍=396
+16:29:46   라운드 160/160  (shard, member) 쌍=396
+16:29:47 [placement] seed 81004 채널 돌려 담기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:30:04   라운드 40/160  (shard, member) 쌍=396
+16:30:22   라운드 80/160  (shard, member) 쌍=396
+16:30:39   라운드 120/160  (shard, member) 쌍=396
+16:30:56   라운드 160/160  (shard, member) 쌍=396
+16:30:58 [placement] seed 81004 채널 고정 구간: shard 크기 [5, 4, 7, 4], shard 모델 84개
+16:31:15   라운드 40/160  (shard, member) 쌍=396
+16:31:32   라운드 80/160  (shard, member) 쌍=396
+16:31:49   라운드 120/160  (shard, member) 쌍=396
+16:32:06   라운드 160/160  (shard, member) 쌍=396
+16:32:08 [placement] seed 81004 ID 해시: shard 크기 [5, 7, 4, 4], shard 모델 84개
+16:32:25   라운드 40/160  (shard, member) 쌍=396
+16:32:42   라운드 80/160  (shard, member) 쌍=396
+16:32:59   라운드 120/160  (shard, member) 쌍=396
+16:33:16   라운드 160/160  (shard, member) 쌍=396
+16:33:18 [placement] seed 81004 끝
+16:33:18 [placement] seed 81005 무작위: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:33:35   라운드 40/160  (shard, member) 쌍=396
+16:33:52   라운드 80/160  (shard, member) 쌍=396
+16:34:09   라운드 120/160  (shard, member) 쌍=396
+16:34:27   라운드 160/160  (shard, member) 쌍=396
+16:34:28 [placement] seed 81005 채널 정렬 자르기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:34:45   라운드 40/160  (shard, member) 쌍=396
+16:35:03   라운드 80/160  (shard, member) 쌍=396
+16:35:21   라운드 120/160  (shard, member) 쌍=396
+16:35:38   라운드 160/160  (shard, member) 쌍=396
+16:35:39 [placement] seed 81005 채널 돌려 담기: shard 크기 [5, 5, 5, 5], shard 모델 84개
+16:35:56   라운드 40/160  (shard, member) 쌍=396
+16:36:14   라운드 80/160  (shard, member) 쌍=396
+16:36:31   라운드 120/160  (shard, member) 쌍=396
+16:36:48   라운드 160/160  (shard, member) 쌍=396
+16:36:50 [placement] seed 81005 채널 고정 구간: shard 크기 [4, 9, 4, 3], shard 모델 84개
+16:37:07   라운드 40/160  (shard, member) 쌍=396
+16:37:24   라운드 80/160  (shard, member) 쌍=396
+16:37:41   라운드 120/160  (shard, member) 쌍=396
+16:37:58   라운드 160/160  (shard, member) 쌍=396
+16:38:00 [placement] seed 81005 ID 해시: shard 크기 [3, 8, 3, 6], shard 모델 84개
+16:38:17   라운드 40/160  (shard, member) 쌍=396
+16:38:34   라운드 80/160  (shard, member) 쌍=396
+16:38:51   라운드 120/160  (shard, member) 쌍=396
+16:39:08   라운드 160/160  (shard, member) 쌍=396
+16:39:09 [placement] seed 81005 끝
+16:39:09 ===== placement 끝: 완료, 29.0분 =====
+16:39:09 ===== control: E1 shard 밖 제어 (전체 정렬·스케줄링) 시작 =====
+16:39:09 [control] seed 81001 20dB: shard 모델 72개
+16:39:22   라운드 40/160  (shard, member) 쌍=308
+16:39:34   라운드 80/160  (shard, member) 쌍=308
+16:39:46   라운드 120/160  (shard, member) 쌍=308
+16:39:59   라운드 160/160  (shard, member) 쌍=308
+16:40:00 [control] seed 81001 0dB: shard 모델 72개
+16:40:12   라운드 40/160  (shard, member) 쌍=308
+16:40:25   라운드 80/160  (shard, member) 쌍=308
+16:40:38   라운드 120/160  (shard, member) 쌍=308
+16:40:50   라운드 160/160  (shard, member) 쌍=308
+16:40:51 [control] seed 81001 -10dB: shard 모델 72개
+16:41:05   라운드 40/160  (shard, member) 쌍=308
+16:41:17   라운드 80/160  (shard, member) 쌍=308
+16:41:30   라운드 120/160  (shard, member) 쌍=308
+16:41:42   라운드 160/160  (shard, member) 쌍=308
+16:41:44 [control] seed 81001 끝
+16:41:44 [control] seed 81002 20dB: shard 모델 72개
+16:41:56   라운드 40/160  (shard, member) 쌍=308
+16:42:08   라운드 80/160  (shard, member) 쌍=308
+16:42:21   라운드 120/160  (shard, member) 쌍=308
+16:42:33   라운드 160/160  (shard, member) 쌍=308
+16:42:35 [control] seed 81002 0dB: shard 모델 72개
+16:42:47   라운드 40/160  (shard, member) 쌍=308
+16:43:00   라운드 80/160  (shard, member) 쌍=308
+16:43:12   라운드 120/160  (shard, member) 쌍=308
+16:43:25   라운드 160/160  (shard, member) 쌍=308
+16:43:26 [control] seed 81002 -10dB: shard 모델 72개
+16:43:38   라운드 40/160  (shard, member) 쌍=308
+16:43:50   라운드 80/160  (shard, member) 쌍=308
+16:44:03   라운드 120/160  (shard, member) 쌍=308
+16:44:15   라운드 160/160  (shard, member) 쌍=308
+16:44:16 [control] seed 81002 끝
+16:44:16 [control] seed 81003 20dB: shard 모델 72개
+16:44:29   라운드 40/160  (shard, member) 쌍=308
+16:44:41   라운드 80/160  (shard, member) 쌍=308
+16:44:53   라운드 120/160  (shard, member) 쌍=308
+16:45:05   라운드 160/160  (shard, member) 쌍=308
+16:45:07 [control] seed 81003 0dB: shard 모델 72개
+16:45:19   라운드 40/160  (shard, member) 쌍=308
+16:45:31   라운드 80/160  (shard, member) 쌍=308
+16:45:43   라운드 120/160  (shard, member) 쌍=308
+16:45:56   라운드 160/160  (shard, member) 쌍=308
+16:45:57 [control] seed 81003 -10dB: shard 모델 72개
+16:46:09   라운드 40/160  (shard, member) 쌍=308
+16:46:22   라운드 80/160  (shard, member) 쌍=308
+16:46:34   라운드 120/160  (shard, member) 쌍=308
+16:46:47   라운드 160/160  (shard, member) 쌍=308
+16:46:48 [control] seed 81003 끝
+16:46:48 [control] seed 81004 20dB: shard 모델 72개
+16:47:01   라운드 40/160  (shard, member) 쌍=308
+16:47:13   라운드 80/160  (shard, member) 쌍=308
+16:47:26   라운드 120/160  (shard, member) 쌍=308
+16:47:38   라운드 160/160  (shard, member) 쌍=308
+16:47:39 [control] seed 81004 0dB: shard 모델 72개
+16:47:52   라운드 40/160  (shard, member) 쌍=308
+16:48:04   라운드 80/160  (shard, member) 쌍=308
+16:48:17   라운드 120/160  (shard, member) 쌍=308
+16:48:29   라운드 160/160  (shard, member) 쌍=308
+16:48:30 [control] seed 81004 -10dB: shard 모델 72개
+16:48:43   라운드 40/160  (shard, member) 쌍=308
+16:48:55   라운드 80/160  (shard, member) 쌍=308
+16:49:08   라운드 120/160  (shard, member) 쌍=308
+16:49:20   라운드 160/160  (shard, member) 쌍=308
+16:49:21 [control] seed 81004 끝
+16:49:21 [control] seed 81005 20dB: shard 모델 72개
+16:49:34   라운드 40/160  (shard, member) 쌍=308
+16:49:46   라운드 80/160  (shard, member) 쌍=308
+16:49:58   라운드 120/160  (shard, member) 쌍=308
+16:50:11   라운드 160/160  (shard, member) 쌍=308
+16:50:12 [control] seed 81005 0dB: shard 모델 72개
+16:50:24   라운드 40/160  (shard, member) 쌍=308
+16:50:37   라운드 80/160  (shard, member) 쌍=308
+16:50:49   라운드 120/160  (shard, member) 쌍=308
+16:51:01   라운드 160/160  (shard, member) 쌍=308
+16:51:02 [control] seed 81005 -10dB: shard 모델 72개
+16:51:15   라운드 40/160  (shard, member) 쌍=308
+16:51:27   라운드 80/160  (shard, member) 쌍=308
+16:51:39   라운드 120/160  (shard, member) 쌍=308
+16:51:51   라운드 160/160  (shard, member) 쌍=308
+16:51:53 [control] seed 81005 끝
+16:51:53 ===== control 끝: 완료, 12.7분 =====
+16:51:53 ===== stability: E2 배정 안정성과 재학습 범위 시작 =====
+16:51:55 [stability] 계산 끝 (채널 draw 305개)
+16:51:55 [stability] seed 81001: shard 모델 115개
+16:52:17   라운드 40/160  (shard, member) 쌍=539
+16:52:39   라운드 80/160  (shard, member) 쌍=539
+16:53:00   라운드 120/160  (shard, member) 쌍=539
+16:53:22   라운드 160/160  (shard, member) 쌍=539
+16:53:24 [stability] seed 81001 끝
+16:53:24 [stability] seed 81002: shard 모델 110개
+16:53:45   라운드 40/160  (shard, member) 쌍=553
+16:54:07   라운드 80/160  (shard, member) 쌍=553
+16:54:29   라운드 120/160  (shard, member) 쌍=553
+16:54:51   라운드 160/160  (shard, member) 쌍=553
+16:54:53 [stability] seed 81002 끝
+16:54:53 [stability] seed 81003: shard 모델 110개
+16:55:15   라운드 40/160  (shard, member) 쌍=563
+16:55:37   라운드 80/160  (shard, member) 쌍=563
+16:55:59   라운드 120/160  (shard, member) 쌍=563
+16:56:21   라운드 160/160  (shard, member) 쌍=563
+16:56:23 [stability] seed 81003 끝
+16:56:23 [stability] seed 81004: shard 모델 115개
+16:56:44   라운드 40/160  (shard, member) 쌍=547
+16:57:06   라운드 80/160  (shard, member) 쌍=547
+16:57:27   라운드 120/160  (shard, member) 쌍=547
+16:57:49   라운드 160/160  (shard, member) 쌍=547
+16:57:50 [stability] seed 81004 끝
+16:57:50 [stability] seed 81005: shard 모델 113개
+16:58:12   라운드 40/160  (shard, member) 쌍=539
+16:58:34   라운드 80/160  (shard, member) 쌍=539
+16:58:55   라운드 120/160  (shard, member) 쌍=539
+16:59:17   라운드 160/160  (shard, member) 쌍=539
+16:59:19 [stability] seed 81005 끝
+16:59:19 ===== stability 끝: 완료, 7.4분 =====
+16:59:19 ===== differencing: E3 삭제 전후 합의 차분 시작 =====
+16:59:19 [differencing] seed 81001: shard 모델 228개, 11라운드
+16:59:30 [differencing] seed 81001 끝
+16:59:30 [differencing] seed 81002: shard 모델 228개, 11라운드
+16:59:42 [differencing] seed 81002 끝
+16:59:42 [differencing] seed 81003: shard 모델 228개, 11라운드
+16:59:53 [differencing] seed 81003 끝
+16:59:53 [differencing] seed 81004: shard 모델 228개, 11라운드
+17:00:05 [differencing] seed 81004 끝
+17:00:05 [differencing] seed 81005: shard 모델 228개, 11라운드
+17:00:16 [differencing] seed 81005 끝
+17:00:16 ===== differencing 끝: 완료, 1.0분 =====
+17:00:16 ===== dropout: E4 학습 중 이탈 시작 =====
+17:00:16 [dropout] seed 81001: shard 모델 96개
+17:00:27   라운드 40/160  (shard, member) 쌍=248
+17:00:37   라운드 80/160  (shard, member) 쌍=233
+17:00:47   라운드 120/160  (shard, member) 쌍=238
+17:00:57   라운드 160/160  (shard, member) 쌍=228
+17:00:59 [dropout] seed 81001 끝
+17:00:59 [dropout] seed 81002: shard 모델 96개
+17:01:09   라운드 40/160  (shard, member) 쌍=248
+17:01:19   라운드 80/160  (shard, member) 쌍=265
+17:01:30   라운드 120/160  (shard, member) 쌍=250
+17:01:40   라운드 160/160  (shard, member) 쌍=265
+17:01:41 [dropout] seed 81002 끝
+17:01:41 [dropout] seed 81003: shard 모델 96개
+17:01:51   라운드 40/160  (shard, member) 쌍=255
+17:02:01   라운드 80/160  (shard, member) 쌍=243
+17:02:11   라운드 120/160  (shard, member) 쌍=243
+17:02:21   라운드 160/160  (shard, member) 쌍=246
+17:02:23 [dropout] seed 81003 끝
+17:02:23 [dropout] seed 81004: shard 모델 96개
+17:02:33   라운드 40/160  (shard, member) 쌍=225
+17:02:43   라운드 80/160  (shard, member) 쌍=226
+17:02:53   라운드 120/160  (shard, member) 쌍=255
+17:03:03   라운드 160/160  (shard, member) 쌍=208
+17:03:04 [dropout] seed 81004 끝
+17:03:04 [dropout] seed 81005: shard 모델 96개
+17:03:14   라운드 40/160  (shard, member) 쌍=243
+17:03:24   라운드 80/160  (shard, member) 쌍=206
+17:03:34   라운드 120/160  (shard, member) 쌍=228
+17:03:44   라운드 160/160  (shard, member) 쌍=221
+17:03:46 [dropout] seed 81005 끝
+17:03:46 ===== dropout 끝: 완료, 3.5분 =====
+17:03:46 ===== lifecycle: E2b 배정·삭제 처리의 누적 비용 시작 =====
+17:03:48 [lifecycle] 계산 끝 (사건 흐름 205개)
+17:03:48 [lifecycle] seed 81001: GPU 확인 (삭제 대상 참여 라운드 120)
+17:03:54 [lifecycle] seed 81001 GPU 끝
+17:03:55 [lifecycle] seed 81002: GPU 확인 (삭제 대상 참여 라운드 120)
+17:04:02 [lifecycle] seed 81002 GPU 끝
+17:04:02 [lifecycle] seed 81003: GPU 확인 (삭제 대상 참여 라운드 80)
+17:04:09 [lifecycle] seed 81003 GPU 끝
+17:04:09 [lifecycle] seed 81004: GPU 확인 (삭제 대상 참여 라운드 80)
+17:04:16 [lifecycle] seed 81004 GPU 끝
+17:04:16 [lifecycle] seed 81005: GPU 확인 (삭제 대상 참여 라운드 120)
+17:04:23 [lifecycle] seed 81005 GPU 끝
+17:04:24 ===== lifecycle 끝: 완료, 0.6분 =====
+17:04:24 ===== subcarrier: R1~R3 부반송파·시간 배치 (FDMA, OFDMA, 혼합, 보호 대역) 시작 =====
+17:04:24 [subcarrier] seed 81001: 설정 16개, shard 모델 288개
+17:05:48   라운드 40/160  (shard, member) 쌍=1376
+17:07:10   라운드 80/160  (shard, member) 쌍=1376
+17:08:31   라운드 120/160  (shard, member) 쌍=1376
+17:09:53   라운드 160/160  (shard, member) 쌍=1376
+17:09:57 [subcarrier] seed 81001: 설정 11개, shard 모델 198개
+17:10:57   라운드 40/160  (shard, member) 쌍=946
+17:11:54   라운드 80/160  (shard, member) 쌍=946
+17:12:52   라운드 120/160  (shard, member) 쌍=946
+17:13:48   라운드 160/160  (shard, member) 쌍=946
+17:13:51 [subcarrier] seed 81001: 설정 11개, shard 모델 198개
+17:14:52   라운드 40/160  (shard, member) 쌍=946
+17:15:59   라운드 80/160  (shard, member) 쌍=946
+17:17:06   라운드 120/160  (shard, member) 쌍=946
+17:18:12   라운드 160/160  (shard, member) 쌍=946
+17:18:15 [subcarrier] seed 81001 끝
+17:18:15 [subcarrier] seed 81002: 설정 16개, shard 모델 288개
+17:19:39   라운드 40/160  (shard, member) 쌍=1376
+17:21:00   라운드 80/160  (shard, member) 쌍=1376
+17:22:22   라운드 120/160  (shard, member) 쌍=1376
+17:23:44   라운드 160/160  (shard, member) 쌍=1376
+17:23:49 [subcarrier] seed 81002: 설정 11개, shard 모델 198개
+17:24:48   라운드 40/160  (shard, member) 쌍=946
+17:25:45   라운드 80/160  (shard, member) 쌍=946
+17:26:40   라운드 120/160  (shard, member) 쌍=946
+17:27:34   라운드 160/160  (shard, member) 쌍=946
+17:27:38 [subcarrier] seed 81002: 설정 11개, shard 모델 198개
+17:28:40   라운드 40/160  (shard, member) 쌍=946
+17:29:45   라운드 80/160  (shard, member) 쌍=946
+17:30:49   라운드 120/160  (shard, member) 쌍=946
+17:31:49   라운드 160/160  (shard, member) 쌍=946
+17:31:53 [subcarrier] seed 81002 끝
+17:31:53 [subcarrier] seed 81003: 설정 16개, shard 모델 288개
+17:33:13   라운드 40/160  (shard, member) 쌍=1376
+17:34:37   라운드 80/160  (shard, member) 쌍=1376
+17:36:01   라운드 120/160  (shard, member) 쌍=1376
+17:37:26   라운드 160/160  (shard, member) 쌍=1376
+17:37:31 [subcarrier] seed 81003: 설정 11개, shard 모델 198개
+17:38:27   라운드 40/160  (shard, member) 쌍=946
+17:39:22   라운드 80/160  (shard, member) 쌍=946
+17:40:19   라운드 120/160  (shard, member) 쌍=946
+17:41:18   라운드 160/160  (shard, member) 쌍=946
+17:41:21 [subcarrier] seed 81003: 설정 11개, shard 모델 198개
+17:42:32   라운드 40/160  (shard, member) 쌍=946
+17:44:50   라운드 80/160  (shard, member) 쌍=946
+17:46:31   라운드 120/160  (shard, member) 쌍=946
+17:47:35   라운드 160/160  (shard, member) 쌍=946
+17:47:38 [subcarrier] seed 81003 끝
+17:47:38 [subcarrier] seed 81004: 설정 16개, shard 모델 288개
+17:49:04   라운드 40/160  (shard, member) 쌍=1376
+17:50:26   라운드 80/160  (shard, member) 쌍=1376
+17:51:45   라운드 120/160  (shard, member) 쌍=1376
+17:53:10   라운드 160/160  (shard, member) 쌍=1376
+17:53:15 [subcarrier] seed 81004: 설정 11개, shard 모델 198개
+17:54:14   라운드 40/160  (shard, member) 쌍=946
+17:55:13   라운드 80/160  (shard, member) 쌍=946
+17:56:09   라운드 120/160  (shard, member) 쌍=946
+17:57:04   라운드 160/160  (shard, member) 쌍=946
+17:57:08 [subcarrier] seed 81004: 설정 11개, shard 모델 198개
+17:58:16   라운드 40/160  (shard, member) 쌍=946
+17:59:21   라운드 80/160  (shard, member) 쌍=946
+18:00:27   라운드 120/160  (shard, member) 쌍=946
+18:01:32   라운드 160/160  (shard, member) 쌍=946
+18:01:35 [subcarrier] seed 81004 끝
+18:01:35 [subcarrier] seed 81005: 설정 16개, shard 모델 288개
+18:02:57   라운드 40/160  (shard, member) 쌍=1376
+18:04:19   라운드 80/160  (shard, member) 쌍=1376
+18:05:44   라운드 120/160  (shard, member) 쌍=1376
+18:07:09   라운드 160/160  (shard, member) 쌍=1376
+18:07:14 [subcarrier] seed 81005: 설정 11개, shard 모델 198개
+18:08:12   라운드 40/160  (shard, member) 쌍=946
+18:09:08   라운드 80/160  (shard, member) 쌍=946
+18:10:04   라운드 120/160  (shard, member) 쌍=946
+18:11:04   라운드 160/160  (shard, member) 쌍=946
+18:11:07 [subcarrier] seed 81005: 설정 11개, shard 모델 198개
+18:12:16   라운드 40/160  (shard, member) 쌍=946
+18:13:28   라운드 80/160  (shard, member) 쌍=946
+18:14:33   라운드 120/160  (shard, member) 쌍=946
+18:15:38   라운드 160/160  (shard, member) 쌍=946
+18:15:42 [subcarrier] seed 81005 끝
+18:15:42 ===== subcarrier 끝: 완료, 71.3분 =====
+18:15:42 요약: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\aircomp_sisa\runs\20261007_140839_DESKTOP-QUB35TD\SUMMARY_KO.md
