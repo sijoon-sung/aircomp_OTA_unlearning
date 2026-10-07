@@ -6,6 +6,10 @@
   interference 같은 자원에 동시에 보내는 shard 사이의 간섭과 near-far: 도착 크기를 어떻게 맞추면 흔적이 줄어드는가
   codes        시간 오차에 강한 코드(ZCZ)로 간섭을 구조적으로 0 으로 만들 때의 대가
   placement    같은 자원을 쓰는 shard 의 배정이 바꾸는 것들 (near-far, 흔적, 삭제 비용, 노출, 안정성)
+  control      E1 직교 블록에서도 전력·스케줄링을 shard 밖 정보로 정하면 정확성이 깨지는가
+  stability    E2 불안정한 배정의 재학습 범위, 해시 + 국소 병합
+  differencing E3 재학습 때 삭제 전후 shard 합의 차분으로 개인 update 가 드러나는가, 새 초기값 재학습
+  dropout      E4 학습 중 이탈이 shard 합의 노출과 잡음에 주는 영향, 최소 인원 규칙
   (deletion.py 는 interference·codes·placement 가 함께 쓰는 학습 경로 구성과 측정)
 """
 from types import SimpleNamespace

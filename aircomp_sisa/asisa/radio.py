@@ -36,6 +36,9 @@
           대가: 칩 수 (gap+1) 배, 0 칩 구간의 잡음도 모이므로 잡음 (gap+1) 배.
   일반식: 수신 템플릿 t, 송신 코드 c 일 때 g_ik = t_k . c_i^eff / (t_k . c_k), 잡음 분산 = sigma2 |t_k|^2 / (t_k . c_k)^2.
   칩 타이밍 오차 delta = m + f (정수 m, 소수 f):  c^eff = (1 - f) roll(c, m) + f roll(c, m + 1).
+전력 정렬 global (orth): 같은 system 의 모든 shard 가 system 전체 최약 member 의 한계 beta 로 보낸다 (기존 AirComp 관행을 shard 마다 그대로 쓴 경우).
+  삭제 대상이 그 최약 member 이면 '처음부터 없었다면' 의 세계에서 모든 shard 의 전력과 잡음이 달라진다.
+스케줄링 sched=('global', q): system 전체 채널의 하위 q 분위수 미만 client 는 송신하지 않는다. 한 명이 빠지면 문턱이 바뀌어 다른 shard 의 참여자가 바뀔 수 있다.
 전력 정렬 weakest (code 전용): 같은 자원을 쓰는 shard 들이 모두 가장 약한 shard 의 최대 크기 beta = max_k beta_min_k 로 도착한다.
   도착 크기가 같아지는 선택 중 잡음이 가장 작지만, 각 shard 의 전력이 다른 shard 의 채널에 의존한다.
 """
@@ -50,7 +53,8 @@ from .util import key
 class RadioConfig:
     sigma2: float = 0.01        # 수신 잡음 분산 (실수 심볼·칩당). 명목 SNR = P / sigma2
     eps: float = EPS            # 반복 기준 허용 집계 오차. 0 이면 반복하지 않음
-    align: str = 'maxpow'       # 'maxpow' | 'common' | 'weakest'(code 전용)
+    align: str = 'maxpow'       # 'maxpow' | 'common' | 'weakest'(code) | 'global'(orth: 같은 system 전체의 최약 member 기준)
+    sched: tuple = None         # None | ('shard'|'global', q): 이번 라운드 채널이 (shard 안 | system 전체) 하위 q 분위수 미만이면 송신하지 않음
     target: float = None        # common 의 목표 집계 오차 (None 이면 eps)
     n_nom: float = None         # common 의 명목 인원 (None 이면 그 shard 의 인원)
     mux: str = 'orth'           # 'orth' | 'code' | 'ideal'
@@ -100,7 +104,7 @@ def plan(cfg, n, hmin, D, L=1, beta_force=None):
         beta0 = (cfg.n_nom or n) * math.sqrt(target * L / (D * cfg.sigma2))
         if beta_min <= beta0:
             return beta0, 1
-    elif cfg.align == 'weakest':
+    elif cfg.align in ('weakest', 'global'):
         beta_min = max(beta_min, beta_force)
     elif cfg.align != 'maxpow':
         raise ValueError(cfg.align)
@@ -111,10 +115,11 @@ def _gaussian(noise_key, shape, device, dtype, std):
     g = torch.Generator(device=device).manual_seed(int(noise_key))
     return torch.randn(*shape, generator=g, device=device, dtype=dtype) * std
 
-def transmit_orth(cfg, X, hs, noise_key):
-    """직교 블록 하나로 shard 평균을 받는다. X [n, D], hs [n]. 반환: 추정 [D], Ledger, 진단."""
+def transmit_orth(cfg, X, hs, noise_key, beta_force=None):
+    """직교 블록 하나로 shard 평균을 받는다. X [n, D], hs [n]. beta_force: align='global' 에서 system 이 정한 beta.
+    반환: 추정 [D], Ledger, 진단."""
     n, D = X.shape
-    beta, R = plan(cfg, n, float(np.min(hs)), D)
+    beta, R = plan(cfg, n, float(np.min(hs)), D, 1, beta_force)
     alpha = beta / n
     h = torch.as_tensor(hs, dtype=X.dtype, device=X.device)
     S = X / (h[:, None] * beta)
@@ -184,7 +189,7 @@ class CodeSystem:
         반환: {코드: 추정 [D]}, {코드: Ledger}, {코드: 진단}."""
         cfg = self.cfg
         D = shards[0][1].shape[1]; dev = shards[0][1].device; dt = shards[0][1].dtype
-        bf = max(cfg.C / (float(np.min(hs)) * math.sqrt(cfg.P * D)) for _, _, _, hs in shards) if cfg.align == 'weakest' else None
+        bf = max(cfg.C / (float(np.min(hs)) * math.sqrt(cfg.P * D)) for _, _, _, hs in shards) if cfg.align in ('weakest', 'global') else None
         plans = {s: plan(cfg, X.shape[0], float(np.min(hs)), D, self.pgain, bf) for s, X, ids, hs in shards}
         Rmax = max(R for _, R in plans.values())
         Z = [_gaussian(noise_key if r == 0 else key(noise_key, 'slot', r), (self.chips, D), dev, dt, math.sqrt(cfg.sigma2)) for r in range(Rmax)]

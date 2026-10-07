@@ -103,6 +103,11 @@ def main():
     dw = CodeSystem(RadioConfig(sigma2=1e-30, mux='code', L=4, delay_max=0.3, align='weakest'), K, 1, delays * 0.3).transmit(shards(), 7)[2]
     bw = [dw[k]['beta'] for k in range(K)]
     check('약한 shard 에 맞춤: 모든 shard 의 beta = 가장 약한 shard 의 최대 크기', max(bw) / min(bw) - 1 < 1e-12 and abs(bw[0] - max(bm)) < 1e-12)
+    # 직교 블록 전체 정렬: system 이 정한 beta (전체 최약 노드 기준) 로 보낸다
+    bf = 1.0 / (0.05 * math.sqrt(D))
+    r, l, d = transmit_orth(RadioConfig(sigma2=.01, align='global'), X[1], hs[1], 1, bf)
+    check('직교 블록 전체 정렬: beta = 전체 최약 노드 기준, 전력 상한 준수', abs(d['beta'] - bf) < 1e-12 and l.max_power_ratio <= 1 + 1e-6,
+          f'beta 비 {d["beta"] / plan(RadioConfig(sigma2=.01), 5, 0.1, D)[0]:.2f} (shard 자기 기준 대비)')
     print('모두 통과' if OK else '실패 항목 있음')
     sys.exit(0 if OK else 1)
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """AirComp-SISA 실험 실행기.
 
-    python run.py                          # noise -> resources -> assignment -> interference -> codes -> placement
+    python run.py                          # 전부 (noise ... placement, control, stability, differencing, dropout)
+    python run.py --only control,stability,differencing,dropout   # E1~E4
     python run.py --only interference      # 일부만 (쉼표로 여러 개)
     python run.py --quick                  # seed 1개, 20라운드, 축소 격자 (동작 확인용, 수치는 의미 없음)
 
@@ -15,8 +16,8 @@ from asisa import config
 from asisa.data import ensure_dataset
 from asisa.util import setup_torch, pick_device, Logger, environment, write_json, PowerMeter
 
-ORDER = ['noise', 'resources', 'assignment', 'interference', 'codes', 'placement']
-TITLE = {'noise': '허용 집계 잡음', 'resources': '자원·삭제 비용·노출', 'assignment': '배정의 학습·삭제 비용', 'interference': 'shard 간 간섭과 도착 크기 맞추기', 'codes': '시간 오차에 강한 코드(ZCZ)', 'placement': '같은 자원을 쓰는 shard 의 배정'}
+ORDER = ['noise', 'resources', 'assignment', 'interference', 'codes', 'placement', 'control', 'stability', 'differencing', 'dropout']
+TITLE = {'noise': '허용 집계 잡음', 'resources': '자원·삭제 비용·노출', 'assignment': '배정의 학습·삭제 비용', 'interference': 'shard 간 간섭과 도착 크기 맞추기', 'codes': '시간 오차에 강한 코드(ZCZ)', 'placement': '같은 자원을 쓰는 shard 의 배정', 'control': 'E1 shard 밖 제어 (전체 정렬·스케줄링)', 'stability': 'E2 배정 안정성과 재학습 범위', 'differencing': 'E3 삭제 전후 합의 차분', 'dropout': 'E4 학습 중 이탈'}
 
 def main():
     for st in (sys.stdout, sys.stderr):

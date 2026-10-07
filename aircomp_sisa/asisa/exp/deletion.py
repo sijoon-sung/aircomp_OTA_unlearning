@@ -15,6 +15,10 @@ import numpy as np
 from ..fl import Shard, per_round
 from ..trainer import disagreement
 
+def tv(pa, pb):
+    """test 표본별 확률 분포의 total variation 거리 평균 (예측 불일치보다 덜 포화된다)."""
+    return float(0.5 * (pa - pb).abs().sum(1).mean())
+
 def add_system(shards, radio, track, tag, groups, slot_of, targets, rc, T):
     """groups: shard 별 client 목록 (빈 shard 는 건너뜀), slot_of: shard -> 코드 번호, targets: 이름 -> client."""
     live = [k for k, g in enumerate(groups) if g]
@@ -42,6 +46,8 @@ def measure(c, W, P, leds, diags, ix, tag, groups, slot_of, targets, hmin, focus
                   max_leak_to_own=max(dg[k]['leak_energy'] / max(dg[k]['own_energy'], 1e-30) for k in live),
                   acc_shard=float(np.mean([c.ev.acc(p) for p in src.values()])), acc_ens=c.ev.ensemble(list(src.values()))['test'],
                   max_power_ratio=max(l.max_power_ratio for l in ld.values()), sizes=[len(g) for g in groups])
+    ae = c.ev.ensemble(list(alt.values())); se = c.ev.ensemble(list(src.values()))
+    sysrow['ens_yard_dis'] = disagreement(se['ptest'], ae['ptest']); sysrow['ens_yard_tv'] = tv(se['ptest'], ae['ptest'])
     rows = []
     for tn, u in targets.items():
         cu = next(k for k in live if u in groups[k])
@@ -49,6 +55,7 @@ def measure(c, W, P, leds, diags, ix, tag, groups, slot_of, targets, hmin, focus
         sisa = c.ev.ensemble([pick(f'{tag}|rep|{tn}') if k == cu else src[k] for k in live]); full = c.ev.ensemble(list(ref.values()))
         lr = leds[ix[f'{tag}|rep|{tn}']]
         sysrow[f'ens_dis_{tn}'] = disagreement(sisa['ptest'], full['ptest'])
+        sysrow[f'ens_tv_{tn}'] = tv(sisa['ptest'], full['ptest'])
         sysrow[f'del_energy_{tn}'] = lr.energy; sysrow[f'del_compute_{tn}'] = lr.compute_calls; sysrow[f'del_acc_{tn}'] = sisa['test']
         for k in live:
             if k == cu or k not in ref:

@@ -26,9 +26,9 @@ class Net(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-def init_vector(seed, device):
-    """모든 shard 가 같은 초기 파라미터 벡터에서 시작한다."""
+def init_vector(seed, device, tag=''):
+    """모든 shard 가 같은 초기 파라미터 벡터에서 시작한다. tag 를 주면 다른 초기값 (재학습을 새 초기값으로 시작할 때)."""
     with torch.random.fork_rng(devices=[]):
-        torch.manual_seed(key(seed, 'init') % 2 ** 31)
+        torch.manual_seed((key(seed, 'init', tag) if tag else key(seed, 'init')) % 2 ** 31)
         m = Net()
     return torch.cat([p.detach().flatten() for p in m.parameters()]).to(device)
