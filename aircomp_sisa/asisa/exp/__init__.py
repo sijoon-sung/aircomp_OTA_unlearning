@@ -12,6 +12,10 @@
   dropout      E4 학습 중 이탈이 shard 합의 노출과 잡음에 주는 영향, 최소 인원 규칙
   lifecycle    E2b 삭제·참여가 이어질 때 배정·삭제 처리 방법별 누적 비용과 노출
   subcarrier   R1~R3 FDMA, 채널 인식 OFDMA, TDMA+FDMA 혼합, 보호 대역
+  retrain      B 학습 도중 삭제 → 같은 자원에서 재학습할 때 그 전송이 다른 shard 에 남기는 흔적
+  earlystop    D 멈출 라운드를 전체 검증 정확도로 정하면 (전체 결정) 다른 shard 모델이 달라지는가
+  sharding     A·E shard 수 K 에 따른 정확도 (제대로 배운 상태) 와 기기 쪽 추론·내려받기 비용
+  fairness     C 삭제 재학습 비용을 사람별로 누가 내는가 (요청자는 떠나고 조원이 냄)
   (deletion.py 는 interference·codes·placement 가 함께 쓰는 학습 경로 구성과 측정)
 """
 from types import SimpleNamespace

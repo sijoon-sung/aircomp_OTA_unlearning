@@ -18,7 +18,7 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 
 | 옵션 | 기본 | 설명 |
 |---|---|---|
-| `--only` | 전부 | `noise,resources,assignment,interference,codes,placement,control,stability,differencing,dropout,lifecycle,subcarrier` 중 일부 |
+| `--only` | 전부 | `noise,resources,assignment,interference,codes,placement,control,stability,differencing,dropout,lifecycle,subcarrier,retrain,earlystop,sharding,fairness` 중 일부 |
 | `--seeds` / `--rounds` | 5 / 160 | |
 | `--eps` | 10 | 허용 집계 오차. noise 실험의 측정값 |
 | `--chunk` | 64 | vmap 묶음 크기. GPU 메모리가 부족하면 32 |
@@ -42,6 +42,10 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 | `lifecycle` (E2b) | 삭제·신규 참여가 이어질 때 배정·삭제 처리 방법별 누적 계산·통신·지연과 노출 (해시, 병합, 정지, 묶음, slicing, 부하 상한 해시, K 조정). slicing 정확성·정지의 정확도 손해 GPU 확인 | 새로 추가 |
 | `subcarrier` (R1~R3) | TDMA 대신 FDMA·채널 인식 OFDMA·TDMA+FDMA 혼합·보호 대역으로 shard 를 배치할 때 라운드 시간, 잡음·반복, 주파수 오차로 인한 shard 간 섞임과 흔적 | 새로 추가 |
 | `placement` | 같은 자원을 쓰는 shard 를 어떻게 배정해야 하는가. 배정이 near-far, 흔적, 삭제 비용, 최소 인원(노출), 삭제 안정성을 어떻게 바꾸는가 | 새로 추가 |
+| `retrain` (B) | 학습 도중 삭제가 와서 같은 자원에서 재학습하면, 그 전송이 학습 중인 다른 shard 에 흔적을 남기는가 (직교 블록이면 0, 코드 분할이면 >0). 지금까지는 재학습을 따로 돌려 이 흔적을 안 쟀다 | 2026-10-08 추가 |
+| `earlystop` (D) | 멈출 라운드를 앙상블 검증 정확도 (전체 결정) 로 정하면 u 와 무관한 shard 의 최종 모델이 달라지는가. shard 자기 검증으로 정하면 0 | 2026-10-08 추가 |
+| `sharding` (A·E) | 로컬 step 을 늘려 제대로 배운 상태에서 K 에 따른 정확도 (조 모델 하나 vs 앙상블), 잡음이 정확도를 올리는 현상이 사라지는가, 기기 쪽 추론 내려받기 (K×32×D bit)·연산 (K 배) | 2026-10-08 추가 |
+| `fairness` (C) | 삭제 재학습 비용을 사람별로 세면 누가 내는가. 요청자는 떠나고 조원이 낸다. 삭제가 한 묶음에 몰릴 때의 쏠림 (지니, 최대/평균) | 2026-10-08 추가 |
 
 각 실험 파일 맨 위 설명에 설정·측정·판정 기준을 적었다. 보고서의 "읽는 법" 절에 가설이 맞을 때 보여야 하는 모습을 적었다.
 

@@ -24,6 +24,7 @@ def _free():
 class LocalTrainer:
     def __init__(self, data, seed, device, chunk=64):
         self.data, self.seed, self.device, self.chunk = data, seed, device, chunk
+        self.steps = LOCAL_STEPS          # 라운드당 로컬 step (sharding 실험이 잠시 바꿈)
         net = Net().to(device)
         self.names = [n for n, _ in net.named_parameters()]
         self.shapes = [p.shape for _, p in net.named_parameters()]
@@ -67,7 +68,7 @@ class LocalTrainer:
         out = torch.empty_like(W)
         for s in range(0, W.shape[0], self.chunk):
             e = min(W.shape[0], s + self.chunk); p = W[s:e]
-            for step in range(LOCAL_STEPS):
+            for step in range(self.steps):
                 idx = torch.as_tensor(np.stack([self.batch(clients[j], t, step, salts[j]) for j in range(s, e)]), device=W.device)
                 p = p - LR * self.flat(self._vgrad(self.unflat(p), self.data['x'][idx], self.data['y'][idx]))
             u = p - W[s:e]
