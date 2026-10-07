@@ -1,0 +1,22 @@
+{
+ "retrain": {
+  "status": "완료",
+  "seconds": 215.37834215164185,
+  "gpu_board_Wh": 17.16963206375804
+ },
+ "earlystop": {
+  "status": "완료",
+  "seconds": 66.77082204818726,
+  "gpu_board_Wh": 5.800545355931586
+ },
+ "sharding": {
+  "status": "완료",
+  "seconds": 882.9007050991058,
+  "gpu_board_Wh": 83.64546165823803
+ },
+ "fairness": {
+  "status": "완료",
+  "seconds": 2.0154924392700195,
+  "gpu_board_Wh": 0
+ }
+}

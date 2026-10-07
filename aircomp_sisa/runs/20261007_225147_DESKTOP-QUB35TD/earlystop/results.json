@@ -1,0 +1,1516 @@
+{
+ "rows": [
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 70,
+   "differs": 1.0,
+   "rel": 0.2438286691904068
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 70,
+   "differs": 1.0,
+   "rel": 0.26245617866516113
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 70,
+   "differs": 1.0,
+   "rel": 0.22852623462677002
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 140,
+   "t_ref": 140,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "best",
+   "shard": 0,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "target",
+   "shard": 0,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "patience",
+   "shard": 0,
+   "t_src": 150,
+   "t_ref": 120,
+   "differs": 1.0,
+   "rel": 0.13317948579788208
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 120,
+   "differs": 1.0,
+   "rel": 0.12382633239030838
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 120,
+   "differs": 1.0,
+   "rel": 0.09608134627342224
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "local",
+   "shard": 0,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 140,
+   "t_ref": 140,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 0,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 0,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 0,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 0,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 0,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 0,
+   "t_src": 140,
+   "t_ref": 130,
+   "differs": 1.0,
+   "rel": 0.03669992834329605
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 140,
+   "t_ref": 130,
+   "differs": 1.0,
+   "rel": 0.04374675452709198
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 140,
+   "t_ref": 130,
+   "differs": 1.0,
+   "rel": 0.08469357341527939
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 0,
+   "t_src": 160,
+   "t_ref": 60,
+   "differs": 1.0,
+   "rel": 0.24698257446289062
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 60,
+   "differs": 1.0,
+   "rel": 0.2804712653160095
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 60,
+   "differs": 1.0,
+   "rel": 0.3528394401073456
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 0,
+   "t_src": 140,
+   "t_ref": 140,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 140,
+   "differs": 1.0,
+   "rel": 0.04476238787174225
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 140,
+   "differs": 1.0,
+   "rel": 0.08527301251888275
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 140,
+   "differs": 1.0,
+   "rel": 0.08382543176412582
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 140,
+   "t_ref": 120,
+   "differs": 1.0,
+   "rel": 0.06914473325014114
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 140,
+   "t_ref": 120,
+   "differs": 1.0,
+   "rel": 0.12323099374771118
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 140,
+   "t_ref": 120,
+   "differs": 1.0,
+   "rel": 0.12283025681972504
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 0,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 0,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 0,
+   "t_src": 140,
+   "t_ref": 160,
+   "differs": 1.0,
+   "rel": 0.0796363353729248
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 140,
+   "t_ref": 160,
+   "differs": 1.0,
+   "rel": 0.08278000354766846
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 140,
+   "t_ref": 160,
+   "differs": 1.0,
+   "rel": 0.0767727866768837
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 0,
+   "t_src": 140,
+   "t_ref": 140,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 150,
+   "differs": 1.0,
+   "rel": 0.07049795985221863
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 150,
+   "differs": 1.0,
+   "rel": 0.05894041433930397
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 150,
+   "differs": 1.0,
+   "rel": 0.05354703590273857
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 120,
+   "t_ref": 120,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 140,
+   "t_ref": 100,
+   "differs": 1.0,
+   "rel": 0.1691351979970932
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 140,
+   "t_ref": 100,
+   "differs": 1.0,
+   "rel": 0.13837963342666626
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 140,
+   "t_ref": 100,
+   "differs": 1.0,
+   "rel": 0.13309545814990997
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 110,
+   "t_ref": 110,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 110,
+   "t_ref": 110,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 110,
+   "t_ref": 110,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 140,
+   "t_ref": 140,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "best",
+   "shard": 1,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "best",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "best",
+   "shard": 3,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "target",
+   "shard": 1,
+   "t_src": 110,
+   "t_ref": 110,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "target",
+   "shard": 2,
+   "t_src": 110,
+   "t_ref": 110,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "target",
+   "shard": 3,
+   "t_src": 110,
+   "t_ref": 110,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "patience",
+   "shard": 1,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "patience",
+   "shard": 2,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "patience",
+   "shard": 3,
+   "t_src": 130,
+   "t_ref": 130,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "local",
+   "shard": 1,
+   "t_src": 140,
+   "t_ref": 140,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "local",
+   "shard": 2,
+   "t_src": 160,
+   "t_ref": 160,
+   "differs": 0.0,
+   "rel": 0.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "local",
+   "shard": 3,
+   "t_src": 150,
+   "t_ref": 150,
+   "differs": 0.0,
+   "rel": 0.0
+  }
+ ],
+ "systems": [
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "best",
+   "acc": 0.712399959564209,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "target",
+   "acc": 0.6900999546051025,
+   "t_mean": 130.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "patience",
+   "acc": 0.6904999613761902,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81001,
+   "target": "weakest",
+   "rule": "local",
+   "acc": 0.7073000073432922,
+   "t_mean": 155.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "best",
+   "acc": 0.712399959564209,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "target",
+   "acc": 0.6900999546051025,
+   "t_mean": 130.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "patience",
+   "acc": 0.6904999613761902,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81001,
+   "target": "median",
+   "rule": "local",
+   "acc": 0.7073000073432922,
+   "t_mean": 155.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "best",
+   "acc": 0.7081999778747559,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "target",
+   "acc": 0.6966999769210815,
+   "t_mean": 120.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "patience",
+   "acc": 0.6782000064849854,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81002,
+   "target": "weakest",
+   "rule": "local",
+   "acc": 0.7055999636650085,
+   "t_mean": 137.5
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "best",
+   "acc": 0.7081999778747559,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "target",
+   "acc": 0.6966999769210815,
+   "t_mean": 120.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "patience",
+   "acc": 0.6782000064849854,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81002,
+   "target": "median",
+   "rule": "local",
+   "acc": 0.7055999636650085,
+   "t_mean": 137.5
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "best",
+   "acc": 0.7170999646186829,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "target",
+   "acc": 0.710599958896637,
+   "t_mean": 140.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "patience",
+   "acc": 0.6992999911308289,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81003,
+   "target": "weakest",
+   "rule": "local",
+   "acc": 0.7254999876022339,
+   "t_mean": 152.5
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "best",
+   "acc": 0.7170999646186829,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "target",
+   "acc": 0.710599958896637,
+   "t_mean": 140.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "patience",
+   "acc": 0.6992999911308289,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81003,
+   "target": "median",
+   "rule": "local",
+   "acc": 0.7254999876022339,
+   "t_mean": 152.5
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "best",
+   "acc": 0.6966999769210815,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "target",
+   "acc": 0.6902999877929688,
+   "t_mean": 120.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "patience",
+   "acc": 0.6855999827384949,
+   "t_mean": 140.0
+  },
+  {
+   "seed": 81004,
+   "target": "weakest",
+   "rule": "local",
+   "acc": 0.6969000101089478,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "best",
+   "acc": 0.6966999769210815,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "target",
+   "acc": 0.6902999877929688,
+   "t_mean": 120.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "patience",
+   "acc": 0.6855999827384949,
+   "t_mean": 140.0
+  },
+  {
+   "seed": 81004,
+   "target": "median",
+   "rule": "local",
+   "acc": 0.6969000101089478,
+   "t_mean": 150.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "best",
+   "acc": 0.6877999901771545,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "target",
+   "acc": 0.6692999601364136,
+   "t_mean": 110.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "patience",
+   "acc": 0.6560999751091003,
+   "t_mean": 130.0
+  },
+  {
+   "seed": 81005,
+   "target": "weakest",
+   "rule": "local",
+   "acc": 0.675599992275238,
+   "t_mean": 147.5
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "best",
+   "acc": 0.6877999901771545,
+   "t_mean": 160.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "target",
+   "acc": 0.6692999601364136,
+   "t_mean": 110.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "patience",
+   "acc": 0.6560999751091003,
+   "t_mean": 130.0
+  },
+  {
+   "seed": 81005,
+   "target": "median",
+   "rule": "local",
+   "acc": 0.675599992275238,
+   "t_mean": 147.5
+  }
+ ],
+ "setting": {
+  "K": 4,
+  "T": 160,
+  "checkpoints": [
+   10,
+   20,
+   30,
+   40,
+   50,
+   60,
+   70,
+   80,
+   90,
+   100,
+   110,
+   120,
+   130,
+   140,
+   150,
+   160
+  ],
+  "eps": 10.0,
+  "seeds": [
+   81001,
+   81002,
+   81003,
+   81004,
+   81005
+  ]
+ }
+}

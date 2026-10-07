@@ -1,0 +1,137 @@
+22:51:47 결과 폴더: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\aircomp_sisa\runs\20261007_225147_DESKTOP-QUB35TD
+22:51:47 장치: cuda
+22:51:47 ===== retrain: B 재학습 전송이 다른 shard 에 남기는 흔적 시작 =====
+22:51:47 [retrain] seed 81001: shard 모델 54개, 삭제 라운드 80
+22:51:58   라운드 40/240  (shard, member) 쌍=237
+22:52:08   라운드 80/240  (shard, member) 쌍=237
+22:52:18   라운드 120/240  (shard, member) 쌍=231
+22:52:28   라운드 160/240  (shard, member) 쌍=231
+22:52:29   라운드 200/240  (shard, member) 쌍=24
+22:52:30   라운드 240/240  (shard, member) 쌍=24
+22:52:31 [retrain] seed 81001 끝
+22:52:31 [retrain] seed 81002: shard 모델 54개, 삭제 라운드 80
+22:52:41   라운드 40/240  (shard, member) 쌍=237
+22:52:51   라운드 80/240  (shard, member) 쌍=237
+22:53:01   라운드 120/240  (shard, member) 쌍=231
+22:53:11   라운드 160/240  (shard, member) 쌍=231
+22:53:12   라운드 200/240  (shard, member) 쌍=24
+22:53:13   라운드 240/240  (shard, member) 쌍=24
+22:53:14 [retrain] seed 81002 끝
+22:53:14 [retrain] seed 81003: shard 모델 54개, 삭제 라운드 80
+22:53:24   라운드 40/240  (shard, member) 쌍=237
+22:53:34   라운드 80/240  (shard, member) 쌍=237
+22:53:44   라운드 120/240  (shard, member) 쌍=231
+22:53:53   라운드 160/240  (shard, member) 쌍=231
+22:53:54   라운드 200/240  (shard, member) 쌍=24
+22:53:55   라운드 240/240  (shard, member) 쌍=24
+22:53:56 [retrain] seed 81003 끝
+22:53:56 [retrain] seed 81004: shard 모델 54개, 삭제 라운드 80
+22:54:06   라운드 40/240  (shard, member) 쌍=237
+22:54:17   라운드 80/240  (shard, member) 쌍=237
+22:54:26   라운드 120/240  (shard, member) 쌍=231
+22:54:36   라운드 160/240  (shard, member) 쌍=231
+22:54:37   라운드 200/240  (shard, member) 쌍=24
+22:54:38   라운드 240/240  (shard, member) 쌍=24
+22:54:39 [retrain] seed 81004 끝
+22:54:39 [retrain] seed 81005: shard 모델 54개, 삭제 라운드 80
+22:54:50   라운드 40/240  (shard, member) 쌍=237
+22:55:00   라운드 80/240  (shard, member) 쌍=237
+22:55:09   라운드 120/240  (shard, member) 쌍=231
+22:55:19   라운드 160/240  (shard, member) 쌍=231
+22:55:20   라운드 200/240  (shard, member) 쌍=24
+22:55:21   라운드 240/240  (shard, member) 쌍=24
+22:55:22 [retrain] seed 81005 끝
+22:55:22 ===== retrain 끝: 완료, 3.6분 =====
+22:55:22 ===== earlystop: D 전체 검증으로 조기 종료 시작 =====
+22:55:22 [earlystop] seed 81001: shard 모델 12개, 체크포인트 16개
+22:55:24   라운드 40/160  (shard, member) 쌍=58
+22:55:27   라운드 80/160  (shard, member) 쌍=58
+22:55:29   라운드 120/160  (shard, member) 쌍=58
+22:55:31   라운드 160/160  (shard, member) 쌍=58
+22:55:35 [earlystop] seed 81001 끝
+22:55:35 [earlystop] seed 81002: shard 모델 12개, 체크포인트 16개
+22:55:38   라운드 40/160  (shard, member) 쌍=58
+22:55:40   라운드 80/160  (shard, member) 쌍=58
+22:55:42   라운드 120/160  (shard, member) 쌍=58
+22:55:45   라운드 160/160  (shard, member) 쌍=58
+22:55:49 [earlystop] seed 81002 끝
+22:55:49 [earlystop] seed 81003: shard 모델 12개, 체크포인트 16개
+22:55:51   라운드 40/160  (shard, member) 쌍=58
+22:55:53   라운드 80/160  (shard, member) 쌍=58
+22:55:56   라운드 120/160  (shard, member) 쌍=58
+22:55:58   라운드 160/160  (shard, member) 쌍=58
+22:56:02 [earlystop] seed 81003 끝
+22:56:02 [earlystop] seed 81004: shard 모델 12개, 체크포인트 16개
+22:56:04   라운드 40/160  (shard, member) 쌍=58
+22:56:07   라운드 80/160  (shard, member) 쌍=58
+22:56:09   라운드 120/160  (shard, member) 쌍=58
+22:56:11   라운드 160/160  (shard, member) 쌍=58
+22:56:15 [earlystop] seed 81004 끝
+22:56:15 [earlystop] seed 81005: shard 모델 12개, 체크포인트 16개
+22:56:18   라운드 40/160  (shard, member) 쌍=58
+22:56:20   라운드 80/160  (shard, member) 쌍=58
+22:56:22   라운드 120/160  (shard, member) 쌍=58
+22:56:25   라운드 160/160  (shard, member) 쌍=58
+22:56:29 [earlystop] seed 81005 끝
+22:56:29 ===== earlystop 끝: 완료, 1.1분 =====
+22:56:29 ===== sharding: A·E shard 수에 따른 정확도와 추론 비용 시작 =====
+22:56:29 [sharding] seed 81001, 로컬 step 2: shard 모델 44개
+22:56:36   라운드 40/160  (shard, member) 쌍=200
+22:56:44   라운드 80/160  (shard, member) 쌍=200
+22:56:51   라운드 120/160  (shard, member) 쌍=200
+22:56:59   라운드 160/160  (shard, member) 쌍=200
+22:56:59 [sharding] seed 81001, 로컬 step 10: shard 모델 44개
+22:57:35   라운드 40/160  (shard, member) 쌍=200
+22:58:12   라운드 80/160  (shard, member) 쌍=200
+22:58:48   라운드 120/160  (shard, member) 쌍=200
+22:59:24   라운드 160/160  (shard, member) 쌍=200
+22:59:25 [sharding] seed 81001 끝
+22:59:25 [sharding] seed 81002, 로컬 step 2: shard 모델 44개
+22:59:33   라운드 40/160  (shard, member) 쌍=200
+22:59:40   라운드 80/160  (shard, member) 쌍=200
+22:59:48   라운드 120/160  (shard, member) 쌍=200
+22:59:55   라운드 160/160  (shard, member) 쌍=200
+22:59:56 [sharding] seed 81002, 로컬 step 10: shard 모델 44개
+23:00:32   라운드 40/160  (shard, member) 쌍=200
+23:01:09   라운드 80/160  (shard, member) 쌍=200
+23:01:45   라운드 120/160  (shard, member) 쌍=200
+23:02:21   라운드 160/160  (shard, member) 쌍=200
+23:02:22 [sharding] seed 81002 끝
+23:02:22 [sharding] seed 81003, 로컬 step 2: shard 모델 44개
+23:02:29   라운드 40/160  (shard, member) 쌍=200
+23:02:37   라운드 80/160  (shard, member) 쌍=200
+23:02:44   라운드 120/160  (shard, member) 쌍=200
+23:02:52   라운드 160/160  (shard, member) 쌍=200
+23:02:53 [sharding] seed 81003, 로컬 step 10: shard 모델 44개
+23:03:29   라운드 40/160  (shard, member) 쌍=200
+23:04:05   라운드 80/160  (shard, member) 쌍=200
+23:04:41   라운드 120/160  (shard, member) 쌍=200
+23:05:18   라운드 160/160  (shard, member) 쌍=200
+23:05:18 [sharding] seed 81003 끝
+23:05:18 [sharding] seed 81004, 로컬 step 2: shard 모델 44개
+23:05:26   라운드 40/160  (shard, member) 쌍=200
+23:05:33   라운드 80/160  (shard, member) 쌍=200
+23:05:41   라운드 120/160  (shard, member) 쌍=200
+23:05:49   라운드 160/160  (shard, member) 쌍=200
+23:05:49 [sharding] seed 81004, 로컬 step 10: shard 모델 44개
+23:06:26   라운드 40/160  (shard, member) 쌍=200
+23:07:02   라운드 80/160  (shard, member) 쌍=200
+23:07:38   라운드 120/160  (shard, member) 쌍=200
+23:08:14   라운드 160/160  (shard, member) 쌍=200
+23:08:15 [sharding] seed 81004 끝
+23:08:15 [sharding] seed 81005, 로컬 step 2: shard 모델 44개
+23:08:23   라운드 40/160  (shard, member) 쌍=200
+23:08:30   라운드 80/160  (shard, member) 쌍=200
+23:08:38   라운드 120/160  (shard, member) 쌍=200
+23:08:45   라운드 160/160  (shard, member) 쌍=200
+23:08:46 [sharding] seed 81005, 로컬 step 10: shard 모델 44개
+23:09:22   라운드 40/160  (shard, member) 쌍=200
+23:09:58   라운드 80/160  (shard, member) 쌍=200
+23:10:34   라운드 120/160  (shard, member) 쌍=200
+23:11:11   라운드 160/160  (shard, member) 쌍=200
+23:11:12 [sharding] seed 81005 끝
+23:11:12 ===== sharding 끝: 완료, 14.7분 =====
+23:11:12 ===== fairness: C 남의 삭제 비용을 누가 내는가 시작 =====
+23:11:14 [fairness] 계산 끝 (사건 흐름 205개 × 방법 5 × 시나리오 2)
+23:11:14 ===== fairness 끝: 완료, 0.0분 =====
+23:11:14 요약: C:\Users\DISLAB\.gemini\antigravity\scratch\aircomp_OTA_unlearning\aircomp_sisa\runs\20261007_225147_DESKTOP-QUB35TD\SUMMARY_KO.md
