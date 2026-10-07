@@ -1,0 +1,33 @@
+{
+ "noise": {
+  "eps_star": 10,
+  "status": "완료",
+  "seconds": 286.79937982559204,
+  "gpu_board_Wh": 25.73926194496784
+ },
+ "resources": {
+  "status": "완료",
+  "seconds": 546.3125298023224,
+  "gpu_board_Wh": 44.22735058656567
+ },
+ "assignment": {
+  "status": "완료",
+  "seconds": 594.9190227985382,
+  "gpu_board_Wh": 52.575458041310974
+ },
+ "interference": {
+  "status": "완료",
+  "seconds": 4188.755558490753,
+  "gpu_board_Wh": 353.35818987205624
+ },
+ "codes": {
+  "status": "완료",
+  "seconds": 1654.5363111495972,
+  "gpu_board_Wh": 144.3624834854298
+ },
+ "placement": {
+  "status": "완료",
+  "seconds": 1726.6847138404846,
+  "gpu_board_Wh": 149.85182739170492
+ }
+}
