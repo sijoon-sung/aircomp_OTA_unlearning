@@ -14,7 +14,12 @@ import math
 import numpy as np
 from .lifecycle import assign, active, N_MIN, T0, GAP, EVENTS, P_DEL, SLICES, METHOD_KO
 from ..config import N_CLIENTS
-from ..util import key, write_json, fmt, pct, table, select, mean
+from ..util import key, write_json, fmt, pct, table, select
+
+def mean(rows, field):
+    """비용이 0 인 사건 흐름 (요청자 집합이 비어 삭제가 없던 경우) 은 비율이 정의되지 않으므로 빼고 평균한다."""
+    v = [r[field] for r in rows if r[field] == r[field]]
+    return float(np.mean(v)) if v else float('nan')
 
 NAME = 'fairness'
 METHODS = ['full', 'rank_rr', 'hash', 'hash_merge', 'hash_merge_slice']
@@ -94,7 +99,8 @@ def run(cfg, log):
                        pct(mean(s, 'top5_share')), pct(mean(s, 'zero_payers'))])
         L += [table(['방법', '전체 낸 라운드', '요청한 적 없는 사람이 낸 비율', '최대 / 평균', '지니', '상위 5명 비율', '한 번도 안 낸 사람'], tb), '']
     L += ['## 읽는 법', '',
-          '- shard 없음은 모두가 모든 삭제를 같이 치르므로 지니가 0 에 가깝고 최대/평균이 1 이다. 비용은 크지만 고르게 든다.',
+          '- shard 없음은 모두가 모든 삭제를 같이 치르므로 가장 고르다 (지니가 0 이 아닌 것은 늦게 참여한 사람과 먼저 떠난 사람이 덜 내기 때문). 비용은 크지만 고르게 든다.',
+          '- 사건 흐름의 70% 가 삭제라 참여자 대부분이 결국 삭제를 요청한다. 그래서 "요청한 적 없는 사람이 낸 비율" 은 50% 안팎에 머물고, 방법 사이 차이는 최대/평균·지니·상위 5명 비율에서 본다.',
           '- 해시 계열은 전체 비용이 작은 대신 u 의 shard 사람들만 낸다. 삭제가 한 묶음에 몰리면 (one_shard) 그 사람들의 최대/평균과 상위 5명 비율이 커져야 한다.',
           '- "요청한 적 없는 사람이 낸 비율" 이 100% 에 가까우면, 삭제 비용은 전부 요청하지 않은 사람이 내는 것이다. 요청자에게 비용을 지우는 설계 '
           '(예: 요청자의 마지막 송신이 재학습 첫 라운드를 대신 보냄) 가 있는지가 다음 질문이다.', '']

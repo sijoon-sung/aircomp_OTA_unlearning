@@ -106,7 +106,9 @@ def run(cfg, log):
         if not rs:
             continue
         m = mean(rs, 'rel_retrain'); mx = max(r['rel_retrain'] for r in rs)
-        L.append(f'- {MUX_KO[name]}: 재학습 흔적 평균 {fmt(m, 4)}, 최대 {fmt(mx, 4)} → ' + ('0 (직교라 재학습 전송이 남에게 닿지 않음)' if mx < 1e-3 else '재학습 전송이 다른 shard 를 바꿈'))
+        floor = max(r['rel_retrain'] for r in select(rows, mux=muxes[0][0])) if muxes[0][1].get('mux') == 'orth' else 1e-3   # 직교 블록의 값 = vmap 부동소수점 바닥
+        L.append(f'- {MUX_KO[name]}: 재학습 흔적 평균 {fmt(m, 4)}, 최대 {fmt(mx, 4)} → '
+                 + ('부동소수점 바닥 (재학습 전송이 남에게 닿지 않음)' if mx <= floor * 1.01 else f'재학습 전송이 다른 shard 를 바꿈 (바닥 {fmt(floor, 4)} 의 {mx / max(floor, 1e-12):.0f}배)'))
     if len(muxes) > 1:
         for name, _ in muxes[1:]:
             m, se, n = paired(rows, 'rel_total', {}, dict(mux=name), dict(mux=muxes[0][0]), keys=('seed', 'shard'))

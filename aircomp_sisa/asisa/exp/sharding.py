@@ -76,11 +76,13 @@ def run(cfg, log):
                 L.append(f'- 로컬 step {steps}: K={K} 앙상블 − K=1 = {pp(mean(rk, "acc_ens") - mean(r1, "acc_ens"))}, 조 모델 하나 − K=1 = {pp(mean(rk, "acc_single") - mean(r1, "acc_ens"))}')
         r4 = select(rows, steps=steps, K=4, noise=0.0); r4n = select(rows, steps=steps, K=4, noise=eps)
         if r4 and r4n:
-            L.append(f'- 로컬 step {steps}: K=4 에서 eps 잡음의 효과 = {pp(mean(r4n, "acc_ens") - mean(r4, "acc_ens"))} '
-                     + ('(잡음이 도움 = 아직 덜 배운 상태)' if mean(r4n, 'acc_ens') > mean(r4, 'acc_ens') else '(잡음이 해침 = 배운 상태)'))
+            ds, de = mean(r4n, 'acc_single') - mean(r4, 'acc_single'), mean(r4n, 'acc_ens') - mean(r4, 'acc_ens')
+            L.append(f'- 로컬 step {steps}: K=4 에서 eps 잡음의 효과 = 조 모델 하나 {pp(ds)}, 앙상블 {pp(de)} '
+                     + ('→ 잡음은 모델 하나를 해치지만 조마다 다른 잡음이 앙상블 다양성을 늘려 앙상블은 좋아짐' if ds < 0 < de else
+                        '→ 잡음이 모델 하나도 좋게 함 = 아직 덜 배운 상태' if ds > 0 else '→ 잡음이 해침'))
     L += ['', '## 읽는 법', '',
           '- 제대로 배운 상태 (로컬 step 10) 에서 K 를 늘리면 조 모델 하나의 정확도는 떨어져야 하고, 앙상블이 그것을 얼마나 메우는지가 "조 몇 개" 의 정확도 쪽 축이다.',
-          '- 잡음 효과가 양수이면 아직 덜 배운 상태라는 뜻이다 (잡음이 regularizer 역할). 제대로 배운 상태에서는 음수여야 한다. 이 실험은 다른 실험의 정확도 숫자를 어떻게 읽어야 하는지 정한다.',
+          '- 잡음 효과는 조 모델 하나와 앙상블을 따로 본다. 하나는 나빠지는데 앙상블이 좋아지면, 조마다 독립인 잡음이 앙상블 다양성을 만든 것이다 (K=1 에서는 앙상블이 없으므로 잡음이 해쳐야 한다). 하나까지 좋아지면 아직 덜 배운 상태다. 이 실험은 다른 실험의 "잡음이 정확도를 올리는" 숫자를 어떻게 읽어야 하는지 정한다.',
           '- 추론 내려받기와 예측 연산은 K 에 정비례한다. 중앙 SISA 는 이 비용이 서버에 있어 보이지 않았다.', '']
     (out / 'REPORT_KO.md').write_text('\n'.join(L), encoding='utf-8')
     return {}
