@@ -19,10 +19,11 @@ from asisa.data import ensure_dataset
 from asisa.util import setup_torch, pick_device, Logger, environment, write_json, PowerMeter
 
 ORDER = ['noise', 'resources', 'assignment', 'interference', 'codes', 'placement', 'control', 'stability', 'differencing', 'dropout', 'lifecycle', 'subcarrier',
-         'retrain', 'earlystop', 'sharding', 'fairness']
+         'retrain', 'earlystop', 'sharding', 'fairness', 'standard']
 TITLE = {'noise': '허용 집계 잡음', 'resources': '자원·삭제 비용·노출', 'assignment': '배정의 학습·삭제 비용', 'interference': 'shard 간 간섭과 도착 크기 맞추기', 'codes': '시간 오차에 강한 코드(ZCZ)', 'placement': '같은 자원을 쓰는 shard 의 배정', 'control': 'E1 shard 밖 제어 (전체 정렬·스케줄링)', 'stability': 'E2 배정 안정성과 재학습 범위', 'differencing': 'E3 삭제 전후 합의 차분', 'dropout': 'E4 학습 중 이탈', 'lifecycle': 'E2b 배정·삭제 처리의 누적 비용', 'subcarrier': 'R1~R3 부반송파·시간 배치 (FDMA, OFDMA, 혼합, 보호 대역)',
          'retrain': 'B 재학습 전송이 다른 shard 에 남기는 흔적', 'earlystop': 'D 전체 검증으로 조기 종료', 'sharding': 'A·E shard 수에 따른 정확도와 추론 비용',
-         'fairness': 'C 남의 삭제 비용을 누가 내는가'}
+         'fairness': 'C 남의 삭제 비용을 누가 내는가',
+         'standard': '기존 AirComp 조건 (Rayleigh·절단 채널 역전·반복 없음·RF 손상) 에서 다시 본 SISA'}
 
 def main():
     for st in (sys.stdout, sys.stderr):

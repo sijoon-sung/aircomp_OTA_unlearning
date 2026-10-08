@@ -18,7 +18,7 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 
 | 옵션 | 기본 | 설명 |
 |---|---|---|
-| `--only` | 전부 | `noise,resources,assignment,interference,codes,placement,control,stability,differencing,dropout,lifecycle,subcarrier,retrain,earlystop,sharding,fairness` 중 일부 |
+| `--only` | 전부 | `noise,resources,assignment,interference,codes,placement,control,stability,differencing,dropout,lifecycle,subcarrier,retrain,earlystop,sharding,fairness,standard` 중 일부 |
 | `--seeds` / `--rounds` | 5 / 160 | |
 | `--eps` | 10 | 허용 집계 오차. noise 실험의 측정값 |
 | `--chunk` | 64 | vmap 묶음 크기. GPU 메모리가 부족하면 32 |
@@ -46,13 +46,16 @@ Windows 는 `run.bat` 더블클릭 (= check.py 후 run.py, 인자를 그대로 �
 | `earlystop` (D) | 멈출 라운드를 앙상블 검증 정확도 (전체 결정) 로 정하면 u 와 무관한 shard 의 최종 모델이 달라지는가. shard 자기 검증으로 정하면 0 | 2026-10-08 추가 |
 | `sharding` (A·E) | 로컬 step 을 늘려 제대로 배운 상태에서 K 에 따른 정확도 (조 모델 하나 vs 앙상블), 잡음이 정확도를 올리는 현상이 사라지는가, 기기 쪽 추론 내려받기 (K×32×D bit)·연산 (K 배) | 2026-10-08 추가 |
 | `fairness` (C) | 삭제 재학습 비용을 사람별로 세면 누가 내는가. 요청자는 떠나고 조원이 낸다. 삭제가 한 묶음에 몰릴 때의 쏠림 (지니, 최대/평균) | 2026-10-08 추가 |
+| `standard` | 기존 AirComp 조건 (Rayleigh 페이딩, 절단 채널 역전 g_th, 반복 없음, FDMA 에 CFO·CP 초과 타이밍·PA 비선형·ADC 양자화) 에서 SNR 별로 정확도·흔적·노출·n_t 를 지금까지의 순한 조건과 나란히 잰다 | 2026-10-08 추가 |
 
 각 실험 파일 맨 위 설명에 설정·측정·판정 기준을 적었다. 보고서의 "읽는 법" 절에 가설이 맞을 때 보여야 하는 모습을 적었다.
 
 ## 3. 모델
 
 - client 20명, FashionMNIST 를 class 마다 Dirichlet(0.5) 비율로 나눔, 작은 CNN (파라미터 38,282개). 로컬 SGD 2 step, update 는 L2 ≤ 1 로 자름.
-- 채널 진폭: 장기 10^(U[-20,0]/20) × 라운드별 U[0.85, 1.15]. 위상은 송신 전에 보상.
+- 채널 진폭: 장기 10^(U[-20,0]/20) × 라운드별 U[0.85, 1.15] (`fading='rayleigh'` 면 |CN(0,1)|). 위상은 송신 전에 보상.
+- 절단 채널 역전 (`align='trunc'`, `trunc=g_th`): |h|² < g_th 인 client 는 그 라운드에 보내지 않고, 보내는 client 는 공개 상수 β = C/(√g_th √(PD)) 로 도착 (Zhu·Wang·Huang 2020). shard 밖 정보를 쓰지 않는다.
+- OFDM RF 손상 (`timing`, `cp`, `pa_ibo`, `adc_bits`): CP 를 넘는 타이밍 오차는 등가 주파수 오차로 ICI 에 더해지고, PA 는 기기 전력 상한 기준 Rapp(p=2) 비선형 (상한 근처로 보내는 약한 채널 client 만 왜곡), ADC 는 전체 대역 최대 진폭을 풀스케일로 양자화 (약한 shard 의 양자화 잡음이 센 shard 전력에 좌우).
 - 한 shard 의 한 라운드 (`asisa/radio.py`):
   member i 가 s_i = x_i / (|h_i| β) 를 보내면 서버에 x_i/β 로 도착하고, 서버는 받은 합에 α = β/n 을 곱해 (1/n)Σx_i + α z 를 얻는다. 집계 오차 = D α² σ² / L.
   - 최대 전력: β = C / (min|h| √(PD)) (가장 약한 member 가 전력 상한에 닿음)

@@ -75,16 +75,19 @@ def train(tr, shards, h, w0, seed, radio_of, track_of=None, log=None, log_every=
         act = dict(present)
         for name, idx in systems.items():
             cfg = radio_of(name); lj = [j for j in idx if j in present]
+            if cfg.trunc is not None:                      # 절단 채널 역전: 문턱 아래 client 는 이번 라운드에 보내지 않음 (자기 채널만 봄)
+                for j in lj:
+                    act[j] = [i for i in present[j] if h[t, i] ** 2 >= cfg.trunc]
             if cfg.sched is not None and lj:
                 scope, q = cfg.sched
                 pool_all = [i for j in lj for i in present[j]]
                 for j in lj:
-                    pool = present[j] if scope == 'shard' else pool_all
-                    if not pool or not present[j]:
+                    pool = act[j] if scope == 'shard' else [i for jj in lj for i in act[jj]]
+                    if not pool or not act[j]:
                         continue
                     thr = float(np.quantile(h[t, pool], q))
-                    a = [i for i in present[j] if h[t, i] >= thr]
-                    act[j] = a if a else [max(present[j], key=lambda i: h[t, i])]
+                    a = [i for i in act[j] if h[t, i] >= thr]
+                    act[j] = a if a else [max(act[j], key=lambda i: h[t, i])]
         for j in live:
             if len(act[j]) < max(1, shards[j].min_present):
                 if act[j] or shards[j].members:

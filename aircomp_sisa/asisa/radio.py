@@ -54,7 +54,9 @@ from .util import key
 class RadioConfig:
     sigma2: float = 0.01        # 수신 잡음 분산 (실수 심볼·칩당). 명목 SNR = P / sigma2
     eps: float = EPS            # 반복 기준 허용 집계 오차. 0 이면 반복하지 않음
-    align: str = 'maxpow'       # 'maxpow' | 'common' | 'weakest'(code) | 'global'(orth: 같은 system 전체의 최약 member 기준)
+    align: str = 'maxpow'       # 'maxpow' | 'common' | 'weakest'(code) | 'global'(orth: 같은 system 전체의 최약 member 기준) | 'trunc'(절단 채널 역전)
+    trunc: float = None         # align='trunc': 문턱 g_th (|h|^2). 이보다 약한 client 는 그 라운드에 보내지 않고, 보내는 client 는 모두
+                                #   beta = C / (sqrt(g_th) sqrt(P D)) 로 도착 (공개 상수. 기존 AirComp 의 truncated channel inversion, Zhu·Wang·Huang 2020)
     sched: tuple = None         # None | ('shard'|'global', q): 이번 라운드 채널이 (shard 안 | system 전체) 하위 q 분위수 미만이면 송신하지 않음
     target: float = None        # common 의 목표 집계 오차 (None 이면 eps)
     n_nom: float = None         # common 의 명목 인원 (None 이면 그 shard 의 인원)
@@ -71,6 +73,10 @@ class RadioConfig:
     guard: int = 0              # mux='ofdm': 블록 사이 보호 부반송파 수
     block_order: str = 'fixed'  # mux='ofdm', alloc='block': 'fixed' | 'beta'
     cfo: float = 0.0            # mux='ofdm': client 주파수 오차 상한 (부반송파 간격 단위)
+    timing: float = 0.0         # mux='ofdm': client 타이밍 오차 상한 (샘플). cp 를 넘는 만큼이 전 부반송파 ICI 가 된다 (등가 주파수 오차 = 초과분 / F)
+    cp: int = 8                 # mux='ofdm': cyclic prefix 길이 (샘플)
+    pa_ibo: float = None        # mux='ofdm': 전력증폭기 input back-off (dB). None 이면 선형. Rapp(p=2) 비선형 → 인접 부반송파로 스펙트럼 누설
+    adc_bits: int = None        # mux='ofdm': 수신 ADC 비트 수. None 이면 무한. 풀스케일은 그 OFDM 심볼의 전체 대역 최대 진폭 (모든 shard 의 합) 으로 정해짐
     P: float = P_MAX
     C: float = CLIP
 
@@ -113,6 +119,8 @@ def plan(cfg, n, hmin, D, L=1, beta_force=None):
             return beta0, 1
     elif cfg.align in ('weakest', 'global'):
         beta_min = max(beta_min, beta_force)
+    elif cfg.align == 'trunc':
+        beta_min = cfg.C / (math.sqrt(cfg.trunc) * math.sqrt(P_eff * D))      # hmin >= sqrt(g_th) 이므로 전력 상한 안
     elif cfg.align != 'maxpow':
         raise ValueError(cfg.align)
     mse1 = D * (beta_min / n) ** 2 * cfg.sigma2 / L
@@ -270,13 +278,39 @@ class OfdmSystem:
     def __init__(self, cfg, seed, device):
         self.cfg = cfg; self.seed = seed; self.F = cfg.F
         self.eps = cfg.cfo * np.array([np.random.default_rng(key(seed, 'cfo', i)).uniform(-1, 1) for i in range(64)])
+        tau = cfg.timing * np.array([np.random.default_rng(key(seed, 'timing', i)).uniform() for i in range(64)])
+        self.excess = np.maximum(0.0, tau - cfg.cp)                      # CP 를 넘는 타이밍 오차 (샘플)
         self._C = {}
 
     def C(self, i, dt, device):
+        """client i 의 부반송파 누설 행렬: CFO 와 CP 초과 타이밍 오차를 등가 주파수 오차로 합친다 (실수 근사)."""
         if i not in self._C:
-            c = ici_coeff(self.eps[i], self.F)
+            e = self.eps[i]; e_eff = (np.sign(e) if e != 0 else 1.0) * (abs(e) + self.excess[i] / self.F)
+            c = ici_coeff(e_eff, self.F)
             self._C[i] = torch.as_tensor(np.stack([np.roll(c, f) for f in range(self.F)]), dtype=dt, device=device)   # C[f, g] = c(g - f)
         return self._C[i]
+
+    def pa(self, G):
+        """전력증폭기 비선형 (Rapp, p=2) 을 시간 영역에서 적용. G [rows, F] 는 실수 부반송파 격자 (rfft 계수로 본다).
+        포화 진폭 A_sat 는 기기 전력 상한 P 에서의 시간 영역 평균 전력 × 10^(IBO/10) 로 고정 (PA 의 성질).
+        그래서 채널 역보상 때문에 상한 가까이 보내는 약한 채널 client 만 왜곡되고, 전력을 낮춰 보내는 client 는 선형에 가깝다.
+        왜곡은 데이터의 함수라 자기 블록 밖으로 새는 성분도 데이터에 묶여 있다."""
+        if self.cfg.pa_ibo is None:
+            return G
+        n = 2 * (self.F - 1)
+        x = torch.fft.irfft(G.to(torch.complex64) if not G.is_complex() else G, n=n, dim=1)
+        p_cap = 2 * self.cfg.P / n ** 2                           # 부반송파 전력 합 = P 일 때의 시간 영역 평균 전력 (irfft 'backward' 정규화)
+        a_sat = math.sqrt(p_cap * 10 ** (self.cfg.pa_ibo / 10))
+        y = x / (1 + (x.abs() / a_sat) ** 4) ** 0.25
+        return torch.fft.rfft(y, n=n, dim=1).real[:, :self.F].to(G.dtype)
+
+    def adc(self, Y):
+        """수신 ADC 양자화. 풀스케일 = 그 OFDM 심볼 (행) 의 전체 대역 최대 진폭 → 약한 shard 의 양자화 잡음이 센 shard 의 전력에 따라 정해진다."""
+        if self.cfg.adc_bits is None:
+            return Y
+        fs = Y.abs().amax(dim=1, keepdim=True).clamp_min(1e-30)
+        step = 2 * fs / (2 ** self.cfg.adc_bits)
+        return torch.round(Y / step) * step
 
     def allocate(self, group, H):
         """group: [(slot, ids, hs)], H: {client: |h_i H_i(f)| [F]}. 반환 {slot: 부반송파 번호 배열} (모두 같은 개수)."""
@@ -338,12 +372,14 @@ class OfdmSystem:
                     s2 = (loc / hl[None, :]) ** 2
                     energy += float(s2.sum()) * R; pr = max(pr, float(s2.sum()) / D / p_sc)
                     full = torch.zeros(rows, F, device=dev, dtype=dt); full[:, Asl] = loc
-                    Pi = full @ self.C(i, dt, dev)
+                    Pi = self.pa(full) @ self.C(i, dt, dev)          # PA 비선형 (자기 블록 밖 누설) → CFO·타이밍 ICI
                     acc += Pi
                     if i in track:
                         Gu[i] = (sl, Pi)
                 Gsh[sl] = acc; info[sl] = (list(ids), X.shape[0], energy, pr, Asl)
             Z = [_gaussian(noise_key if r == 0 else key(noise_key, 'slot', r), (rows, F), dev, dt, np.sqrt(sig_sc)) for r in range(Rmax)]
+            Gtot = sum(Gsh.values())
+            Yq = [self.adc(Gtot + Z[r]) if self.cfg.adc_bits is not None else None for r in range(Rmax)]     # 전체 대역을 한 번에 양자화
             for sl, X, ids, hs in grp:
                 beta, R = plans[sl]; n = X.shape[0]; alpha = beta / n; Asl = info[sl][4]
                 read = lambda M: M[:, Asl].reshape(-1)[:D]
@@ -357,7 +393,10 @@ class OfdmSystem:
                     if su != sl:
                         d['u_leak'][u] = float((alpha * min(plans[su][1], R) / R * read(Pu)).pow(2).sum())
                 noise = sum(read(Z[r]) for r in range(R)) / R
-                out[sl] = alpha * (own + leak + noise)
+                if self.cfg.adc_bits is not None:
+                    out[sl] = alpha * sum(read(Yq[r]) for r in range(R)) / R     # 양자화된 전체 격자에서 자기 블록을 읽음 (진단 own/leak/noise 는 양자화 전)
+                else:
+                    out[sl] = alpha * (own + leak + noise)
                 d.update(own_energy=float((alpha * own).pow(2).sum()), leak_energy=float((alpha * leak).pow(2).sum()),
                          noise_energy=float((alpha * noise).pow(2).sum()), alpha=alpha, beta=beta, repeats=float(R))
                 diags[sl] = d

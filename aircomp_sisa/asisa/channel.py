@@ -4,10 +4,17 @@ import numpy as np
 from .config import N_CLIENTS
 from .util import key
 
-def channels(seed, T):
-    """client 채널 진폭. 장기 진폭 10^(U[-20,0]/20) x 라운드별 U[0.85, 1.15]. 반환: base [N], h [T, N]."""
+def channels(seed, T, fading='mild'):
+    """client 채널 진폭. 장기 진폭 10^(U[-20,0]/20) x 라운드별 페이딩. 반환: base [N], h [T, N].
+    fading='mild'     U[0.85, 1.15] (지금까지의 실험)
+    fading='rayleigh' |CN(0,1)| (E|g|^2 = 1, 깊은 골이 있음. 기존 AirComp 논문의 블록 페이딩)"""
     base = 10 ** (np.random.default_rng(key(seed, 'slow_channel')).uniform(-20, 0, N_CLIENTS) / 20)
-    fad = np.stack([np.random.default_rng(key(seed, t, 'fading')).uniform(.85, 1.15, N_CLIENTS) for t in range(T)])
+    if fading == 'mild':
+        fad = np.stack([np.random.default_rng(key(seed, t, 'fading')).uniform(.85, 1.15, N_CLIENTS) for t in range(T)])
+    elif fading == 'rayleigh':
+        fad = np.stack([np.random.default_rng(key(seed, t, 'rayleigh')).rayleigh(1 / np.sqrt(2), N_CLIENTS) for t in range(T)])
+    else:
+        raise ValueError(fading)
     return base, base[None, :] * fad
 
 RULES = ['random_split', 'rank_chunk', 'rank_rr', 'bins', 'hash']
