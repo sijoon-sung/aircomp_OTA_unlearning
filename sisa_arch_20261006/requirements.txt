@@ -1,4 +1,0 @@
-# GPU 사용 시 torch/torchvision 은 https://pytorch.org/get-started/locally/ 의 CUDA 판 명령으로 설치하세요.
-numpy>=1.23
-torch>=2.1
-torchvision>=0.16

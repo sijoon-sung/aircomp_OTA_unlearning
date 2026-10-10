@@ -17,3 +17,6 @@ mpl_cache/
 *.key
 .DS_Store
 Thumbs.db
+
+# local run outputs
+aircomp_sisa/runs/*_quick/

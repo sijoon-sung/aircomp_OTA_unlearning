@@ -1,6 +1,6 @@
 # 가설별 묶음: aircomp_OTA_unlearning (2026-10-10)
 
-이 문서는 같은 내용을 **"무엇을 확인하려 했나"** 기준으로 다시 묶은 것이다.
+이 문서는 저장소의 모든 실험을 **"무엇을 확인하려 했나"** 기준으로 묶은 것이다. 2026-10-11 정리 때 `sisa_arch_20261006/`, `aircomp_sim_20261007/` 코드를 지웠고(git 기록에 남음), aircomp_sim의 실행 결과는 `aircomp_sisa/runs/legacy_aircomp_sim`로 옮겼다.
 수치는 각 폴더의 결과 문서에서 옮겼고, 마지막 절은 결과표를 직접 대조하며 찾은 문제다.
 
 ## 뿌리 질문
@@ -71,7 +71,7 @@
 | 데이터–채널 상관이 있을 때만 이득인가 | `research_20261003_sisa_aircomp/correlation_control_v1` | 연결 0: 삭제 RE 5.6% 절감(기준 미달). 0.5/1: 19–21% 절감 |
 | 실측 삭제비로 배정 선택 | `aircomp_mechanism_20261004` | **18조건 중 10조건에서 중단.** 첫 seed data 배정 UL 8.97%↓, 준비비 4.1e8 |
 | 참여 시점 지연 | `aircomp_staged_entry_20261003` | 완료 |
-| 배정 9종 파레토 | `aircomp_sim_20261007` P1, `aircomp_sisa/asisa/exp/assignment.py` | 돌려 담기 삭제 에너지 −13.8% (최대 전력) |
+| 배정 9종 파레토 | `aircomp_sisa/runs/legacy_aircomp_sim` P1, `aircomp_sisa/asisa/exp/assignment.py` | 돌려 담기 삭제 에너지 −13.8% (최대 전력) |
 | 배정 안정성·누적 비용·공정성 | `aircomp_sisa/asisa/exp/stability.py`, `lifecycle.py`, `fairness.py`, `placement.py` | 순위 규칙은 삭제 1회에 3.4–3.9 shard 재학습. 해시는 1개지만 최소 인원 2.8, 노출 41% |
 
 **판정:** trade-off는 있다. 10/5 문서의 판정 그대로, 데이터 중심 이득은 AirComp 기여가 아니다.
@@ -81,7 +81,7 @@
 | 결합 경로 | 폴더 | 핵심 결과 (미삭제 shard 파라미터 흔적) |
 |---|---|---|
 | 합성 선형 혼합 수신 | `aircomp_isolation_test_20261003` | 혼합 ρ>0에서 전파, ZF로 제거 |
-| 코드 분할 간섭·near-far | `aircomp_sim_20261007` P0-A·P2, `aircomp_sisa/asisa/exp/interference.py`, `codes.py`, `placement.py` | 20dB 칩오차 .3 채널정렬: 0.321 (난수 0.235). ZCZ 구간 안 0 |
+| 코드 분할 간섭·near-far | `aircomp_sisa/runs/legacy_aircomp_sim` P0-A·P2, `aircomp_sisa/asisa/exp/interference.py`, `codes.py`, `placement.py` | 20dB 칩오차 .3 채널정렬: 0.321 (난수 0.235). ZCZ 구간 안 0 |
 | 전체 전력 정렬·스케줄링 | `aircomp_sisa/asisa/exp/control.py` | −10dB 전체 정렬 0.476 ± 0.091, shard 안 0 |
 | 재학습 전송 자체 | `aircomp_sisa/asisa/exp/retrain.py` | PN16 0.124, TDMA 0.0013 |
 | 부반송파 주파수 오차 | `aircomp_sisa/asisa/exp/subcarrier.py` | OFDMA 채널 인식 0.203 ± 0.090 |
@@ -106,7 +106,7 @@
 
 | 폴더 | 핵심 결과 |
 |---|---|
-| `aircomp_sim_20261007` P0(b), `aircomp_sisa/asisa/exp/resources.py`, `lifecycle.py` | 학습 UL K=1 6.1e6 → K=10 6.1e7. 삭제 UL 6.125e6 고정. 누적 통신을 줄이는 건 slicing뿐 (전체 재학습 대비 해시+병합 122.6% → slicing 추가 91.7%) |
+| `aircomp_sisa/runs/legacy_aircomp_sim` P0(b), `aircomp_sisa/asisa/exp/resources.py`, `lifecycle.py` | 학습 UL K=1 6.1e6 → K=10 6.1e7. 삭제 UL 6.125e6 고정. 누적 통신을 줄이는 건 slicing뿐 (전체 재학습 대비 해시+병합 122.6% → slicing 추가 91.7%) |
 
 **판정:** 성립. "AirComp 시간은 참가자 수와 무관"에서 한 줄로 나온다.
 
@@ -125,9 +125,9 @@
 2. **차분 실험의 해석이 자기 표와 맞지 않는다.** 보고서는 "새 초기값 재학습이 차분을 막는다"고 쓰지만, n=2·20dB에서 cos 0.148 → 0.141, 적중 90% → 80%로 거의 그대로다. n=5에서 75% → 50%로 떨어지지만 배치만 바꿔도 45%다. 새 초기값의 효과는 배치 변경 수준이다.
 3. **정렬 방식 사이의 흔적 비교 단위가 다르다.** 공통 수신 크기의 파라미터 난수 변동은 1.39, 최대 전력은 0.22다. "흔적 ÷ 난수"가 작아 보이는 것은 잡음이 기준선을 부풀린 탓이다. `placement` 보고서에 주의 문구는 있지만 `interference` 판정에는 반영되지 않았다.
 4. **디지털 비교군이 32bit × D의 Shannon 전송이다.** P0 표의 225배 차이는 이 기준선 때문이다. 같은 저장소의 SFL 실험에서는 4bit 디지털이 OTA와 거의 같았다.
-5. **미완:** `aircomp_mechanism_20261004` 10/18, `standard` 미실행, `sisa_arch_20261006` 결과 없음.
+5. **미완:** `aircomp_mechanism_20261004` 10/18, `standard` 미실행.
 6. **재현 경로:** B세대 10/3 실험은 `research_20260929_pdf_ota_unlearning/core.py`의 DISLAB PC 절대경로에 묶여 있다.
 
 ## 묶음을 실제 폴더로 옮길 때
 
-폴더를 물리적으로 옮기면 깨지는 곳이 두 군데 있다. `aircomp_sim_20261007`이 `sisa_arch_20261006`을 import하고, B세대 실험들이 `research_20260929_pdf_ota_unlearning/core.py`를 상대경로로 찾는다. 그래서 첫 단계는 이동이 아니라 최상위에 `HYPOTHESES.md` 하나(이 문서)를 두고 각 가설에서 기존 폴더로 링크하는 것이다. 이동은 A·B세대를 `archive/`로 내릴 때 한 번에 한다.
+10/3~10/4 실험들은 `research_20260929_pdf_ota_unlearning/core.py`를 상대경로로 찾으므로, 이 폴더들을 옮길 때는 core.py도 함께 옮겨야 한다. 지금 실행 가능한 코드는 `aircomp_sisa/` 하나다.
